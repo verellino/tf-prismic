@@ -1,6 +1,6 @@
 <template>
   <div class="w-full text-white bg-dark-blue">
-    <div class="grid grid-rows-1 grid-flow-col p-32 gap-24">
+    <div class="grid grid-rows-1 md:grid-flow-col p-4 py-12 md:p-32 gap-8 md:gap-24">
       <div> 
         <h2>Transforming Futures</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
