@@ -12,7 +12,7 @@
           wrapper="h1"
           class="mb-3 text-3xl font-semibold tracking-tighter text-slate-800 md:text-4xl"
         />
-        <p class="font-serif italic tracking-tighter text-slate-500">
+        <p class="blog-details-span">
           {{ formatDate(article) }}
         </p>
       </Bounded>
@@ -32,7 +32,7 @@
                   {{ $prismic.asText(latestArticle.data.title) }}
                 </PrismicLink>
               </h1>
-              <p class="font-serif italic tracking-tighter text-slate-500">
+              <p class="blog-details-span">
                 {{ formatDate(latestArticle) }}
               </p>
             </li>

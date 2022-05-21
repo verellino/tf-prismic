@@ -1,13 +1,108 @@
 <template>
-  <Bounded size="widest">
-    <ul class="grid grid-cols-1 gap-16">
-      <ArticleListItem
-        v-for="article in articles"
-        :key="article.id"
-        :article="article"
-      />
-    </ul>
-  </Bounded>
+  <div>
+    <div class="container">
+      <div
+        class="hero-banner flex flex-col-reverse mx-auto md:flex-row justify-center items-center p-10 pt-32 mb-32"
+      >
+        <div
+          class="hero-text text-left md:w-1/2 h-full flex flex-col justify-center"
+        >
+          <h1 class="title">Transforming Futures</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo
+            quam, non iusto eius veritatis id porro! Velit molestiae earum,
+            excepturi sed quidem, minus consequatur ipsa unde magnam quaerat
+            provident.
+          </p>
+          <button class="bg-dark-blue rounded-sm p-2 text-white mt-4 w-32">Button</button>
+        </div>
+        <div class="w-1/2 flex justify-center align-center">
+          <img src="@/assets/images/Hero-img.png" alt="Transforming Futures" />
+        </div>
+      </div>
+    </div>
+    <BlogsFeaturedBlog :articles="articles" />
+    <BlogsCategoryGrid :articles="articles" />
+    <BlogsThreeCol :articles="articles" />
+    <section>
+      <div class="container py-24 text-center">
+        <h2>Our Partners</h2>
+        <div class="flex w-full justify-evenly mt-24">
+          <div class="h-20 w-20 rounded-full bg-neutral-500"></div>
+          <div class="h-20 w-20 rounded-full bg-neutral-500"></div>
+          <div class="h-20 w-20 rounded-full bg-neutral-500"></div>
+          <div class="h-20 w-20 rounded-full bg-neutral-500"></div>
+          <div class="h-20 w-20 rounded-full bg-neutral-500"></div>
+          <div class="h-20 w-20 rounded-full bg-neutral-500"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container text-center py-32">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+          <div class="overflow-hidden sm:rounded-md text-left mt-8">
+            <div class="px-4 py-5 sm:p-6">
+              <div class="grid grid-cols-6 gap-6">
+                <div class="col-span-6 sm:col-span-3">
+                  <label
+                    for="first-name"
+                    class="block text-sm font-medium text-gray-700"
+                    >First name</label
+                  >
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    autocomplete="given-name"
+                    class="mt-1 h-12 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-700 rounded-md"
+                  />
+                </div>
+
+                <div class="col-span-6 sm:col-span-3">
+                  <label
+                    for="email-address"
+                    class="block text-sm font-medium text-gray-700"
+                    >Email address</label
+                  >
+                  <input
+                    type="text"
+                    name="email-address"
+                    id="email-address"
+                    autocomplete="email"
+                    class="mt-1 h-12 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-700 rounded-md"
+                  />
+                </div>
+
+                <div class="col-span-6">
+                  <label
+                    for="street-address"
+                    class="block text-sm font-medium text-gray-700"
+                    >Lorem</label
+                  >
+                  <input
+                    type="text"
+                    name="lorem"
+                    id="lorem"
+                    autocomplete="lorem"
+                    class="mt-1 h-72 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-700 rounded-md"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="px-4 py-3 bg-gray-50 text-center sm:px-6">
+              <button
+                type="submit"
+                class="inline-flex w-1/2 justify-center py-4 px-8 border border-transparent shadow-sm font-medium rounded-md text-white bg-dark-blue hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -38,3 +133,15 @@ export default {
   }
 }
 </script>
+
+<style>
+.container {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner {
+  height: 64vh;
+}
+</style>

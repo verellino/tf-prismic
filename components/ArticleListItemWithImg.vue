@@ -1,13 +1,20 @@
 <template>
   <li
-    class="flex flex-col justify-center m-4 p-6"
+    class="flex flex-col justify-center p-10"
   >
     <PrismicLink :field="article" tab-index="-1">
+      <div class="article-img aspect-w-16 aspect-h-9 relative bg-gray-100 mb-4">
+        <PrismicImage
+          v-if="featuredImage.url"
+          :field="featuredImage"
+          class="object-cover"
+        />
+      </div>
       <div>
         <p class="blog-details-span">
           {{ formattedDate }}
         </p>
-        <Heading as="h3">
+        <Heading as="h2">
           <PrismicLink :field="article">
             {{ $prismic.asText(article.data.title) }}
           </PrismicLink>

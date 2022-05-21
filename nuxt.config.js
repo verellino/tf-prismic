@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Prismic + Nuxt blog example',
+    title: 'Transforming Futures',
     htmlAttrs: {
       lang: 'en'
     },
@@ -16,7 +16,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Prismic + Nuxt blog example'
+        content: 'Transforming Futures'
       },
       { name: 'format-detection', content: 'telephone=no' }
     ],

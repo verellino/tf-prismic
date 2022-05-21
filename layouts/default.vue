@@ -1,12 +1,6 @@
 <template>
   <div class="text-slate-700">
-    <Header
-      v-if="navigation.data && settings.data"
-      :with-profile="withHeaderProfile"
-      :with-divider="withHeaderDivider"
-      :navigation="navigation"
-      :settings="settings"
-    />
+    <GlobalsMegaMenu />
     <main><nuxt /></main>
     <Footer v-if="navigation.data && settings.data" :with-sign-up-form="withFooterSignUpForm" :settings="settings" />
   </div>
