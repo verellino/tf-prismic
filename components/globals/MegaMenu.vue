@@ -23,7 +23,7 @@
               <router-link :to="`/`" class="hover:text-blue-900">Technology</router-link>
             </li>
             <li class="mr-8 mb-6 lg:mb-0">
-              <router-link :to="`/about`" class="hover:text-blue-900">More</router-link>
+              <router-link :to="`/about`" class="hover:text-blue-900">Resources</router-link>
             </li>
             <!-- <li>
               <GlobalsDropdownMenu />

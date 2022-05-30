@@ -9510,7 +9510,7 @@ slash@3.0.0, slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-slice-machine-ui@^0.3.6:
+slice-machine-ui@^0.3.7:
   version "0.3.7"
   resolved "https://registry.yarnpkg.com/slice-machine-ui/-/slice-machine-ui-0.3.7.tgz#5df5a6c87e775fc9cef2402976418d56d3b5bafc"
   integrity sha512-3g9kUKRBqVfacuh6TJHELNP+XJqAl8oKtadUVSrbpkRo56AedqOyOy5yp7ckgoUZd6U2w+ydx7s+GArqI9K1ow==

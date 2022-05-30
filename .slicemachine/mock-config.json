@@ -30,7 +30,8 @@
           "patternType": "HEADING",
           "blocks": 1
         }
-      }
+      },
+      "tags": {}
     },
     "settings": {
       "name": {
@@ -57,7 +58,10 @@
           "blocks": 1
         }
       }
-    }
+    },
+    "tags": {},
+    "categories": {},
+    "category": {}
   },
   "slices": {
     "Text": {

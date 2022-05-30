@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <div
-        class="hero-banner flex flex-col-reverse mx-auto md:flex-row justify-center items-center p-10 pt-32 mb-32"
+        class="hero-banner flex flex-col-reverse mx-auto md:flex-row justify-center items-center p-10 pt-40 md:pt-32 pb-12"
       >
         <div
           class="hero-text text-left md:w-1/2 h-full flex flex-col justify-center"
@@ -10,14 +10,12 @@
           <h1 class="title">Transforming Futures</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo
-            quam, non iusto eius veritatis id porro! Velit molestiae earum,
-            excepturi sed quidem, minus consequatur ipsa unde magnam quaerat
-            provident.
+            quam, non iusto eius veritatis id porro!
           </p>
           <button class="bg-dark-blue rounded-sm p-2 text-white mt-4 w-32">Button</button>
         </div>
         <div class="w-1/2 flex justify-center align-center">
-          <img src="@/assets/images/Hero-img.png" alt="Transforming Futures" />
+          <img src="@/assets/images/Hero-img.png" alt="Transforming Futures" class="h-30 md:h-60" />
         </div>
       </div>
     </div>
@@ -141,7 +139,9 @@ export default {
   align-items: center;
 }
 
-.hero-banner {
-  height: 64vh;
+@media screen and (min-width: 749px) {
+  .hero-banner {
+    max-height: 40vh;
+  }
 }
 </style>

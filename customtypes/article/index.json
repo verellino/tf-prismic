@@ -39,6 +39,17 @@
           "thumbnails": []
         }
       },
+      "category": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": [
+            "category"
+          ],
+          "label": "category",
+          "placeholder": "Category"
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
@@ -55,6 +66,26 @@
             },
             "contact_form": {
               "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Meta": {
+      "tags": {
+        "type": "Group",
+        "config": {
+          "label": "Tags",
+          "fields": {
+            "tag": {
+              "type": "Link",
+              "config": {
+                "label": "Tag",
+                "select": "document",
+                "customtypes": [
+                  "tags"
+                ]
+              }
             }
           }
         }

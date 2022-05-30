@@ -5,7 +5,7 @@
         <!-- Left Category Section -->
         <div class="flex flex-col justify-center align-start md:p-10 col-span-2">
           <h2 class="h1">Category</h2>
-          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 category-grid__ul border-blogs-right">
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 category-grid__ul">
             <ArticleListItemWithImg
               v-for="article in articles"
               :key="article.id"
@@ -15,7 +15,7 @@
         </div>
         <!-- Right Section  -->
         <div
-          class="flex flex-col justify-start align-start md:p-10 col-span-2 md:col-span-1"
+          class="flex flex-col justify-start align-start md:p-10 col-span-2 md:col-span-1 border-blogs-left"
         >
           <h2>Lorem ipsum</h2>
           <ul>

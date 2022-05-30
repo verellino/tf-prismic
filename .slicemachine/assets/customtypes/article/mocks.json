@@ -1,16 +1,16 @@
 {
-  "id": "bb44b119-fd37-4b02-822f-dd46c76d10e0",
-  "uid": "animi-quidem-aspernatur",
+  "id": "508aa630-ed39-4ee9-aadb-5bd0ea46c836",
+  "uid": "dolor-aut-omnis",
   "type": "article",
   "data": {
     "title": [
       {
         "type": "heading1",
-        "text": "Target integrated bandwidth",
+        "text": "Engineer next-generation web services",
         "spans": []
       }
     ],
-    "publishDate": "2014-08-18",
+    "publishDate": "2017-07-27",
     "featuredImage": {
       "dimensions": {
         "width": 2000,
@@ -18,7 +18,37 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=2000&h=1500&fit=crop"
-    }
+      "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=2000&h=1500&fit=crop"
+    },
+    "category": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    },
+    "tags": [
+      {
+        "tag": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "tag": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "tag": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "tag": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      }
+    ]
   }
 }

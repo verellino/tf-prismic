@@ -17,11 +17,6 @@
         </p>
       </Bounded>
       <SliceZone :slices="article.data.slices" :components="components" />
-      <ul>
-        <li class="tags" v-for="tag in tagdata" :key="tag.id">
-          {{ $prismic.asText(tag.data.title) }}
-        </li>
-      </ul>
     </article>
     <Bounded v-if="latestArticles.length">
       <div class="grid grid-cols-1 justify-items-center gap-16 md:gap-24">
@@ -60,13 +55,6 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
 export default {
   async asyncData ({ $prismic, store, params }) {
     const article = await $prismic.api.getByUID('article', params.uid)
-    // Query tags
-    let tagids = []
-    article.data.tags.forEach(tag => {
-      tagids.push(tag.tag.id)
-    })
-    const tags = await $prismic.api.getByIDs(tagids)
- 
     const { results: latestArticles } = await $prismic.api.query(
       $prismic.predicate.at('document.type', 'article'),
       {
@@ -77,15 +65,13 @@ export default {
         pageSize: 3
       }
     )
-      
     await store.dispatch('prismic/load')
     store.commit('layout/setWithHeaderProfile', false)
     store.commit('layout/setWithHeaderDivider', false)
     store.commit('layout/setWithFooterSignUpForm', true)
     return {
       article,
-      latestArticles,
-      tagdata: tags.results
+      latestArticles
     }
   },
   data () {

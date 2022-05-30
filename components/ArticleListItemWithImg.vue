@@ -1,27 +1,34 @@
 <template>
   <li
-    class="flex flex-col justify-center p-10"
+    class="p-10"
   >
     <PrismicLink :field="article" tab-index="-1">
-      <div class="article-img aspect-w-16 aspect-h-9 relative bg-gray-100 mb-4">
-        <PrismicImage
-          v-if="featuredImage.url"
-          :field="featuredImage"
-          class="object-cover"
-        />
-      </div>
-      <div>
-        <p class="blog-details-span">
-          {{ formattedDate }}
-        </p>
-        <Heading as="h2">
-          <PrismicLink :field="article">
-            {{ $prismic.asText(article.data.title) }}
-          </PrismicLink>
-        </Heading>
-        <p v-if="excerpt" class="leading-relaxed">
-          {{ excerpt }}
-        </p>
+      <p class="blog-details-span">
+        {{ formattedDate }}
+      </p>
+      <div class="flex flex-row">
+        <div class="w-3/4 pr-4 flex flex-col justify-between">
+          <div>
+            <Heading as="h2">
+            <PrismicLink :field="article">
+              {{ $prismic.asText(article.data.title) }}
+            </PrismicLink>
+            </Heading>
+            <p v-if="excerpt" class="hidden md:block leading-relaxed">
+              {{ excerpt }}
+            </p>
+          </div>
+          <div class="mt-4 text-xs">
+            <nuxt-link to="/" class="uppercase text-dark-blue">Category</nuxt-link>
+          </div>
+        </div>
+        <div class="article-img w-1/4 relative ml-8">
+          <PrismicImage
+            v-if="featuredImage.url"
+            :field="featuredImage"
+            class="object-cover aspect-1"
+          />
+        </div>
       </div>
     </PrismicLink>
   </li>

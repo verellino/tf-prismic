@@ -1,8 +1,8 @@
-{
-  "extends": [
-    "@nuxtjs"
-  ],
-  "rules": {
-    "vue/multi-word-component-names": "off"
-  }
-}
+// {
+//   "extends": [
+//     "@nuxtjs"
+//   ],
+//   "rules": {
+//     "vue/multi-word-component-names": "off"
+//   }
+// }
