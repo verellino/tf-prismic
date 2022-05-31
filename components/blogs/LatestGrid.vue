@@ -1,9 +1,9 @@
 <template>
-  <div class="featured-blogs">
+  <div class="border-b-2  border-gray-200">
     <div class="container py-20">
-      <h2 class="text-center">Now Trending</h2>
+      <h2 class="text-center uppercase">Latest Articles</h2>
       <ul class="flex p-8">
-        <ArticleGridItem
+        <LatestArticleGridItem
           v-for="article in articles"
           :key="article.id"
           :article="article"

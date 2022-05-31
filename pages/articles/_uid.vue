@@ -1,50 +1,48 @@
 <template>
-  <div>
-    <Bounded>
-      <NuxtLink to="/" class="font-semibold tracking-tight text-slate-400">
-        &larr; Back to articles
-      </NuxtLink>
-    </Bounded>
-    <article>
-      <Bounded class="pb-0">
+  <div class="pt-32">
+    <div>
+      <Bounded class="pb-0 text-center">
         <PrismicText
           :field="article.data.title"
           wrapper="h1"
-          class="mb-3 text-3xl font-semibold tracking-tighter text-slate-800 md:text-4xl"
+          class="mb-3 text-6xl font-semibold tracking-tighter text-slate-800 md:text-4xl"
         />
         <p class="blog-details-span">
           {{ formatDate(article) }}
         </p>
       </Bounded>
-      <SliceZone :slices="article.data.slices" :components="components" />
-      <ul>
-        <li class="tags" v-for="tag in tagdata" :key="tag.id">
-          {{ $prismic.asText(tag.data.title) }}
-        </li>
-      </ul>
-    </article>
-    <Bounded v-if="latestArticles.length">
-      <div class="grid grid-cols-1 justify-items-center gap-16 md:gap-24">
-        <HorizontalDivider />
-        <div class="w-full">
-          <Heading size="2xl" class="mb-10">
-            Latest articles
-          </Heading>
-          <ul class="grid grid-cols-1 gap-12">
-            <li v-for="latestArticle in latestArticles" :key="latestArticle.id">
-              <h1 class="mb-3 text-3xl font-semibold tracking-tighter text-slate-800 md:text-4xl">
-                <PrismicLink :field="latestArticle">
-                  {{ $prismic.asText(latestArticle.data.title) }}
-                </PrismicLink>
-              </h1>
-              <p class="blog-details-span">
-                {{ formatDate(latestArticle) }}
-              </p>
-            </li>
-          </ul>
-        </div>
+    </div>
+    <div class="grid grid-cols-3">
+      <div class="col-span-2 ">
+        <article>
+          <SliceZone :slices="article.data.slices" :components="components" />
+        </article>
+        <Bounded>
+          <NuxtLink to="/" class="font-semibold tracking-tight text-slate-400">
+            &larr; Back to articles
+          </NuxtLink>
+        </Bounded>
       </div>
-    </Bounded>
+      <div class="col-span-1">
+        <Bounded v-if="latestArticles.length">
+          <div class="grid grid-cols-1 justify-items-center gap-16 md:gap-24">
+            <HorizontalDivider />
+            <div class="w-full">
+              <Heading size="2xl" class="mb-10">
+                Latest articles
+              </Heading>
+              <ul class="grid grid-cols-1 gap-12">
+                  <ArticleListItemWithImg
+                  v-for="article in latestArticles"
+                  :key="article.id"
+                  :article="article"
+                />
+              </ul>
+            </div>
+          </div>
+        </Bounded>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -60,12 +58,6 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
 export default {
   async asyncData ({ $prismic, store, params }) {
     const article = await $prismic.api.getByUID('article', params.uid)
-    // Query tags
-    let tagids = []
-    article.data.tags.forEach(tag => {
-      tagids.push(tag.tag.id)
-    })
-    const tags = await $prismic.api.getByIDs(tagids)
  
     const { results: latestArticles } = await $prismic.api.query(
       $prismic.predicate.at('document.type', 'article'),
@@ -84,8 +76,7 @@ export default {
     store.commit('layout/setWithFooterSignUpForm', true)
     return {
       article,
-      latestArticles,
-      tagdata: tags.results
+      latestArticles
     }
   },
   data () {

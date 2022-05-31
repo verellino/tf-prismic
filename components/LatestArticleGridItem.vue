@@ -1,20 +1,27 @@
 <template>
-  <li
-    class="flex flex-col justify-center m-4 p-6"
-  >
+  <li class="py-8 px-4 lg:w-1/3">
     <PrismicLink :field="article" tab-index="-1">
-      <div>
-        <p class="blog-details-span">
-          {{ formattedDate }}
-        </p>
-        <Heading as="h3">
-          <PrismicLink :field="article">
-            {{ $prismic.asText(article.data.title) }}
-          </PrismicLink>
-        </Heading>
-        <p v-if="excerpt" class="leading-relaxed mt-2">
-          {{ excerpt }}
-        </p>
+      <div class="h-full flex items-start">
+        <!-- <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+            <span class="text-neutral-500 pb-2 mb-2 border-b-2 border-gray-200">01</span>
+        </div> -->
+        <div class="flex-grow pl-6">
+          <span class="blog-details-span">
+            {{ formattedDate }}
+          </span>
+              <Heading as="h3">
+                <PrismicLink :field="article">
+                  {{ $prismic.asText(article.data.title) }}
+                </PrismicLink>
+              </Heading>
+            <p v-if="excerpt" class="mt-2 hidden md:block leading-relaxed mb-5">{{ excerpt }}</p>
+            <a class="inline-flex items-center">
+              <span class="flex">
+                  <nuxt-link to="/" class="uppercase text-dark-blue inline-block py-1 px-2 rounded bg-blue-50 text-xs font-medium tracking-widest">{{ article.data.category.uid }}</nuxt-link>
+                  <span class="ml-4 title-font font-medium text-neutral-900">Author</span>
+              </span>
+            </a>
+        </div>
       </div>
     </PrismicLink>
   </li>

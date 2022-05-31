@@ -20,6 +20,7 @@
       </div>
     </div>
     <BlogsFeaturedBlog :articles="articles" />
+    <BlogsLatestGrid :articles="articles" />
     <BlogsCategoryGrid :articles="articles" />
     <BlogsThreeCol :articles="articles" />
     <section>

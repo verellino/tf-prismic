@@ -14,7 +14,7 @@
               {{ $prismic.asText(article.data.title) }}
             </PrismicLink>
             </Heading>
-            <p v-if="excerpt" class="hidden md:block leading-relaxed">
+            <p v-if="excerpt" class="mt-2 hidden md:block leading-relaxed">
               {{ excerpt }}
             </p>
           </div>
