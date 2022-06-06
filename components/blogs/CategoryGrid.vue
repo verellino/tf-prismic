@@ -3,8 +3,8 @@
     <div class="container px-4 md:px-auto py-20">
       <div class="grid gird-cols-2 md:grid-cols-3 gap-4">
         <!-- Left Category Section -->
-        <div class="flex flex-col justify-center align-start md:p-10 col-span-2">
-          <h2 class="h1">Category</h2>
+        <div class="flex flex-col align-start md:p-10 col-span-2">
+          <h2 class="h1 capitalize">{{ article.category.uid }}</h2>
           <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 category-grid__ul">
             <ArticleListItemWithImg
               v-for="article in articles"

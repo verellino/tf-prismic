@@ -4,7 +4,7 @@
       <h2 class="text-center uppercase">Latest Articles</h2>
       <ul class="flex p-8">
         <LatestArticleGridItem
-          v-for="article in articles"
+          v-for="article in articles.slice(0,3)"
           :key="article.id"
           :article="article"
           class="col-span-1"
@@ -20,7 +20,8 @@ export default {
     articles: {
       type: Array,
       required: true
-    }
+    },
+    limit: 3
   }
 }
 </script>

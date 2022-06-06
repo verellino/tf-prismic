@@ -7,14 +7,14 @@
         {{ formattedDate }}
       </p>
       <div class="flex flex-row">
-        <div class="w-3/4 pr-4 flex flex-col justify-between">
+        <div class="blog-card w-3/4 pr-4 flex flex-col justify-between">
           <div>
-            <Heading as="h2">
+            <Heading as="h3">
             <PrismicLink :field="article">
               {{ $prismic.asText(article.data.title) }}
             </PrismicLink>
             </Heading>
-            <p v-if="excerpt" class="mt-2 hidden md:block leading-relaxed">
+            <p v-if="excerpt" class="excerpt mt-2 hidden md:block leading-relaxed">
               {{ excerpt }}
             </p>
           </div>
@@ -22,7 +22,7 @@
             <nuxt-link to="/" class="uppercase text-dark-blue">Category</nuxt-link>
           </div>
         </div>
-        <div class="article-img w-1/4 relative ml-8">
+        <div v-if="featuredImage" class="article-img w-1/4 relative ml-8">
           <PrismicImage
             v-if="featuredImage.url"
             :field="featuredImage"

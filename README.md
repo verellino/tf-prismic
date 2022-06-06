@@ -52,3 +52,11 @@ limitations under the License.
 [prismic-sign-up]: https://prismic.io/dashboard/signup
 [nuxt]: https://nuxtjs.org/
 [live-demo]: https://nuxt-starter-prismic-blog.vercel.app
+
+
+# TO DO
+- [ ] Homepage Category Section
+  - [ ] Generate section per category exisiting
+- [ ] Query by Category Page (Index)
+- [ ] Tag System Implementation
+  - [ ] Query by Tags Page (Index)
