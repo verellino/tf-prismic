@@ -1,54 +1,12 @@
 {
-  "id": "508aa630-ed39-4ee9-aadb-5bd0ea46c836",
-  "uid": "dolor-aut-omnis",
+  "id": "cf200fac-9947-4bcc-ba4f-86357a406e9f",
+  "uid": "et-fuga-molestiae",
   "type": "article",
   "data": {
-    "title": [
-      {
-        "type": "heading1",
-        "text": "Engineer next-generation web services",
-        "spans": []
-      }
-    ],
-    "publishDate": "2017-07-27",
-    "featuredImage": {
-      "dimensions": {
-        "width": 2000,
-        "height": 1500
-      },
-      "alt": "Placeholder image",
-      "copyright": null,
-      "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=2000&h=1500&fit=crop"
-    },
-    "category": {
-      "link_type": "Web",
-      "url": "https://slicemachine.dev"
-    },
-    "tags": [
-      {
-        "tag": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "tag": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        }
-      },
-      {
-        "tag": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        }
-      },
-      {
-        "tag": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        }
-      }
-    ]
+    "title": "envisioneer efficient systems",
+    "writer": "innovate ubiquitous architectures",
+    "editor": "syndicate cross-media interfaces",
+    "publishDate": "2016-04-19T13:23:52.355Z",
+    "category": "Government - Inisiatif dan Pembangunan"
   }
 }

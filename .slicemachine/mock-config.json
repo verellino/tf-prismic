@@ -31,7 +31,7 @@
           "blocks": 1
         }
       },
-      "tags": {}
+      "testSection": {}
     },
     "settings": {
       "name": {
@@ -61,7 +61,10 @@
     },
     "tags": {},
     "categories": {},
-    "category": {}
+    "category": {},
+    "report": {},
+    "new-article": {},
+    "news": {}
   },
   "slices": {
     "Text": {

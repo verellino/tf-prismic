@@ -39,7 +39,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "D:\\code\\transform-futures-main\\TF-nuxt\\.slicemachine\\assets\\slices\\ContactForm\\default\\preview.png",
+            "path": "/home/aflahnadhif/Sites/tf-prismic/.slicemachine/assets/slices/ContactForm/default/preview.png",
             "width": 800,
             "height": 516
           }
@@ -170,12 +170,12 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "D:\\code\\transform-futures-main\\TF-nuxt\\.slicemachine\\assets\\slices\\Image\\default\\preview.png",
+            "path": "/home/aflahnadhif/Sites/tf-prismic/.slicemachine/assets/slices/Image/default/preview.png",
             "width": 800,
             "height": 538
           },
           "wide": {
-            "path": "D:\\code\\transform-futures-main\\TF-nuxt\\.slicemachine\\assets\\slices\\Image\\wide\\preview.png",
+            "path": "/home/aflahnadhif/Sites/tf-prismic/.slicemachine/assets/slices/Image/wide/preview.png",
             "width": 800,
             "height": 562
           }
@@ -245,7 +245,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "D:\\code\\transform-futures-main\\TF-nuxt\\.slicemachine\\assets\\slices\\Quote\\default\\preview.png",
+            "path": "/home/aflahnadhif/Sites/tf-prismic/.slicemachine/assets/slices/Quote/default/preview.png",
             "width": 800,
             "height": 178
           }
@@ -275,7 +275,7 @@
                     "label": "Text",
                     "placeholder": "Text with rich formatting",
                     "allowTargetBlank": true,
-                    "multi": "paragraph,preformatted,heading1,heading2,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl,heading3"
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   }
                 }
               },
@@ -294,7 +294,7 @@
               "text": [
                 {
                   "type": "paragraph",
-                  "text": "Ut aliqua mollit deserunt qui aute cillum do sint aliqua.",
+                  "text": "Minim veniam ut ut cillum sit commodo. Amet adipisicing ad ipsum elit exercitation pariatur aute elit aliquip deserunt veniam. Consequat ut ex deserunt deserunt.",
                   "spans": []
                 }
               ]
@@ -307,7 +307,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "D:\\code\\transform-futures-main\\TF-nuxt\\.slicemachine\\assets\\slices\\Text\\default\\preview.png",
+            "path": "/home/aflahnadhif/Sites/tf-prismic/.slicemachine/assets/slices/Text/default/preview.png",
             "width": 800,
             "height": 113
           }
