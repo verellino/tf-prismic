@@ -57,7 +57,6 @@ export default {
     const article = await $prismic.api.getByUID('article', params.uid)
     const { results: latestArticles } = await $prismic.api.query(
       $prismic.predicate.at('document.type', 'article'),
-      $prismic.predicate.at('my.article.category', params.uid),
       {
         orderings: `[${[
           { field: 'my.article.publishDate', direction: 'desc' },

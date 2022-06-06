@@ -7,14 +7,17 @@
         <p class="blog-details-span">
           {{ formattedDate }}
         </p>
-        <Heading as="h3">
+        <Heading as="h4">
           <PrismicLink :field="article">
             {{ $prismic.asText(article.data.title) }}
           </PrismicLink>
         </Heading>
-        <p v-if="excerpt" class="leading-relaxed mt-2">
-          {{ excerpt }}
-        </p>
+        <a class="inline-flex items-center mt-5">
+            <span class="flex">
+                <nuxt-link to="/" class="uppercase text-dark-blue inline-block py-1 px-2 rounded bg-blue-50 text-xs font-medium tracking-widest">{{ article.data.category.uid }}</nuxt-link>
+                <span class="ml-4 title-font font-medium text-neutral-900">Author</span>
+            </span>
+          </a>
       </div>
     </PrismicLink>
   </li>

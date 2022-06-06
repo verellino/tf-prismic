@@ -25,17 +25,18 @@
       </div>
       <div class="col-span-1">
         <Bounded v-if="latestArticles.length">
-          <div class="grid grid-cols-1 justify-items-center gap-16 md:gap-24">
+          <h2>
+            Latest articles
+          </h2>
+          <div class="grid grid-cols-1 gap-8 md:gap-24">
             <HorizontalDivider />
             <div class="w-full">
-              <Heading size="2xl" class="mb-10">
-                Latest articles
-              </Heading>
-              <ul class="grid grid-cols-1 gap-12">
-                  <ArticleListItemWithImg
+              <ul class="grid grid-cols-1 gap-8">
+                  <ArticleListItem
                   v-for="article in latestArticles"
                   :key="article.id"
                   :article="article"
+                  class="border-blogs-bottom"
                 />
               </ul>
             </div>

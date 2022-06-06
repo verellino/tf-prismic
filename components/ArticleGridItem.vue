@@ -12,8 +12,8 @@
                 {{ $prismic.asText(article.data.title) }}
               </PrismicLink>
             </Heading>
-          <p v-if="excerpt" class="mt-2 hidden md:block leading-relaxed mb-5">{{ excerpt }}</p>
-          <a class="inline-flex items-center">
+          <p v-if="excerpt" class="mt-2 hidden md:block leading-relaxed">{{ excerpt }}</p>
+          <a class="inline-flex items-center mt-5">
             <span class="flex">
                 <nuxt-link to="/" class="uppercase text-dark-blue inline-block py-1 px-2 rounded bg-blue-50 text-xs font-medium tracking-widest">{{ article.data.category.uid }}</nuxt-link>
                 <span class="ml-4 title-font font-medium text-neutral-900">Author</span>

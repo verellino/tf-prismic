@@ -4,7 +4,7 @@
       <h2 class="text-center">Now Trending</h2>
       <ul class="flex p-8">
         <ArticleGridItem
-          v-for="article in articles"
+          v-for="article in articles.slice(0,3)"
           :key="article.id"
           :article="article"
           class="col-span-1"
