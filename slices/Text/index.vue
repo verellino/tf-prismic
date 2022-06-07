@@ -2,7 +2,7 @@
   <Bounded as="section">
     <PrismicRichText
       v-if="$prismic.asText(slice.primary.text)"
-      class="font-serif leading-relaxed md:text-xl md:leading-relaxed"
+      class="leading-relaxed md:text-xl md:leading-relaxed"
       :field="slice.primary.text"
       wrapper="div"
     />

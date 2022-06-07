@@ -4,17 +4,20 @@
   >
     <PrismicLink :field="article" tab-index="-1">
       <div>
-        <p class="blog-details-span">
-          {{ formattedDate }}
+        <p class="text-xs blue-primary mb-2">
+          <nuxt-link to="/" class="uppercase mr-2 inline-block py-1 px-2 rounded bg-blue-50 text-xs font-medium tracking-wide">{{ article.data.category }}</nuxt-link> {{ formattedDate }}
         </p>
         <Heading as="h3">
           <PrismicLink :field="article">
-            {{ $prismic.asText(article.data.title) }}
+            {{ article.data.title }}
           </PrismicLink>
         </Heading>
         <p v-if="excerpt" class="leading-relaxed mt-2">
           {{ excerpt }}
         </p>
+        <span class="flex">
+          <span class="title-font font-medium text-neutral-900">{{ article.data.writer }}</span>
+        </span>
       </div>
     </PrismicLink>
   </li>
@@ -22,7 +25,7 @@
 
 <script>
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
-  month: 'short',
+  month: 'numeric',
   day: 'numeric',
   year: 'numeric'
 })

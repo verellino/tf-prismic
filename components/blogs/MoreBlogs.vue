@@ -1,7 +1,7 @@
 <template>
   <div class="featured-blogs">
     <div class="container py-20">
-      <h2 class="text-center">Now Trending</h2>
+      <h2 class="text-center">More articles like this</h2>
       <ul class="flex p-8">
         <ArticleGridItem
           v-for="article in articles.slice(0,3)"

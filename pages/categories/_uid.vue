@@ -47,7 +47,7 @@
 import { components } from '~/slices'
 
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
-  month: 'short',
+  month: 'numeric',
   day: 'numeric',
   year: 'numeric'
 })

@@ -1,13 +1,13 @@
 <template>
   <div class="featured-blogs">
     <div class="container px-4 md:px-auto py-20">
-      <h2 class="h1">Featured Articles</h2>
+      <h2 class="h1 pl-10">Featured Articles</h2>
       <ul class="grid grid-cols-1 md:grid-cols-4 gap-4 featured-grid__ul">
         <ArticleListItemWithImg
           v-for="article in limitArticles"
           :key="article.id"
           :article="article"
-          
+          class="border-blogs-bottom"
         />
       </ul>
     </div>

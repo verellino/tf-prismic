@@ -2,13 +2,11 @@
   <div class="pt-32">
     <div>
       <Bounded class="pb-0 text-center">
-        <PrismicText
-          :field="article.data.title"
-          wrapper="h1"
-          class="mb-3 text-6xl font-semibold tracking-tighter text-slate-800 md:text-4xl"
-        />
+        <h1 class="mb-3 text-6xl font-semibold tracking-tighter text-slate-800 md:text-4xl">
+          {{article.data.title}}
+        </h1>
         <p class="blog-details-span">
-          {{ formatDate(article) }}
+          {{ formattedDate }}
         </p>
       </Bounded>
     </div>
@@ -23,16 +21,17 @@
           </NuxtLink>
         </Bounded>
       </div>
+      <!-- Right Blogs Section  -->
       <div class="col-span-1">
         <Bounded v-if="latestArticles.length">
-          <div class="grid grid-cols-1 justify-items-center gap-16 md:gap-24">
+          <div>
             <HorizontalDivider />
             <div class="w-full">
-              <Heading size="2xl" class="mb-10">
+              <h2 class="pl-10">
                 Latest articles
-              </Heading>
-              <ul class="grid grid-cols-1 gap-12">
-                  <ArticleListItemWithImg
+              </h2>
+              <ul class="grid grid-cols-1 gap-4">
+                  <ArticleListItem
                   v-for="article in latestArticles"
                   :key="article.id"
                   :article="article"
@@ -43,6 +42,10 @@
         </Bounded>
       </div>
     </div>
+    <!-- More Blogs Bottom Section  -->
+    <div>
+    <BlogsMoreBlogs :articles="articlesCategory" />
+    </div>
   </div>
 </template>
 
@@ -50,7 +53,7 @@
 import { components } from '~/slices'
 
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
-  month: 'short',
+  month: 'numeric',
   day: 'numeric',
   year: 'numeric'
 })
@@ -69,6 +72,17 @@ export default {
         pageSize: 3
       }
     )
+
+    const { results: articlesCategory } = await $prismic.api.query(
+      $prismic.predicate.similar(article.id, 3),
+      {
+        orderings: `[${[
+          { field: 'my.article.publishDate', direction: 'desc' },
+          { field: 'document.first_publication_date', direction: 'desc' }
+        ].map(({ field, direction }) => `${field} ${direction}`).join(', ')}]`,
+        pageSize: 3
+      }
+    )
       
     await store.dispatch('prismic/load')
     store.commit('layout/setWithHeaderProfile', false)
@@ -76,7 +90,8 @@ export default {
     store.commit('layout/setWithFooterSignUpForm', true)
     return {
       article,
-      latestArticles
+      latestArticles,
+      articlesCategory
     }
   },
   data () {
@@ -84,15 +99,16 @@ export default {
   },
   head () {
     return {
-      title: `${this.$prismic.asText(this.article.data.title)} | ${this.$prismic.asText(this.$store.state.prismic.settings.data.name)}`
+      title: `${this.article.data.title} | ${this.$store.state.prismic.settings.data.name}`
     }
   },
-  methods: {
-    formatDate (article) {
-      const date = this.$prismic.asDate(article.data.publishDate || article.first_publication_date)
+  computed: {
+    formattedDate () {
+      const date = this.$prismic.asDate(this.article.data.publishDate || this.article.first_publication_date)
 
       return dateFormatter.format(date)
     }
-  }
+  },
+
 }
 </script>
