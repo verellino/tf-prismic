@@ -4,10 +4,10 @@
   >
     <PrismicLink :field="article" tab-index="-1">
       <p class="text-xs blue-primary mb-2">
-        <nuxt-link to="/" class="uppercase mr-2 inline-block py-1 px-2 rounded bg-blue-50 text-xs font-medium tracking-wide">{{ article.data.category }}</nuxt-link> {{ formattedDate }}
+        <nuxt-link to="/" class="uppercase mr-2 inline-block py-1 px-2 rounded bg-blue-50 text-xs font-medium tracking-wide">{{ article.data.section }}</nuxt-link> {{ formattedDate }}
       </p>
       <div class="flex flex-row">
-        <div class="blog-card w-3/4 pr-4 flex flex-col justify-between">
+        <div class="blog-card pr-4 flex flex-col justify-between">
           <div>
             <Heading as="h3">
             <PrismicLink :field="article">
@@ -19,6 +19,7 @@
             </p>
           </div>
           <div class="mt-4 text-xs">
+            <span class="title-font font-medium text-neutral-900">{{ article.data.category }} | </span>
             <span class="title-font font-medium text-neutral-900">{{ article.data.writer }}</span>
           </div>
         </div>

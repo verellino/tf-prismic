@@ -5,18 +5,19 @@
     <PrismicLink :field="article" tab-index="-1">
       <div>
         <p class="text-xs blue-primary mb-2">
-          <nuxt-link to="/" class="uppercase mr-2 inline-block py-1 px-2 rounded bg-blue-50 text-xs font-medium tracking-wide">{{ article.data.category }}</nuxt-link> {{ formattedDate }}
+          <nuxt-link to="/" class="uppercase mr-2 inline-block py-1 px-2 rounded bg-blue-50 text-xs font-medium tracking-wide">{{ article.data.section }}</nuxt-link> {{ formattedDate }}
         </p>
-        <Heading as="h3">
+        <Heading as="h4">
           <PrismicLink :field="article">
             {{ article.data.title }}
           </PrismicLink>
         </Heading>
-        <p v-if="excerpt" class="leading-relaxed mt-2">
+        <!-- <p v-if="excerpt" class="excerpt mt-2 hidden md:block leading-relaxed text-sm">
           {{ excerpt }}
-        </p>
+        </p> -->
         <span class="flex">
-          <span class="title-font font-medium text-neutral-900">{{ article.data.writer }}</span>
+          <span class="font-medium text-sm text-neutral-900">{{ article.data.category }} | </span>
+          <span class="font-medium text-sm text-neutral-900"> {{ article.data.writer }}</span>
         </span>
       </div>
     </PrismicLink>

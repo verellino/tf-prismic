@@ -22,7 +22,10 @@
     <BlogsFeaturedBlog :articles="articles" />
     <BlogsLatestGrid :articles="articles" />
     <BlogsCategoryGrid :articles="articles" />
-    <BlogsThreeCol :articles="articles" />
+    <section>
+      <h2 class="text-center">Now Trending</h2>
+      <BlogsThreeCol :articles="articles" />
+    </section>
     <section>
       <div class="container py-24 text-center">
         <h2>Our Partners</h2>
