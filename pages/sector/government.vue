@@ -3,7 +3,7 @@
     <div class="pt-24 text-center">
         <h1>Government</h1>
     </div>
-    <BlogsArticleMainGrid :articles="articles" />
+    <BlogsArticleMainGrid :articles="articles.slice(0,7)" />
     <BlogsFeaturedBlog :articles="articles" />
     <BlogsLatestGrid :articles="articles" />
   </div>

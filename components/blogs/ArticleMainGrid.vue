@@ -16,7 +16,7 @@
         <div class="flex flex-col align-start md:py-10 md:px-4 col-span-3">
           <ul class="flex">
             <ArticleGridItem
-              v-for="article in articles.slice(0,3)"
+              v-for="article in articles.slice(5,7)"
               :key="article.id"
               :article="article"
               class="col-span-1"

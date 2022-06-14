@@ -20,7 +20,7 @@
           <h2>Lorem ipsum</h2>
           <ul>
             <ArticleListItem
-              v-for="article in articles.slice(0,4)"
+              v-for="article in articles.slice(5,8)"
               :key="article.id"
               :article="article"
               class="border-blogs-bottom"

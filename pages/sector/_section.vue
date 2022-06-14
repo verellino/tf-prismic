@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="text-center">{{ articles.section }}</h1>
-    <BlogsArticleMainGrid :articles="articles" />
+    <BlogsArticleMainGrid :articles="articles.slice(0,7)" />
     <BlogsFeaturedBlog :articles="articles" />
     <BlogsLatestGrid :articles="articles" />
     <BlogsThreeCol :articles="articles" />
