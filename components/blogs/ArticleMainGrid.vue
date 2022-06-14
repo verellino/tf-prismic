@@ -1,10 +1,9 @@
 <template>
   <div>
-    <div class="container px-4 md:px-auto py-20">
+    <div class="container px-4 md:px-auto">
       <div class="grid gird-cols-2 md:grid-cols-3 gap-4">
         <!-- Left Category Section -->
-        <div class="flex flex-col align-start md:py-10 md:px-4 col-span-2">
-          <h2 class="h1 capitalize pl-10">Category</h2>
+        <div class="flex flex-col align-start md:py-10 md:px-4 col-span-3">
           <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 category-grid__ul">
             <ArticleListItemWithImg
               v-for="article in articles.slice(0,4)"
@@ -14,16 +13,13 @@
           </ul>
         </div>
         <!-- Right Section  -->
-        <div
-          class="flex flex-col justify-start align-start md:py-10 md:px-4 col-span-2 md:col-span-1 border-blogs-left"
-        >
-          <h2>Lorem ipsum</h2>
-          <ul>
-            <ArticleListItem
-              v-for="article in articles.slice(5,8)"
+        <div class="flex flex-col align-start md:py-10 md:px-4 col-span-3">
+          <ul class="flex">
+            <ArticleGridItem
+              v-for="article in articles.slice(5,7)"
               :key="article.id"
               :article="article"
-              class="border-blogs-bottom"
+              class="col-span-1"
             />
           </ul>
         </div>

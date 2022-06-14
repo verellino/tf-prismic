@@ -15,14 +15,17 @@
           <button class="bg-dark-blue rounded-sm p-2 text-white mt-4 w-32">Button</button>
         </div>
         <div class="w-1/2 flex justify-center align-center">
-          <img src="@/assets/images/Hero-img.png" alt="Transforming Futures" class="h-30 md:h-60" />
+          <img src="@/assets/images/Hero-img.png" alt="Transforming Futures" class="p-4 h-30 md:h-60" />
         </div>
       </div>
     </div>
     <BlogsFeaturedBlog :articles="articles" />
     <BlogsLatestGrid :articles="articles" />
     <BlogsCategoryGrid :articles="articles" />
-    <BlogsThreeCol :articles="articles" />
+    <section>
+      <h2 class="text-center">Now Trending</h2>
+      <BlogsThreeCol :articles="articles" />
+    </section>
     <section>
       <div class="container py-24 text-center">
         <h2>Our Partners</h2>
@@ -37,7 +40,7 @@
       </div>
     </section>
     <section>
-      <div class="container text-center py-32">
+      <div class="container text-center py-32 px-16">
         <h2>Contact Us</h2>
         <form action="#" method="POST">
           <div class="overflow-hidden sm:rounded-md text-left mt-8">
@@ -54,7 +57,7 @@
                     name="first-name"
                     id="first-name"
                     autocomplete="given-name"
-                    class="mt-1 h-12 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-700 rounded-md"
+                    class="mt-1 h-12 px-4 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-2 border-gray-500 rounded-md"
                   />
                 </div>
 
@@ -69,7 +72,7 @@
                     name="email-address"
                     id="email-address"
                     autocomplete="email"
-                    class="mt-1 h-12 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-700 rounded-md"
+                    class="mt-1 h-12 px-4 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-2 border-gray-500 rounded-md"
                   />
                 </div>
 
@@ -84,7 +87,7 @@
                     name="lorem"
                     id="lorem"
                     autocomplete="lorem"
-                    class="mt-1 h-72 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-700 rounded-md"
+                    class="mt-1 h-72 px-4 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-2 border-gray-500 rounded-md"
                   />
                 </div>
               </div>

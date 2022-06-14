@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="font-sans text-gray-800">
+  <div id="app" class="relative font-sans text-gray-800">
     <header class="bg-white z-10 absolute w-full shadow-sm">
       <nav
         class="mx-auto px-8 flex flex-wrap justify-between items-center py-5"
@@ -17,10 +17,10 @@
               <GlobalsMegaNav />
             </li>
             <li class="mr-8 mb-6 lg:mb-0">
-              <router-link :to="`/about`" class="hover:text-blue-900">Government</router-link>
+              <nuxt-link to="/sector/government" class="hover:text-blue-900">Government</nuxt-link>
             </li>
             <li class="mr-8 mb-6 lg:mb-0">
-              <router-link :to="`/`" class="hover:text-blue-900">Technology</router-link>
+              <nuxt-link to="/sector/technology" class="hover:text-blue-900">Technology</nuxt-link>
             </li>
             <li class="mr-8 mb-6 lg:mb-0">
               <router-link :to="`/about`" class="hover:text-blue-900">Resources</router-link>

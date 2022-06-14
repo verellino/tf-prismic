@@ -3,15 +3,15 @@
     class="p-10"
   >
     <PrismicLink :field="article" tab-index="-1">
-      <p class="blog-details-span">
-        {{ formattedDate }}
+      <p class="text-xs blue-primary mb-2">
+        <nuxt-link to="/" class="uppercase mr-2 inline-block py-1 px-2 rounded bg-blue-50 text-xs font-medium tracking-wide">{{ article.data.section }}</nuxt-link> {{ formattedDate }}
       </p>
       <div class="flex flex-row">
-        <div class="blog-card w-3/4 pr-4 flex flex-col justify-between">
+        <div class="blog-card pr-4 flex flex-col justify-between">
           <div>
             <Heading as="h3">
             <PrismicLink :field="article">
-              {{ $prismic.asText(article.data.title) }}
+              {{ article.data.title }}
             </PrismicLink>
             </Heading>
             <p v-if="excerpt" class="excerpt mt-2 hidden md:block leading-relaxed">
@@ -19,16 +19,17 @@
             </p>
           </div>
           <div class="mt-4 text-xs">
-            <nuxt-link to="/" class="uppercase text-dark-blue">Category</nuxt-link>
+            <span class="title-font font-medium text-neutral-900">{{ article.data.category }} | </span>
+            <span class="title-font font-medium text-neutral-900">{{ article.data.writer }}</span>
           </div>
         </div>
-        <div v-if="featuredImage" class="article-img w-1/4 relative ml-8">
+        <!-- <div v-if="featuredImage" class="article-img w-1/4 relative ml-8">
           <PrismicImage
             v-if="featuredImage.url"
             :field="featuredImage"
             class="object-cover aspect-1"
           />
-        </div>
+        </div> -->
       </div>
     </PrismicLink>
   </li>
@@ -36,7 +37,7 @@
 
 <script>
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
-  month: 'short',
+  month: 'numeric',
   day: 'numeric',
   year: 'numeric'
 })
