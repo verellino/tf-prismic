@@ -15,7 +15,9 @@
           <button class="bg-dark-blue rounded-sm p-2 text-white mt-4 w-32">Button</button>
         </div>
         <div class="w-1/2 flex justify-center align-center">
-          <img src="@/assets/images/Hero-img.png" alt="Transforming Futures" class="p-4 h-30 md:h-60" />
+         <div class="w-full aspect-square">
+           <img src="@/assets/images/Hero-img.png" alt="Transforming Futures" class="p-4 h-30 mx-auto md:h-60" />
+         </div>
         </div>
       </div>
     </div>
@@ -23,7 +25,7 @@
     <BlogsLatestGrid :articles="articles" />
     <BlogsCategoryGrid :articles="articles" />
     <section>
-      <h2 class="text-center">Now Trending</h2>
+      <h2 class="text-center featured-blogs pt-2 -mb-12">Now Trending</h2>
       <BlogsThreeCol :articles="articles" />
     </section>
     <section>
@@ -40,6 +42,7 @@
       </div>
     </section>
     <section>
+      <!-- Contact Form  -->
       <div class="container text-center py-32 px-16">
         <h2>Contact Us</h2>
         <form action="#" method="POST">
@@ -145,7 +148,7 @@ export default {
 
 @media screen and (min-width: 749px) {
   .hero-banner {
-    max-height: 40vh;
+    height: 40vh;
   }
 }
 </style>

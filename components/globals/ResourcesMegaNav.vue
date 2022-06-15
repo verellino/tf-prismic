@@ -1,7 +1,7 @@
 <template>
-  <div @mouseover="showMenu" @mouseleave="hideMenu">
-    <nuxt-link to="/sector/economy" class="relative hover:text-gray-600" @focus="showMenu" @keydown.shift.tab="hideMenu" @keydown.esc.exact="hideMenu" @keydown.up.exact.prevent="startArrowKeys" @keydown.down.exact.prevent="startArrowKeys">
-      Economy
+  <div @mouseover="showMenu" @mouseleave="hideMenu" class="relative">
+    <nuxt-link to="/" class="relative hover:text-gray-600" @focus="showMenu" @keydown.shift.tab="hideMenu" @keydown.esc.exact="hideMenu" @keydown.up.exact.prevent="startArrowKeys" @keydown.down.exact.prevent="startArrowKeys">
+      Resources
     </nuxt-link>
 
     <div class="absolute w-full">&nbsp;</div>
@@ -12,24 +12,28 @@
             <li class="mb-8">
               <a href="/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.down.exact.prevent="focusNext(true)" @keydown.up.exact.prevent="">
                 <span class="ml-2">
-                  <span class="block font-bold text-blue-900 group-hover:text-blue-900 items-center" >
-                    <span>Investasi dan Keuangan</span>
-                    <!-- <span
-                      class="ml-2 bg-yellow-500 text-yellow-800 px-2 py-1 rounded-full uppercase font-bold text-xxs"
-                      >New</span
-                    > -->
-                  </span>
-                  <!-- <span
-                    class="block text-sm text-gray-600 group-hover:text-blue-900"
-                    >Measure actions users take</span
-                  > -->
+                  <span class="block font-bold text-blue-900 group-hover:text-blue-900 items-center" >Reports</span>
                 </span>
               </a>
             </li>
             <li class="mb-8">
               <a href="/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
                 <span class="ml-2">
-                  <span class="block font-bold text-blue-900 group-hover:text-blue-900">Industri dan Perdagangan</span>
+                  <span class="block font-bold text-blue-900 group-hover:text-blue-900">Programs</span>
+                </span>
+              </a>
+            </li>
+            <li class="mb-8">
+              <a href="/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
+                <span class="ml-2">
+                  <span class="block font-bold text-blue-900 group-hover:text-blue-900">Glossary</span>
+                </span>
+              </a>
+            </li>
+            <li class="mb-8">
+              <a href="/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
+                <span class="ml-2">
+                  <span class="block font-bold text-blue-900 group-hover:text-blue-900">About Us</span>
                 </span>
               </a>
             </li>

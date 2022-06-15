@@ -28,14 +28,26 @@
       <div class="col-span-1">
         <Bounded v-if="latestArticles.length">
           <div>
-            <HorizontalDivider />
             <div class="w-full">
               <h2 class="pl-10">
                 Latest articles
               </h2>
-              <ul class="grid grid-cols-1 gap-4">
+              <ul class="grid grid-cols-1 gap-2">
                   <ArticleListItem
                   v-for="article in latestArticles"
+                  :key="article.id"
+                  :article="article"
+                />
+              </ul>
+            </div>
+            <HorizontalDivider class="w-full" />
+            <div class="w-full mt-6">
+              <h3 class="pl-10 blue-primary ">
+                {{ article.data.category }}
+              </h3>
+              <ul class="grid grid-cols-1 gap-2">
+                  <ArticleListItem
+                  v-for="article in categoryPosts"
                   :key="article.id"
                   :article="article"
                 />
@@ -47,7 +59,7 @@
     </div>
     <!-- More Blogs Bottom Section  -->
     <div>
-    <BlogsMoreBlogs :articles="articlesCategory" />
+    <BlogsMoreBlogs :articles="similarArticles" />
     </div>
   </div>
 </template>
@@ -76,7 +88,7 @@ export default {
       }
     )
 
-    const { results: articlesCategory } = await $prismic.api.query(
+    const { results: similarArticles } = await $prismic.api.query(
       $prismic.predicate.similar(article.id, 3),
       {
         orderings: `[${[
@@ -86,6 +98,13 @@ export default {
         pageSize: 3
       }
     )
+
+    
+    const categoryId = article.data.categories.id
+
+    const { results: categoryPosts } = await $prismic.api.query([
+      $prismic.predicates.at("my.article.categories", categoryId)
+    ])
       
     await store.dispatch('prismic/load')
     store.commit('layout/setWithHeaderProfile', false)
@@ -94,7 +113,8 @@ export default {
     return {
       article,
       latestArticles,
-      articlesCategory
+      similarArticles,
+      categoryPosts
     }
   },
   data () {

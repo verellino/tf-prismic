@@ -17,7 +17,7 @@
         </p> -->
         <span class="flex">
           <span class="font-medium text-sm text-neutral-900">{{ article.data.category }} | </span>
-          <span class="font-medium text-sm text-neutral-900"> {{ article.data.writer }}</span>
+          <span class="font-medium text-sm text-neutral-900 ml-1"> {{ article.data.writer }}</span>
         </span>
       </div>
     </PrismicLink>

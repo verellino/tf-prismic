@@ -1,6 +1,6 @@
 <template>
   <li
-    class="py-8 px-4 lg:w-1/3"
+    class="py-4 px-2 lg:w-1/3"
   >
     <PrismicLink :field="article" tab-index="-1">
       <div class="flex-grow pl-6">
@@ -16,7 +16,7 @@
           <a class="inline-flex items-center">
             <span class="flex">
               <span class="title-font font-medium text-neutral-900">{{ article.data.category }} | </span>
-              <span class="title-font font-medium text-neutral-900">{{ article.data.writer }}</span>
+              <span class="title-font font-medium text-neutral-900 ml-1">{{ article.data.writer }}</span>
             </span>
           </a>
       </div>
@@ -56,10 +56,7 @@ export default {
       return dateFormatter.format(date)
     },
     excerpt () {
-      const text = this.article.data.slices
-        .filter(slice => slice.slice_type === 'text')
-        .map(slice => this.$prismic.asText(slice.primary.text))
-        .join(' ')
+      const text = this.article.data.slices.filter(slice => slice.slice_type === 'text').map(slice => this.$prismic.asText(slice.primary.text)).join(' ')
       const excerpt = text.substring(0, 80)
       if (text.length > 80) {
         return excerpt.substring(0, excerpt.lastIndexOf(' ')) + '…'

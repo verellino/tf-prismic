@@ -1,7 +1,7 @@
 <template>
   <div class="featured-blogs">
-    <div class="container py-20">
-      <ul class="flex p-8">
+    <div class="container py-12">
+      <ul class="flex flex-col md:flex-row p-4">
         <ArticleGridItem
           v-for="article in articles.slice(0,3)"
           :key="article.id"

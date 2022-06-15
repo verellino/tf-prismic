@@ -1,6 +1,6 @@
 <template>
   <li
-    class="p-10"
+    class="p-4"
   >
     <PrismicLink :field="article" tab-index="-1">
       <p class="text-xs blue-primary mb-2">
@@ -20,7 +20,7 @@
           </div>
           <div class="mt-4 text-xs">
             <span class="title-font font-medium text-neutral-900">{{ article.data.category }} | </span>
-            <span class="title-font font-medium text-neutral-900">{{ article.data.writer }}</span>
+            <span class="title-font font-medium text-neutral-900 ml-1">{{ article.data.writer }}</span>
           </div>
         </div>
         <!-- <div v-if="featuredImage" class="article-img w-1/4 relative ml-8">

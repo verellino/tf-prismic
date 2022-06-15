@@ -1,13 +1,17 @@
 {
-  "id": "ebe404b4-ae11-4950-b7cc-8823d163eea6",
-  "uid": "ea-corrupti-porro",
+  "id": "08d3ed31-10d3-4654-8bfd-4ccadb8960a0",
+  "uid": "perferendis-placeat-quidem",
   "type": "article",
   "data": {
-    "title": "revolutionize rich platforms",
-    "writer": "facilitate viral supply-chains",
-    "editor": "revolutionize clicks-and-mortar models",
-    "publishDate": "2013-02-14T18:18:09.999Z",
+    "title": "streamline killer infrastructures",
+    "writer": "matrix cross-platform applications",
+    "editor": "transform viral functionalities",
+    "publishDate": "2014-12-17T21:37:22.101Z",
     "section": "Economy",
-    "category": "Industri dan Perdagangan"
+    "category": "Industri dan Perdagangan",
+    "categories": {
+      "link_type": "Web",
+      "url": "https://prismic.io"
+    }
   }
 }

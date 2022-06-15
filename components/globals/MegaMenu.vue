@@ -14,16 +14,16 @@
             :class="menuOpen ? 'block' : 'hidden'"
           >
             <li class="mr-8 mb-6 lg:mb-0">
-              <GlobalsMegaNav />
+              <GlobalsEcoMegaNav />
             </li>
             <li class="mr-8 mb-6 lg:mb-0">
-              <nuxt-link to="/sector/government" class="hover:text-blue-900">Government</nuxt-link>
+              <GlobalsGovMegaNav />
             </li>
             <li class="mr-8 mb-6 lg:mb-0">
-              <nuxt-link to="/sector/technology" class="hover:text-blue-900">Technology</nuxt-link>
+              <GlobalsTechMegaNav />
             </li>
             <li class="mr-8 mb-6 lg:mb-0">
-              <router-link :to="`/about`" class="hover:text-blue-900">Resources</router-link>
+              <GlobalsResourcesMegaNav />
             </li>
             <!-- <li>
               <GlobalsDropdownMenu />

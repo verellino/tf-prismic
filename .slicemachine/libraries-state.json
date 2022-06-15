@@ -39,7 +39,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/home/aflahnadhif/Sites/tf-prismic/.slicemachine/assets/slices/ContactForm/default/preview.png",
+            "path": "D:\\code\\transform-futures-main\\TF-nuxt\\.slicemachine\\assets\\slices\\ContactForm\\default\\preview.png",
             "width": 800,
             "height": 516
           }
@@ -170,12 +170,12 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/home/aflahnadhif/Sites/tf-prismic/.slicemachine/assets/slices/Image/default/preview.png",
+            "path": "D:\\code\\transform-futures-main\\TF-nuxt\\.slicemachine\\assets\\slices\\Image\\default\\preview.png",
             "width": 800,
             "height": 538
           },
           "wide": {
-            "path": "/home/aflahnadhif/Sites/tf-prismic/.slicemachine/assets/slices/Image/wide/preview.png",
+            "path": "D:\\code\\transform-futures-main\\TF-nuxt\\.slicemachine\\assets\\slices\\Image\\wide\\preview.png",
             "width": 800,
             "height": 562
           }
@@ -245,7 +245,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/home/aflahnadhif/Sites/tf-prismic/.slicemachine/assets/slices/Quote/default/preview.png",
+            "path": "D:\\code\\transform-futures-main\\TF-nuxt\\.slicemachine\\assets\\slices\\Quote\\default\\preview.png",
             "width": 800,
             "height": 178
           }
@@ -307,7 +307,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/home/aflahnadhif/Sites/tf-prismic/.slicemachine/assets/slices/Text/default/preview.png",
+            "path": "D:\\code\\transform-futures-main\\TF-nuxt\\.slicemachine\\assets\\slices\\Text\\default\\preview.png",
             "width": 800,
             "height": 113
           }

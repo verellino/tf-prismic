@@ -1,6 +1,6 @@
 {
-  "id": "tags",
-  "label": "Tags",
+  "id": "glossary",
+  "label": "Glossary",
   "repeatable": true,
   "status": true,
   "json": {
