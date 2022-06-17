@@ -7,7 +7,7 @@
         <p class="text-xs blue-primary mb-2">
           <nuxt-link to="/" class="uppercase mr-2 inline-block py-1 px-2 rounded bg-blue-50 text-xs font-medium tracking-wide">{{ article.data.section }}</nuxt-link> {{ formattedDate }}
         </p>
-        <Heading as="h4">
+        <Heading as="h5">
           <PrismicLink :field="article">
             {{ article.data.title }}
           </PrismicLink>

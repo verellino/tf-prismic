@@ -2,7 +2,7 @@
   <Bounded as="section">
     <PrismicRichText
       v-if="$prismic.asText(slice.primary.text)"
-      class="leading-relaxed md:text-xl md:leading-relaxed"
+      class="article-text leading-loose mx-auto"
       :field="slice.primary.text"
       wrapper="div"
     />
@@ -18,3 +18,9 @@ export default {
   props: getSliceComponentProps(['slice', 'index', 'slices', 'context'])
 }
 </script>
+
+<style scoped>
+.article-text {
+  max-width: 40em;
+}
+</style>

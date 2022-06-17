@@ -2,10 +2,10 @@
   <div>
     <div class="container">
       <div
-        class="hero-banner flex flex-col-reverse mx-auto md:flex-row justify-center items-center p-10 pt-40 md:pt-32 pb-12"
+        class="hero-banner flex flex-col-reverse mx-auto sm:flex-row justify-center items-center p-10 pt-40 sm:pt-20 pb-4"
       >
         <div
-          class="hero-text text-left md:w-1/2 h-full flex flex-col justify-center"
+          class="hero-text text-left sm:w-1/2 h-full flex flex-col justify-center"
         >
           <h1 class="title">Transforming Futures</h1>
           <p>
@@ -16,7 +16,7 @@
         </div>
         <div class="w-1/2 flex justify-center align-center">
          <div class="w-full aspect-square">
-           <img src="@/assets/images/Hero-img.png" alt="Transforming Futures" class="p-4 h-30 mx-auto md:h-60" />
+           <img src="@/assets/images/Hero-img.png" alt="Transforming Futures" class="p-4 h-30 mx-auto sm:h-60" />
          </div>
         </div>
       </div>
@@ -25,7 +25,7 @@
     <BlogsLatestGrid :articles="articles" />
     <BlogsCategoryGrid :articles="articles" />
     <section>
-      <h2 class="text-center featured-blogs pt-2 -mb-12">Now Trending</h2>
+      <h2 class="text-center featured-blogs pt-6 -mb-12">Now Trending</h2>
       <BlogsThreeCol :articles="articles" />
     </section>
     <section>
@@ -148,7 +148,7 @@ export default {
 
 @media screen and (min-width: 749px) {
   .hero-banner {
-    height: 40vh;
+    /* height: 40vh; */
   }
 }
 </style>

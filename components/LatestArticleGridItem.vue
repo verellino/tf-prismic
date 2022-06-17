@@ -14,7 +14,7 @@
                   {{ article.data.title }}
                 </PrismicLink>
               </Heading>
-            <p v-if="excerpt" class="mt-2 hidden md:block leading-relaxed mb-5">{{ excerpt }}</p>
+            <p v-if="excerpt" class="mt-2 hidden md:block leading-relaxed mb-5 pr-8">{{ excerpt }}</p>
             <div class="inline-flex items-center text-xs">
               <span class="title-font font-medium text-neutral-900">{{ article.data.category }} | </span>
               <span class="title-font font-medium text-neutral-900 ml-1">{{ article.data.writer }}</span>

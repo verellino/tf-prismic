@@ -65,7 +65,15 @@
     "report": {},
     "new-article": {},
     "news": {},
-    "subcategory": {}
+    "subcategory": {},
+    "glossary": {
+      "description": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 1
+        }
+      }
+    }
   },
   "slices": {
     "Text": {

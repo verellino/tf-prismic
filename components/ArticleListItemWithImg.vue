@@ -14,7 +14,7 @@
               {{ article.data.title }}
             </PrismicLink>
             </Heading>
-            <p v-if="excerpt" class="excerpt mt-2 hidden md:block leading-relaxed">
+            <p v-if="excerpt" class="excerpt mt-2 hidden md:block leading-relaxed pr-8">
               {{ excerpt }}
             </p>
           </div>

@@ -6,9 +6,9 @@
 
     <div class="absolute w-full">&nbsp;</div>
     <transition name="mega-menu-fade">
-      <div v-show="isVisible" class="mega-menu absolute normal-case font-normal bg-white shadow-md rounded-lg overflow-hidden border mt-4 w-full z-30 lg:z-10 lg:w-160 left-0">
+      <div v-show="isVisible" class="mega-menu absolute normal-case font-normal bg-white shadow-md rounded-lg overflow-hidden border mt-4 w-full z-30 lg:z-10 lg:w-80 left-0">
         <div class="flex flex-col lg:flex-row px-8 py-6 border-b -mx-4">
-          <ul class="w-full lg:w-1/2 px-4">
+          <ul class="w-full px-4">
             <li class="mb-8">
               <nuxt-link to="/category/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.down.exact.prevent="focusNext(true)" @keydown.up.exact.prevent="">
                 <span class="ml-2">

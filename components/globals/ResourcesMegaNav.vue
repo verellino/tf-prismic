@@ -6,9 +6,9 @@
 
     <div class="absolute w-full">&nbsp;</div>
     <transition name="mega-menu-fade">
-      <div v-show="isVisible" class="mega-menu absolute normal-case font-normal bg-white shadow-md rounded-lg overflow-hidden border mt-4 w-full z-30 lg:z-10 lg:w-160 left-0">
+      <div v-show="isVisible" class="mega-menu absolute normal-case font-normal bg-white shadow-md rounded-lg overflow-hidden border mt-4 w-full z-30 lg:z-10 lg:w-80 left-0">
         <div class="flex flex-col lg:flex-row px-8 py-6 border-b -mx-4">
-          <ul class="w-full lg:w-1/2 px-4">
+          <ul class="w-full px-4">
             <li class="mb-8">
               <a href="/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.down.exact.prevent="focusNext(true)" @keydown.up.exact.prevent="">
                 <span class="ml-2">
@@ -24,16 +24,9 @@
               </a>
             </li>
             <li class="mb-8">
-              <a href="/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
+              <a href="/glossary" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
                 <span class="ml-2">
                   <span class="block font-bold text-blue-900 group-hover:text-blue-900">Glossary</span>
-                </span>
-              </a>
-            </li>
-            <li class="mb-8">
-              <a href="/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
-                <span class="ml-2">
-                  <span class="block font-bold text-blue-900 group-hover:text-blue-900">About Us</span>
                 </span>
               </a>
             </li>

@@ -1,6 +1,6 @@
 <template>
   <Bounded as="section" :size="slice.variation === 'wide' ? 'widest' : 'base'">
-    <figure class="grid grid-cols-1 gap-4">
+    <figure class="grid grid-cols-1 gap-8">
       <div v-if="slice.primary.image.url" class="bg-gray-100">
         <PrismicImage
           :field="slice.primary.image"

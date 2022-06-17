@@ -1,11 +1,11 @@
 <template>
-  <div class="pt-32">
+  <div class="pt-20">
     <div>
       <Bounded class="pb-0 text-center">
         <p class="blue-primary mb-2 uppercase font-semibold">
           {{ article.data.section }}
         </p>
-        <h1 class="mb-3 text-3xl font-semibold tracking-tighter text-slate-800 md:text-4xl">
+        <h1 class="mb-3 font-semibold text-slate-800 sm:text-2xl">
           {{article.data.title}}
         </h1>
         <p class="blog-details-span">
@@ -13,8 +13,8 @@
         </p>
       </Bounded>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3">
-      <div class="col-span-1 md:col-span-2">
+    <div class="grid grid-cols-1 sm:grid-cols-3">
+      <div class="col-span-1 sm:col-span-2">
         <article>
           <SliceZone :slices="article.data.slices" :components="components" />
         </article>
@@ -32,8 +32,8 @@
               <h2 class="pl-10">
                 Latest articles
               </h2>
-              <ul class="grid grid-cols-1 gap-2">
-                  <ArticleListItem
+              <ul class="grid grid-cols-1 gap-y-2">
+                  <BlogArticleListItem
                   v-for="article in latestArticles"
                   :key="article.id"
                   :article="article"
@@ -46,7 +46,7 @@
                 {{ article.data.category }}
               </h3>
               <ul class="grid grid-cols-1 gap-2">
-                  <ArticleListItem
+                  <BlogArticleListItem
                   v-for="article in categoryPosts"
                   :key="article.id"
                   :article="article"

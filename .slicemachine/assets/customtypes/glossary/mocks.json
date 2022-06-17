@@ -1,0 +1,30 @@
+{
+  "id": "30fde40f-399f-4f6d-96fa-a5058408234b",
+  "uid": "amet-tempora-error",
+  "type": "glossary",
+  "data": {
+    "title": "reintermediate cross-media functionalities",
+    "description": [
+      {
+        "type": "heading1",
+        "text": "Enable customized blockchains",
+        "spans": []
+      },
+      {
+        "type": "image",
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?w=900&h=500&fit=crop"
+      },
+      {
+        "type": "paragraph",
+        "text": "Culpa amet culpa esse incididunt cupidatat consectetur qui sit fugiat qui nostrud nisi esse id.",
+        "spans": []
+      }
+    ]
+  }
+}
