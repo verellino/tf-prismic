@@ -9,7 +9,8 @@
             <img src="#" alt="logo" class="w-10" />
             <span>TF</span>
           </router-link>
-          <ul
+        </div>
+        <ul
             class="capitalize tracking-wide w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
             :class="menuOpen ? 'block' : 'hidden'"
           >
@@ -29,7 +30,6 @@
               <GlobalsDropdownMenu />
             </li> -->
           </ul>
-        </div>
         <div class="block lg:hidden">
           <button
             @click="toggleMenu"

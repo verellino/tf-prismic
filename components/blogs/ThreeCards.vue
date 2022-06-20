@@ -8,14 +8,14 @@
                 <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Jul</span>
                 <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
             </div>
-            <div class="flex-grow pl-6">
-                <h2 class="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">{{ article.data.category.uid }}</h2>
+            <div class="flex-grow">
+                <h2 class="tracking-widest text-xs title-font text-indigo-500 mb-1">{{ article.data.category.uid }}</h2>
                 <h1 class="title-font text-xl font-medium text-gray-900 mb-3">The 400 Blows</h1>
                 <p class="leading-relaxed mb-5">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
                 <a class="inline-flex items-center">
                 <img alt="blog" src="https://dummyimage.com/103x103" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
                 <span class="flex-grow flex flex-col pl-3">
-                    <span class="title-font font-medium text-gray-900">Alper Kamu</span>
+                    <span class="title-font text-gray-900">Alper Kamu</span>
                 </span>
                 </a>
             </div>
@@ -27,14 +27,14 @@
                 <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Jul</span>
                 <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
             </div>
-            <div class="flex-grow pl-6">
-                <h2 class="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">{{ article.data.category.uid }}</h2>
+            <div class="flex-grow">
+                <h2 class="tracking-widest text-xs title-font text-indigo-500 mb-1">{{ article.data.category.uid }}</h2>
                 <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Shooting Stars</h1>
                 <p class="leading-relaxed mb-5">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
                 <a class="inline-flex items-center">
                 <img alt="blog" src="https://dummyimage.com/102x102" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
                 <span class="flex-grow flex flex-col pl-3">
-                    <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                    <span class="title-font text-gray-900">Holden Caulfield</span>
                 </span>
                 </a>
             </div>
@@ -46,14 +46,14 @@
                 <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Jul</span>
                 <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
             </div>
-            <div class="flex-grow pl-6">
-                <h2 class="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">{{ article.data.category.uid }}</h2>
+            <div class="flex-grow">
+                <h2 class="tracking-widest text-xs title-font text-indigo-500 mb-1">{{ article.data.category.uid }}</h2>
                 <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Neptune</h1>
                 <p class="leading-relaxed mb-5">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
                 <a class="inline-flex items-center">
                 <img alt="blog" src="https://dummyimage.com/101x101" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
                 <span class="flex-grow flex flex-col pl-3">
-                    <span class="title-font font-medium text-gray-900">Henry Letham</span>
+                    <span class="title-font text-gray-900">Henry Letham</span>
                 </span>
                 </a>
             </div>

@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html, body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
     font-family: 'Poppins';
     font-style: normal;
     font-size: 16px;
 }
 
 h1, h2, h3, h4, h5 {
-    @apply leading-relaxed;
+    @apply leading-normal;
     font-weight: 600;
 }
 
@@ -45,4 +45,7 @@ h4, .h4 {
 }
 .border-blogs-bottom {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.excerpt {
+  @apply text-sm;
 }

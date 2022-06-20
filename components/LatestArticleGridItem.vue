@@ -9,15 +9,15 @@
           <p class="text-xs blue-primary mb-2">
             <nuxt-link to="/" class="uppercase mr-2 inline-block py-1 px-2 rounded bg-blue-50 text-xs font-medium tracking-wide">{{ article.data.section }}</nuxt-link> {{ formattedDate }}
           </p>
-              <Heading as="h3">
+              <Heading as="h3" class="h4">
                 <PrismicLink :field="article">
                   {{ article.data.title }}
                 </PrismicLink>
               </Heading>
-            <p v-if="excerpt" class="mt-2 hidden md:block leading-relaxed mb-5 pr-8">{{ excerpt }}</p>
+            <p v-if="excerpt" class="excerpt mt-2 hidden md:block leading-relaxed mb-5 pr-8">{{ excerpt }}</p>
             <div class="inline-flex items-center text-xs">
-              <span class="title-font font-medium text-neutral-900">{{ article.data.category }} | </span>
-              <span class="title-font font-medium text-neutral-900 ml-1">{{ article.data.writer }}</span>
+              <span class="title-font text-neutral-900">{{ article.data.category }} | </span>
+              <span class="title-font text-neutral-900 ml-1">{{ article.data.writer }}</span>
             </div>
         </div>
       </div>

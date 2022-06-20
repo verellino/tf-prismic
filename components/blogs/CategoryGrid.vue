@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="container px-4 md:px-auto py-12">
+    <div class="container px-4 md:px-12 py-12">
       <div class="grid gird-cols-2 md:grid-cols-3 gap-8">
         
         <!-- Left Category Section -->
         <div class="flex flex-col align-start md:py-10 md:px-4 col-span-2">
-          <h2 class="h1 capitalize pl-4 mb-4">Category</h2>
+          <h2 class="h1 capitalize mb-6">Category</h2>
           <ul class="grid grid-cols-1 md:grid-cols-2 gap-8 category-grid__ul">
             <ArticleListItemWithImg
               v-for="article in articles.slice(0,4)"

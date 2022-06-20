@@ -1,8 +1,8 @@
 <template>
   <div class="featured-blogs">
-    <div class="container px-4 md:px-auto py-12">
-      <h2 class="h1 pl-4 mb-4">Featured Articles</h2>
-      <ul class="grid grid-cols-1 md:grid-cols-4 gap-8 featured-grid__ul">
+    <div class="container px-4 md:px-10 py-12">
+      <h2 class="h1 mb-6">Featured Articles</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-12 gap-8 featured-grid__ul">
         <ArticleListItemWithImg
           v-for="article in limitArticles"
           :key="article.id"
@@ -32,22 +32,19 @@ export default {
 
 <style>
 .featured-grid__ul li{
-  @apply w-full h-full col-span-1 md:col-span-2;
+  @apply w-full h-full col-span-1 md:col-span-4;
 }
-.featured-grid__ul li:nth-child(even) {
-  backdrop-filter: brightness(98%);
-}
-.featured-grid__ul li:nth-child(n+5) .article-img {
+.featured-grid__ul li:nth-child(n+7) .article-img {
   display: none;
 }
-.featured-grid__ul li:nth-child(n+5) .excerpt {
+.featured-grid__ul li:nth-child(n+7) .excerpt {
   display: none;
 }
-.featured-grid__ul li:nth-child(n+5) .blog-card {
+.featured-grid__ul li:nth-child(n+7) .blog-card {
   @apply w-full;
 }
 
-.featured-grid__ul li:nth-child(n+5) {
-  @apply w-full h-full col-span-1 md:row-span-1;
+.featured-grid__ul li:nth-child(n+7) {
+  @apply w-full h-full col-span-1 md:col-span-3 md:row-span-1;
 }
 </style>
