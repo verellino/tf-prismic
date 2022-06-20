@@ -1,7 +1,7 @@
 <template>
-  <div class="pt-32">
+  <div class="pt-10">
     <div class="pt-24 text-center">
-        <h1></h1>
+        <h1>{{ articles[0].data.category }}</h1>
     </div>
     <BlogsArticleMainGrid :articles="articles.slice(0,7)" />
     <BlogsFeaturedBlog :articles="articles" />

@@ -10,49 +10,49 @@
         <div class="flex flex-col lg:flex-row px-8 py-6 border-b -mx-4">
           <ul class="w-full px-4">
             <li class="mb-8">
-              <nuxt-link to="/category/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.down.exact.prevent="focusNext(true)" @keydown.up.exact.prevent="">
+              <nuxt-link to="/category/YqiAMhEAADoGVtao" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.down.exact.prevent="focusNext(true)" @keydown.up.exact.prevent="">
                 <span class="ml-2">
                   <span class="block font-bold text-blue-900 group-hover:text-blue-900 items-center" >Artificial Intelligence</span>
                 </span>
               </nuxt-link>
             </li>
             <li class="mb-8">
-              <nuxt-link to="/category/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
+              <nuxt-link to="/category/YqiAPhEAACMAVtbp" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
                 <span class="ml-2">
                   <span class="block font-bold text-blue-900 group-hover:text-blue-900">AR/VR</span>
                 </span>
               </nuxt-link>
             </li>
             <li class="mb-8">
-              <nuxt-link to="/category/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
+              <nuxt-link to="/category/YqiASxEAACEAVtcn" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
                 <span class="ml-2">
                   <span class="block font-bold text-blue-900 group-hover:text-blue-900">Blockchain</span>
                 </span>
               </nuxt-link>
             </li>
             <li class="mb-8">
-              <nuxt-link to="/category/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
+              <nuxt-link to="/category/YqiAjBEAACEAVthp" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
                 <span class="ml-2">
                   <span class="block font-bold text-blue-900 group-hover:text-blue-900">Cloud computing</span>
                 </span>
               </nuxt-link>
             </li>
             <li class="mb-8">
-              <nuxt-link to="/category/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
+              <nuxt-link to="/category/YqiAoREAACAAVtjF" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
                 <span class="ml-2">
                   <span class="block font-bold text-blue-900 group-hover:text-blue-900">Data Analytics</span>
                 </span>
               </nuxt-link>
             </li>
             <li class="mb-8">
-              <nuxt-link to="/category/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
+              <nuxt-link to="/category/YqiArhEAACAAVtkE" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
                 <span class="ml-2">
                   <span class="block font-bold text-blue-900 group-hover:text-blue-900">Internet of Things</span>
                 </span>
               </nuxt-link>
             </li>
             <li class="mb-8">
-              <nuxt-link to="/category/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
+              <nuxt-link to="/category/YqiAuhEAADoGVtk-" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
                 <span class="ml-2">
                   <span class="block font-bold text-blue-900 group-hover:text-blue-900">Metaverse</span>
                 </span>

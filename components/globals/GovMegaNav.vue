@@ -10,14 +10,14 @@
         <div class="flex flex-col lg:flex-row px-8 py-6 border-b -mx-4">
           <ul class="w-full px-4">
             <li class="mb-8">
-              <nuxt-link to="/category/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.down.exact.prevent="focusNext(true)" @keydown.up.exact.prevent="">
+              <nuxt-link to="/category/Yqh_GhEAADoGVtF2" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.down.exact.prevent="focusNext(true)" @keydown.up.exact.prevent="">
                 <span class="ml-2">
                   <span class="block font-bold text-blue-900 group-hover:text-blue-900 items-center" >Akses dan Infrastruktur</span>
                 </span>
               </nuxt-link>
             </li>
             <li class="mb-8">
-              <nuxt-link to="/category/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
+              <nuxt-link to="/category/Yqh_whEAACEAVtSA" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
                 <span class="ml-2">
                   <span class="block font-bold text-blue-900 group-hover:text-blue-900">Keamanan dan Pertahanan</span>
                 </span>
@@ -31,21 +31,21 @@
               </nuxt-link>
             </li>
             <li class="mb-8">
-              <nuxt-link to="/category/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
+              <nuxt-link to="/category/Yqh_2hEAACMAVtT_" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
                 <span class="ml-2">
                   <span class="block font-bold text-blue-900 group-hover:text-blue-900">Energi dan Lingkungan</span>
                 </span>
               </nuxt-link>
             </li>
             <li class="mb-8">
-              <nuxt-link to="/category/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
+              <nuxt-link to="/category/Yqh_6BEAACAAVtVB" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
                 <span class="ml-2">
                   <span class="block font-bold text-blue-900 group-hover:text-blue-900">Inisiatif dan Pembangunan</span>
                 </span>
               </nuxt-link>
             </li>
             <li class="mb-8">
-              <nuxt-link to="/category/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
+              <nuxt-link to="/category/Yqh_-REAACMAVtWR" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
                 <span class="ml-2">
                   <span class="block font-bold text-blue-900 group-hover:text-blue-900">Kepentingan Publik</span>
                 </span>

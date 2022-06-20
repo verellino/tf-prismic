@@ -1,29 +1,13 @@
 <template>
   <div>
-    <div class="container px-4 md:px-12">
-      <div class="grid gird-cols-2 md:grid-cols-3 gap-8">
-        <!-- Left Category Section -->
-        <div class="flex flex-col align-start md:py-10 md:px-4 col-span-3">
-          <ul class="grid grid-cols-1 md:grid-cols-2 gap-8 category-grid__ul">
-            <ArticleListItemWithImg
-              v-for="article in articles.slice(0,4)"
-              :key="article.id"
-              :article="article"
-            />
-          </ul>
-        </div>
-        <!-- Right Section  -->
-        <div class="flex flex-col align-start md:py-10 md:px-4 col-span-3">
-          <ul class="flex">
-            <ArticleGridItem
-              v-for="article in articles.slice(5,7)"
-              :key="article.id"
-              :article="article"
-              class="col-span-1"
-            />
-          </ul>
-        </div>
-      </div>
+    <div class="container px-4 md:px-10 py-12">
+      <ul class="grid grid-cols-1 md:grid-cols-12 gap-8 featured-grid__ul">
+        <ArticleListItemWithImg
+          v-for="article in limitArticles"
+          :key="article.id"
+          :article="article"
+        />
+      </ul>
     </div>
   </div>
 </template>
@@ -34,27 +18,32 @@ export default {
     articles: {
       type: Array,
       required: true
+    },
+    limit: 8
+  },
+  computed:{
+    limitArticles(){
+      return this.limit ? this.articles.slice(0,this.limit) : this.articles
     }
   }
 }
 </script>
 
-<style scoped>
-.category-grid__ul li:nth-child(1) {
-  @apply flex flex-col justify-center p-10 col-span-1 md:col-span-2;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+<style>
+.featured-grid__ul li{
+  @apply w-full h-full col-span-1 md:col-span-4;
 }
-.category-grid__ul li:nth-child(2) {
-  @apply flex flex-col justify-center p-10 col-span-1;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.featured-grid__ul li:nth-child(n+7) .article-img {
+  display: none;
 }
-.category-grid__ul li:nth-child(3) {
-  @apply flex flex-col justify-center p-10 col-span-1;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.featured-grid__ul li:nth-child(n+7) .excerpt {
+  display: none;
 }
-.category-grid__ul li:nth-child(4) {
-  @apply flex flex-col justify-center p-10 col-span-1 md:col-span-2;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.featured-grid__ul li:nth-child(n+7) .blog-card {
+  @apply w-full;
+}
+
+.featured-grid__ul li:nth-child(n+7) {
+  @apply w-full h-full col-span-1 md:col-span-3 md:row-span-1;
 }
 </style>

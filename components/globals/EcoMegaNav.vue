@@ -10,14 +10,14 @@
         <div class="flex flex-col lg:flex-row px-8 py-6 border-b -mx-4">
           <ul class="w-full px-4">
             <li class="mb-8">
-              <nuxt-link to="/category/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.down.exact.prevent="focusNext(true)" @keydown.up.exact.prevent="">
+              <nuxt-link to="/category/Yqh9bREAACMAVsnW" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.down.exact.prevent="focusNext(true)" @keydown.up.exact.prevent="">
                 <span class="ml-2">
                   <span class="block font-bold text-blue-900 group-hover:text-blue-900 items-center" >Investasi dan Keuangan</span>
                 </span>
               </nuxt-link>
             </li>
             <li class="mb-8">
-              <nuxt-link to="/category/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
+              <nuxt-link to="/category/Yqh--xEAACAAVtDm" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
                 <span class="ml-2">
                   <span class="block font-bold text-blue-900 group-hover:text-blue-900">Industri dan Perdagangan</span>
                 </span>
