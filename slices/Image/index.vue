@@ -12,7 +12,7 @@
         v-if="$prismic.asText(slice.primary.caption)"
         :field="slice.primary.caption"
         wrapper="figcaption"
-        class="text-center font-serif italic tracking-tight text-slate-500"
+        class="text-center italic tracking-tight text-slate-500"
       />
     </figure>
   </Bounded>

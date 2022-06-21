@@ -2,7 +2,7 @@
   <Bounded as="section" size="wide">
     <div
       v-if="$prismic.asText(slice.primary.quote)"
-      class="font-serif text-3xl italic leading-relaxed"
+      class="text-3xl italic leading-relaxed"
     >
       &ldquo;
       {{ $prismic.asText(slice.primary.quote) }}

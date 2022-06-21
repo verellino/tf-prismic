@@ -23,7 +23,7 @@
           v-if="$prismic.asText(description)"
           :field="description"
           wrapper="p"
-          class="font-serif text-2xl italic leading-normal tracking-tight text-slate-500"
+          class="text-2xl italic leading-normal tracking-tight text-slate-500"
         />
       </div>
     </div>
