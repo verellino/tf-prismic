@@ -19,7 +19,7 @@
           <SliceZone :slices="article.data.slices" :components="components" />
         </article>
         <Bounded>
-          <NuxtLink to="/" class="tracking-tight text-slate-400">
+          <NuxtLink to="/" class="font-semibold tracking-tight text-slate-400">
             &larr; Back to articles
           </NuxtLink>
         </Bounded>
@@ -52,9 +52,6 @@
                   :article="article"
                 />
               </ul>
-              <nuxt-link :to="categoryLink" class="pl-10 tracking-tight text-xs text-slate-400">
-                {{ article.data.category }} &rarr;
-              </nuxt-link>
             </div>
           </div>
         </Bounded>
@@ -78,13 +75,13 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
 
 export default {
   async asyncData ({ $prismic, store, params }) {
-    const article = await $prismic.api.getByUID('article', params.uid)
+    const article = await $prismic.api.getByUID('news', params.uid)
  
     const { results: latestArticles } = await $prismic.api.query(
-      $prismic.predicate.at('document.type', 'article'),
+      $prismic.predicate.at('document.type', 'news'),
       {
         orderings: `[${[
-          { field: 'my.article.publishDate', direction: 'desc' },
+          { field: 'my.news.publishDate', direction: 'desc' },
           { field: 'document.first_publication_date', direction: 'desc' }
         ].map(({ field, direction }) => `${field} ${direction}`).join(', ')}]`,
         pageSize: 3
@@ -95,7 +92,7 @@ export default {
       $prismic.predicate.similar(article.id, 3),
       {
         orderings: `[${[
-          { field: 'my.article.publishDate', direction: 'desc' },
+          { field: 'my.news.publishDate', direction: 'desc' },
           { field: 'document.first_publication_date', direction: 'desc' }
         ].map(({ field, direction }) => `${field} ${direction}`).join(', ')}]`,
         pageSize: 3
@@ -104,10 +101,9 @@ export default {
 
     
     const categoryId = article.data.categories.id
-    const categoryLink = "/category/"+categoryId
 
     const { results: categoryPosts } = await $prismic.api.query([
-      $prismic.predicates.at("my.article.categories", categoryId)
+      $prismic.predicates.at("my.news.categories", categoryId)
     ])
       
     await store.dispatch('prismic/load')
@@ -118,7 +114,6 @@ export default {
       article,
       latestArticles,
       similarArticles,
-      categoryLink,
       categoryPosts
     }
   },

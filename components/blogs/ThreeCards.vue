@@ -9,7 +9,7 @@
                 <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
             </div>
             <div class="flex-grow">
-                <h2 class="tracking-widest text-xs title-font text-indigo-500 mb-1">{{ article.data.category.uid }}</h2>
+                <h2 class="tracking-widest text-xxs title-font text-indigo-500 mb-1">{{ article.data.category.uid }}</h2>
                 <h1 class="title-font text-xl font-medium text-gray-900 mb-3">The 400 Blows</h1>
                 <p class="leading-relaxed mb-5">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
                 <a class="inline-flex items-center">
@@ -28,7 +28,7 @@
                 <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
             </div>
             <div class="flex-grow">
-                <h2 class="tracking-widest text-xs title-font text-indigo-500 mb-1">{{ article.data.category.uid }}</h2>
+                <h2 class="tracking-widest text-xxs title-font text-indigo-500 mb-1">{{ article.data.category.uid }}</h2>
                 <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Shooting Stars</h1>
                 <p class="leading-relaxed mb-5">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
                 <a class="inline-flex items-center">
@@ -47,7 +47,7 @@
                 <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
             </div>
             <div class="flex-grow">
-                <h2 class="tracking-widest text-xs title-font text-indigo-500 mb-1">{{ article.data.category.uid }}</h2>
+                <h2 class="tracking-widest text-xxs title-font text-indigo-500 mb-1">{{ article.data.category.uid }}</h2>
                 <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Neptune</h1>
                 <p class="leading-relaxed mb-5">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
                 <a class="inline-flex items-center">

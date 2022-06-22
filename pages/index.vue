@@ -31,19 +31,19 @@
     <section>
       <div class="container py-24 text-center">
         <h2>Our Partners</h2>
-        <div class="flex w-full justify-evenly mt-24">
-          <div class="h-20 w-20 rounded-full bg-neutral-500"></div>
-          <div class="h-20 w-20 rounded-full bg-neutral-500"></div>
-          <div class="h-20 w-20 rounded-full bg-neutral-500"></div>
-          <div class="h-20 w-20 rounded-full bg-neutral-500"></div>
-          <div class="h-20 w-20 rounded-full bg-neutral-500"></div>
-          <div class="h-20 w-20 rounded-full bg-neutral-500"></div>
+        <div class="flex flex-wrap w-full justify-evenly mt-24">
+          <div class="h-20 w-20 rounded-full m-8 md:mr-6 bg-neutral-500"></div>
+          <div class="h-20 w-20 rounded-full m-8 md:mr-6 bg-neutral-500"></div>
+          <div class="h-20 w-20 rounded-full m-8 md:mr-6 bg-neutral-500"></div>
+          <div class="h-20 w-20 rounded-full m-8 md:mr-6 bg-neutral-500"></div>
+          <div class="h-20 w-20 rounded-full m-8 md:mr-6 bg-neutral-500"></div>
+          <div class="h-20 w-20 rounded-full m-8 md:mr-6 bg-neutral-500"></div>
         </div>
       </div>
     </section>
     <section>
       <!-- Contact Form  -->
-      <div class="container text-center py-32 px-16">
+      <div class="container text-center py-32 px-4 md:px-16">
         <h2>Contact Us</h2>
         <form action="#" method="POST">
           <div class="overflow-hidden sm:rounded-md text-left mt-8">

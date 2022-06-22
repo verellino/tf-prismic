@@ -2,7 +2,7 @@
   <Bounded as="section">
     <PrismicRichText
       v-if="$prismic.asText(slice.primary.text)"
-      class="article-text leading-loose mx-auto"
+      class="article-text mx-auto"
       :field="slice.primary.text"
       wrapper="div"
     />
@@ -20,7 +20,8 @@ export default {
 </script>
 
 <style scoped>
-.article-text {
+.article-text {    
   max-width: 40em;
+  white-space: pre-wrap;
 }
 </style>

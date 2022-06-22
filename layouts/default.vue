@@ -30,6 +30,6 @@ export default {
 
 <style>
 body {
-  @apply overflow-x-hidden antialiased;
+  @apply overflow-x-hidden antialiased text-sm;
 }
 </style>

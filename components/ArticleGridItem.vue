@@ -1,22 +1,20 @@
 <template>
   <li
-    class="px-2 lg:w-1/3"
+    class="py-8 px-4 lg:w-1/3 relative"
   >
     <PrismicLink :field="article" tab-index="-1">
       <div class="flex-grow">
-        <p class="text-xs blue-primary mb-2">
-          <nuxt-link to="/" class="uppercase mr-2 inline-block py-1 px-2 rounded bg-blue-50 text-xs font-medium tracking-wide">{{ article.data.section }}</nuxt-link> {{ formattedDate }}
+        <p class="text-xxs blue-primary mb-2">
+          <nuxt-link to="/" class="category-span">{{ article.data.section }}</nuxt-link> {{ formattedDate }}
         </p>
-            <Heading as="h3" class="h4">
-              <PrismicLink :field="article">
+           <Heading as="h3" class="h4">
                 {{ article.data.title }}
-              </PrismicLink>
             </Heading>
-          <p v-if="excerpt" class="excerpt mt-2 hidden md:block leading-relaxed mb-5 pr-8">{{ excerpt }}</p>
+          <p v-if="excerpt" class="excerpt">{{ excerpt }}</p>
           <a class="inline-flex items-center">
-            <span class="flex">
-              <span class="title-font text-xs text-neutral-900">{{ article.data.category }} | </span>
-              <span class="title-font text-xs text-neutral-900 ml-1">{{ article.data.writer }}</span>
+            <span class="flex absolute bottom-0 left-2">
+              <span class="title-font text-xxs text-neutral-900">{{ article.data.category }} | </span>
+              <span class="title-font text-xxs text-neutral-900 ml-1">{{ article.data.writer }}</span>
             </span>
           </a>
       </div>

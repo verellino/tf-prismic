@@ -33,7 +33,7 @@
         </ul>
       </div>
       <!-- <SignUpForm v-if="withSignUpForm" :settings="settings" /> -->
-      <!-- <div class="mx-auto w-full max-w-3xl text-center text-xs font-semibold tracking-tight text-slate-500">
+      <!-- <div class="mx-auto w-full max-w-3xl text-center text-xxs font-semibold tracking-tight text-slate-500">
         Proudly published using <a href="https://prismic.io" class="text-slate-700">Prismic</a>
       </div> -->
     </div>

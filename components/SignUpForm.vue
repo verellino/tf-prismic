@@ -34,7 +34,7 @@
         </div>
         <PrismicText
           v-if="$prismic.asText(settings.data.newsletterDisclaimer)"
-          class="text-center text-xs tracking-tight text-slate-500"
+          class="text-center text-xxs tracking-tight text-slate-500"
           :field="settings.data.newsletterDisclaimer"
           wrapper="p"
         />

@@ -26,9 +26,9 @@
             <li class="mr-8 mb-6 lg:mb-0">
               <GlobalsResourcesMegaNav />
             </li>
-            <!-- <li>
-              <GlobalsDropdownMenu />
-            </li> -->
+            <li>
+              <GlobalsSearchForm />
+            </li>
           </ul>
         <div class="block lg:hidden">
           <button

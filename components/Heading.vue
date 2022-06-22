@@ -1,7 +1,7 @@
 <template>
   <Component
     :is="as"
-    class="font-sans font-semibold tracking-tighter leading-normal text-slate-800"
+    class="text-slate-800"
     :class="{}"
   >
     <slot />

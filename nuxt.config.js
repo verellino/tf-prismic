@@ -64,17 +64,17 @@ export default {
     htmlSerializer(type, element, content, children) {
       switch (type) {
         case "heading1":
-          return /* html */ `<h2 class="font-sans font-semibold tracking-tighter text-slate-800 mb-7 mt-12 first:mt-0 last:mb-0">${children.join(
+          return /* html */ `<h2 class="font-sans font-semibold text-slate-800 mb-7 mt-12 first:mt-0 last:mb-0">${children.join(
             ""
           )}</h2>`;
 
         case "heading2":
-          return /* html */ `<h3 class="font-sans font-semibold tracking-tighter text-slate-800 mb-7 last:mb-0">${children.join(
+          return /* html */ `<h3 class="font-sans font-semibold text-slate-800 mb-7 last:mb-0">${children.join(
             ""
           )}</h3>`;
 
         case "heading3":
-          return /* html */ `<h4 class="font-sans font-semibold tracking-tighter text-slate-800 mb-7 last:mb-0">${children.join(
+          return /* html */ `<h4 class="font-sans font-semibold text-slate-800 mb-7 last:mb-0">${children.join(
             ""
           )}</h4>`;
 

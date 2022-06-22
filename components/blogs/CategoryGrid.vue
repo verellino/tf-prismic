@@ -16,15 +16,15 @@
         </div>
         <!-- Right Section  -->
         <div
-          class="flex flex-col justify-start align-start md:py-10 md:px-4 col-span-2 md:col-span-1 border-blogs-left"
+          class="flex flex-col justify-start align-start md:py-10 md:px-4 col-span-2 md:col-span-1"
         >
-          <h2>Lorem ipsum</h2>
+          <h2 class="mb-6">Lorem ipsum</h2>
           <ul>
             <ArticleListItem
               v-for="article in articles.slice(5,8)"
               :key="article.id"
               :article="article"
-              class="border-blogs-bottom"
+              class="border-blogs-bottom mb-2"
             />
           </ul>
         </div>
@@ -45,21 +45,4 @@ export default {
 </script>
 
 <style scoped>
-.category-grid__ul li:nth-child(1) {
-  @apply flex flex-col justify-center col-span-1 md:col-span-2;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-.category-grid__ul li:nth-child(2) {
-  @apply flex flex-col justify-center col-span-1;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-.category-grid__ul li:nth-child(3) {
-  @apply flex flex-col justify-center col-span-1;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-.category-grid__ul li:nth-child(4) {
-  @apply flex flex-col justify-center col-span-1 md:col-span-2;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
 </style>

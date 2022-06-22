@@ -4,8 +4,8 @@
   >
     <PrismicLink :field="article" tab-index="-1">
       <div>
-        <p class="text-xs blue-primary mb-2">
-          <nuxt-link to="/" class="uppercase mr-2 inline-block py-1 px-2 rounded bg-blue-50 text-xs font-medium tracking-wide">{{ article.data.section }}</nuxt-link> {{ formattedDate }}
+        <p class="text-xxs blue-primary mb-2">
+          <nuxt-link to="/" class="category-span">{{ article.data.section }}</nuxt-link> {{ formattedDate }}
         </p>
         <Heading as="h5">
           <PrismicLink :field="article">
@@ -16,8 +16,8 @@
           {{ excerpt }}
         </p> -->
         <span class="flex">
-          <span class="font-medium text-xs text-neutral-900">{{ article.data.category }} | </span>
-          <span class="font-medium text-xs text-neutral-900 ml-1"> {{ article.data.writer }}</span>
+          <span class="font-medium text-xxs text-neutral-900">{{ article.data.category }} | </span>
+          <span class="font-medium text-xxs text-neutral-900 ml-1"> {{ article.data.writer }}</span>
         </span>
       </div>
     </PrismicLink>

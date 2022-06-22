@@ -2,7 +2,7 @@
   <div class="border-b-2  border-gray-200">
     <div class="container px-4 md:px-23 py-12">
       <h2 class="text-center uppercase mb-4">Latest Articles</h2>
-      <ul class="flex p-4">
+      <ul class="flex flex-col sm:flex-row p-4">
         <LatestArticleGridItem
           v-for="article in articles.slice(0,3)"
           :key="article.id"

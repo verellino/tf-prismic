@@ -1,25 +1,25 @@
 <template>
-  <li>
+  <li class="relative py-2">
     <PrismicLink :field="article" tab-index="-1">
-      <p class="text-xs blue-primary mb-2">
-        <nuxt-link to="/" class="uppercase mr-2 inline-block py-1 px-2 rounded bg-blue-50 text-xs font-medium tracking-wide">{{ article.data.section }}</nuxt-link> {{ formattedDate }}
+      <p class="text-xxs blue-primary mb-2">
+        <nuxt-link to="/" class="category-span">{{ article.data.section }}</nuxt-link> {{ formattedDate }}
       </p>
-      <div class="flex flex-row">
+      <div>
         <div class="blog-card pr-4 flex flex-col justify-between">
           <div>
             <Heading as="h3" class="h4">
-            <PrismicLink :field="article">
               {{ article.data.title }}
-            </PrismicLink>
             </Heading>
-            <p v-if="excerpt" class="excerpt mt-2 hidden md:block leading-relaxed pr-8">
+            <p v-if="excerpt" class="excerpt">
               {{ excerpt }}
             </p>
           </div>
-          <div class="mt-4 text-xs">
-            <span class="title-font text-neutral-900">{{ article.data.category }} | </span>
-            <span class="title-font text-neutral-900 ml-1">{{ article.data.writer }}</span>
-          </div>
+         <a href="#" class="mt-4 text-xxs ">
+           <div class="absolute bottom-1 left-0">
+              <span class="title-font text-neutral-900">{{ article.data.category }} | </span>
+              <span class="title-font text-neutral-900 ml-1">{{ article.data.writer }}</span>
+            </div>
+         </a>
         </div>
         <!-- <div v-if="featuredImage" class="article-img w-1/4 relative ml-8">
           <PrismicImage

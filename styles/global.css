@@ -6,27 +6,32 @@ html, body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
     font-family: 'Poppins';
     font-style: normal;
     font-size: 16px;
+    line-height: 1.625em;
 }
 
 h1, h2, h3, h4, h5 {
-    @apply leading-normal;
-    font-weight: 600;
+    @apply font-semibold tracking-tight leading-snug mb-1;
 }
 
 h1, .h1 {
     font-size: 1.728em;
+    margin-bottom: 1.2em;
 }
 
 h2, .h2 {
-    font-size:1.44em;
+    font-size: 1.44em;
 }
 
 h3, .h3 {
-    font-size: 1.22em;
+    font-size: 1.28em;
 }
 
 h4, .h4 {
-    font-size: 1.1em;
+    font-size: 1.14em;
+}
+
+h5, .h5 {
+    font-size: 1.06em;
 }
 
 
@@ -47,5 +52,13 @@ h4, .h4 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .excerpt {
-  @apply text-sm;
+  @apply text-xs mt-2 hidden md:block leading-relaxed mb-2 pr-8;
+}
+.category-span {
+  @apply uppercase mr-2 inline-block py-1 px-2 rounded bg-blue-50 text-xxs font-medium tracking-wide;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+
 }
