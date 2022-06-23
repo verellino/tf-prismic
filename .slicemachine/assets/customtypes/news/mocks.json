@@ -1,6 +1,17 @@
 {
-  "id": "2440449e-32a7-4f5b-882d-0d35582b69df",
-  "uid": "quod-voluptatem-dolore",
+  "id": "3f8d9821-89d4-44d0-ac67-85956040610f",
+  "uid": "nam-maiores-omnis",
   "type": "news",
-  "data": {}
+  "data": {
+    "title": "streamline granular vortals",
+    "writer": "matrix ubiquitous partnerships",
+    "editor": "innovate integrated interfaces",
+    "publishDate": "2013-04-26T11:50:10.527Z",
+    "section": "Government",
+    "category": "Internet of Things",
+    "categories": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    }
+  }
 }

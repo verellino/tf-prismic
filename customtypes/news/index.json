@@ -76,6 +76,16 @@
           ]
         }
       },
+      "categories": {
+        "type": "Link",
+        "config": {
+          "label": "Categories",
+          "select": "document",
+          "customtypes": [
+            "subcategory"
+          ]
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

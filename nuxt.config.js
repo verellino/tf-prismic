@@ -59,6 +59,10 @@ export default {
           type: "article",
           path: "/articles/:uid",
         },
+        {
+          type: "news",
+          path: "/news/:uid",
+        },
       ],
     },
     htmlSerializer(type, element, content, children) {

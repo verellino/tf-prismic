@@ -78,33 +78,12 @@ export default {
     const article = await $prismic.api.getByUID('news', params.uid)
  
     const { results: latestArticles } = await $prismic.api.query(
-      $prismic.predicate.at('document.type', 'news'),
-      {
-        orderings: `[${[
-          { field: 'my.news.publishDate', direction: 'desc' },
-          { field: 'document.first_publication_date', direction: 'desc' }
-        ].map(({ field, direction }) => `${field} ${direction}`).join(', ')}]`,
-        pageSize: 3
-      }
+      $prismic.predicate.at('document.type', 'news')
     )
 
     const { results: similarArticles } = await $prismic.api.query(
-      $prismic.predicate.similar(article.id, 3),
-      {
-        orderings: `[${[
-          { field: 'my.news.publishDate', direction: 'desc' },
-          { field: 'document.first_publication_date', direction: 'desc' }
-        ].map(({ field, direction }) => `${field} ${direction}`).join(', ')}]`,
-        pageSize: 3
-      }
+      $prismic.predicate.similar(article.id, 3)
     )
-
-    
-    const categoryId = article.data.categories.id
-
-    const { results: categoryPosts } = await $prismic.api.query([
-      $prismic.predicates.at("my.news.categories", categoryId)
-    ])
       
     await store.dispatch('prismic/load')
     store.commit('layout/setWithHeaderProfile', false)
@@ -113,8 +92,7 @@ export default {
     return {
       article,
       latestArticles,
-      similarArticles,
-      categoryPosts
+      similarArticles
     }
   },
   data () {
