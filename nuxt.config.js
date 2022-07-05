@@ -21,10 +21,15 @@ export default {
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+    link: [{ rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css", integrity: "sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==", crossorigin: "anonymous", referrerpolicy:  "no-referrer" }]
   },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ["@nuxt/postcss8", "@nuxtjs/prismic", "@nuxtjs/google-fonts"],
+
+  modules: [
+    'vue-social-sharing/nuxt'
+  ],
 
   generate: {
     exclude: ["/slice-simulator"],
@@ -68,12 +73,12 @@ export default {
     htmlSerializer(type, element, content, children) {
       switch (type) {
         case "heading1":
-          return /* html */ `<h2 class="font-sans font-semibold text-slate-800 mb-7 mt-12 first:mt-0 last:mb-0">${children.join(
+          return /* html */ `<h2 class="font-serif text-slate-800 mb-7 mt-12 first:mt-0 last:mb-0">${children.join(
             ""
           )}</h2>`;
 
         case "heading2":
-          return /* html */ `<h3 class="font-sans font-semibold text-slate-800 mb-7 last:mb-0">${children.join(
+          return /* html */ `<h3 class="font-serif text-slate-800 mb-7 last:mb-0">${children.join(
             ""
           )}</h3>`;
 
@@ -131,7 +136,9 @@ export default {
   },
   googleFonts: {
     families: {
-      Poppins: true
+      Poppins: true,
+      "Noto+Serif+Display": [500, 600],
     },
+    display: "swap",
   },
 };

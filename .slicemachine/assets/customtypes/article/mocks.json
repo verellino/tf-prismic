@@ -1,17 +1,67 @@
 {
-  "id": "08d3ed31-10d3-4654-8bfd-4ccadb8960a0",
-  "uid": "perferendis-placeat-quidem",
+  "id": "1b0fff69-2f48-4807-99fc-bc9452f59096",
+  "uid": "molestiae-sed-occaecati",
   "type": "article",
   "data": {
-    "title": "streamline killer infrastructures",
-    "writer": "matrix cross-platform applications",
-    "editor": "transform viral functionalities",
-    "publishDate": "2014-12-17T21:37:22.101Z",
-    "section": "Economy",
-    "category": "Industri dan Perdagangan",
+    "title": "enhance 24/365 convergence",
+    "writer": "enable compelling web services",
+    "editor": "innovate interactive action-items",
+    "publishDate": "2015-09-06T22:31:20.029Z",
+    "section": "Government",
+    "category": "Cloud computing",
     "categories": {
       "link_type": "Web",
       "url": "https://prismic.io"
-    }
+    },
+    "mainImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
+    },
+    "featured": false,
+    "general-card": [
+      {
+        "title": "transform interactive communities",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Incididunt sunt exercitation minim est dolor esse nisi nostrud. Ipsum anim occaecat officia adipisicing quis commodo sit dolor commodo. Lorem est aliquip culpa officia.",
+            "spans": []
+          }
+        ],
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "title": "utilize best-of-breed partnerships",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Adipisicing qui mollit aliqua irure consequat eu exercitation proident est in mollit adipisicing. Consequat ex commodo ut eiusmod proident fugiat dolore reprehenderit esse commodo reprehenderit incididunt consequat. Fugiat nulla sint mollit eiusmod Lorem eu eiusmod in fugiat magna commodo quis pariatur enim.",
+            "spans": []
+          }
+        ],
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
+        }
+      }
+    ]
   }
 }

@@ -1,8 +1,8 @@
 <template>
-  <Bounded as="section">
+  <Bounded as="section" class="ml-8">
     <PrismicRichText
       v-if="$prismic.asText(slice.primary.text)"
-      class="article-text mx-auto"
+      class="article-text"
       :field="slice.primary.text"
       wrapper="div"
     />
@@ -21,7 +21,6 @@ export default {
 
 <style scoped>
 .article-text {    
-  max-width: 40em;
   white-space: pre-wrap;
 }
 </style>

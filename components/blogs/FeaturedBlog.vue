@@ -2,10 +2,8 @@
   <div class="featured-blogs">
     <div class="container px-4 md:px-10 py-12">
       <h2 class="h1 mb-6">Featured Articles</h2>
-      <ul class="grid grid-cols-12 gap-y-8 md:gap-y-1 md:gap-x-1">
-        <li v-for="article in limitArticles" :key="article.id" class="col-span-12 md:col-span-4">
-          <ArticleListItemWithImg :article="article" />
-        </li>
+      <ul class="grid grid-cols-12 gap-y-8 md:gap-y-4 md:gap-x-1">
+        <ArticleListItemWithImg :article="article" v-for="article in limitArticles" :key="article.id" class="col-span-12 md:col-span-4" />
     </ul>
     </div>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <li
-    class="flex flex-col justify-center m-4 p-6"
+    class="flex flex-col justify-center p-4"
   >
     <PrismicLink :field="article" tab-index="-1">
       <div>

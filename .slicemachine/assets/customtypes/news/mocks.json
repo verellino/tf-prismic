@@ -1,17 +1,27 @@
 {
-  "id": "3f8d9821-89d4-44d0-ac67-85956040610f",
-  "uid": "nam-maiores-omnis",
+  "id": "237ae980-fa24-49de-b028-49a20be9bfb6",
+  "uid": "non-incidunt-qui",
   "type": "news",
   "data": {
-    "title": "streamline granular vortals",
-    "writer": "matrix ubiquitous partnerships",
-    "editor": "innovate integrated interfaces",
-    "publishDate": "2013-04-26T11:50:10.527Z",
-    "section": "Government",
-    "category": "Internet of Things",
+    "title": "generate real-time action-items",
+    "writer": "brand real-time paradigms",
+    "editor": "e-enable extensible web services",
+    "publishDate": "2017-03-18T05:38:16.806Z",
+    "section": "Technology",
+    "category": "Energi dan Lingkungan",
     "categories": {
       "link_type": "Web",
-      "url": "http://twitter.com"
-    }
+      "url": "https://slicemachine.dev"
+    },
+    "mainImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
+    },
+    "featured": true
   }
 }

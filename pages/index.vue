@@ -12,7 +12,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo
             quam, non iusto eius veritatis id porro!
           </p>
-          <button class="bg-dark-blue rounded-sm p-2 text-white mt-4 w-32">Button</button>
+          <button class="bg-dark-blue rounded-md p-2 text-white mt-4 w-32">Button</button>
         </div>
         <div class="w-1/2 flex justify-center align-center">
          <div class="w-full aspect-square">
@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-    <BlogsFeaturedBlog :articles="articles" />
+    <BlogsFeaturedwImgBlog :articles="featuredArticles" />
     <BlogsLatestGrid :articles="articles" />
     <BlogsCategoryGrid :articles="articles" />
     <section>
@@ -43,69 +43,6 @@
     </section>
     <section>
       <!-- Contact Form  -->
-      <div class="container text-center py-32 px-4 md:px-16">
-        <h2>Contact Us</h2>
-        <form action="#" method="POST">
-          <div class="overflow-hidden sm:rounded-md text-left mt-8">
-            <div class="px-4 py-5 sm:p-6">
-              <div class="grid grid-cols-6 gap-6">
-                <div class="col-span-6 sm:col-span-3">
-                  <label
-                    for="first-name"
-                    class="block text-sm font-medium text-gray-700"
-                    >First name</label
-                  >
-                  <input
-                    type="text"
-                    name="first-name"
-                    id="first-name"
-                    autocomplete="given-name"
-                    class="mt-1 h-12 px-4 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-2 border-gray-500 rounded-md"
-                  />
-                </div>
-
-                <div class="col-span-6 sm:col-span-3">
-                  <label
-                    for="email-address"
-                    class="block text-sm font-medium text-gray-700"
-                    >Email address</label
-                  >
-                  <input
-                    type="text"
-                    name="email-address"
-                    id="email-address"
-                    autocomplete="email"
-                    class="mt-1 h-12 px-4 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-2 border-gray-500 rounded-md"
-                  />
-                </div>
-
-                <div class="col-span-6">
-                  <label
-                    for="street-address"
-                    class="block text-sm font-medium text-gray-700"
-                    >Lorem</label
-                  >
-                  <input
-                    type="text"
-                    name="lorem"
-                    id="lorem"
-                    autocomplete="lorem"
-                    class="mt-1 h-72 px-4 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-2 border-gray-500 rounded-md"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="px-4 py-3 bg-gray-50 text-center sm:px-6">
-              <button
-                type="submit"
-                class="inline-flex w-1/2 justify-center py-4 px-8 border border-transparent shadow-sm font-medium rounded-md text-white bg-dark-blue hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-              >
-                Submit
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
     </section>
   </div>
 </template>
@@ -119,8 +56,20 @@ export default {
         orderings: `[${[
           { field: 'my.article.publishDate', direction: 'desc' },
           { field: 'document.first_publication_date', direction: 'desc' }
-        ].map(({ field, direction }) => `${field} ${direction}`).join(', ')}]`,
+        ].map(({ field, direction }) => `${field} ${direction}`).join(', ')
+        }]`,
         pageSize: 100
+      }
+    )
+    const { results: featuredArticles } = await $prismic.api.query(
+      $prismic.predicate.at('my.article.featured', true),
+      {
+        orderings: `[${[
+          { field: 'my.article.publishDate', direction: 'desc' },
+          { field: 'document.first_publication_date', direction: 'desc' }
+        ].map(({ field, direction }) => `${field} ${direction}`).join(', ')
+        }]`,
+        pageSize: 9
       }
     )
     await store.dispatch('prismic/load')
@@ -128,7 +77,8 @@ export default {
     store.commit('layout/setWithHeaderDivider', false)
     store.commit('layout/setWithFooterSignUpForm', true)
     return {
-      articles
+      articles,
+      featuredArticles
     }
   },
   head () {

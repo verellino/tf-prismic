@@ -1,18 +1,18 @@
 <template>
   <li class="relative py-2">
     <PrismicLink :field="article" tab-index="-1">
-      <div v-if="featuredImage" class="article-img w-full relative aspect-video mb-4 py-4 px-1">
+      <div v-if="featuredImage" class="article-img w-full mb-4 relative py-4 px-1 rounded-md">
         <PrismicImage
           v-if="featuredImage.url"
           :field="featuredImage"
-          class="object-cover  rounded-md "
+          class="object-cover object-center"
         />
       </div>
       <p class="text-xxs blue-primary mb-2">
         <nuxt-link to="/" class="category-span">{{ article.data.section }}</nuxt-link>
       </p>
       <div>
-        <div class="blog-card pr-4 flex flex-col justify-between">
+        <div class="blog-card flex flex-col justify-between">
           <div>
             <Heading as="h3" class="h4">
               {{ article.data.title }}
@@ -24,7 +24,7 @@
          <a href="#" class="mt-4 text-xxs ">
            <div class="absolute bottom-1 left-0">
               <span class="title-font text-neutral-900">{{ article.data.category }} | </span>
-              <span class="title-font text-neutral-900 ml-1"> {{ formattedDate }}</span>
+              <span class="title-font text-neutral-900 ml-1">{{ formattedDate }} | </span>
               <span class="title-font text-neutral-900 ml-1">{{ article.data.writer }}</span>
             </div>
          </a>
