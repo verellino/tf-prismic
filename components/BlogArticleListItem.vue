@@ -8,16 +8,14 @@
           <nuxt-link to="/" class="category-span">{{ article.data.section }}</nuxt-link> {{ formattedDate }}
         </p>
         <Heading as="h5">
-          <PrismicLink :field="article">
             {{ article.data.title }}
-          </PrismicLink>
         </Heading>
         <!-- <p v-if="excerpt" class="excerpt mt-2 hidden md:block leading-relaxed text-sm">
           {{ excerpt }}
         </p> -->
         <span class="flex">
-          <span class="font-medium text-xxs text-neutral-900">{{ article.data.category }} | </span>
-          <span class="font-medium text-xxs text-neutral-900 ml-1"> {{ article.data.writer }}</span>
+          <span class="font-thin text-xxs">{{ article.data.category }} | </span>
+          <span class="font-thin text-xxs ml-1"> {{ article.data.writer }}</span>
         </span>
       </div>
     </PrismicLink>

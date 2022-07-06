@@ -1,7 +1,7 @@
 <template>
   <div @mouseover="showMenu" @mouseleave="hideMenu" class="relative">
     <nuxt-link to="/sector/government" class="relative hover:text-gray-600" @focus="showMenu" @keydown.shift.tab="hideMenu" @keydown.esc.exact="hideMenu" @keydown.up.exact.prevent="startArrowKeys" @keydown.down.exact.prevent="startArrowKeys">
-      Government
+      Pemerintahan
     </nuxt-link>
 
     <div class="absolute w-full">&nbsp;</div>

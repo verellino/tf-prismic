@@ -15,9 +15,9 @@
             </p>
           </div>
          <a href="#" class="mt-4 text-xxs ">
-           <div class="absolute bottom-1 left-0">
-              <span class="title-font text-neutral-900">{{ article.data.category }} | </span>
-              <span class="title-font text-neutral-900 ml-1">{{ article.data.writer }}</span>
+           <div class="article-details-bottom-span">
+              <span class="">{{ article.data.category }} | </span>
+              <span class=" ml-1">{{ article.data.writer }}</span>
             </div>
          </a>
         </div>

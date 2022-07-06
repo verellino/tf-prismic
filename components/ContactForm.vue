@@ -1,6 +1,6 @@
 <template>
    <div class="container text-center py-32 px-4 md:px-16">
-        <h2>Contact Us</h2>
+        <h2>Kontak </h2>
         <form action="#" method="POST">
           <div class="overflow-hidden sm:rounded-md text-left mt-8">
             <div class="px-4 py-5 sm:p-6">

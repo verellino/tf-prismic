@@ -25,13 +25,13 @@
     <BlogsLatestGrid :articles="articles" />
     <BlogsCategoryGrid :articles="articles" />
     <section>
-      <h2 class="text-center featured-blogs pt-6 -mb-12">Now Trending</h2>
+      <h2 class="text-center featured-blogs pt-6 -mb-12">Tren Terkini</h2>
       <BlogsThreeCol :articles="articles" />
     </section>
     <section>
-      <div class="container py-24 text-center">
-        <h2>Our Partners</h2>
-        <div class="flex flex-wrap w-full justify-evenly mt-24">
+      <div class="container py-12 text-center">
+        <h2>Mitra</h2>
+        <div class="flex flex-wrap w-full justify-evenly my-8">
           <div class="h-20 w-20 rounded-full m-8 md:mr-6 bg-neutral-500"></div>
           <div class="h-20 w-20 rounded-full m-8 md:mr-6 bg-neutral-500"></div>
           <div class="h-20 w-20 rounded-full m-8 md:mr-6 bg-neutral-500"></div>

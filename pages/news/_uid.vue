@@ -30,7 +30,7 @@
           <div>
             <div class="w-full">
               <h2 class="pl-10">
-                Latest articles
+                Artikel Terbaru
               </h2>
               <ul class="grid grid-cols-1 gap-y-2">
                   <BlogArticleListItem

@@ -1,7 +1,7 @@
 <template>
   <div @mouseover="showMenu" @mouseleave="hideMenu" class="relative">
     <nuxt-link to="/" class="relative hover:text-gray-600" @focus="showMenu" @keydown.shift.tab="hideMenu" @keydown.esc.exact="hideMenu" @keydown.up.exact.prevent="startArrowKeys" @keydown.down.exact.prevent="startArrowKeys">
-      Resources
+      Wawasan
     </nuxt-link>
 
     <div class="absolute w-full">&nbsp;</div>
@@ -12,21 +12,21 @@
             <li class="mb-8">
               <a href="/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.down.exact.prevent="focusNext(true)" @keydown.up.exact.prevent="">
                 <span class="ml-2">
-                  <span class="block font-bold text-blue-900 group-hover:text-blue-900 items-center" >Reports</span>
+                  <span class="block font-bold text-blue-900 group-hover:text-blue-900 items-center" >Laporan</span>
                 </span>
               </a>
             </li>
             <li class="mb-8">
               <a href="/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
                 <span class="ml-2">
-                  <span class="block font-bold text-blue-900 group-hover:text-blue-900">Programs</span>
+                  <span class="block font-bold text-blue-900 group-hover:text-blue-900">Program</span>
                 </span>
               </a>
             </li>
             <li class="mb-8">
               <a href="/glossary" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
                 <span class="ml-2">
-                  <span class="block font-bold text-blue-900 group-hover:text-blue-900">Glossary</span>
+                  <span class="block font-bold text-blue-900 group-hover:text-blue-900">Glosarium</span>
                 </span>
               </a>
             </li>

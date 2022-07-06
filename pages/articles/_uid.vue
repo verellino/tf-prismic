@@ -1,7 +1,7 @@
 <template>
   <div class="pt-20">
     <div>
-      <div v-if="featuredImage" class="article-main-image w-full mb-4 relative overflow-hidden">
+      <div v-if="featuredImage" class="article-main-image w-full mb-8 relative overflow-hidden">
         <PrismicImage
           v-if="featuredImage.url"
           :field="featuredImage"
@@ -17,8 +17,8 @@
         <h1 class="mb-3 font-semibold blue-primary sm:text-2xl">
           {{article.data.title}}
         </h1>
-        <p class="blog-details-span">
-          {{ formattedDate }} | {{ article.data.writer }}
+        <p class="blog-details-span text-xs">
+          {{ formattedDate }} | {{ article.data.writer }} | 10 mins read
         </p>
       </div>
     </div>
@@ -27,9 +27,30 @@
         <article>
           <SliceZone :slices="article.data.slices" :components="components" />
         </article>
+        
+        <div class="pl-12">
+          <p>Bagikan artikel ini:</p>
+          <ul class="flex mt-2">
+            <ShareNetwork
+              v-for="network in networks"
+              :network="network.network"
+              :key="network.network"
+              :url="sharing.url"
+              :title="sharing.title"
+              :description="sharing.description"
+              :quote="sharing.quote"
+              :hashtags="sharing.hashtags"
+              :twitterUser="sharing.twitterUser"
+              class="mr-8"
+            >
+              <i :class="network.icon"></i>
+            </ShareNetwork>
+          </ul>
+        </div>
+
         <Bounded>
           <NuxtLink to="/" class="tracking-tight text-slate-400">
-            &larr; Back to articles
+            &larr; Kembali ke semua artikel
           </NuxtLink>
         </Bounded>
       </div>
@@ -38,7 +59,7 @@
         <div v-if="latestArticles.length" class="py-8 md:py-10 lg:py-12">
           <div class="w-full">
             <h2 class="pl-4">
-              Latest articles
+              Artikel Terbaru
             </h2>
             <ul class="grid grid-cols-1 gap-y-2">
                 <BlogArticleListItem
@@ -60,7 +81,7 @@
                 :article="article"
               />
             </ul>
-            <nuxt-link :to="categoryLink" class="pl-10 tracking-tight text-xs text-slate-400">
+            <nuxt-link :to="categoryLink" class="pl-4 tracking-tight text-xs text-slate-400">
               {{ article.data.category }} &rarr;
             </nuxt-link>
           </div>
@@ -70,22 +91,6 @@
     <!-- More Blogs Bottom Section  -->
     <div>
       <BlogsMoreBlogs :articles="similarArticles" />
-    </div>
-    <div class="fixed z-90 top-1/2 left-0 flex flex-col p-2">
-       <ShareNetwork
-        v-for="network in networks"
-        :network="network.network"
-        :key="network.network"
-        :url="sharing.url"
-        :title="sharing.title"
-        :description="sharing.description"
-        :quote="sharing.quote"
-        :hashtags="sharing.hashtags"
-        :twitterUser="sharing.twitterUser"
-      >
-        <i :class="network.icon"></i>
-      </ShareNetwork>
-
     </div>
   </div>
 </template>
@@ -134,25 +139,12 @@ export default {
     ])
       
     await store.dispatch('prismic/load')
-    store.commit('layout/setWithHeaderProfile', false)
-    store.commit('layout/setWithHeaderDivider', false)
-    store.commit('layout/setWithFooterSignUpForm', true)
-    const sharingUrl = article.href
-    const sharingTitle = article.data.general-card[0].title
-    const sharingDescription = $prismic.asText(article.data.general-card[0].description)
-    const sharingQuote = article.data.twitter-card[0].title
-    const sharingTwitterUser = article.data.twitter-card[0].twitter_handle
     return {
       article,
       latestArticles,
       similarArticles,
       categoryLink,
       categoryPosts,
-      sharingTwitterUser,
-      sharingQuote,
-      sharingDescription,
-      sharingTitle,
-      sharingUrl
     }
   },
   data () {
@@ -205,11 +197,6 @@ export default {
     },
   },
   mounted() {
-    this.url = sharingUrl,
-    this.title = sharingTitle,
-    this.description = sharingDescription,
-    this.quote = sharingQuote,
-    this.twitterUser = sharingTwitterUser
        
   }
 

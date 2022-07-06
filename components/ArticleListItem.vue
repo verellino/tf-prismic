@@ -8,9 +8,7 @@
           <nuxt-link to="/" class="category-span">{{ article.data.section }}</nuxt-link> {{ formattedDate }}
         </p>
         <Heading as="h4">
-          <PrismicLink :field="article">
-            {{ article.data.title }}
-          </PrismicLink>
+          {{ article.data.title }}
         </Heading>
         <!-- <p v-if="excerpt" class="excerpt mt-2 hidden md:block leading-relaxed text-sm">
           {{ excerpt }}
