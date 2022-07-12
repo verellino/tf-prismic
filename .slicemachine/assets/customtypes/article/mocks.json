@@ -1,17 +1,18 @@
 {
-  "id": "1b0fff69-2f48-4807-99fc-bc9452f59096",
-  "uid": "molestiae-sed-occaecati",
+  "id": "c645cbf6-0a0e-4f4f-a0c3-ad5bd29332b8",
+  "uid": "qui-aut-aperiam",
   "type": "article",
   "data": {
-    "title": "enhance 24/365 convergence",
-    "writer": "enable compelling web services",
-    "editor": "innovate interactive action-items",
-    "publishDate": "2015-09-06T22:31:20.029Z",
+    "title": "strategize B2B infrastructures",
+    "writer": "cultivate extensible convergence",
+    "editor": "target user-centric markets",
+    "minsRead": "maximize one-to-one experiences",
+    "publishDate": "2016-04-27T13:09:49.012Z",
     "section": "Government",
     "category": "Cloud computing",
     "categories": {
       "link_type": "Web",
-      "url": "https://prismic.io"
+      "url": "http://google.com"
     },
     "mainImage": {
       "dimensions": {
@@ -20,48 +21,44 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
     },
-    "featured": false,
-    "general-card": [
+    "featured": true,
+    "description": [
       {
-        "title": "transform interactive communities",
-        "description": [
-          {
-            "type": "paragraph",
-            "text": "Incididunt sunt exercitation minim est dolor esse nisi nostrud. Ipsum anim occaecat officia adipisicing quis commodo sit dolor commodo. Lorem est aliquip culpa officia.",
-            "spans": []
-          }
-        ],
-        "image": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
-        }
-      },
-      {
-        "title": "utilize best-of-breed partnerships",
-        "description": [
-          {
-            "type": "paragraph",
-            "text": "Adipisicing qui mollit aliqua irure consequat eu exercitation proident est in mollit adipisicing. Consequat ex commodo ut eiusmod proident fugiat dolore reprehenderit esse commodo reprehenderit incididunt consequat. Fugiat nulla sint mollit eiusmod Lorem eu eiusmod in fugiat magna commodo quis pariatur enim.",
-            "spans": []
-          }
-        ],
-        "image": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
-        }
+        "type": "paragraph",
+        "text": "Proident culpa magna enim consequat in irure labore cillum mollit veniam ea. Exercitation laboris amet ea laborum.",
+        "spans": []
       }
-    ]
+    ],
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
+    },
+    "card-type": "Summary Card with Large Image",
+    "twitter-handle": "enable proactive applications",
+    "twitter-image": {
+      "dimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=300&h=300&fit=crop",
+      "large_image": {
+        "dimensions": {
+          "width": 600,
+          "height": 314
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=600&h=314&fit=crop"
+      }
+    }
   }
 }

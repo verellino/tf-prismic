@@ -251,6 +251,62 @@
           }
         }
       },
+      "references": {
+        "library": "slices",
+        "id": "references",
+        "name": "References",
+        "description": "References",
+        "model": {
+          "id": "references",
+          "type": "SharedSlice",
+          "name": "References",
+          "description": "References",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Quote",
+              "primary": {
+                "references": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "References",
+                    "placeholder": "Quote without quotation marks",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "references",
+            "items": [],
+            "primary": {
+              "references": [
+                {
+                  "type": "paragraph",
+                  "text": "Pariatur consequat id officia. Adipisicing ex dolore laboris ut Lorem magna tempor. Deserunt voluptate aliqua commodo.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
+      },
       "text": {
         "library": "slices",
         "id": "text",

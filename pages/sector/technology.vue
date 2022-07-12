@@ -12,8 +12,8 @@
 <script>
 import { components } from '~/slices'
 
-const dateFormatter = new Intl.DateTimeFormat('en-US', {
-  month: 'numeric',
+const dateFormatter = new Intl.DateTimeFormat('id-ID', {
+  month: 'short',
   day: 'numeric',
   year: 'numeric'
 })

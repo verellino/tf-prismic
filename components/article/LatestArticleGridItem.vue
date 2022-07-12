@@ -23,9 +23,9 @@
           </div>
          <a href="#" class="mt-4 text-xxs ">
            <div class="article-details-bottom-span">
-              <span class="">{{ article.data.category }} | </span>
-              <span class="ml-1"> {{ formattedDate }}</span>
-              <span class="ml-1">{{ article.data.writer }}</span>
+              <span class="">{{ article.data.writer}} | </span>
+              <span class="ml-1"> {{ formattedDate }} |</span>
+              <span class="ml-1">{{ article.data.minsRead}}</span>
             </div>
          </a>
         </div>
@@ -35,8 +35,8 @@
 </template>
 
 <script>
-const dateFormatter = new Intl.DateTimeFormat('en-US', {
-  month: 'numeric',
+const dateFormatter = new Intl.DateTimeFormat('id-ID', {
+  month: 'short',
   day: 'numeric',
   year: 'numeric'
 })

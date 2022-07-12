@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-20">
+  <div class="pt-22">
     <div>
       <div v-if="featuredImage" class="article-main-image w-full mb-8 relative overflow-hidden">
         <PrismicImage
@@ -18,7 +18,7 @@
           {{article.data.title}}
         </h1>
         <p class="blog-details-span text-xs">
-          {{ formattedDate }} | {{ article.data.writer }} | 10 mins read
+          {{ formattedDate }} | {{ article.data.writer }} | {{article.data.minsRead}}
         </p>
       </div>
     </div>
@@ -62,7 +62,7 @@
               Artikel Terbaru
             </h2>
             <ul class="grid grid-cols-1 gap-y-2">
-                <BlogArticleListItem
+                <ArticleBlogsListItem
                 v-for="article in latestArticles"
                 :key="article.id"
                 :article="article"
@@ -75,7 +75,7 @@
               {{ article.data.category }}
             </h3>
             <ul class="grid grid-cols-1 gap-2">
-                <BlogArticleListItem
+                <ArticleBlogsListItem
                 v-for="article in categoryPosts"
                 :key="article.id"
                 :article="article"
@@ -98,13 +98,36 @@
 <script>
 import { components } from '~/slices'
 
-const dateFormatter = new Intl.DateTimeFormat('en-US', {
-  month: 'numeric',
+const dateFormatter = new Intl.DateTimeFormat('id-ID', {
+  month: 'short',
   day: 'numeric',
   year: 'numeric'
 })
 
 export default {
+  data () {
+    return { 
+      components,
+      sharing: {
+        url: '',
+        title: '',
+        description: '',
+        quote: '',
+        hashtags: '',
+        twitterUser: 'transforming_futures'
+      },
+       networks: [
+        { network: 'email', name: 'Email', icon: 'far fah fa-lg fa-envelope', color: '#333333' },
+        { network: 'facebook', name: 'Facebook', icon: 'fab fah fa-lg fa-facebook-f', color: '#1877f2' },
+        { network: 'line', name: 'Line', icon: 'fab fah fa-lg fa-line', color: '#00c300' },
+        { network: 'linkedin', name: 'LinkedIn', icon: 'fab fah fa-lg fa-linkedin', color: '#007bb5' },
+        { network: 'messenger', name: 'Messenger', icon: 'fab fah fa-lg fa-facebook-messenger', color: '#0084ff' },
+        { network: 'pinterest', name: 'Pinterest', icon: 'fab fah fa-lg fa-pinterest', color: '#bd081c' },
+        { network: 'telegram', name: 'Telegram', icon: 'fab fah fa-lg fa-telegram-plane', color: '#0088cc' },
+        { network: 'twitter', name: 'Twitter', icon: 'fab fah fa-lg fa-twitter', color: '#1da1f2' },
+      ]
+    }
+  },
   async asyncData ({ $prismic, store, params }) {
     const article = await $prismic.api.getByUID('article', params.uid)
  
@@ -137,7 +160,12 @@ export default {
     const { results: categoryPosts } = await $prismic.api.query([
       $prismic.predicates.at("my.article.categories", categoryId)
     ])
-      
+    
+    // this.sharing.url = this.$route.path,
+    // this.description = await article.data.description,
+    // this.quote = await article.data.description,
+    // this.hashtags = await article.data.hashtags,
+
     await store.dispatch('prismic/load')
     return {
       article,
@@ -147,33 +175,68 @@ export default {
       categoryPosts,
     }
   },
-  data () {
-    return { 
-      components,
-      sharing: {
-        url: '',
-        title: '',
-        description: '',
-        quote: '',
-        hashtags: '',
-        twitterUser: ''
-      },
-       networks: [
-        { network: 'email', name: 'Email', icon: 'far fah fa-lg fa-envelope', color: '#333333' },
-        { network: 'facebook', name: 'Facebook', icon: 'fab fah fa-lg fa-facebook-f', color: '#1877f2' },
-        { network: 'line', name: 'Line', icon: 'fab fah fa-lg fa-line', color: '#00c300' },
-        { network: 'linkedin', name: 'LinkedIn', icon: 'fab fah fa-lg fa-linkedin', color: '#007bb5' },
-        { network: 'messenger', name: 'Messenger', icon: 'fab fah fa-lg fa-facebook-messenger', color: '#0084ff' },
-        { network: 'pinterest', name: 'Pinterest', icon: 'fab fah fa-lg fa-pinterest', color: '#bd081c' },
-        { network: 'telegram', name: 'Telegram', icon: 'fab fah fa-lg fa-telegram-plane', color: '#0088cc' },
-        { network: 'twitter', name: 'Twitter', icon: 'fab fah fa-lg fa-twitter', color: '#1da1f2' },
-      ]
-    }
-  },
   head () {
     return {
       title: `${this.article.data.title} | ${this.$store.state.prismic.settings.data.name}`,
       meta: [
+        {
+        hid: "description",
+        name: "description",
+        content: this.article.data.description,
+      },
+      {
+        hid: "og:title",
+        name: "og:title",
+        content: this.article.data.title,
+      },
+      {
+        hid: "og:description",
+        name: "og:description",
+        content: this.article.data.description,
+      },
+      {
+        hid: "og:type",
+        property: "og:type",
+        content: "article",
+      },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: `https://transformingfutures.com${this.$route.path}`,
+      },
+      {
+        hid: "twitter:url",
+        name: "twitter:url",
+        content: `https://transformingfutures.com${this.$route.path}`,
+      },
+      {
+        hid: "twitter:title",
+        name: "twitter:title",
+        content: this.article.data.title,
+      },
+      {
+        hid: "twitter:description",
+        name: "twitter:description",
+        content: this.article.data.description,
+      },
+      {
+        hid: "twitter:image",
+        name: "twitter:image",
+        content: this.article.data.image,
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: this.article.data.image,
+      },
+      {
+        property: "article:tag",
+        content: this.article.data.tags ? this.article.data.tags.toString() : "",
+      },
+      {
+        name: "twitter:data2",
+        content: this.article.data.tags ? this.article.data.tags.toString() : "",
+      },
         
       ]
     }
@@ -195,11 +258,24 @@ export default {
       }
       return null
     },
+    excerpt () {
+      const text = this.article.data.slices
+        .filter(slice => slice.slice_type === 'text')
+        .map(slice => this.$prismic.asText(slice.primary.text))
+        .join(' ')
+      const excerpt = text.substring(0, 80)
+      if (text.length > 80) {
+        return excerpt.substring(0, excerpt.lastIndexOf(' ')) + '…'
+      } else {
+        return excerpt
+      }
+    }
+    
   },
   mounted() {
-       
+    this.sharing.url = "https://transformingfutures.com" + this.$nuxt.$route.path
+    this.sharing.title = this.article.data.title + " - "
   }
-
 }
 </script>
 

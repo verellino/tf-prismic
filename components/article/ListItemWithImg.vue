@@ -1,30 +1,41 @@
 <template>
-  <li
-    class="flex flex-col justify-center p-4"
-  >
+  <li class="relative py-2">
     <PrismicLink :field="article" tab-index="-1">
+      <p class="text-xxs blue-primary mb-2">
+        <nuxt-link to="/" class="category-span">{{ article.data.section }}</nuxt-link> {{ formattedDate }}
+      </p>
       <div>
-        <p class="text-xxs blue-primary mb-2">
-          <nuxt-link to="/" class="category-span">{{ article.data.section }}</nuxt-link> {{ formattedDate }}
-        </p>
-        <Heading as="h5">
-            {{ article.data.title }}
-        </Heading>
-        <!-- <p v-if="excerpt" class="excerpt mt-2 hidden md:block leading-relaxed text-sm">
-          {{ excerpt }}
-        </p> -->
-        <span class="flex">
-          <span class="font-thin text-xxs">{{ article.data.category }} | </span>
-          <span class="font-thin text-xxs ml-1"> {{ article.data.writer }}</span>
-        </span>
+        <div class="blog-card pr-4 flex flex-col justify-between">
+          <div>
+            <Heading as="h3" class="h4">
+              {{ article.data.title }}
+            </Heading>
+            <p v-if="excerpt" class="excerpt">
+              {{ excerpt }}
+            </p>
+          </div>
+         <a href="#" class="mt-4 text-xxs ">
+           <div class="article-details-bottom-span">
+              <span class="">{{ article.data.category }} | </span>
+              <span class=" ml-1">{{ article.data.writer }}</span>
+            </div>
+         </a>
+        </div>
+        <!-- <div v-if="featuredImage" class="article-img w-1/4 relative ml-8">
+          <PrismicImage
+            v-if="featuredImage.url"
+            :field="featuredImage"
+            class="object-cover aspect-1"
+          />
+        </div> -->
       </div>
     </PrismicLink>
   </li>
 </template>
 
 <script>
-const dateFormatter = new Intl.DateTimeFormat('en-US', {
-  month: 'numeric',
+const dateFormatter = new Intl.DateTimeFormat('id-ID', {
+  month: 'short',
   day: 'numeric',
   year: 'numeric'
 })

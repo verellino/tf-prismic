@@ -3,12 +3,14 @@
 import ContactForm from './ContactForm';
 import Image from './Image';
 import Quote from './Quote';
+import References from './References';
 import Text from './Text';
 
 export {
 	ContactForm,
 	Image,
 	Quote,
+	References,
 	Text,
 };
 
@@ -16,5 +18,6 @@ export const components = {
 	contact_form: ContactForm,
 	image: Image,
 	quote: Quote,
+	references: References,
 	text: Text,
 };

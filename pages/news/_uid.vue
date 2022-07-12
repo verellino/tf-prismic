@@ -33,7 +33,7 @@
                 Artikel Terbaru
               </h2>
               <ul class="grid grid-cols-1 gap-y-2">
-                  <BlogArticleListItem
+                  <ArticleBlogsListItem
                   v-for="article in latestArticles"
                   :key="article.id"
                   :article="article"
@@ -46,7 +46,7 @@
                 {{ article.data.category }}
               </h3>
               <ul class="grid grid-cols-1 gap-2">
-                  <BlogArticleListItem
+                  <ArticleBlogsListItem
                   v-for="article in categoryPosts"
                   :key="article.id"
                   :article="article"
@@ -67,8 +67,8 @@
 <script>
 import { components } from '~/slices'
 
-const dateFormatter = new Intl.DateTimeFormat('en-US', {
-  month: 'numeric',
+const dateFormatter = new Intl.DateTimeFormat('id-ID', {
+  month: 'short',
   day: 'numeric',
   year: 'numeric'
 })

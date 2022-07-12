@@ -1,0 +1,17 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "references",
+    "items": [],
+    "primary": {
+      "references": [
+        {
+          "type": "paragraph",
+          "text": "Pariatur consequat id officia. Adipisicing ex dolore laboris ut Lorem magna tempor. Deserunt voluptate aliqua commodo.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

@@ -1,30 +1,31 @@
 <template>
   <li
-    class="py-8 px-4 lg:w-1/3 relative"
+    class="flex flex-col justify-center p-4"
   >
     <PrismicLink :field="article" tab-index="-1">
-      <div class="flex-grow">
+      <div>
         <p class="text-xxs blue-primary mb-2">
           <nuxt-link to="/" class="category-span">{{ article.data.section }}</nuxt-link> {{ formattedDate }}
         </p>
-           <Heading as="h3" class="h4">
-                {{ article.data.title }}
-            </Heading>
-          <p v-if="excerpt" class="excerpt">{{ excerpt }}</p>
-          <a class="inline-flex items-center">
-            <span class="flex absolute bottom-0 left-2">
-              <span class="title-font text-xxs text-neutral-900">{{ article.data.category }} | </span>
-              <span class="title-font text-xxs text-neutral-900 ml-1">{{ article.data.writer }}</span>
-            </span>
-          </a>
+        <Heading as="h5">
+            {{ article.data.title }}
+        </Heading>
+        <!-- <p v-if="excerpt" class="excerpt mt-2 hidden md:block leading-relaxed text-sm">
+          {{ excerpt }}
+        </p> -->
+        <span class="flex">
+          <span class="font-thin text-xxs">{{ article.data.writer }} | </span>
+          <span class="font-thin text-xxs ml-1"> {{ formattedDate}} |</span>
+          <span class="font-thin text-xxs ml-1"> {{ article.data.minsRead }}</span>
+        </span>
       </div>
     </PrismicLink>
   </li>
 </template>
 
 <script>
-const dateFormatter = new Intl.DateTimeFormat('en-US', {
-  month: 'numeric',
+const dateFormatter = new Intl.DateTimeFormat('id-ID', {
+  month: 'short',
   day: 'numeric',
   year: 'numeric'
 })
@@ -54,7 +55,10 @@ export default {
       return dateFormatter.format(date)
     },
     excerpt () {
-      const text = this.article.data.slices.filter(slice => slice.slice_type === 'text').map(slice => this.$prismic.asText(slice.primary.text)).join(' ')
+      const text = this.article.data.slices
+        .filter(slice => slice.slice_type === 'text')
+        .map(slice => this.$prismic.asText(slice.primary.text))
+        .join(' ')
       const excerpt = text.substring(0, 80)
       if (text.length > 80) {
         return excerpt.substring(0, excerpt.lastIndexOf(' ')) + '…'

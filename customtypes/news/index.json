@@ -33,6 +33,13 @@
           "placeholder": ""
         }
       },
+      "minsRead": {
+        "type": "Text",
+        "config": {
+          "label": "Mins Read",
+          "placeholder": ""
+        }
+      },
       "publishDate": {
         "type": "Timestamp",
         "config": {
@@ -114,7 +121,7 @@
             "image": {
               "type": "SharedSlice"
             },
-            "quote": {
+            "references": {
               "type": "SharedSlice"
             }
           }

@@ -2,7 +2,7 @@
   <div class="text-slate-700">
     <GlobalsMegaMenu />
     <main><nuxt /></main>
-    <Footer v-if="navigation.data && settings.data" :with-sign-up-form="withFooterSignUpForm" :settings="settings" />
+    <GlobalsFooter v-if="navigation.data && settings.data" :with-sign-up-form="withFooterSignUpForm" :settings="settings" />
   </div>
 </template>
 

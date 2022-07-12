@@ -119,6 +119,18 @@
       "default": {
         "primary": {}
       }
+    },
+    "References": {
+      "default": {
+        "primary": {
+          "references": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
     }
   }
 }

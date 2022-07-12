@@ -33,6 +33,13 @@
           "placeholder": ""
         }
       },
+      "minsRead": {
+        "type": "Text",
+        "config": {
+          "label": "Mins Read",
+          "placeholder": ""
+        }
+      },
       "publishDate": {
         "type": "Timestamp",
         "config": {
@@ -114,7 +121,7 @@
             "image": {
               "type": "SharedSlice"
             },
-            "quote": {
+            "references": {
               "type": "SharedSlice"
             }
           }
@@ -122,62 +129,65 @@
       }
     },
     "Social Media Cards & SEO Meta": {
-      
-            "title": {
-              "type": "Text",
-              "config": {
-                "label": "General Title",
-                "placeholder": ""
-              }
-            },
-            "description": {
-              "type": "StructuredText",
-              "config": {
-                "label": "Description",
-                "placeholder": "",
-                "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-              }
-            },
-            "image": {
-              "type": "Image",
-              "config": {
-                "label": "Image",
-                "constraint": {},
-                "thumbnails": []
-              }
-            },
-            "card-type" : {
-            "type" : "Select",
-            "config" : {
-              "options" : [ "Standard Summary Card", "Summary Card with Large Image" ],
-              "default_value" : "Standard Summary Card",
-              "label" : "Card type"
-            }
-          },
-          "twitter-handle" : {
-            "type" : "Text",
-            "config" : {
-              "label" : "Twitter Handle",
-              "placeholder" : "Twitter handle..."
-            }
-          },
-          "twitter-image" : {
-            "type" : "Image",
-            "config" : {
-              "constraint" : {
-                "width" : 300,
-                "height" : 300
-              },
-              "thumbnails" : [ {
-                "name" : "large_image",
-                "width" : 600,
-                "height" : 314
-              } ],
-              "label" : "Image"
-          }
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "General Title",
+          "placeholder": ""
         }
-      }   
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "label": "Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "card-type": {
+        "type": "Select",
+        "config": {
+          "options": [
+            "Standard Summary Card",
+            "Summary Card with Large Image"
+          ],
+          "default_value": "Standard Summary Card",
+          "label": "Card type"
+        }
+      },
+      "twitter-handle": {
+        "type": "Text",
+        "config": {
+          "label": "Twitter Handle",
+          "placeholder": "Twitter handle..."
+        }
+      },
+      "twitter-image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 300,
+            "height": 300
+          },
+          "thumbnails": [
+            {
+              "name": "large_image",
+              "width": 600,
+              "height": 314
+            }
+          ],
+          "label": "Image"
+        }
+      }
     }
   }
-  
+}

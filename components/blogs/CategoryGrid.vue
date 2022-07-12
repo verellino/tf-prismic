@@ -2,6 +2,13 @@
   <div>
     <div class="container px-4 md:px-12 py-12">
       <h2 class="h1 capitalize mb-6 ml-4">Kategori</h2>
+      <!-- <div class="flex justify-start space-x-2 p-4">
+        <ul v-for="cat in categories">
+          <button @click="toggle($event)" class="uppercase mr-2 inline-block py-1 px-2 rounded-md active:font-semibold active:border-blue-100  active:bg-blue-50 hover:bg-blue-100 transition duration-200 text-xxs font-medium tracking-wide;">
+            {{cat.uid}}
+          </button>
+        </ul>
+      </div> -->
       <div class="grid gird-cols-2 md:grid-cols-3 gap-8">
         
         <!-- Left Category Section -->
@@ -38,8 +45,11 @@ export default {
     articles: {
       type: Array,
       required: true
+    },
+    categories: {
+      type: Array
     }
-  }
+  },
 }
 </script>
 

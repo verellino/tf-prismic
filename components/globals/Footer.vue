@@ -30,11 +30,11 @@
       </div>
       <div class="col-span-2">
         <span class="h4 font-semibold text-sigma-green">Media Sosial</span>
-        <ul class="mt-6">
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm"><i class="mr-2 fab fah fa-lg fa-instagram"></i>Instagram</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm"><i class="mr-2 fab fah fa-lg fa-facebook-f"></i>Facebook</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm"><i class="mr-2 fab fah fa-lg fa-linkedin"></i>LinkedIn</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm"><i class="mr-2 fab fah fa-lg fa-whatsapp"></i>Whatsapp</nuxt-link></li>
+        <ul class="mt-6 flex justify-between flex-wrap">
+          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm"><i class="mr-2 fab fah fa-lg fa-instagram"></i></nuxt-link></li>
+          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm"><i class="mr-2 fab fah fa-lg fa-facebook-f"></i></nuxt-link></li>
+          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm"><i class="mr-2 fab fah fa-lg fa-linkedin"></i></nuxt-link></li>
+          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm"><i class="mr-2 fab fah fa-lg fa-whatsapp"></i></nuxt-link></li>
         </ul>
       </div>
       <!-- <SignUpForm v-if="withSignUpForm" :settings="settings" /> -->

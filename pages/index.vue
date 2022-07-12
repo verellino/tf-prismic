@@ -23,10 +23,10 @@
     </div>
     <BlogsFeaturedwImgBlog :articles="featuredArticles" />
     <BlogsLatestGrid :articles="articles" />
-    <BlogsCategoryGrid :articles="articles" />
-    <section>
-      <h2 class="text-center featured-blogs pt-6 -mb-12">Tren Terkini</h2>
-      <BlogsThreeCol :articles="articles" />
+    <BlogsCategoryGrid :articles="articles" :categories="categories" />
+    <section class="featured-blogs relative">
+      <h2 class="text-center pt-6">Tren Terkini</h2>
+      <BlogsSwiper :articles="articles" />
     </section>
     <section>
       <div class="container py-12 text-center">
@@ -72,13 +72,19 @@ export default {
         pageSize: 9
       }
     )
+
+    const { results: categories } = await $prismic.api.query(
+      $prismic.predicate.at('document.type', 'category'),
+    )
+
     await store.dispatch('prismic/load')
     store.commit('layout/setWithHeaderProfile', true)
     store.commit('layout/setWithHeaderDivider', false)
     store.commit('layout/setWithFooterSignUpForm', true)
     return {
       articles,
-      featuredArticles
+      featuredArticles,
+      categories
     }
   },
   head () {

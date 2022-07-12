@@ -21,15 +21,22 @@ export default {
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
-    link: [{ rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css", integrity: "sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==", crossorigin: "anonymous", referrerpolicy:  "no-referrer" }]
+    link: [
+      {
+        rel: "stylesheet",
+        href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css",
+        integrity:
+          "sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==",
+        crossorigin: "anonymous",
+        referrerpolicy: "no-referrer",
+      },
+    ],
   },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ["@nuxt/postcss8", "@nuxtjs/prismic", "@nuxtjs/google-fonts"],
 
-  modules: [
-    'vue-social-sharing/nuxt'
-  ],
+  modules: ["vue-social-sharing/nuxt"],
 
   generate: {
     exclude: ["/slice-simulator"],
@@ -46,10 +53,15 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@/styles/global.css"],
+  css: [
+    "@/styles/global.css",
+    "vue-slick-carousel/dist/vue-slick-carousel.css",
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
+
+  plugins: [{ src: "./plugins/vue-slick-carousel.js" }],
 
   prismic: {
     endpoint: sm.apiEndpoint,
@@ -67,6 +79,10 @@ export default {
         {
           type: "news",
           path: "/news/:uid",
+        },
+        {
+          type: "report",
+          path: "/report/:uid",
         },
       ],
     },
