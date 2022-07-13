@@ -1,6 +1,22 @@
 <template>
   <div class="py-8 px-12">
-    <VueSlickCarousel v-bind="slickOptions">
+    <VueSlickCarousel v-bind="slickOptionsMobile" class="md:hidden block">
+        <ul v-for="article in articles.slice(0,6)" :key="article.id">
+            <ArticleGridItemWithImg :article="article" class="px-1" />
+        </ul>
+        <template #prevArrow="arrowOption">
+          <div class="custom-arrow absolute top-1/2 -left-8 h-4 w-4">
+            <img src="~/assets/images/left-chev.png" alt="">
+          </div>
+        </template>
+        <template #nextArrow="arrowOption">
+          <div class="custom-arrow absolute top-1/2 -right-8 h-4 w-4">
+            <img src="~/assets/images/right-chev.png" alt="">
+          </div>
+        </template>
+    </VueSlickCarousel>
+
+    <VueSlickCarousel v-bind="slickOptions" class="hidden md:block">
         <ul v-for="article in articles.slice(0,6)" :key="article.id">
             <ArticleGridItemWithImg :article="article" class="px-1" />
         </ul>
@@ -32,6 +48,10 @@ export default {
     return {
       slickOptions: {
         slidesToShow: 3,
+        arrows: true
+      },
+      slickOptions: {
+        slidesToShow: 1,
         arrows: true
       }
     }
