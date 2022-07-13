@@ -28,7 +28,7 @@
           <SliceZone :slices="article.data.slices" :components="components" />
         </article>
         
-        <div class="pl-12">
+        <div class="p-4 md:pl-12">
           <p>Bagikan artikel ini:</p>
           <ul class="flex mt-2">
             <ShareNetwork
@@ -41,7 +41,7 @@
               :quote="sharing.quote"
               :hashtags="sharing.hashtags"
               :twitterUser="sharing.twitterUser"
-              class="mr-8"
+              class="mr-4 md:mr-8"
             >
               <i :class="network.icon"></i>
             </ShareNetwork>
