@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container px-4 md:px-12 py-12">
+    <div class="container px-4 md:px-10 py-12">
       <h2 class="h1 capitalize mb-6 ml-4">Kategori</h2>
       <!-- <div class="flex justify-start space-x-2 p-4">
         <ul v-for="cat in categories">
