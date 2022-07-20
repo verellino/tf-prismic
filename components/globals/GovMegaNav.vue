@@ -24,13 +24,6 @@
               </nuxt-link>
             </li>
             <li class="mb-8">
-              <nuxt-link to="/category/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
-                <span class="ml-2">
-                  <span class="block font-bold text-blue-900 group-hover:text-blue-900">Keamanan dan Pertahanan</span>
-                </span>
-              </nuxt-link>
-            </li>
-            <li class="mb-8">
               <nuxt-link to="/category/Yqh_2hEAACMAVtT_" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
                 <span class="ml-2">
                   <span class="block font-bold text-blue-900 group-hover:text-blue-900">Energi dan Lingkungan</span>
