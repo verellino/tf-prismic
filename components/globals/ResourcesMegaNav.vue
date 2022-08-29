@@ -1,32 +1,75 @@
 <template>
   <div @mouseover="showMenu" @mouseleave="hideMenu" class="relative">
-    <nuxt-link to="/" class="relative hover:text-gray-600" @focus="showMenu" @keydown.shift.tab="hideMenu" @keydown.esc.exact="hideMenu" @keydown.up.exact.prevent="startArrowKeys" @keydown.down.exact.prevent="startArrowKeys">
+    <nuxt-link
+      to="/"
+      class="relative hover:text-gray-600"
+      @focus="showMenu"
+      @keydown.shift.tab="hideMenu"
+      @keydown.esc.exact="hideMenu"
+      @keydown.up.exact.prevent="startArrowKeys"
+      @keydown.down.exact.prevent="startArrowKeys"
+    >
       Wawasan
     </nuxt-link>
 
     <div class="absolute w-full">&nbsp;</div>
     <transition name="mega-menu-fade">
-      <div v-show="isVisible" class="mega-menu absolute normal-case font-normal bg-white shadow-md rounded-md overflow-hidden border mt-4 w-full z-30 lg:z-10 lg:w-80 right-0">
-        <div class="flex flex-col lg:flex-row px-8 py-6 border-b -mx-4">
+      <div
+        v-show="isVisible"
+        class="mega-menu right-0 z-30 mt-4 hidden w-full overflow-hidden rounded-md border bg-white font-normal normal-case shadow-md sm:absolute lg:z-10 lg:w-80"
+      >
+        <div class="-mx-4 flex flex-col border-b px-8 py-6 lg:flex-row">
           <ul class="w-full px-4">
             <li class="mb-8">
-              <a href="/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.down.exact.prevent="focusNext(true)" @keydown.up.exact.prevent="">
+              <a
+                href="/"
+                class="group flex"
+                @keydown.esc.exact="hideMenu"
+                @keydown.tab.exact="focusNext(false)"
+                @keydown.down.exact.prevent="focusNext(true)"
+                @keydown.up.exact.prevent=""
+              >
                 <span class="ml-2">
-                  <span class="block font-bold text-blue-900 group-hover:text-blue-900 items-center" >Laporan</span>
+                  <span
+                    class="block items-center font-bold text-blue-900 group-hover:text-blue-900"
+                    >Laporan</span
+                  >
                 </span>
               </a>
             </li>
             <li class="mb-8">
-              <a href="/" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
+              <a
+                href="/"
+                class="group flex"
+                @keydown.esc.exact="hideMenu"
+                @keydown.tab.exact="focusNext(false)"
+                @keydown.shift.tab="focusPrevious(false)"
+                @keydown.up.exact.prevent="focusPrevious(true)"
+                @keydown.down.exact.prevent="focusNext(true)"
+              >
                 <span class="ml-2">
-                  <span class="block font-bold text-blue-900 group-hover:text-blue-900">Program</span>
+                  <span
+                    class="block font-bold text-blue-900 group-hover:text-blue-900"
+                    >Program</span
+                  >
                 </span>
               </a>
             </li>
             <li class="mb-8">
-              <a href="/glossary" class="flex group" @keydown.esc.exact="hideMenu" @keydown.tab.exact="focusNext(false)" @keydown.shift.tab="focusPrevious(false)" @keydown.up.exact.prevent="focusPrevious(true)" @keydown.down.exact.prevent="focusNext(true)" >
+              <a
+                href="/glossary"
+                class="group flex"
+                @keydown.esc.exact="hideMenu"
+                @keydown.tab.exact="focusNext(false)"
+                @keydown.shift.tab="focusPrevious(false)"
+                @keydown.up.exact.prevent="focusPrevious(true)"
+                @keydown.down.exact.prevent="focusNext(true)"
+              >
                 <span class="ml-2">
-                  <span class="block font-bold text-blue-900 group-hover:text-blue-900">Glosarium</span>
+                  <span
+                    class="block font-bold text-blue-900 group-hover:text-blue-900"
+                    >Glosarium</span
+                  >
                 </span>
               </a>
             </li>
@@ -34,51 +77,113 @@
         </div>
       </div>
     </transition>
+    <div
+      v-show="isVisible"
+      class="mega-menu borderfont-normal right-0 z-30 mt-4 w-full overflow-hidden normal-case sm:hidden"
+    >
+      <div class="-mx-4 flex flex-col border-b px-8 py-6 lg:flex-row">
+        <ul class="w-full px-4">
+          <li class="mb-8">
+            <a
+              href="/"
+              class="group flex"
+              @keydown.esc.exact="hideMenu"
+              @keydown.tab.exact="focusNext(false)"
+              @keydown.down.exact.prevent="focusNext(true)"
+              @keydown.up.exact.prevent=""
+            >
+              <span class="ml-2">
+                <span
+                  class="block items-center group-hover:text-blue-900"
+                  >Laporan</span
+                >
+              </span>
+            </a>
+          </li>
+          <li class="mb-8">
+            <a
+              href="/"
+              class="group flex"
+              @keydown.esc.exact="hideMenu"
+              @keydown.tab.exact="focusNext(false)"
+              @keydown.shift.tab="focusPrevious(false)"
+              @keydown.up.exact.prevent="focusPrevious(true)"
+              @keydown.down.exact.prevent="focusNext(true)"
+            >
+              <span class="ml-2">
+                <span
+                  class="block group-hover:text-blue-900"
+                  >Program</span
+                >
+              </span>
+            </a>
+          </li>
+          <li class="mb-8">
+            <a
+              href="/glossary"
+              class="group flex"
+              @keydown.esc.exact="hideMenu"
+              @keydown.tab.exact="focusNext(false)"
+              @keydown.shift.tab="focusPrevious(false)"
+              @keydown.up.exact.prevent="focusPrevious(true)"
+              @keydown.down.exact.prevent="focusNext(true)"
+            >
+              <span class="ml-2">
+                <span
+                  class="block group-hover:text-blue-900"
+                  >Glosarium</span
+                >
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   mounted() {
-    this.menuItems = document.querySelectorAll('.mega-menu a')
+    this.menuItems = document.querySelectorAll(".mega-menu a");
   },
   data() {
     return {
       isVisible: false,
       menuItems: null,
-      focusedIndex: 0
-    }
+      focusedIndex: 0,
+    };
   },
   methods: {
     showMenu() {
-      this.isVisible = true
+      this.isVisible = true;
     },
     hideMenu() {
-      this.isVisible = false
-      this.focusedIndex = 0
+      this.isVisible = false;
+      this.focusedIndex = 0;
     },
     startArrowKeys() {
-      this.menuItems[0].focus()
+      this.menuItems[0].focus();
     },
     focusPrevious(isArrowKey) {
-      this.focusedIndex = this.focusedIndex - 1
+      this.focusedIndex = this.focusedIndex - 1;
 
       if (isArrowKey) {
-        this.focusItem()
+        this.focusItem();
       }
     },
     focusNext(isArrowKey) {
-      this.focusedIndex = this.focusedIndex + 1
+      this.focusedIndex = this.focusedIndex + 1;
 
       if (isArrowKey) {
-        this.focusItem()
+        this.focusItem();
       }
     },
     focusItem() {
-      this.menuItems[this.focusedIndex].focus()
-    }
-  }
-}
+      this.menuItems[this.focusedIndex].focus();
+    },
+  },
+};
 </script>
 
 <style scoped>

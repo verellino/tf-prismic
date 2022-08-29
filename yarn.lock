@@ -10677,6 +10677,11 @@ vue-meta@^2.4.0:
   dependencies:
     deepmerge "^4.2.2"
 
+vue-nested-menu@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vue-nested-menu/-/vue-nested-menu-1.0.0.tgz#96a2cbb29b1de8e0d2bd929bd2b4e24a0f3eaf7d"
+  integrity sha512-5wJeTdI8Fgtj0eJ+wdI47BfW/+8s5Xh6zoB+h64iovjLvnRqUDABAbds1yI6W5QRuSyVfsFu5d8rTw+Z5A7rgQ==
+
 vue-no-ssr@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/vue-no-ssr/-/vue-no-ssr-1.1.1.tgz"

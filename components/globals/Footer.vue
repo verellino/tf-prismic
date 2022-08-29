@@ -42,8 +42,8 @@
         Proudly published using <a href="https://prismic.io" class="text-slate-700">Prismic</a>
       </div> -->
     </div>
-    <div class="flex justify-between text-xxs p-4 md:px-16">
-      <span>Copyright © 2022 Transforming Futures</span>
+    <div class="flex flex-col md:flex-row justify-between text-xxs p-4 md:px-16">
+      <span>Copyright © 2022 Innovating Indonesia</span>
       <div>
         <nuxt-link to="/" class="text-xxs">Kebijakan Privasi | </nuxt-link>
         <nuxt-link to="/" class="text-xxs">Tentang Layanan</nuxt-link>

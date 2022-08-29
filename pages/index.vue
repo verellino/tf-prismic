@@ -7,7 +7,7 @@
         <div
           class="hero-text text-left sm:w-1/2 h-full flex flex-col justify-center"
         >
-          <h1 class="title">Transforming Futures</h1>
+          <h1 class="title">Innovating Indonesia</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo
             quam, non iusto eius veritatis id porro!
@@ -16,7 +16,7 @@
         </div>
         <div class="w-1/2 flex justify-center align-center">
          <div class="w-full aspect-square">
-           <img src="@/assets/images/Hero-img.png" alt="Transforming Futures" class="p-4 h-30 mx-auto sm:h-60" />
+           <img src="@/assets/images/Hero-img.png" alt="Innovating Indonesia" class="p-4 h-30 mx-auto sm:h-60" />
          </div>
         </div>
       </div>

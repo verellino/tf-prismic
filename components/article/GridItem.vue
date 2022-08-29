@@ -1,6 +1,6 @@
 <template>
   <li
-    class="py-8 px-4 lg:w-1/3 relative"
+    class="py-8 pr-4 lg:w-1/3 relative"
   >
     <PrismicLink :field="article" tab-index="-1">
       <div class="flex-grow">

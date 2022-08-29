@@ -7,7 +7,7 @@
           v-for="article in articles.slice(0,3)"
           :key="article.id"
           :article="article"
-          class="col-span-1 border-blogs-right__desktop"
+          class="col-span-1"
         />
       </ul>
     </div>

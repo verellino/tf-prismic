@@ -61,7 +61,10 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  plugins: [{ src: "./plugins/vue-slick-carousel.js" }],
+  plugins: [
+    { src: "./plugins/vue-slick-carousel.js" },
+    { src: "./plugins/vue-nested-menu.js" }
+  ],
 
   prismic: {
     endpoint: sm.apiEndpoint,

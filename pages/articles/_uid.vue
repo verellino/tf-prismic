@@ -1,11 +1,11 @@
 <template>
-  <div class="pt-22">
-    <div>
-      <div v-if="featuredImage" class="article-main-image w-full mb-8 relative overflow-hidden">
+  <div>
+    <div class="mx-14 pt-24">
+      <div v-if="featuredImage" class="article-main-image w-full mb-8 relative overflow-hidden rounded-md">
         <PrismicImage
           v-if="featuredImage.url"
           :field="featuredImage"
-          class="object-cover object-center"
+          class="object-cover w-full h-full"
         />
       </div>
     </div>
@@ -282,6 +282,6 @@ export default {
 <style scoped>
 .article-main-image{
   aspect-ratio: 16/9;
-  max-height: 40vh;
+  max-height: 45vh;
 }
 </style>

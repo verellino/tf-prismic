@@ -2,34 +2,38 @@
   <div class="text-slate-700">
     <GlobalsMegaMenu />
     <main><nuxt /></main>
-    <GlobalsFooter v-if="navigation.data && settings.data" :with-sign-up-form="withFooterSignUpForm" :settings="settings" />
+    <GlobalsFooter
+      v-if="navigation.data && settings.data"
+      :with-sign-up-form="withFooterSignUpForm"
+      :settings="settings"
+    />
   </div>
 </template>
 
 <script>
 export default {
   computed: {
-    withHeaderProfile () {
-      return this.$store.state.layout.withHeaderProfile
+    withHeaderProfile() {
+      return this.$store.state.layout.withHeaderProfile;
     },
-    withHeaderDivider () {
-      return this.$store.state.layout.withHeaderDivider
+    withHeaderDivider() {
+      return this.$store.state.layout.withHeaderDivider;
     },
-    withFooterSignUpForm () {
-      return this.$store.state.layout.withFooterSignUpForm
+    withFooterSignUpForm() {
+      return this.$store.state.layout.withFooterSignUpForm;
     },
-    navigation () {
-      return this.$store.state.prismic.navigation
+    navigation() {
+      return this.$store.state.prismic.navigation;
     },
-    settings () {
-      return this.$store.state.prismic.settings
-    }
-  }
-}
+    settings() {
+      return this.$store.state.prismic.settings;
+    },
+  },
+};
 </script>
 
 <style>
 body {
-  @apply overflow-x-hidden antialiased text-sm;
+  @apply overflow-x-hidden text-sm antialiased;
 }
 </style>
