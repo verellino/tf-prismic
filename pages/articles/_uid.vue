@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mx-14 pt-24">
+    <div class="mx-4 sm:mx-14 pt-24">
       <div v-if="featuredImage" class="article-main-image w-full mb-8 relative overflow-hidden rounded-md">
         <PrismicImage
           v-if="featuredImage.url"
@@ -14,7 +14,7 @@
         <p class="mb-2 uppercase font-semibold text-sm">
           {{ article.data.section }}
         </p>
-        <h1 class="mb-3 font-semibold blue-primary sm:text-2xl">
+        <h1 class="mb-3 mx-3 font-semibold blue-primary text-2xl">
           {{article.data.title}}
         </h1>
         <p class="blog-details-span text-xs">
@@ -24,7 +24,7 @@
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-3">
       <div class="col-span-1 sm:col-span-2">
-        <article>
+        <article style="hyphens:auto;">
           <SliceZone :slices="article.data.slices" :components="components" />
         </article>
         
