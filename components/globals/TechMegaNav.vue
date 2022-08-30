@@ -2,7 +2,7 @@
   <div @mouseover="showMenu" @mouseleave="hideMenu" class="relative">
     <nuxt-link
       to="/sector/technology"
-      class="relative hover:text-gray-600"
+      class="relative hover:text-blue-900"
       @focus="showMenu"
       @keydown.shift.tab="hideMenu"
       @keydown.esc.exact="hideMenu"
@@ -10,13 +10,16 @@
       @keydown.down.exact.prevent="startArrowKeys"
     >
       Teknologi
+      <span class="float-right ml-2 w-6"
+        ><img src="~assets/images/bottom-chev.svg" alt="expand more"
+      /></span>
     </nuxt-link>
 
     <div class="absolute w-full">&nbsp;</div>
     <transition name="mega-menu-fade">
       <div
         v-show="isVisible"
-        class="mega-menu hidden sm:absolute right-0 z-30 mt-4 w-full overflow-hidden rounded-md border bg-white font-normal normal-case shadow-md lg:z-10 lg:w-80"
+        class="mega-menu absolute right-0 z-30 mt-4 hidden w-full overflow-hidden rounded-md border bg-white font-normal normal-case shadow-md sm:block lg:z-10 lg:w-80"
       >
         <div class="-mx-4 flex flex-col border-b px-8 py-6 lg:flex-row">
           <ul class="w-full px-4">
@@ -172,7 +175,7 @@
       class="mega-menu borderfont-normal right-0 z-30 mt-4 w-full overflow-hidden normal-case sm:hidden"
     >
       <div class="-mx-4 flex flex-col border-b px-8 py-6 lg:flex-row">
-        <ul class="w-full px-4">
+        <ul class="w-full">
           <li class="mb-8">
             <nuxt-link
               to="/category/YqiAMhEAADoGVtao"
@@ -183,8 +186,7 @@
               @keydown.up.exact.prevent=""
             >
               <span class="ml-2">
-                <span
-                  class="block items-center group-hover:text-blue-900"
+                <span class="block items-center group-hover:text-blue-900"
                   >Artificial Intelligence</span
                 >
               </span>
@@ -201,10 +203,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span
-                  class="block group-hover:text-blue-900"
-                  >AR/VR</span
-                >
+                <span class="block group-hover:text-blue-900">AR/VR</span>
               </span>
             </nuxt-link>
           </li>
@@ -219,10 +218,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span
-                  class="block group-hover:text-blue-900"
-                  >Blockchain</span
-                >
+                <span class="block group-hover:text-blue-900">Blockchain</span>
               </span>
             </nuxt-link>
           </li>
@@ -237,8 +233,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span
-                  class="block group-hover:text-blue-900"
+                <span class="block group-hover:text-blue-900"
                   >Cloud computing</span
                 >
               </span>
@@ -255,8 +250,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span
-                  class="block group-hover:text-blue-900"
+                <span class="block group-hover:text-blue-900"
                   >Data Analytics</span
                 >
               </span>
@@ -273,8 +267,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span
-                  class="block group-hover:text-blue-900"
+                <span class="block group-hover:text-blue-900"
                   >Internet of Things</span
                 >
               </span>
@@ -291,10 +284,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span
-                  class="block group-hover:text-blue-900"
-                  >Metaverse</span
-                >
+                <span class="block group-hover:text-blue-900">Metaverse</span>
               </span>
             </nuxt-link>
           </li>
@@ -309,10 +299,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span
-                  class="block group-hover:text-blue-900"
-                  >Robotics</span
-                >
+                <span class="block group-hover:text-blue-900">Robotics</span>
               </span>
             </nuxt-link>
           </li>

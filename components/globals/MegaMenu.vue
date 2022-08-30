@@ -14,16 +14,16 @@
             class="capitalize tracking-wide w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
             :class="menuOpen ? 'block' : 'hidden'"
           >
-            <li class="mr-8 mb-6 lg:mb-0">
+            <li class="sm:mr-8 mb-6 lg:mb-0">
               <GlobalsEcoMegaNav />
             </li>
-            <li class="mr-8 mb-6 lg:mb-0">
+            <li class="sm:mr-8 mb-6 lg:mb-0">
               <GlobalsGovMegaNav />
             </li>
-            <li class="mr-8 mb-6 lg:mb-0">
+            <li class="sm:mr-8 mb-6 lg:mb-0">
               <GlobalsTechMegaNav />
             </li>
-            <li class="mr-8 mb-6 lg:mb-0">
+            <li class="sm:mr-8 mb-6 lg:mb-0">
               <GlobalsResourcesMegaNav />
             </li>
             <li>
@@ -33,7 +33,7 @@
         <div class="block absolute top-5 right-8  sm:relative lg:hidden">
           <button
             @click="toggleMenu"
-            class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600"
+            class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-blue-900 hover:border-gray-600"
           >
             <svg
               class="current-color h-3 w-3"

@@ -2,21 +2,21 @@
   <div @mouseover="showMenu" @mouseleave="hideMenu" class="relative">
     <nuxt-link
       to="/"
-      class="relative hover:text-gray-600"
+      class="relative hover:text-blue-900"
       @focus="showMenu"
       @keydown.shift.tab="hideMenu"
       @keydown.esc.exact="hideMenu"
       @keydown.up.exact.prevent="startArrowKeys"
       @keydown.down.exact.prevent="startArrowKeys"
     >
-      Wawasan
+      Wawasan <span class="float-right ml-2 w-6"><img src="~assets/images/bottom-chev.svg" alt="expand more"></span>
     </nuxt-link>
 
     <div class="absolute w-full">&nbsp;</div>
     <transition name="mega-menu-fade">
       <div
         v-show="isVisible"
-        class="mega-menu right-0 z-30 mt-4 hidden w-full overflow-hidden rounded-md border bg-white font-normal normal-case shadow-md sm:absolute lg:z-10 lg:w-80"
+        class="mega-menu right-0 z-30 mt-4 hidden w-full overflow-hidden rounded-md border bg-white font-normal normal-case shadow-md absolute sm:block lg:z-10 lg:w-80"
       >
         <div class="-mx-4 flex flex-col border-b px-8 py-6 lg:flex-row">
           <ul class="w-full px-4">
@@ -82,7 +82,7 @@
       class="mega-menu borderfont-normal right-0 z-30 mt-4 w-full overflow-hidden normal-case sm:hidden"
     >
       <div class="-mx-4 flex flex-col border-b px-8 py-6 lg:flex-row">
-        <ul class="w-full px-4">
+        <ul class="w-full">
           <li class="mb-8">
             <a
               href="/"
@@ -93,8 +93,7 @@
               @keydown.up.exact.prevent=""
             >
               <span class="ml-2">
-                <span
-                  class="block items-center group-hover:text-blue-900"
+                <span class="block items-center group-hover:text-blue-900"
                   >Laporan</span
                 >
               </span>
@@ -111,10 +110,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span
-                  class="block group-hover:text-blue-900"
-                  >Program</span
-                >
+                <span class="block group-hover:text-blue-900">Program</span>
               </span>
             </a>
           </li>
@@ -129,10 +125,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span
-                  class="block group-hover:text-blue-900"
-                  >Glosarium</span
-                >
+                <span class="block group-hover:text-blue-900">Glosarium</span>
               </span>
             </a>
           </li>

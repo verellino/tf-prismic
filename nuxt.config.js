@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Transforming Futures",
+    title: "Innovating Indonesia",
     htmlAttrs: {
       lang: "en",
     },
@@ -16,7 +16,7 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "Transforming Futures",
+        content: "Innovating Indonesia",
       },
       { name: "format-detection", content: "telephone=no" },
     ],

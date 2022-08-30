@@ -2,7 +2,7 @@
   <div @mouseover="showMenu" @mouseleave="hideMenu" class="relative">
     <nuxt-link
       to="/sector/economy"
-      class="relative hover:text-gray-600"
+      class="relative hover:text-blue-900"
       @focus="showMenu"
       @keydown.shift.tab="hideMenu"
       @keydown.esc.exact="hideMenu"
@@ -10,13 +10,16 @@
       @keydown.down.exact.prevent="startArrowKeys"
     >
       Ekonomi
+      <span class="float-right ml-2 w-6"
+        ><img src="~assets/images/bottom-chev.svg" alt="expand more"
+      /></span>
     </nuxt-link>
 
     <div class="absolute w-full">&nbsp;</div>
     <transition name="mega-menu-fade">
       <div
         v-show="isVisible"
-        class="mega-menu right-0 z-30 mt-4 hidden w-full overflow-hidden rounded-md border bg-white font-normal normal-case shadow-md sm:absolute lg:z-10 lg:w-80"
+        class="mega-menu right-0 z-30 mt-4 hidden w-full overflow-hidden rounded-md border bg-white font-normal normal-case shadow-md sm:absolute sm:block lg:z-10 lg:w-80"
       >
         <div class="-mx-4 flex flex-col border-b px-8 py-6 lg:flex-row">
           <ul class="w-full px-4">
@@ -61,10 +64,10 @@
     </transition>
     <div
       v-show="isVisible"
-      class="mega-menu right-0 z-30 mt-4 w-full overflow-hidden borderfont-normal normal-case sm:hidden"
+      class="mega-menu borderfont-normal right-0 z-30 mt-4 w-full overflow-hidden normal-case sm:hidden"
     >
-      <div class="-mx-4 flex flex-col border-b pl-8 py-6">
-        <ul class="w-full px-4">
+      <div class="-mx-4 flex flex-col border-b py-6 pl-8">
+        <ul class="w-full">
           <li class="mb-8">
             <nuxt-link
               to="/category/Yqh9bREAACMAVsnW"
@@ -75,8 +78,7 @@
               @keydown.up.exact.prevent=""
             >
               <span class="ml-2">
-                <span
-                  class="block items-center group-hover:text-blue-900"
+                <span class="block items-center group-hover:text-blue-900"
                   >Investasi dan Keuangan</span
                 >
               </span>
@@ -93,8 +95,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span
-                  class="block group-hover:text-blue-900"
+                <span class="block group-hover:text-blue-900"
                   >Industri dan Perdagangan</span
                 >
               </span>
