@@ -1,18 +1,23 @@
 <template>
   <li class="relative py-2">
     <PrismicLink :field="article" tab-index="-1">
-      <div v-if="featuredImage" class="article-img w-full relative aspect-video mb-4 py-4 px-1">
+      <div
+        v-if="featuredImage"
+        class="article-img aspect-h-9 relative mb-4 max-h-56 w-full overflow-hidden py-4 px-1"
+      >
         <PrismicImage
           v-if="featuredImage.url"
           :field="featuredImage"
-          class="object-cover  rounded-md "
+          class="h-full w-full rounded-md object-cover"
         />
       </div>
-      <p class="text-xxs blue-primary mb-2">
-        <nuxt-link to="/" class="category-span">{{ article.data.section }}</nuxt-link>
+      <p class="blue-primary mb-2 text-xxs">
+        <nuxt-link to="/" class="category-span">{{
+          article.data.section
+        }}</nuxt-link>
       </p>
       <div>
-        <div class="blog-card pr-4 flex flex-col justify-between">
+        <div class="blog-card flex flex-col justify-between pr-4">
           <div>
             <Heading as="h3" class="h4">
               {{ article.data.title }}
@@ -21,13 +26,13 @@
               {{ excerpt }}
             </p>
           </div>
-         <a href="#" class="mt-4 text-xxs ">
-           <div class="article-details-bottom-span">
-              <span class="">{{ article.data.writer}} | </span>
+          <a href="#" class="mt-4 text-xxs">
+            <div class="article-details-bottom-span">
+              <span class="">{{ article.data.writer }} | </span>
               <span class="ml-1"> {{ formattedDate }} |</span>
-              <span class="ml-1">{{ article.data.minsRead}}</span>
+              <span class="ml-1">{{ article.data.minsRead }}</span>
             </div>
-         </a>
+          </a>
         </div>
       </div>
     </PrismicLink>
@@ -35,48 +40,52 @@
 </template>
 
 <script>
-const dateFormatter = new Intl.DateTimeFormat('id-ID', {
-  month: 'short',
-  day: 'numeric',
-  year: 'numeric'
-})
+const dateFormatter = new Intl.DateTimeFormat("id-ID", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+});
 
 export default {
   props: {
     article: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
-    featuredImage () {
+    featuredImage() {
       if (this.article.data.mainImage.url) {
-        return this.article.data.mainImage
+        return this.article.data.mainImage;
       }
 
-      const imageSlice = this.article.data.slices.find(slice => slice.slice_type === 'image')
+      const imageSlice = this.article.data.slices.find(
+        (slice) => slice.slice_type === "image"
+      );
       if (imageSlice && imageSlice.primary.image.url) {
-        return imageSlice.primary.image
+        return imageSlice.primary.image;
       }
-      return null
+      return null;
     },
-    formattedDate () {
-      const date = this.$prismic.asDate(this.article.data.publishDate || this.article.first_publication_date)
+    formattedDate() {
+      const date = this.$prismic.asDate(
+        this.article.data.publishDate || this.article.first_publication_date
+      );
 
-      return dateFormatter.format(date)
+      return dateFormatter.format(date);
     },
-    excerpt () {
+    excerpt() {
       const text = this.article.data.slices
-        .filter(slice => slice.slice_type === 'text')
-        .map(slice => this.$prismic.asText(slice.primary.text))
-        .join(' ')
-      const excerpt = text.substring(0, 80)
+        .filter((slice) => slice.slice_type === "text")
+        .map((slice) => this.$prismic.asText(slice.primary.text))
+        .join(" ");
+      const excerpt = text.substring(0, 80);
       if (text.length > 80) {
-        return excerpt.substring(0, excerpt.lastIndexOf(' ')) + '…'
+        return excerpt.substring(0, excerpt.lastIndexOf(" ")) + "…";
       } else {
-        return excerpt
+        return excerpt;
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>

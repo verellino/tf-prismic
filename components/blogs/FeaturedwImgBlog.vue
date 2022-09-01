@@ -6,8 +6,8 @@
         <ArticleGridItemWithImg v-for="article in gridArticles" :key="article.id" class="md:col-span-2 col-span-4" :article="article" />  
       </ul>
       <hr class="my-4 w-full h-px border-0 bg-slate-100">
-      <ul class="mt-4 flex flex-col md:flex-row justify-evenly">
-        <ArticleGridItemWithImg v-for="article in rowArticles" :key="article.id" :article="article" class="py-4 md:py-0" />  
+      <ul class="mt-4 flex flex-col md:flex-row justify-start">
+        <ArticleGridItemWithImg v-for="article in rowArticles" :key="article.id" :article="article" class="py-4 sm:py-0 sm:w-1/4" />  
       </ul>
     </div>
   </div>
