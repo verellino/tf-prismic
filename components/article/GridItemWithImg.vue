@@ -1,9 +1,10 @@
 <template>
-  <li class="relative py-2">
+  <li>
+    <div class="relative py-2">
     <PrismicLink :field="article" tab-index="-1">
       <div
         v-if="featuredImage"
-        class="article-img aspect-h-9 relative mb-4 w-full overflow-hidden rounded-md py-4 px-1 max-h-56"
+        class="article-img aspect-h-9 relative mb-4 max-h-56 w-full overflow-hidden rounded-md py-4 px-1"
       >
         <PrismicImage
           v-if="featuredImage.url"
@@ -11,6 +12,7 @@
           class="h-full w-full rounded-md object-cover object-center"
         />
       </div>
+      <!-- <div v-if="!!featuredImage" class="sm:h-20"></div> -->
       <p class="blue-primary mb-2 text-xxs">
         <nuxt-link to="/" class="category-span">{{
           article.data.section
@@ -36,6 +38,9 @@
         </div>
       </div>
     </PrismicLink>
+    </div>
+  </div>
+  <hr class="my-2 sm:hidden h-px w-full border-0 bg-gray-300" />
   </li>
 </template>
 
@@ -79,8 +84,8 @@ export default {
         .filter((slice) => slice.slice_type === "text")
         .map((slice) => this.$prismic.asText(slice.primary.text))
         .join(" ");
-      const excerpt = text.substring(0, 80);
-      if (text.length > 80) {
+      const excerpt = text.substring(0, 160);
+      if (text.length > 160) {
         return excerpt.substring(0, excerpt.lastIndexOf(" ")) + "…";
       } else {
         return excerpt;

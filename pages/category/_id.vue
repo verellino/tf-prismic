@@ -4,7 +4,7 @@
       <h1>{{ articles[0].data.category }}</h1>
     </div>
     <BlogsArticleMainGrid :articles="articles.slice(0, 7)" />
-    <BlogsFeaturedBlog :articles="articles" />
+    <BlogsFeaturedBlog :articles="articles.slice(0, 3)" />
     <BlogsLatestGrid :articles="articles" />
   </div>
 </template>
