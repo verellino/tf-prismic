@@ -19,7 +19,7 @@
           v-for="article in rowArticles"
           :key="article.id"
           :article="article"
-          class="featured-grid__ul-row py-4 sm:w-1/4 sm:py-0"
+          class="featured-grid__ul-row sm:w-1/4 sm:py-0"
         />
       </ul>
     </div>
@@ -68,15 +68,17 @@ export default {
   display: none;
 }
 .featured-grid__ul .article-img {
-  aspect-ratio: 16/9;
-  @apply max-h-64 overflow-hidden pb-10;
+  @apply max-h-64 overflow-hidden;
 }
 
 @media only screen and (min-width: 768px) {
   .featured-grid__ul li:nth-child(1) {
     border-right: 1px white solid;
   }
-  featured-grid__ul-row .excerpt {
+  .featured-grid__ul-row {
+    padding: 0 0.5em;
+  }
+  .featured-grid__ul-row .excerpt {
     font-size: 12px;
   }
 }

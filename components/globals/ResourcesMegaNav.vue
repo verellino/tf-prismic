@@ -22,6 +22,23 @@
           <ul class="w-full px-4">
             <li class="mb-8">
               <a
+                href="/news"
+                class="group flex"
+                @keydown.esc.exact="hideMenu"
+                @keydown.tab.exact="focusNext(false)"
+                @keydown.down.exact.prevent="focusNext(true)"
+                @keydown.up.exact.prevent=""
+              >
+                <span class="ml-2">
+                  <span
+                    class="block items-center font-bold text-blue-900 group-hover:text-blue-900"
+                    >Berita</span
+                  >
+                </span>
+              </a>
+            </li>
+            <li class="mb-8">
+              <a
                 href="/"
                 class="group flex"
                 @keydown.esc.exact="hideMenu"
@@ -83,6 +100,22 @@
     >
       <div class="-mx-4 flex flex-col border-b px-8 py-6 lg:flex-row">
         <ul class="w-full">
+          <li class="mb-8">
+            <a
+              href="/news"
+              class="group flex"
+              @keydown.esc.exact="hideMenu"
+              @keydown.tab.exact="focusNext(false)"
+              @keydown.down.exact.prevent="focusNext(true)"
+              @keydown.up.exact.prevent=""
+            >
+              <span class="ml-2">
+                <span class="block items-center group-hover:text-blue-900"
+                  >Berita</span
+                >
+              </span>
+            </a>
+          </li>
           <li class="mb-8">
             <a
               href="/"

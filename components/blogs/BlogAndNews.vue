@@ -17,14 +17,14 @@
               :article="article"
             />
           </ul>
-          <nuxt-link to="/" class="col-span-2 mt-4 text-center text-sm">Lihat lebih banyak...</nuxt-link>
+          <nuxt-link to="/articles" class="col-span-2 mt-4 text-center text-sm">Lihat semua artikel...</nuxt-link>
         </div>
         <!-- Right Section  -->
         <div
-          class="align-start col-span-2 flex flex-col justify-start md:col-span-1 md:px-4"
+          class="align-start col-span-2 flex flex-col justify-start md:col-span-1"
         >
-          <h2 class="mb-6 capitalize">Berita Terbaru</h2>
-          <ul>
+          <h2 class="mb-6 sm:pl-4 capitalize">Berita Terbaru</h2>
+          <ul class="sm:px-4 rounded-md bg-gray-100 border-x border-y border-slate-200">
             <ArticleListItem
               v-for="article in news"
               :key="article.id"
@@ -62,14 +62,20 @@ export default {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+.artikel_terbaru-grid__ul li:nth-child(7) {
+  @apply md:col-span-2;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.artikel_terbaru-grid__ul li:nth-child(10) {
+  @apply md:col-span-2;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
 .artikel_terbaru-grid__ul li:nth-child(2) {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
-.artikel_terbaru-grid__ul li:nth-child(n + 4) .article-img {
-  display: none;
-}
 .artikel_terbaru-grid__ul .article-img {
   aspect-ratio: 16/9;
-  @apply max-h-64 overflow-hidden pb-10;
+  @apply max-h-64 overflow-hidden;
 }
 </style>

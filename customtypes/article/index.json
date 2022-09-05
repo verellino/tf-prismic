@@ -110,6 +110,15 @@
           "placeholder_false": "false"
         }
       },
+      "hero-slider": {
+        "type": "Boolean",
+        "config": {
+          "label": "Tampilkan di Hero",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
