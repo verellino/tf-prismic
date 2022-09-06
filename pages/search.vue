@@ -1,5 +1,6 @@
 <template>
-  <main class="container pt-24 col-start-2 col-end-12">
+  <main class="container pt-24 col-start-2 col-end-12 px-4 sm:px-10">
+    <client-only>
     <div class="mb-16 mt-8 text-2xl Search">
       <div>
         <strong>Results for:</strong>
@@ -9,9 +10,9 @@
     </div>
  
     <div v-if="result.length > 0" class="grid grid-cols-12 row-gap-16 md:col-gap-16">
-      <div v-for="article in result" :key="article.id" class="col-span-12 md:col-span-4">
-        <ArticleListItemWithImg :article="article" />
-      </div>
+      <ul v-for="article in result" :key="article.id" class="col-span-12 md:col-span-4">
+        <ArticleGridItemWithImg :article="article" />
+      </ul>
  
       <div class="flex col-span-12 mt-16 loadmore">
         <button
@@ -31,6 +32,7 @@
       </div>
       <GlobalsSearchForm :currentinput="searchterm" />
     </div>
+    </client-only>
   </main>
 </template>
  

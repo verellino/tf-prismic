@@ -3,9 +3,11 @@
     <div class="pt-24 text-center">
         <h1>Government</h1>
     </div>
+    <client-only>
     <BlogsArticleMainGrid :articles="articles.slice(0,7)" />
     <BlogsFeaturedBlog :articles="articles" />
     <BlogsLatestGrid :articles="articles" />
+    </client-only>
   </div>
 </template>
 
@@ -40,7 +42,7 @@ export default {
   },
   head () {
     return {
-      title: `${this.articles.section} | ${this.$prismic.asText(this.$store.state.prismic.settings.data.name)}`
+      title: `${this.articles.section} | Innovating Indonesia`
     }
   },
 }

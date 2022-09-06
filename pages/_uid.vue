@@ -23,7 +23,7 @@ export default {
   },
   head () {
     return {
-      title: `${this.$prismic.asText(this.page.data.title)} | ${this.$prismic.asText(this.$store.state.prismic.settings.data.name)}`
+      title: `${this.$prismic.asText(this.page.data.title)} | Innovating Indonesia`
     }
   }
 }

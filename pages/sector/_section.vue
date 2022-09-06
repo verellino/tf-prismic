@@ -1,11 +1,12 @@
 <template>
   <div>
     <h1 class="text-center">{{ articles.section }}</h1>
+    <client-only>
     <BlogsArticleMainGrid :articles="articles.slice(0,7)" />
     <BlogsFeaturedBlog :articles="articles" />
     <BlogsLatestGrid :articles="articles" />
     <BlogsThreeCol :articles="articles" />
-    {{section}}
+    </client-only>
   </div>
 </template>
 
@@ -41,7 +42,7 @@ export default {
   },
   head () {
     return {
-      title: `${this.articles.section} | ${this.$prismic.asText(this.$store.state.prismic.settings.data.name)}`
+      title: `${this.articles.section} | Innovating Indonesia`
     }
   },
 }

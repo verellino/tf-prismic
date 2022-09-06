@@ -3,9 +3,10 @@
     <div class="pt-24 text-center">
       <h1 class="m-0">Berita</h1>
     </div>
-    <BlogsArticleMainGrid :articles="featuredArticles" />
+    <client-only>
+    <BlogsArticleMainGrid v-if="featuredArticles" :articles="featuredArticles" />
     <BlogsLatestGrid :articles="articles" />
-    {{ section }}
+    </client-only>
   </div>
 </template>
 

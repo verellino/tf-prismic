@@ -33,7 +33,7 @@ export default {
   },
   head () {
     return {
-      title: this.$prismic.asText(this.$store.state.prismic.settings.data.name)
+      title: "Innovating Indonesia"
     }
   }
 }

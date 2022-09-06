@@ -219,7 +219,7 @@ export default {
   },
   head() {
     return {
-      title: `${this.article.data.title} | ${this.$store.state.prismic.settings.data.name}`,
+      title: `${this.article.data.title} | Innovating Indonesia`,
       meta: [
         {
           hid: "description",
