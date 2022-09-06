@@ -1,6 +1,7 @@
 <!-- Blogs / Category Grid -->
 <template>
   <div>
+    <client-only>
     <div class="container px-4 py-12 md:px-10">
       <div class="gird-cols-2 grid gap-8 md:grid-cols-3">
         <!-- Left Category Section -->
@@ -35,6 +36,7 @@
         </div>
       </div>
     </div>
+    </client-only>
   </div>
 </template>
 

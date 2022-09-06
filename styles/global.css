@@ -90,10 +90,12 @@ h5, .h5 {
   justify-content: center;
 }
 .slick-active .custom-dot, .custom-arrow{
- fill: rgb(9, 55, 83)
+ color: rgb(9, 55, 83);
+ fill:currentColor;
 }
 .custom-dot{
-  fill: rgba(142, 178, 200, 0.4);
+  color: rgba(142, 178, 200, 0.4);;
+  fill:currentColor;
 }
 @media only screen and (min-width: 768px) {
   /* For desktop: */

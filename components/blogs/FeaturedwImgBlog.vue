@@ -3,6 +3,7 @@
   <div class="featured-blogs">
     <div class="container px-4 py-12 md:px-10">
       <h2 class="h1 mb-6">Artikel Unggulan</h2>
+      <client-only>
       <ul
         class="featured-grid__ul grid grid-cols-1 gap-y-8 md:grid-cols-4 md:gap-x-4"
       >
@@ -22,6 +23,7 @@
           class="featured-grid__ul-row sm:w-1/4 sm:py-0"
         />
       </ul>
+      </client-only>
     </div>
   </div>
 </template>

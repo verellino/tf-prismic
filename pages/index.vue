@@ -5,22 +5,8 @@
       <BlogsSwiper :articles="heroArticles" />
     </section>
     <BlogsFeaturedwImgBlog :articles="featuredArticles" />
-    <!-- <BlogsLatestGrid :articles="articles" /> -->
     <!-- <BlogsCategoryGrid :articles="articles" :categories="categories" /> -->
     <BlogsBlogAndNews :articles="articles.slice(0,10)" :news="news" />
-    <!-- <section>
-      <div class="container py-12 text-center">
-        <h2>Mitra</h2>
-        <div class="my-8 flex w-full flex-wrap justify-evenly">
-          <div class="m-8 h-20 w-20 rounded-full bg-neutral-500 md:mr-6"></div>
-          <div class="m-8 h-20 w-20 rounded-full bg-neutral-500 md:mr-6"></div>
-          <div class="m-8 h-20 w-20 rounded-full bg-neutral-500 md:mr-6"></div>
-          <div class="m-8 h-20 w-20 rounded-full bg-neutral-500 md:mr-6"></div>
-          <div class="m-8 h-20 w-20 rounded-full bg-neutral-500 md:mr-6"></div>
-          <div class="m-8 h-20 w-20 rounded-full bg-neutral-500 md:mr-6"></div>
-        </div>
-      </div>
-    </section> -->
   </div>
 </template>
 
@@ -35,8 +21,7 @@ export default {
           { field: "document.first_publication_date", direction: "desc" },
         ]
           .map(({ field, direction }) => `${field} ${direction}`)
-          .join(", ")}]`,
-        pageSize: 100,
+          .join(", ")}]`
       }
     );
     const { results: featuredArticles } = await $prismic.api.query(
