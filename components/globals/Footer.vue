@@ -7,10 +7,9 @@
       <div class="col-span-2">
         <span class="h4 font-semibold text-sigma-green">Innovating Indonesia</span>
         <ul class="mt-6">
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Laporan</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Artikel</nuxt-link></li>
+          <li class="mb-4"><nuxt-link to="/news" class="font-normal text-sm">Berita</nuxt-link></li>
+          <li class="mb-4"><nuxt-link to="/articles" class="font-normal text-sm">Artikel</nuxt-link></li>
           <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Video</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Berita</nuxt-link></li>
           <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Langganan</nuxt-link></li>
         </ul>
       </div>

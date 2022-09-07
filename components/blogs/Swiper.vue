@@ -7,7 +7,7 @@
             <ArticleGridItemWithImg :article="article" class="px-1" />
           </ul>
           <template #prevArrow="arrowOption">
-            <div class="custom-arrow absolute top-1/2 -left-8 h-4 w-4">
+            <div class="custom-arrow absolute top-1/2 -left-12 h-4 w-4">
               <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
                 <path
                   d="M28.05 36 16 23.95 28.05 11.9l2.15 2.15-9.9 9.9 9.9 9.9Z"
@@ -16,7 +16,7 @@
             </div>
           </template>
           <template #nextArrow="arrowOption">
-            <div class="custom-arrow absolute top-1/2 -right-8 h-4 w-4">
+            <div class="custom-arrow absolute top-1/2 right-0 h-4 w-4">
               <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
                 <path
                   d="m18.75 36-2.15-2.15 9.9-9.9-9.9-9.9 2.15-2.15L30.8 23.95Z"
