@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="pt-24 text-center">
-        <h1>Economy</h1>
+        <h1>Ekonomi</h1>
     </div>
     <client-only>
     <BlogsArticleMainGrid :articles="articles.slice(0,7)" />
@@ -42,7 +42,7 @@ export default {
   },
   head () {
     return {
-      title: `${this.articles.section} | Innovating Indonesia`
+      title: `Ekonomi | Innovating Indonesia`
     }
   },
 }

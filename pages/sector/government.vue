@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="pt-24 text-center">
-        <h1>Government</h1>
+        <h1>Pemerintahan</h1>
     </div>
     <client-only>
     <BlogsArticleMainGrid :articles="articles.slice(0,7)" />

@@ -6,7 +6,7 @@
       <ul class="grid grid-cols-12 gap-y-8 md:gap-y-4 md:gap-x-1">
         <ArticleListItemWithImg
           :article="article"
-          v-for="article in limitArticles"
+          v-for="article in articles.slice(0, this.limit)"
           :key="article.id"
           class="col-span-12 md:col-span-4"
         />
@@ -23,11 +23,6 @@ export default {
       required: true,
     },
     limit: 8,
-  },
-  computed: {
-    limitArticles() {
-      return this.limit ? this.articles.slice(0, this.limit) : this.articles;
-    },
   },
 };
 </script>

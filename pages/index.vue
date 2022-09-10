@@ -6,7 +6,12 @@
     </section>
     <BlogsFeaturedwImgBlog :articles="featuredArticles" />
     <!-- <BlogsCategoryGrid :articles="articles" :categories="categories" /> -->
-    <BlogsBlogAndNews :articles="articles.slice(0,10)" :news="news" />
+    <HomeSectionsCategoryThreeCol
+      :articlesEco="articlesEco.slice(0, 4)"
+      :articlesGov="articlesGov.slice(0, 4)"
+      :articlesTech="articlesTech.slice(0, 4)"
+    />
+    <BlogsBlogAndNews :articles="articles.slice(0, 10)" :news="news" />
   </div>
 </template>
 
@@ -21,7 +26,7 @@ export default {
           { field: "document.first_publication_date", direction: "desc" },
         ]
           .map(({ field, direction }) => `${field} ${direction}`)
-          .join(", ")}]`
+          .join(", ")}]`,
       }
     );
     const { results: featuredArticles } = await $prismic.api.query(
@@ -64,14 +69,52 @@ export default {
         pageSize: 10,
       }
     );
-
+    const { results: articlesEco } = await $prismic.api.query(
+      $prismic.predicate.at("my.article.section", "Economy"),
+      {
+        orderings: `[${[
+          { field: "my.article.publishDate", direction: "desc" },
+          { field: "document.first_publication_date", direction: "desc" },
+        ]
+          .map(({ field, direction }) => `${field} ${direction}`)
+          .join(", ")}]`,
+        pageSize: 4,
+      }
+    );
+    const { results: articlesGov } = await $prismic.api.query(
+      $prismic.predicate.at("my.article.section", "Government"),
+      {
+        orderings: `[${[
+          { field: "my.article.publishDate", direction: "desc" },
+          { field: "document.first_publication_date", direction: "desc" },
+        ]
+          .map(({ field, direction }) => `${field} ${direction}`)
+          .join(", ")}]`,
+        pageSize: 4,
+      }
+    );
+    const { results: articlesTech } = await $prismic.api.query(
+      $prismic.predicate.at("my.article.section", "Technology"),
+      {
+        orderings: `[${[
+          { field: "my.article.publishDate", direction: "desc" },
+          { field: "document.first_publication_date", direction: "desc" },
+        ]
+          .map(({ field, direction }) => `${field} ${direction}`)
+          .join(", ")}]`,
+        pageSize: 4,
+      }
+    );
     await store.dispatch("prismic/load");
     return {
       articles,
       featuredArticles,
       heroArticles,
       categories,
-      news
+      news,
+      articlesEco,
+      articlesGov,
+      articlesTech,
     };
   },
   head() {

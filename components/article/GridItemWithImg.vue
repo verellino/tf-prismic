@@ -40,7 +40,6 @@
     </PrismicLink>
     </div>
   </div>
-  <hr class="my-2 sm:hidden h-px w-full border-0 bg-gray-300" />
   </li>
 </template>
 

@@ -16,7 +16,7 @@
       </ul>
       <hr class="my-4 h-px w-full border-0 bg-slate-100" />
       <ul class="mt-4 flex flex-col justify-start md:flex-row">
-        <ArticleGridItemWithImg
+        <ArticleGridItem
           v-for="article in rowArticles"
           :key="article.id"
           :article="article"
