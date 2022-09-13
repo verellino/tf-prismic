@@ -1,5 +1,5 @@
 <template>
-  <li class="relative py-8 lg:w-1/3">
+  <li class="relative py-8 pr-4 lg:w-1/3">
     <PrismicLink :field="article" tab-index="-1">
       <div class="flex-grow">
         <p class="blue-primary mb-2 text-xxs">
@@ -7,12 +7,12 @@
             article.data.section
           }}</nuxt-link>
         </p>
-        <Heading as="h3" class="h4">
+        <Heading as="h3" class="h4 pr-4">
           {{ article.data.title }}
         </Heading>
         <p v-if="excerpt" class="excerpt">{{ excerpt }}</p>
         <a class="inline-flex items-center">
-          <span class="absolute bottom-0 left-2 flex">
+          <div class="article-details-bottom-span mt-4 flex">
             <span class="title-font text-xxs text-neutral-900"
               >{{ article.data.writer }} |
             </span>
@@ -22,7 +22,7 @@
             <span class="ml-1 text-xxs font-thin">
               {{ article.data.minsRead }}</span
             >
-          </span>
+          </div>
         </a>
       </div>
     </PrismicLink>

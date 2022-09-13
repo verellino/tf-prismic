@@ -26,7 +26,7 @@
           </template>
           <template #customPaging="page">
             <div class="custom-dot">
-              <svg width="16px" height="16px" viewBox="0 0 16 16">
+              <svg width="14px" height="14px" viewBox="0 0 16 16">
                 <g id="surface1">
                   <path
                     style="fill: currentColor"
@@ -64,7 +64,7 @@
           </template>
           <template #customPaging="page">
             <div class="custom-dot">
-              <svg width="16px" height="16px" viewBox="0 0 16 16">
+              <svg width="14px" height="14px" viewBox="0 0 16 16">
                 <g id="surface1">
                   <path
                     style="fill: currentColor"

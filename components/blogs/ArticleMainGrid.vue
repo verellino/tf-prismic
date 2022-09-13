@@ -3,7 +3,7 @@
   <div class="article-main-grid">
     <div class="container px-4 py-12 sm:px-10">
       <ul
-        class="article-main-grid__ul grid grid-cols-1 gap-y-8 sm:grid-cols-4 sm:gap-x-4"
+        class="article-main-grid__ul grid grid-cols-1 gap-y-8 sm:grid-cols-4 sm:gap-x-8"
       >
         <ArticleGridItemWithImg
           v-for="article in gridArticles"
@@ -12,13 +12,12 @@
           :article="article"
         />
       </ul>
-      <hr class="my-4 hidden h-px w-full border-0 bg-gray-300 sm:block" />
-      <ul class="mt-4 flex flex-col justify-evenly sm:flex-row">
+      <hr class="mt-8 hidden h-px w-full border-0 bg-gray-300 sm:block" />
+      <ul class="flex flex-col justify-evenly sm:flex-row">
         <ArticleGridItem
           v-for="article in rowArticles"
           :key="article.id"
           :article="article"
-          class="py-4 sm:py-0"
         />
       </ul>
     </div>
@@ -53,7 +52,7 @@ export default {
   @apply h-full w-full;
 }
 .article-main-grid__ul li:nth-child(1) {
-  @apply sm:col-span-2 sm:row-span-4 sm:pr-4;
+  @apply sm:col-span-2 sm:row-span-4 sm:pr-8;
 }
 .article-main-grid__ul li:nth-child(2) {
   @apply sm:col-span-2 sm:row-span-2;

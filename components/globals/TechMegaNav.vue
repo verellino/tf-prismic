@@ -2,7 +2,7 @@
   <div @mouseover="showMenu" @mouseleave="hideMenu" class="relative">
     <nuxt-link
       to="/sector/technology"
-      class="relative hover:text-blue-900"
+      class="link_underline relative hover:font-semibold hover:text-dark-blue"
       @focus="showMenu"
       @keydown.shift.tab="hideMenu"
       @keydown.esc.exact="hideMenu"
@@ -21,9 +21,11 @@
         v-show="isVisible"
         class="mega-menu absolute right-0 z-30 mt-4 hidden w-full overflow-hidden rounded-md border bg-white font-normal normal-case shadow-md sm:block lg:z-10 lg:w-80"
       >
-        <div class="-mx-4 flex flex-col border-b px-8 py-6 lg:flex-row">
-          <ul class="w-full px-4">
-            <li class="mb-8">
+        <div class="flex flex-col lg:flex-row">
+          <ul class="w-full">
+            <li
+              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+            >
               <nuxt-link
                 to="/category/YqiAMhEAADoGVtao"
                 class="group flex"
@@ -33,14 +35,15 @@
                 @keydown.up.exact.prevent=""
               >
                 <span class="ml-2">
-                  <span
-                    class="block items-center font-bold text-blue-900 group-hover:text-blue-900"
+                  <span class="block items-center"
                     >Artificial Intelligence</span
                   >
                 </span>
               </nuxt-link>
             </li>
-            <li class="mb-8">
+            <li
+              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+            >
               <nuxt-link
                 to="/category/YqiAPhEAACMAVtbp"
                 class="group flex"
@@ -51,14 +54,13 @@
                 @keydown.down.exact.prevent="focusNext(true)"
               >
                 <span class="ml-2">
-                  <span
-                    class="block font-bold text-blue-900 group-hover:text-blue-900"
-                    >AR/VR</span
-                  >
+                  <span class="block">AR/VR</span>
                 </span>
               </nuxt-link>
             </li>
-            <li class="mb-8">
+            <li
+              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+            >
               <nuxt-link
                 to="/category/YqiASxEAACEAVtcn"
                 class="group flex"
@@ -69,14 +71,13 @@
                 @keydown.down.exact.prevent="focusNext(true)"
               >
                 <span class="ml-2">
-                  <span
-                    class="block font-bold text-blue-900 group-hover:text-blue-900"
-                    >Blockchain</span
-                  >
+                  <span class="block">Blockchain</span>
                 </span>
               </nuxt-link>
             </li>
-            <li class="mb-8">
+            <li
+              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+            >
               <nuxt-link
                 to="/category/YqiAjBEAACEAVthp"
                 class="group flex"
@@ -87,14 +88,13 @@
                 @keydown.down.exact.prevent="focusNext(true)"
               >
                 <span class="ml-2">
-                  <span
-                    class="block font-bold text-blue-900 group-hover:text-blue-900"
-                    >Cloud computing</span
-                  >
+                  <span class="block">Cloud computing</span>
                 </span>
               </nuxt-link>
             </li>
-            <li class="mb-8">
+            <li
+              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+            >
               <nuxt-link
                 to="/category/YqiAoREAACAAVtjF"
                 class="group flex"
@@ -105,14 +105,13 @@
                 @keydown.down.exact.prevent="focusNext(true)"
               >
                 <span class="ml-2">
-                  <span
-                    class="block font-bold text-blue-900 group-hover:text-blue-900"
-                    >Data Analytics</span
-                  >
+                  <span class="block">Data Analytics</span>
                 </span>
               </nuxt-link>
             </li>
-            <li class="mb-8">
+            <li
+              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+            >
               <nuxt-link
                 to="/category/YqiArhEAACAAVtkE"
                 class="group flex"
@@ -123,14 +122,13 @@
                 @keydown.down.exact.prevent="focusNext(true)"
               >
                 <span class="ml-2">
-                  <span
-                    class="block font-bold text-blue-900 group-hover:text-blue-900"
-                    >Internet of Things</span
-                  >
+                  <span class="block">Internet of Things</span>
                 </span>
               </nuxt-link>
             </li>
-            <li class="mb-8">
+            <li
+              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+            >
               <nuxt-link
                 to="/category/YqiAuhEAADoGVtk-"
                 class="group flex"
@@ -141,14 +139,13 @@
                 @keydown.down.exact.prevent="focusNext(true)"
               >
                 <span class="ml-2">
-                  <span
-                    class="block font-bold text-blue-900 group-hover:text-blue-900"
-                    >Metaverse</span
-                  >
+                  <span class="block">Metaverse</span>
                 </span>
               </nuxt-link>
             </li>
-            <li class="mb-8">
+            <li
+              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+            >
               <nuxt-link
                 to="/category/"
                 class="group flex"
@@ -159,10 +156,7 @@
                 @keydown.down.exact.prevent="focusNext(true)"
               >
                 <span class="ml-2">
-                  <span
-                    class="block font-bold text-blue-900 group-hover:text-blue-900"
-                    >Robotics</span
-                  >
+                  <span class="block">Robotics</span>
                 </span>
               </nuxt-link>
             </li>
@@ -174,9 +168,11 @@
       v-show="isVisible"
       class="mega-menu borderfont-normal right-0 z-30 mt-4 w-full overflow-hidden normal-case sm:hidden"
     >
-      <div class="-mx-4 flex flex-col border-b px-8 py-6 lg:flex-row">
+      <div class="flex flex-col lg:flex-row">
         <ul class="w-full">
-          <li class="mb-8">
+          <li
+            class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+          >
             <nuxt-link
               to="/category/YqiAMhEAADoGVtao"
               class="group flex"
@@ -186,13 +182,15 @@
               @keydown.up.exact.prevent=""
             >
               <span class="ml-2">
-                <span class="block items-center group-hover:text-blue-900"
+                <span class="block items-center group-hover:text-dark-blue"
                   >Artificial Intelligence</span
                 >
               </span>
             </nuxt-link>
           </li>
-          <li class="mb-8">
+          <li
+            class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+          >
             <nuxt-link
               to="/category/YqiAPhEAACMAVtbp"
               class="group flex"
@@ -203,11 +201,13 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-blue-900">AR/VR</span>
+                <span class="block group-hover:text-dark-blue">AR/VR</span>
               </span>
             </nuxt-link>
           </li>
-          <li class="mb-8">
+          <li
+            class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+          >
             <nuxt-link
               to="/category/YqiASxEAACEAVtcn"
               class="group flex"
@@ -218,11 +218,13 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-blue-900">Blockchain</span>
+                <span class="block group-hover:text-dark-blue">Blockchain</span>
               </span>
             </nuxt-link>
           </li>
-          <li class="mb-8">
+          <li
+            class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+          >
             <nuxt-link
               to="/category/YqiAjBEAACEAVthp"
               class="group flex"
@@ -233,13 +235,15 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-blue-900"
+                <span class="block group-hover:text-dark-blue"
                   >Cloud computing</span
                 >
               </span>
             </nuxt-link>
           </li>
-          <li class="mb-8">
+          <li
+            class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+          >
             <nuxt-link
               to="/category/YqiAoREAACAAVtjF"
               class="group flex"
@@ -250,13 +254,15 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-blue-900"
+                <span class="block group-hover:text-dark-blue"
                   >Data Analytics</span
                 >
               </span>
             </nuxt-link>
           </li>
-          <li class="mb-8">
+          <li
+            class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+          >
             <nuxt-link
               to="/category/YqiArhEAACAAVtkE"
               class="group flex"
@@ -267,13 +273,15 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-blue-900"
+                <span class="block group-hover:text-dark-blue"
                   >Internet of Things</span
                 >
               </span>
             </nuxt-link>
           </li>
-          <li class="mb-8">
+          <li
+            class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+          >
             <nuxt-link
               to="/category/YqiAuhEAADoGVtk-"
               class="group flex"
@@ -284,11 +292,13 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-blue-900">Metaverse</span>
+                <span class="block group-hover:text-dark-blue">Metaverse</span>
               </span>
             </nuxt-link>
           </li>
-          <li class="mb-8">
+          <li
+            class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+          >
             <nuxt-link
               to="/category/"
               class="group flex"
@@ -299,7 +309,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-blue-900">Robotics</span>
+                <span class="block group-hover:text-dark-blue">Robotics</span>
               </span>
             </nuxt-link>
           </li>

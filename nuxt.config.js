@@ -63,7 +63,7 @@ export default {
 
   plugins: [
     { src: "./plugins/vue-slick-carousel.js" },
-    { src: "./plugins/vue-nested-menu.js" }
+    { src: "./plugins/vue-nested-menu.js" },
   ],
 
   prismic: {
@@ -155,9 +155,11 @@ export default {
   },
   googleFonts: {
     families: {
-      Poppins: true,
+      Lato: true,
       "Noto+Serif+Display": [500, 600],
     },
     display: "swap",
+    prefetch: true,
+    download: true,
   },
 };

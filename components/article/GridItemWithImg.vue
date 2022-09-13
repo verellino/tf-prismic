@@ -4,7 +4,7 @@
     <PrismicLink :field="article" tab-index="-1">
       <div
         v-if="featuredImage"
-        class="article-img relative max-h-56 w-full overflow-hidden rounded-md py-4 px-1"
+        class="article-img relative max-h-56 w-full overflow-hidden rounded-md pb-4 px-1"
       >
         <PrismicImage
           v-if="featuredImage.url"

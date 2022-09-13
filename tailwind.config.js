@@ -34,7 +34,9 @@ module.exports = {
         "outline-green": "0 0 0 3px rgba(5,202,160, 0.8)",
       },
       minHeight: {
-        "40": "10rem",
+        16: "4rem",
+        20: "5rem",
+        40: "10rem",
       },
     },
   },

@@ -2,25 +2,30 @@
   <div @mouseover="showMenu" @mouseleave="hideMenu" class="relative">
     <nuxt-link
       to="/"
-      class="relative hover:text-blue-900"
+      class="link_underline relative hover:font-semibold hover:text-dark-blue"
       @focus="showMenu"
       @keydown.shift.tab="hideMenu"
       @keydown.esc.exact="hideMenu"
       @keydown.up.exact.prevent="startArrowKeys"
       @keydown.down.exact.prevent="startArrowKeys"
     >
-      Wawasan <span class="float-right ml-2 w-6"><img src="~assets/images/bottom-chev.svg" alt="expand more"></span>
+      Wawasan
+      <span class="float-right ml-2 w-6"
+        ><img src="~assets/images/bottom-chev.svg" alt="expand more"
+      /></span>
     </nuxt-link>
 
     <div class="absolute w-full">&nbsp;</div>
     <transition name="mega-menu-fade">
       <div
         v-show="isVisible"
-        class="mega-menu right-0 z-30 mt-4 hidden w-full overflow-hidden rounded-md border bg-white font-normal normal-case shadow-md absolute sm:block lg:z-10 lg:w-80"
+        class="mega-menu absolute right-0 z-30 mt-4 hidden w-full overflow-hidden rounded-md border bg-white font-normal normal-case shadow-md sm:block lg:z-10 lg:w-80"
       >
-        <div class="-mx-4 flex flex-col border-b px-8 py-6 lg:flex-row">
-          <ul class="w-full px-4">
-            <li class="mb-8">
+        <div class="flex flex-col lg:flex-row">
+          <ul class="w-full">
+            <li
+              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+            >
               <a
                 href="/news"
                 class="group flex"
@@ -30,14 +35,13 @@
                 @keydown.up.exact.prevent=""
               >
                 <span class="ml-2">
-                  <span
-                    class="block items-center font-bold text-blue-900 group-hover:text-blue-900"
-                    >Berita</span
-                  >
+                  <span class="block items-center">Berita</span>
                 </span>
               </a>
             </li>
-            <li class="mb-8">
+            <li
+              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+            >
               <a
                 href="/"
                 class="group flex"
@@ -47,14 +51,13 @@
                 @keydown.up.exact.prevent=""
               >
                 <span class="ml-2">
-                  <span
-                    class="block items-center font-bold text-blue-900 group-hover:text-blue-900"
-                    >Laporan</span
-                  >
+                  <span class="block items-center">Laporan</span>
                 </span>
               </a>
             </li>
-            <li class="mb-8">
+            <li
+              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+            >
               <a
                 href="/"
                 class="group flex"
@@ -65,14 +68,13 @@
                 @keydown.down.exact.prevent="focusNext(true)"
               >
                 <span class="ml-2">
-                  <span
-                    class="block font-bold text-blue-900 group-hover:text-blue-900"
-                    >Program</span
-                  >
+                  <span class="block">Program</span>
                 </span>
               </a>
             </li>
-            <li class="mb-8">
+            <li
+              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+            >
               <a
                 href="/glossary"
                 class="group flex"
@@ -83,10 +85,7 @@
                 @keydown.down.exact.prevent="focusNext(true)"
               >
                 <span class="ml-2">
-                  <span
-                    class="block font-bold text-blue-900 group-hover:text-blue-900"
-                    >Glosarium</span
-                  >
+                  <span class="block">Glosarium</span>
                 </span>
               </a>
             </li>
@@ -110,7 +109,7 @@
               @keydown.up.exact.prevent=""
             >
               <span class="ml-2">
-                <span class="block items-center group-hover:text-blue-900"
+                <span class="block items-center group-hover:text-dark-blue"
                   >Berita</span
                 >
               </span>
@@ -126,7 +125,7 @@
               @keydown.up.exact.prevent=""
             >
               <span class="ml-2">
-                <span class="block items-center group-hover:text-blue-900"
+                <span class="block items-center group-hover:text-dark-blue"
                   >Laporan</span
                 >
               </span>
@@ -143,7 +142,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-blue-900">Program</span>
+                <span class="block group-hover:text-dark-blue">Program</span>
               </span>
             </a>
           </li>
@@ -158,7 +157,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-blue-900">Glosarium</span>
+                <span class="block group-hover:text-dark-blue">Glosarium</span>
               </span>
             </a>
           </li>

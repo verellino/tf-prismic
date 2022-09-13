@@ -2,10 +2,10 @@
 <template>
   <div class="featured-blogs">
     <div class="container px-4 py-12 md:px-10">
-      <h2 class="h1 mb-6">Artikel Unggulan</h2>
+      <h2 class="section-title">Artikel Unggulan</h2>
       <client-only>
       <ul
-        class="featured-grid__ul grid grid-cols-1 gap-y-8 md:grid-cols-4 md:gap-x-4"
+        class="featured-grid__ul grid grid-cols-1 gap-y-8 md:grid-cols-4 md:gap-x-8"
       >
         <ArticleGridItemWithImg
           v-for="article in gridArticles"
@@ -14,8 +14,8 @@
           :article="article"
         />
       </ul>
-      <hr class="my-4 h-px w-full border-0 bg-slate-100" />
-      <ul class="mt-4 flex flex-col justify-start md:flex-row">
+      <hr class="my-8 h-px w-full border-0 bg-slate-100" />
+      <ul class="mt-8 flex flex-col justify-start md:flex-row">
         <ArticleGridItem
           v-for="article in rowArticles"
           :key="article.id"
@@ -57,7 +57,7 @@ export default {
   @apply h-full w-full;
 }
 .featured-grid__ul li:nth-child(1) {
-  @apply md:col-span-2 md:row-span-4 md:pr-4;
+  @apply md:col-span-2 md:row-span-4 md:pr-8;
 }
 .featured-grid__ul li:nth-child(2) {
   @apply md:col-span-2 md:row-span-2;
