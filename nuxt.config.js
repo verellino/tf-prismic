@@ -155,8 +155,7 @@ export default {
   },
   googleFonts: {
     families: {
-      Lato: true,
-      "Noto+Serif+Display": [500, 600],
+      Inter: true
     },
     display: "swap",
     prefetch: true,
