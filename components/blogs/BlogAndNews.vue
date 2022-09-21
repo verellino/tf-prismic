@@ -28,9 +28,7 @@
           <div
             class="align-start col-span-2 flex flex-col justify-start md:col-span-1"
           >
-            <h2 class="section-title">
-              Berita Terbaru
-            </h2>
+            <h2 class="section-title">Berita Terbaru</h2>
             <ul class="">
               <ArticleBeritaListItem
                 v-for="article in news"
@@ -68,24 +66,10 @@ export default {
   aspect-ratio: 16/9;
   @apply max-h-64 overflow-hidden;
 }
-.artikel_terbaru-grid__ul li:nth-child(even) {
+.artikel_terbaru-grid__ul li:nth-child(odd) {
   border-right: none;
 }
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .artikel_terbaru-grid__ul li:nth-child(even) {
-    @apply pr-8;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
-  }
-}
-.artikel_terbaru-grid__ul li:nth-child(even) {
-  border-right: none;
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .artikel_terbaru-grid__ul li:nth-child(even) {
-    @apply pr-8;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
-  }
+.artikel_terbaru-grid__ul li:nth-child(n + 3) .article-img {
+  display: none;
 }
 </style>

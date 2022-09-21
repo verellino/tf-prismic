@@ -4,7 +4,7 @@
       <h1>{{ articles[0].data.category }}</h1>
     </div>
     <client-only>
-      <BlogsBlogAndNews :articles="articles" :news="news" />
+      <BlogsBlogAndNews :articles="articles"  />
       <BlogsFeaturedBlog :articles="articles.slice(0, 3)" />
     </client-only>
   </div>
@@ -34,7 +34,7 @@ export default {
       }
     );
     const { results: news } = await $prismic.api.query(
-      $prismic.predicate.at("my.news.categories", params.id),
+      $prismic.predicate.at("my.news.category", params.id),
       {
         orderings: `[${[
           { field: "my.news.publishDate", direction: "desc" },
@@ -48,6 +48,7 @@ export default {
     await store.dispatch("prismic/load");
     return {
       articles,
+      news
     };
   },
   data() {
