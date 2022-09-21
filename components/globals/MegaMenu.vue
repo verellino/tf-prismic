@@ -2,12 +2,11 @@
   <div id="app" class="relative font-sans text-gray-800">
     <header class="bg-white z-10 absolute w-full shadow-sm">
       <nav
-        class="mx-auto px-8 flex flex-wrap justify-between items-center py-5"
+        class="mx-auto px-8 flex flex-wrap justify-between items-center py-2"
       >
-        <div class="mb-0 lg:mb-6 xl:mb-0 flex">
+        <div class="mb-0 lg:mb-6 xl:mb-0 flex w-40">
           <router-link :to="`/`" class="font-bold flex items-end mr-8">
-            <img src="#" alt="logo" class="w-10" />
-            <span>TF</span>
+            <img src="/Logo.png" alt="logo" class="object-cover"/>
           </router-link>
         </div>
         <ul
@@ -25,6 +24,9 @@
             </li>
             <li class="sm:mr-8 mb-6 lg:mb-0">
               <GlobalsResourcesMegaNav />
+            </li>
+            <li class="sm:mr-8 mb-6 lg:mb-0">
+              <GlobalsProgramsMegaNav />
             </li>
             <li>
               <GlobalsSearchForm />

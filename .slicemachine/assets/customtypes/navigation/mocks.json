@@ -1,42 +1,16 @@
 {
-  "id": "91725e73-0c0d-4a3d-a9d9-db33cf1ff70a",
-  "uid": "dolores-aut-aliquam",
+  "id": "fcc97fbf-3740-4748-a070-f384b9e94bca",
+  "uid": "labore-neque-aliquam",
   "type": "navigation",
   "data": {
-    "homepageLabel": [
-      {
-        "type": "heading3",
-        "text": "Enable intuitive channels",
-        "spans": []
-      }
-    ],
-    "links": [
-      {
-        "label": [
-          {
-            "type": "heading3",
-            "text": "Implement interactive portals",
-            "spans": []
-          }
-        ],
-        "link": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        }
+    "logo": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
       },
-      {
-        "label": [
-          {
-            "type": "heading3",
-            "text": "Optimize innovative eyeballs",
-            "spans": []
-          }
-        ],
-        "link": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        }
-      }
-    ]
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+    }
   }
 }

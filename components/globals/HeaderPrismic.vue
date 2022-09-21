@@ -1,0 +1,55 @@
+<template>
+  <div class="absolute z-10 w-full bg-white font-sans text-gray-800 shadow-sm">
+    <nav class="mx-auto flex flex-wrap items-center justify-between px-8 py-5">
+        <slice-zone
+          :components="components"
+          :slices="navigation.data.body"
+          class="mt-8 block w-full flex-grow items-center capitalize tracking-wide lg:mt-0 lg:flex lg:w-auto lg:flex-initial"
+          :class="menuOpen ? 'block' : 'hidden'"
+        />
+      <div class="absolute top-5 right-8 block sm:relative lg:hidden">
+        <button
+          @click="toggleMenu"
+          class="flex items-center rounded border border-gray-500 px-3 py-2 hover:border-gray-600 hover:text-dark-blue"
+        >
+          <svg
+            class="current-color h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="gray" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</template>
+
+<script>
+import { components } from "~/slices";
+
+export default {
+  data: function () {
+    return { components, menuOpen: false };
+  },
+  methods: {
+    toggleMenu() {
+      this.menuOpen = !this.menuOpen;
+    },
+  },
+  props: {
+    withDivider: {
+      type: Boolean,
+      default: true,
+    },
+    withProfile: {
+      type: Boolean,
+      default: true,
+    },
+    navigation: {
+      type: Object,
+      required: true,
+    },
+  },
+};
+</script>

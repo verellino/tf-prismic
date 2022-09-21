@@ -12,28 +12,33 @@
         />
       </div>
     </div>
-    <div>
-      <div class="pb-0 text-center">
-        <p class="mb-2 text-sm font-semibold uppercase">
-          {{ article.data.section }}
-        </p>
-        <h1 class="blue-primary mx-3 mb-3 text-2xl font-semibold">
-          {{ article.data.title }}
-        </h1>
-        <div class="flex justify-center">
-          <div class="text-left mr-32">
-            <p class="blog-details-span text-xs">Penulis: {{ article.data.writer }}</p>
-            <p class="blog-details-span text-xs">Editor: {{ article.data.editor }}</p>
-          </div>
-          <div class="text-left">
-            <p class="blog-details-span text-xs">Tanggal: {{ formattedDate }}</p>
-            <p class="blog-details-span text-xs">Waktu Baca: {{ article.data.minsRead }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="grid grid-cols-1 sm:grid-cols-3">
       <div class="col-span-1 sm:col-span-2">
+        <div>
+          <div class="pb-0 text-center">
+            <p class="mb-2 text-sm font-semibold uppercase">
+              {{ article.data.section }}
+            </p>
+            <h1 class="text-maroon mx-3 mb-3 text-2xl font-semibold font-serif">
+              {{ article.data.title }}
+            </h1>
+            <div class="flex justify-center">
+              <div class="mr-32 text-left">
+                <p class="blog-details-span text-xs">
+                  Penulis: {{ article.data.writer }}
+                </p>
+                <p class="blog-details-span text-xs">
+                  Editor: {{ article.data.editor }}
+                </p>
+              </div>
+              <div class="text-left">
+                <p class="blog-details-span text-xs">
+                  {{ formattedDate }} | {{ article.data.minsRead }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <article style="hyphens: auto">
           <SliceZone :slices="article.data.slices" :components="components" />
         </article>
@@ -66,9 +71,9 @@
       </div>
       <!-- Right Blogs Section  -->
       <div class="col-span-1">
-        <div v-if="latestArticles.length" class="py-8 md:py-10 lg:py-12">
+        <div v-if="latestArticles.length" class="py-4 md:py-10 lg:py-12">
           <div class="w-full">
-            <h2 class="pl-4">Artikel Terbaru</h2>
+            <h2 class="pl-4 font-serif">Artikel Terbaru</h2>
             <ul class="grid grid-cols-1 gap-y-2">
               <ArticleBlogsListItem
                 v-for="article in latestArticles"
@@ -78,24 +83,6 @@
             </ul>
           </div>
           <HorizontalDivider class="w-full" />
-          <div class="mt-6 w-full">
-            <h3 class="blue-primary pl-4 font-serif">
-              {{ article.data.category }}
-            </h3>
-            <ul class="grid grid-cols-1 gap-2">
-              <ArticleBlogsListItem
-                v-for="article in categoryPosts.slice(0, 6)"
-                :key="article.id"
-                :article="article"
-              />
-            </ul>
-            <nuxt-link
-              :to="categoryLink"
-              class="pl-4 text-xs tracking-tight text-slate-400"
-            >
-              {{ article.data.category }} &rarr;
-            </nuxt-link>
-          </div>
         </div>
       </div>
     </div>
@@ -131,7 +118,7 @@ export default {
         {
           network: "whatsapp",
           name: "Whatsapp",
-          icon: 'fab fah fa-lg fa-whatsapp',
+          icon: "fab fah fa-lg fa-whatsapp",
           color: "#333333",
         },
         {
@@ -179,7 +166,7 @@ export default {
         ]
           .map(({ field, direction }) => `${field} ${direction}`)
           .join(", ")}]`,
-        pageSize: 3,
+        pageSize: 8,
       }
     );
 

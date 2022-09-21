@@ -4,6 +4,7 @@
       <h2 class="pt-6 text-center">Tren Terkini</h2>
       <BlogsSwiper :articles="heroArticles" />
     </section>
+    <BlogsBlogAndNews :articles="articles.slice(0, 10)" :news="news" />
     <BlogsFeaturedwImgBlog :articles="featuredArticles" />
     <!-- <BlogsCategoryGrid :articles="articles" :categories="categories" /> -->
     <HomeSectionsCategoryThreeCol
@@ -11,7 +12,6 @@
       :articlesGov="articlesGov.slice(0, 4)"
       :articlesTech="articlesTech.slice(0, 4)"
     />
-    <BlogsBlogAndNews :articles="articles.slice(0, 10)" :news="news" />
   </div>
 </template>
 
@@ -70,7 +70,7 @@ export default {
       }
     );
     const { results: articlesEco } = await $prismic.api.query(
-      $prismic.predicate.at("my.article.section", "Economy"),
+      $prismic.predicate.at("my.article.section", "Ekonomi"),
       {
         orderings: `[${[
           { field: "my.article.publishDate", direction: "desc" },
@@ -82,7 +82,7 @@ export default {
       }
     );
     const { results: articlesGov } = await $prismic.api.query(
-      $prismic.predicate.at("my.article.section", "Government"),
+      $prismic.predicate.at("my.article.section", "Pemerintahan"),
       {
         orderings: `[${[
           { field: "my.article.publishDate", direction: "desc" },
@@ -94,7 +94,7 @@ export default {
       }
     );
     const { results: articlesTech } = await $prismic.api.query(
-      $prismic.predicate.at("my.article.section", "Technology"),
+      $prismic.predicate.at("my.article.section", "Teknologi"),
       {
         orderings: `[${[
           { field: "my.article.publishDate", direction: "desc" },

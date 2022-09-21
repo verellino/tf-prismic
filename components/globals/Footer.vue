@@ -1,34 +1,36 @@
 <template>
-  <div class="w-full text-white bg-dark-blue font-normal">
+  <div class="w-full text-white font-normal bg-dark-maroon">
     <div class="grid grid-rows-1 md:grid-cols-10 md:grid-flow-col p-4 py-12 md:px-16 gap-8">
       <div class="col-span-2 pr-8"> 
-        <img src="#" alt="logo TF">
+        <img src="/Logo-White-Text.png" alt="logo TF">
       </div>
       <div class="col-span-2">
-        <span class="h5 uppercase font-bold text-sigma-green">Innovating Indonesia</span>
-        <ul class="mt-2">
+        <span class="h5 uppercase font-bold text-light-gray">Innovating Indonesia</span>
+        <ul class="mt-4">
           <li class="mb-4"><nuxt-link to="/news" class="font-normal text-sm">Berita</nuxt-link></li>
           <li class="mb-4"><nuxt-link to="/articles" class="font-normal text-sm">Artikel</nuxt-link></li>
           <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Video</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Langganan</nuxt-link></li>
         </ul>
       </div>
       <div class="col-span-2">
-        <span class="h5 uppercase font-bold text-sigma-green">Perusahaan</span>
-        <ul class="mt-2">
+        <span class="h5 uppercase font-bold text-light-gray">Perusahaan</span>
+        <ul class="mt-4">
           <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Tentang</nuxt-link></li>
           <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Kontak</nuxt-link></li>
+          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Kebijakan Privasi</nuxt-link></li>
         </ul>
       </div>
       <div class="col-span-2">
-        <span class="h5 uppercase font-bold text-sigma-green">Inovasi</span>
-        <ul class="mt-2">
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">TF Training</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">TF Consulting</nuxt-link></li>
+        <span class="h5 uppercase font-bold text-light-gray">Services</span>
+        <ul class="mt-4">
+          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Research</nuxt-link></li>
+          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Training</nuxt-link></li>
+          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Consulting</nuxt-link></li>
+          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Mentoring</nuxt-link></li>
         </ul>
       </div>
       <div class="col-span-2">
-        <span class="h5 uppercase font-bold text-sigma-green">Media Sosial</span>
+        <span class="h5 uppercase font-bold text-light-gray">Media Sosial</span>
         <ul class="mt-2 flex justify-start flex-wrap">
           <li class="mb-4 mr-4"><nuxt-link to="/" class="font-normal text-sm"><i class="mr-2 fab fah fa-lg fa-instagram"></i></nuxt-link></li>
           <li class="mb-4 mr-4"><nuxt-link to="/" class="font-normal text-sm"><i class="mr-2 fab fah fa-lg fa-facebook-f"></i></nuxt-link></li>

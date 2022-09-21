@@ -1,14 +1,28 @@
 {
-  "id": "1bd7018f-47df-4fbe-a54e-8869109bb97d",
-  "uid": "dignissimos-et-tenetur",
+  "id": "823990ee-0b15-4446-8834-4e69171c8919",
+  "uid": "voluptates-maxime-quae",
   "type": "report",
   "data": {
-    "myText": [
-      {
-        "type": "paragraph",
-        "text": "Exercitation dolor Lorem voluptate laboris dolor voluptate mollit sunt adipisicing dolor eiusmod commodo qui ipsum nulla.",
-        "spans": []
-      }
-    ]
+    "title": "unleash global experiences",
+    "writer": "matrix plug-and-play networks",
+    "editor": "enhance global e-business",
+    "minsRead": "reintermediate sexy convergence",
+    "publishDate": "2014-02-03T02:23:14.948Z",
+    "section": "Technology",
+    "category": "Blockchain",
+    "categories": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "mainImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
+    },
+    "featured": true
   }
 }

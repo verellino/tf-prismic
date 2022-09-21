@@ -1,0 +1,21 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "2nd_level_nav",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Optimize dynamic e-business",
+          "spans": []
+        }
+      ],
+      "navLink": {
+        "link_type": "Web",
+        "url": "https://prismic.io"
+      }
+    }
+  }
+]

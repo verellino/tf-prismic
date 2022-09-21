@@ -21,6 +21,7 @@ export default {
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+    link: [{ rel: 'preconnect', href: "https://fonts.gstatic.com" }],
     link: [
       {
         rel: "stylesheet",
@@ -29,6 +30,14 @@ export default {
           "sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==",
         crossorigin: "anonymous",
         referrerpolicy: "no-referrer",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap",
       },
     ],
   },
@@ -55,6 +64,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     "@/styles/global.css",
+    "@/assets/css/fonts.css",
     "vue-slick-carousel/dist/vue-slick-carousel.css",
   ],
 
@@ -155,7 +165,8 @@ export default {
   },
   googleFonts: {
     families: {
-      Inter: true
+      Inter: true,
+      Lora: true
     },
     display: "swap",
     prefetch: true,

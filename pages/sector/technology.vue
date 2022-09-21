@@ -23,7 +23,7 @@ const dateFormatter = new Intl.DateTimeFormat('id-ID', {
 export default {
   async asyncData ({ $prismic, store, params }) {
     const { results: articles } = await $prismic.api.query(
-      $prismic.predicate.at('my.article.section', 'Technology' ),
+      $prismic.predicate.at('my.article.section', 'Teknologi' ),
       {
         orderings: `[${[
           { field: 'my.article.publishDate', direction: 'desc' },

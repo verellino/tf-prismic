@@ -131,6 +131,35 @@
           }
         }
       }
+    },
+    "1stLevelNav": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "2ndLevelNav": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Excerpt": {
+      "default": {
+        "primary": {
+          "excerpt": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
     }
   }
 }

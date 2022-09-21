@@ -1,6 +1,7 @@
 <template>
   <div class="text-slate-700">
     <GlobalsMegaMenu />
+    <!-- <GlobalsHeaderPrismic v-if="navigation.data" :navigation="navigation" /> -->
     <main><nuxt /></main>
     <GlobalsFooter
       v-if="navigation.data && settings.data"

@@ -42,7 +42,7 @@
       <div class="carousel__desktop hidden md:block">
         <VueSlickCarousel v-bind="slickOptions">
           <ul v-for="article in articles" :key="article.id">
-            <ArticleGridItemWithImg :article="article" class="px-1" />
+            <ArticleGridItemWithImg :article="article" class="px-4" />
           </ul>
           <template #prevArrow="arrowOption">
             <div class="custom-arrow absolute top-1/2 -left-12 h-4 w-4">

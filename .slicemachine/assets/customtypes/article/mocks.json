@@ -1,15 +1,15 @@
 {
-  "id": "c645cbf6-0a0e-4f4f-a0c3-ad5bd29332b8",
-  "uid": "qui-aut-aperiam",
+  "id": "f445ea77-4131-4d5f-a00b-b02f41f8de7f",
+  "uid": "dignissimos-expedita-accusantium",
   "type": "article",
   "data": {
-    "title": "strategize B2B infrastructures",
-    "writer": "cultivate extensible convergence",
-    "editor": "target user-centric markets",
-    "minsRead": "maximize one-to-one experiences",
-    "publishDate": "2016-04-27T13:09:49.012Z",
-    "section": "Government",
-    "category": "Cloud computing",
+    "title": "enhance sticky e-tailers",
+    "writer": "seize web-enabled platforms",
+    "editor": "evolve out-of-the-box vortals",
+    "minsRead": "engage dot-com networks",
+    "publishDate": "2013-05-02T18:49:38.142Z",
+    "section": "Ekonomi",
+    "category": "Industri dan Perdagangan",
     "categories": {
       "link_type": "Web",
       "url": "http://google.com"
@@ -21,13 +21,14 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
     },
     "featured": true,
+    "hero-slider": false,
     "description": [
       {
         "type": "paragraph",
-        "text": "Proident culpa magna enim consequat in irure labore cillum mollit veniam ea. Exercitation laboris amet ea laborum.",
+        "text": "Proident deserunt aliquip exercitation laboris excepteur esse consequat minim elit proident nostrud.",
         "spans": []
       }
     ],
@@ -38,10 +39,10 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
     },
-    "card-type": "Summary Card with Large Image",
-    "twitter-handle": "enable proactive applications",
+    "card-type": "Standard Summary Card",
+    "twitter-handle": "optimize global content",
     "twitter-image": {
       "dimensions": {
         "width": 300,
@@ -49,7 +50,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=300&h=300&fit=crop",
+      "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=300&h=300&fit=crop",
       "large_image": {
         "dimensions": {
           "width": 600,
@@ -57,7 +58,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=600&h=314&fit=crop"
+        "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=600&h=314&fit=crop"
       }
     }
   }

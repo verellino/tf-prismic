@@ -1,0 +1,57 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "first_level_nav",
+    "items": [
+      {
+        "secondNavLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "subcategoryTitle": "deliver cross-media communities"
+      },
+      {
+        "secondNavLink": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        },
+        "subcategoryTitle": "productize front-end systems"
+      },
+      {
+        "secondNavLink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        },
+        "subcategoryTitle": "enhance virtual networks"
+      },
+      {
+        "secondNavLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "subcategoryTitle": "embrace seamless functionalities"
+      },
+      {
+        "secondNavLink": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        },
+        "subcategoryTitle": "strategize sticky communities"
+      }
+    ],
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Cupidatat sint veniam nostrud adipisicing fugiat. Consectetur ipsum laborum esse veniam labore anim cupidatat excepteur dolore ea in voluptate Lorem sunt. Aute ut ex consequat.",
+          "spans": []
+        }
+      ],
+      "navLink": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      }
+    }
+  }
+]

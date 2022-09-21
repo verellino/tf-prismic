@@ -5,7 +5,7 @@
       <h2 class="section-title">Artikel Unggulan</h2>
       <client-only>
       <ul
-        class="featured-grid__ul grid grid-cols-1 gap-y-8 md:grid-cols-4 md:gap-x-8"
+        class="featured-grid__ul grid grid-cols-1 gap-y-4 md:grid-cols-4 md:gap-x-8"
       >
         <ArticleGridItemWithImg
           v-for="article in gridArticles"
@@ -63,7 +63,7 @@ export default {
   @apply md:col-span-2 md:row-span-2;
 }
 .featured-grid__ul li:nth-child(3) {
-  @apply md:col-span-2 md:row-span-2 md:pt-8;
+  @apply md:col-span-2 md:row-span-2 md:pt-4;
   border-top: 1px white solid;
 }
 .featured-grid__ul li:nth-child(n + 2) .article-img {

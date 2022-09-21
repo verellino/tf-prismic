@@ -1,12 +1,11 @@
 <template>
   <div class="pt-10">
-    <div class="pt-24 text-center">
+    <div class="section-title pt-24 text-center">
       <h1>{{ articles[0].data.category }}</h1>
     </div>
     <client-only>
-      <BlogsArticleMainGrid :articles="articles.slice(0, 7)" />
+      <BlogsBlogAndNews :articles="articles" :news="news" />
       <BlogsFeaturedBlog :articles="articles.slice(0, 3)" />
-      <BlogsLatestGrid :articles="articles" />
     </client-only>
   </div>
 </template>
@@ -32,6 +31,18 @@ export default {
           .map(({ field, direction }) => `${field} ${direction}`)
           .join(", ")}]`,
         pageSize: 100,
+      }
+    );
+    const { results: news } = await $prismic.api.query(
+      $prismic.predicate.at("my.news.categories", params.id),
+      {
+        orderings: `[${[
+          { field: "my.news.publishDate", direction: "desc" },
+          { field: "document.first_publication_date", direction: "desc" },
+        ]
+          .map(({ field, direction }) => `${field} ${direction}`)
+          .join(", ")}]`,
+        pageSize: 10,
       }
     );
     await store.dispatch("prismic/load");

@@ -18,11 +18,13 @@ html, body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 
 
 h1, .h1 {
-    font-size: 2em;
+  font-size: 2em;
+  font-family: 'Lora';
 }
 
 h2, .h2 {
-    font-size: 1.8em;
+  font-size: 1.8em;
+  font-family: 'Lora';
 }
 
 h3, .h3 {
@@ -61,16 +63,15 @@ h5, .h5 {
   transform: scaleX(1);
 }
 .section-title{
-  font-size: 1.8rem;
-  font-variant: all-small-caps;
   font-weight: 700;
+  font-family: 'Lora';
 }
 .blue-primary{
     color: #1478B3;
 }
 
 .featured-blogs {
-  background: #c6ddda;
+  background: #ececed;
 }
 .border-blogs-right {
   border-right: 1px solid rgba(0, 0, 0, 0.1);

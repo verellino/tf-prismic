@@ -24,7 +24,7 @@
         <div class="flex flex-col lg:flex-row">
           <ul class="w-full">
             <li
-              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+              class="border-blogs-bottom p-4 hover:bg-dark-maroon hover:font-bold hover:text-white"
             >
               <nuxt-link
                 to="/category/Yqh_GhEAADoGVtF2"
@@ -42,7 +42,7 @@
               </nuxt-link>
             </li>
             <li
-              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+              class="border-blogs-bottom p-4 hover:bg-dark-maroon hover:font-bold hover:text-white"
             >
               <nuxt-link
                 to="/category/Yqh_whEAACEAVtSA"
@@ -59,7 +59,7 @@
               </nuxt-link>
             </li>
             <li
-              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+              class="border-blogs-bottom p-4 hover:bg-dark-maroon hover:font-bold hover:text-white"
             >
               <nuxt-link
                 to="/category/Yqh_2hEAACMAVtT_"
@@ -76,7 +76,7 @@
               </nuxt-link>
             </li>
             <li
-              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+              class="border-blogs-bottom p-4 hover:bg-dark-maroon hover:font-bold hover:text-white"
             >
               <nuxt-link
                 to="/category/Yqh_6BEAACAAVtVB"
@@ -93,7 +93,7 @@
               </nuxt-link>
             </li>
             <li
-              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+              class="border-blogs-bottom p-4 hover:bg-dark-maroon hover:font-bold hover:text-white"
             >
               <nuxt-link
                 to="/category/Yqh_-REAACMAVtWR"
@@ -120,7 +120,7 @@
       <div class="-mx-4 flex flex-col border-b px-8 py-6 lg:flex-row">
         <ul class="w-full">
           <li
-            class="border-blogs-bottom my-4 hover:bg-dark-blue hover:text-white"
+            class="border-blogs-bottom my-4 hover:bg-dark-maroon hover:text-white"
           >
             <nuxt-link
               to="/category/Yqh_GhEAADoGVtF2"
@@ -138,7 +138,7 @@
             </nuxt-link>
           </li>
           <li
-            class="border-blogs-bottom my-4 hover:bg-dark-blue hover:text-white"
+            class="border-blogs-bottom my-4 hover:bg-dark-maroon hover:text-white"
           >
             <nuxt-link
               to="/category/Yqh_whEAACEAVtSA"
@@ -157,7 +157,7 @@
             </nuxt-link>
           </li>
           <li
-            class="border-blogs-bottom my-4 hover:bg-dark-blue hover:text-white"
+            class="border-blogs-bottom my-4 hover:bg-dark-maroon hover:text-white"
           >
             <nuxt-link
               to="/category/Yqh_2hEAACMAVtT_"
@@ -176,7 +176,7 @@
             </nuxt-link>
           </li>
           <li
-            class="border-blogs-bottom my-4 hover:bg-dark-blue hover:text-white"
+            class="border-blogs-bottom my-4 hover:bg-dark-maroon hover:text-white"
           >
             <nuxt-link
               to="/category/Yqh_6BEAACAAVtVB"
@@ -195,7 +195,7 @@
             </nuxt-link>
           </li>
           <li
-            class="border-blogs-bottom my-4 hover:bg-dark-blue hover:text-white"
+            class="border-blogs-bottom my-4 hover:bg-dark-maroon hover:text-white"
           >
             <nuxt-link
               to="/category/Yqh_-REAACMAVtWR"

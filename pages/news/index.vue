@@ -1,11 +1,14 @@
 <template>
   <div>
     <div class="pt-24 text-center">
-      <h1 class="m-0">Berita</h1>
+      <h1 class="m-0 font-serif">Berita</h1>
     </div>
     <client-only>
-    <BlogsArticleMainGrid v-if="featuredArticles" :articles="featuredArticles" />
-    <BlogsLatestGrid :articles="articles" />
+      <BlogsNewsThreeCol
+        :articlesEco="articlesEco"
+        :articlesGov="articlesGov"
+        :articlesTech="articlesTech"
+      />
     </client-only>
   </div>
 </template>
@@ -46,10 +49,49 @@ export default {
         pageSize: 7,
       }
     );
+    const { results: articlesEco } = await $prismic.api.query(
+      $prismic.predicate.at("my.news.categories", "Ekonomi"),
+      {
+        orderings: `[${[
+          { field: "my.article.publishDate", direction: "desc" },
+          { field: "document.first_publication_date", direction: "desc" },
+        ]
+          .map(({ field, direction }) => `${field} ${direction}`)
+          .join(", ")}]`,
+        pageSize: 4,
+      }
+    );
+    const { results: articlesGov } = await $prismic.api.query(
+      $prismic.predicate.at("my.news.categories", "Pemerintahan"),
+      {
+        orderings: `[${[
+          { field: "my.article.publishDate", direction: "desc" },
+          { field: "document.first_publication_date", direction: "desc" },
+        ]
+          .map(({ field, direction }) => `${field} ${direction}`)
+          .join(", ")}]`,
+        pageSize: 4,
+      }
+    );
+    const { results: articlesTech } = await $prismic.api.query(
+      $prismic.predicate.at("my.news.categories", "Teknologi"),
+      {
+        orderings: `[${[
+          { field: "my.article.publishDate", direction: "desc" },
+          { field: "document.first_publication_date", direction: "desc" },
+        ]
+          .map(({ field, direction }) => `${field} ${direction}`)
+          .join(", ")}]`,
+        pageSize: 4,
+      }
+    );
     await store.dispatch("prismic/load");
     return {
       articles,
       featuredArticles,
+      articlesEco,
+      articlesGov,
+      articlesTech,
     };
   },
   data() {

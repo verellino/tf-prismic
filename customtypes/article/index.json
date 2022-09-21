@@ -53,9 +53,9 @@
           "label": "Section",
           "placeholder": "",
           "options": [
-            "Economy",
-            "Government",
-            "Technology"
+            "Ekonomi",
+            "Pemerintahan",
+            "Teknologi"
           ]
         }
       },
@@ -131,6 +131,9 @@
               "type": "SharedSlice"
             },
             "references": {
+              "type": "SharedSlice"
+            },
+            "excerpt": {
               "type": "SharedSlice"
             }
           }

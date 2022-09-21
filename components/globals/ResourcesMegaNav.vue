@@ -24,7 +24,7 @@
         <div class="flex flex-col lg:flex-row">
           <ul class="w-full">
             <li
-              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+              class="border-blogs-bottom p-4 hover:bg-dark-maroon hover:font-bold hover:text-white"
             >
               <a
                 href="/news"
@@ -40,7 +40,7 @@
               </a>
             </li>
             <li
-              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+              class="border-blogs-bottom p-4 hover:bg-dark-maroon hover:font-bold hover:text-white"
             >
               <a
                 href="/"
@@ -56,24 +56,7 @@
               </a>
             </li>
             <li
-              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
-            >
-              <a
-                href="/"
-                class="group flex"
-                @keydown.esc.exact="hideMenu"
-                @keydown.tab.exact="focusNext(false)"
-                @keydown.shift.tab="focusPrevious(false)"
-                @keydown.up.exact.prevent="focusPrevious(true)"
-                @keydown.down.exact.prevent="focusNext(true)"
-              >
-                <span class="ml-2">
-                  <span class="block">Program</span>
-                </span>
-              </a>
-            </li>
-            <li
-              class="border-blogs-bottom p-4 hover:bg-dark-blue hover:font-bold hover:text-white"
+              class="border-blogs-bottom p-4 hover:bg-dark-maroon hover:font-bold hover:text-white"
             >
               <a
                 href="/glossary"
@@ -128,21 +111,6 @@
                 <span class="block items-center group-hover:text-dark-blue"
                   >Laporan</span
                 >
-              </span>
-            </a>
-          </li>
-          <li class="mb-8">
-            <a
-              href="/"
-              class="group flex"
-              @keydown.esc.exact="hideMenu"
-              @keydown.tab.exact="focusNext(false)"
-              @keydown.shift.tab="focusPrevious(false)"
-              @keydown.up.exact.prevent="focusPrevious(true)"
-              @keydown.down.exact.prevent="focusNext(true)"
-            >
-              <span class="ml-2">
-                <span class="block group-hover:text-dark-blue">Program</span>
               </span>
             </a>
           </li>
