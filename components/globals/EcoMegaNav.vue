@@ -2,7 +2,7 @@
   <div @mouseover="showMenu" @mouseleave="hideMenu" class="relative">
     <nuxt-link
       to="/sector/economy"
-      class="link_underline relative hover:font-semibold hover:text-dark-blue"
+      class="link_underline relative hover:font-semibold hover:text-dark-maroon"
       @focus="showMenu"
       @keydown.shift.tab="hideMenu"
       @keydown.esc.exact="hideMenu"
@@ -95,7 +95,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-dark-blue"
+                <span class="block group-hover:text-dark-maroon"
                   >Industri dan Perdagangan</span
                 >
               </span>

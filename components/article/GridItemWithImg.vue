@@ -13,7 +13,7 @@
         />
       </div>
       <!-- <div v-if="!!featuredImage" class="sm:h-20"></div> -->
-      <p class="blue-primary mb-2 text-xxs">
+      <p class="mb-2 text-xxs">
         <nuxt-link to="/" class="category-span">{{
           article.data.section
         }}</nuxt-link>
@@ -83,9 +83,9 @@ export default {
         .filter((slice) => slice.slice_type === "text")
         .map((slice) => this.$prismic.asText(slice.primary.text))
         .join(" ");
-      const excerpt = text.substring(0, 160);
-      if (text.length > 160) {
-        return excerpt.substring(0, excerpt.lastIndexOf(" ")) + "…";
+      const excerpt = text.substring(0, 250);
+      if (text.length > 250) {
+        return excerpt.substring(0, excerpt.lastIndexOf(" "));
       } else {
         return excerpt;
       }

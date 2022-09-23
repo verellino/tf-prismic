@@ -2,14 +2,14 @@
   <div @mouseover="showMenu" @mouseleave="hideMenu" class="relative">
     <nuxt-link
       to="/"
-      class="link_underline relative hover:font-semibold hover:text-dark-blue"
+      class="link_underline relative hover:font-semibold hover:text-dark-maroon"
       @focus="showMenu"
       @keydown.shift.tab="hideMenu"
       @keydown.esc.exact="hideMenu"
       @keydown.up.exact.prevent="startArrowKeys"
       @keydown.down.exact.prevent="startArrowKeys"
     >
-      Programs
+      Program
       <span class="float-right ml-2 w-6"
         ><img src="~assets/images/bottom-chev.svg" alt="expand more"
       /></span>
@@ -68,7 +68,7 @@
                 @keydown.down.exact.prevent="focusNext(true)"
               >
                 <span class="ml-2">
-                  <span class="block">Training</span>
+                  <span class="block">Pelatihan</span>
                 </span>
               </a>
             </li>
@@ -109,7 +109,7 @@
               @keydown.up.exact.prevent=""
             >
               <span class="ml-2">
-                <span class="block items-center group-hover:text-dark-blue"
+                <span class="block items-center group-hover:text-dark-maroon"
                   >Events</span
                 >
               </span>
@@ -125,8 +125,8 @@
               @keydown.up.exact.prevent=""
             >
               <span class="ml-2">
-                <span class="block items-center group-hover:text-dark-blue"
-                  >Training</span
+                <span class="block items-center group-hover:text-dark-maroon"
+                  >Pelatihan</span
                 >
               </span>
             </a>
@@ -142,7 +142,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-dark-blue">Mentoring</span>
+                <span class="block group-hover:text-dark-maroon">Mentoring</span>
               </span>
             </a>
           </li>

@@ -2,7 +2,7 @@
   <div @mouseover="showMenu" @mouseleave="hideMenu" class="relative">
     <nuxt-link
       to="/sector/technology"
-      class="link_underline relative hover:font-semibold hover:text-dark-blue"
+      class="link_underline relative hover:font-semibold hover:text-dark-maroon"
       @focus="showMenu"
       @keydown.shift.tab="hideMenu"
       @keydown.esc.exact="hideMenu"
@@ -182,7 +182,7 @@
               @keydown.up.exact.prevent=""
             >
               <span class="ml-2">
-                <span class="block items-center group-hover:text-dark-blue"
+                <span class="block items-center group-hover:text-dark-maroon"
                   >Artificial Intelligence</span
                 >
               </span>
@@ -201,7 +201,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-dark-blue">AR/VR</span>
+                <span class="block group-hover:text-dark-maroon">AR/VR</span>
               </span>
             </nuxt-link>
           </li>
@@ -218,7 +218,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-dark-blue">Blockchain</span>
+                <span class="block group-hover:text-dark-maroon">Blockchain</span>
               </span>
             </nuxt-link>
           </li>
@@ -235,7 +235,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-dark-blue"
+                <span class="block group-hover:text-dark-maroon"
                   >Cloud computing</span
                 >
               </span>
@@ -254,7 +254,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-dark-blue"
+                <span class="block group-hover:text-dark-maroon"
                   >Data Analytics</span
                 >
               </span>
@@ -273,7 +273,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-dark-blue"
+                <span class="block group-hover:text-dark-maroon"
                   >Internet of Things</span
                 >
               </span>
@@ -292,7 +292,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-dark-blue">Metaverse</span>
+                <span class="block group-hover:text-dark-maroon">Metaverse</span>
               </span>
             </nuxt-link>
           </li>
@@ -309,7 +309,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-dark-blue">Robotics</span>
+                <span class="block group-hover:text-dark-maroon">Robotics</span>
               </span>
             </nuxt-link>
           </li>

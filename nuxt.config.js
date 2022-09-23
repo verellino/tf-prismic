@@ -33,11 +33,7 @@ export default {
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap",
-      },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora:wght@400;500;600&display=swap",
       },
     ],
   },
@@ -166,7 +162,8 @@ export default {
   googleFonts: {
     families: {
       Inter: true,
-      Lora: true
+      Lora: true,
+      Lato: true,
     },
     display: "swap",
     prefetch: true,

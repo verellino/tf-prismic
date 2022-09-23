@@ -1,11 +1,10 @@
 <template>
-  <div class="pt-10">
-    <div class="section-title pt-24 text-center">
+  <div class="pt-24">
+    <div class="section-title text-center">
       <h1>{{ articles[0].data.category }}</h1>
     </div>
     <client-only>
       <BlogsBlogAndNews :articles="articles"  />
-      <BlogsFeaturedBlog :articles="articles.slice(0, 3)" />
     </client-only>
   </div>
 </template>

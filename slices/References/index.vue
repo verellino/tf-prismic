@@ -1,6 +1,6 @@
 <template>
-  <Bounded as="section" class="font-serif sm:ml-8 pt-0 break-words">
-    <h3 class="h2 mb-7 font-serif text-maroon">Referensi</h3>
+  <Bounded as="section" class="sm:ml-8 pt-0 break-words">
+    <h3 class="h2 mb-7 text-maroon">Referensi</h3>
     <PrismicRichText
       v-if="$prismic.asText(slice.primary.references)"
       :field="slice.primary.references"

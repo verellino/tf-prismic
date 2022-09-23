@@ -2,7 +2,7 @@
   <div @mouseover="showMenu" @mouseleave="hideMenu" class="relative">
     <nuxt-link
       to="/sector/government"
-      class="link_underline relative hover:font-semibold hover:text-dark-blue"
+      class="link_underline relative hover:font-semibold hover:text-dark-maroon"
       @focus="showMenu"
       @keydown.shift.tab="hideMenu"
       @keydown.esc.exact="hideMenu"
@@ -131,7 +131,7 @@
               @keydown.up.exact.prevent=""
             >
               <span class="ml-2">
-                <span class="block items-center group-hover:text-dark-blue"
+                <span class="block items-center group-hover:text-dark-maroon"
                   >Akses dan Infrastruktur</span
                 >
               </span>
@@ -150,7 +150,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-dark-blue"
+                <span class="block group-hover:text-dark-maroon"
                   >Keamanan dan Pertahanan</span
                 >
               </span>
@@ -169,7 +169,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-dark-blue"
+                <span class="block group-hover:text-dark-maroon"
                   >Energi dan Lingkungan</span
                 >
               </span>
@@ -188,7 +188,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-dark-blue"
+                <span class="block group-hover:text-dark-maroon"
                   >Inisiatif dan Pembangunan</span
                 >
               </span>
@@ -207,7 +207,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-dark-blue"
+                <span class="block group-hover:text-dark-maroon"
                   >Kepentingan Publik</span
                 >
               </span>

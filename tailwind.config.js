@@ -9,7 +9,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: 'Poppins, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+      sans: 'Lato, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
       serif: "Lora, serif",
     },
     extend: {
@@ -18,7 +18,7 @@ module.exports = {
         "maroon": "#7b1f1e",
         "dark-maroon": "#521514",
         "dark-blue": "#093753",
-        "sigma-green": "#C6DDDA",
+        "light-gold": "#F1E5AC",
         "light-gray": "#f2f4f3",
       },
       spacing: {

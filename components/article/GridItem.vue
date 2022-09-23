@@ -2,7 +2,7 @@
   <li class="relative py-8 pr-4 lg:w-1/3">
     <PrismicLink :field="article" tab-index="-1">
       <div class="flex-grow">
-        <p class="blue-primary mb-2 text-xxs">
+        <p class="mb-2 text-xxs">
           <nuxt-link to="/" class="category-span">{{
             article.data.section
           }}</nuxt-link>
@@ -69,9 +69,9 @@ export default {
         .filter((slice) => slice.slice_type === "text")
         .map((slice) => this.$prismic.asText(slice.primary.text))
         .join(" ");
-      const excerpt = text.substring(0, 80);
-      if (text.length > 80) {
-        return excerpt.substring(0, excerpt.lastIndexOf(" ")) + "…";
+      const excerpt = text.substring(0, 250);
+      if (text.length > 250) {
+        return excerpt.substring(0, excerpt.lastIndexOf(" "));
       } else {
         return excerpt;
       }

@@ -2,7 +2,7 @@
   <div @mouseover="showMenu" @mouseleave="hideMenu" class="relative">
     <nuxt-link
       to="/"
-      class="link_underline relative hover:font-semibold hover:text-dark-blue"
+      class="link_underline relative hover:font-semibold hover:text-dark-maroon"
       @focus="showMenu"
       @keydown.shift.tab="hideMenu"
       @keydown.esc.exact="hideMenu"
@@ -92,7 +92,7 @@
               @keydown.up.exact.prevent=""
             >
               <span class="ml-2">
-                <span class="block items-center group-hover:text-dark-blue"
+                <span class="block items-center group-hover:text-dark-maroon"
                   >Berita</span
                 >
               </span>
@@ -108,7 +108,7 @@
               @keydown.up.exact.prevent=""
             >
               <span class="ml-2">
-                <span class="block items-center group-hover:text-dark-blue"
+                <span class="block items-center group-hover:text-dark-maroon"
                   >Laporan</span
                 >
               </span>
@@ -125,7 +125,7 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <span class="ml-2">
-                <span class="block group-hover:text-dark-blue">Glosarium</span>
+                <span class="block group-hover:text-dark-maroon">Glosarium</span>
               </span>
             </a>
           </li>

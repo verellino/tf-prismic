@@ -67,7 +67,7 @@ export default {
         .join(" ");
       const excerpt = text.substring(0, 80);
       if (text.length > 80) {
-        return excerpt.substring(0, excerpt.lastIndexOf(" ")) + "…";
+        return excerpt.substring(0, excerpt.lastIndexOf(" "));
       } else {
         return excerpt;
       }

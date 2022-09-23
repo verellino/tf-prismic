@@ -15,17 +15,18 @@
       <div class="col-span-2">
         <span class="h5 uppercase font-bold text-light-gray">Perusahaan</span>
         <ul class="mt-4">
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Tentang</nuxt-link></li>
+          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Tentang Kami</nuxt-link></li>
           <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Kontak</nuxt-link></li>
           <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Kebijakan Privasi</nuxt-link></li>
+          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Tentang Layanan</nuxt-link></li>
         </ul>
       </div>
       <div class="col-span-2">
-        <span class="h5 uppercase font-bold text-light-gray">Services</span>
+        <span class="h5 uppercase font-bold text-light-gray">Layanan</span>
         <ul class="mt-4">
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Research</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Training</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Consulting</nuxt-link></li>
+          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Riset</nuxt-link></li>
+          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Pelatihan</nuxt-link></li>
+          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Konsultasi</nuxt-link></li>
           <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Mentoring</nuxt-link></li>
         </ul>
       </div>
@@ -45,10 +46,6 @@
     </div>
     <div class="flex flex-col md:flex-row justify-between text-xxs p-4 md:px-16">
       <span>Copyright © 2022 Innovating Indonesia</span>
-      <div>
-        <nuxt-link to="/" class="text-xxs">Kebijakan Privasi | </nuxt-link>
-        <nuxt-link to="/" class="text-xxs">Tentang Layanan</nuxt-link>
-      </div>
     </div>
   </div>
 </template>

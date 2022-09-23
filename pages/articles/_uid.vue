@@ -16,10 +16,10 @@
       <div class="col-span-1 sm:col-span-2">
         <div>
           <div class="pb-0 text-center">
-            <p class="mb-2 text-sm font-semibold uppercase">
-              {{ article.data.section }}
+            <p class="mt-2 mb-2 text-sm font-semibold uppercase">
+              {{ article.data.section }} <span v-if="article.data.category">| {{ article.data.category }}</span>
             </p>
-            <h1 class="text-maroon mx-3 mb-3 text-2xl font-semibold font-serif">
+            <h1 class="text-maroon mx-3 mb-3 text-2xl">
               {{ article.data.title }}
             </h1>
             <div class="flex justify-center">
@@ -71,9 +71,9 @@
       </div>
       <!-- Right Blogs Section  -->
       <div class="col-span-1">
-        <div v-if="latestArticles.length" class="py-4 md:py-10 lg:py-12">
+        <div v-if="latestArticles.length" class="">
           <div class="w-full">
-            <h2 class="pl-4 font-serif">Artikel Terbaru</h2>
+            <h2 class="pl-4">Artikel Terbaru</h2>
             <ul class="grid grid-cols-1 gap-y-2">
               <ArticleBlogsListItem
                 v-for="article in latestArticles"
@@ -299,9 +299,9 @@ export default {
         .filter((slice) => slice.slice_type === "text")
         .map((slice) => this.$prismic.asText(slice.primary.text))
         .join(" ");
-      const excerpt = text.substring(0, 80);
-      if (text.length > 80) {
-        return excerpt.substring(0, excerpt.lastIndexOf(" ")) + "…";
+      const excerpt = text.substring(0, 250);
+      if (text.length > 250) {
+        return excerpt.substring(0, excerpt.lastIndexOf(" "));
       } else {
         return excerpt;
       }

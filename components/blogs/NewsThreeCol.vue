@@ -8,7 +8,7 @@
             <span
               ><img
                 src="~assets/images/chevron_right.svg"
-                class="inline-block h-6"
+                class="inline-block h-6 chevron-color"
             /></span>
           </nuxt-link>
           <ArticleCategoryListItem
@@ -23,7 +23,7 @@
             <span
               ><img
                 src="~assets/images/chevron_right.svg"
-                class="inline-block h-6"
+                class="inline-block h-6 chevron-color"
             /></span>
           </nuxt-link>
           <ArticleCategoryListItem
@@ -38,7 +38,7 @@
             <span
               ><img
                 src="~assets/images/chevron_right.svg"
-                class="inline-block h-6"
+                class="inline-block h-6 chevron-color"
             /></span>
           </nuxt-link>
           <ArticleCategoryListItem

@@ -11,16 +11,12 @@
           {{ excerpt }}
         </p> -->
         <div class="article-details-bottom-span mt-4 text-xxs">
-          <span class="blue-primary mr-1 text-xxs">
-            <nuxt-link
-              to="/"
-              class="mr-2 rounded-md bg-blue-50 py-1 px-2 text-xxs font-medium uppercase tracking-wide"
-              >{{ article.data.section }}</nuxt-link
-            >
-          </span>
-          <span class="">{{ article.data.writer }} | </span>
-          <span class="ml-1">{{ formattedDate }} | </span>
-          <span class="ml-1">{{ article.data.minsRead }}</span>
+          <span class="">{{ article.data.section }}</span>
+          <span class=""> | {{ article.data.writer }}</span>
+          <span class=""> | {{ formattedDate }}</span>
+          <span v-if="article.data.minsRead" class="">
+            | {{ article.data.minsRead }}</span
+          >
         </div>
       </div>
     </PrismicLink>
@@ -69,7 +65,7 @@ export default {
         .join(" ");
       const excerpt = text.substring(0, 80);
       if (text.length > 80) {
-        return excerpt.substring(0, excerpt.lastIndexOf(" ")) + "…";
+        return excerpt.substring(0, excerpt.lastIndexOf(" "));
       } else {
         return excerpt;
       }

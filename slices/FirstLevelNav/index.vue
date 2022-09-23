@@ -2,7 +2,7 @@
   <li class="mb-6 sm:mr-8 lg:mb-0">
     <PrismicRichText
       :field="slice.primary.title"
-      class="link_underline relative hover:font-semibold hover:text-dark-blue"
+      class="link_underline relative hover:font-semibold hover:text-dark-maroon"
       @focus="showMenu"
       @keydown.shift.tab="hideMenu"
       @keydown.esc.exact="hideMenu"

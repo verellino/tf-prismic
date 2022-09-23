@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="pt-24 text-center">
-      <h1 class="m-0 font-serif">Berita</h1>
+      <h1 class="m-0">Berita</h1>
     </div>
     <client-only>
       <BlogsNewsThreeCol

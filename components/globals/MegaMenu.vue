@@ -2,11 +2,11 @@
   <div id="app" class="relative font-sans text-gray-800">
     <header class="bg-white z-10 absolute w-full shadow-sm">
       <nav
-        class="mx-auto px-8 flex flex-wrap justify-between items-center py-2"
+        class="mx-auto px-8 flex flex-wrap justify-between items-center py-4"
       >
-        <div class="mb-0 lg:mb-6 xl:mb-0 flex w-40">
-          <router-link :to="`/`" class="font-bold flex items-end mr-8">
-            <img src="/Logo.png" alt="logo" class="object-cover"/>
+        <div class="mb-0 lg:mb-6 xl:mb-0 flex w-40 overflow-hidden">
+          <router-link :to="`/`" class="font-bold flex items-end">
+            <img src="/Logo-II.png" alt="logo" class="object-cover w-full object-center"/>
           </router-link>
         </div>
         <ul
@@ -35,7 +35,7 @@
         <div class="block absolute top-5 right-8  sm:relative lg:hidden">
           <button
             @click="toggleMenu"
-            class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-dark-blue hover:border-gray-600"
+            class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-dark-maroon hover:border-gray-600"
           >
             <svg
               class="current-color h-3 w-3"
