@@ -18,11 +18,11 @@
                 :article="article"
               />
             </ul>
-            <div class="col-span-2 mt-8 text-center">
+            <!-- <div class="col-span-2 mt-8 text-center">
               <nuxt-link to="/articles" class="link_underline text-sm"
                 >Lihat semua artikel...</nuxt-link
               >
-            </div>
+            </div> -->
           </div>
           <!-- Right Section  -->
           <div

@@ -27,7 +27,7 @@
               class="border-blogs-bottom p-4 hover:bg-dark-maroon hover:font-bold hover:text-white"
             >
               <a
-                href="/"
+                href="/events"
                 class="group flex"
                 @keydown.esc.exact="hideMenu"
                 @keydown.tab.exact="focusNext(false)"
@@ -59,7 +59,7 @@
               class="border-blogs-bottom p-4 hover:bg-dark-maroon hover:font-bold hover:text-white"
             >
               <a
-                href="/"
+                href="/training"
                 class="group flex"
                 @keydown.esc.exact="hideMenu"
                 @keydown.tab.exact="focusNext(false)"
@@ -76,7 +76,7 @@
               class="border-blogs-bottom p-4 hover:bg-dark-maroon hover:font-bold hover:text-white"
             >
               <a
-                href="/glossary"
+                href="/menata"
                 class="group flex"
                 @keydown.esc.exact="hideMenu"
                 @keydown.tab.exact="focusNext(false)"
@@ -100,8 +100,8 @@
       <div class="-mx-4 flex flex-col border-b px-8 py-6 lg:flex-row">
         <ul class="w-full">
           <li class="mb-8">
-            <a
-              href="/"
+            <nuxt-link
+              to="/events"
               class="group flex"
               @keydown.esc.exact="hideMenu"
               @keydown.tab.exact="focusNext(false)"
@@ -113,11 +113,11 @@
                   >Events</span
                 >
               </span>
-            </a>
+            </nuxt-link>
           </li>
           <li class="mb-8">
             <a
-              href="/"
+              href="/training"
               class="group flex"
               @keydown.esc.exact="hideMenu"
               @keydown.tab.exact="focusNext(false)"
@@ -133,7 +133,7 @@
           </li>
           <li class="mb-8">
             <a
-              href="/"
+              href="/menata"
               class="group flex"
               @keydown.esc.exact="hideMenu"
               @keydown.tab.exact="focusNext(false)"

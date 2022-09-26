@@ -3,27 +3,39 @@
 import ContactForm from './ContactForm';
 import Excerpt from './Excerpt';
 import FirstLevelNav from './FirstLevelNav';
+import Hero from './Hero';
+import HeroWithImage from './HeroWithImage';
 import Image from './Image';
+import ImageCards from './ImageCards';
 import Quote from './Quote';
 import References from './References';
 import Text from './Text';
+import TextWithImage from './TextWithImage';
 
 export {
 	ContactForm,
 	Excerpt,
 	FirstLevelNav,
+	Hero,
+	HeroWithImage,
 	Image,
+	ImageCards,
 	Quote,
 	References,
 	Text,
+	TextWithImage,
 };
 
 export const components = {
 	contact_form: ContactForm,
 	excerpt: Excerpt,
 	first_level_nav: FirstLevelNav,
+	hero: Hero,
+	hero_with_image: HeroWithImage,
 	image: Image,
+	image_cards: ImageCards,
 	quote: Quote,
 	references: References,
 	text: Text,
+	text_with_image: TextWithImage,
 };

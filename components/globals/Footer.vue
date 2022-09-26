@@ -1,42 +1,92 @@
 <template>
-  <div class="w-full text-white font-normal bg-dark-maroon">
-    <div class="grid grid-rows-1 md:grid-cols-10 md:grid-flow-col p-4 py-12 md:px-16 gap-8">
-      <div class="col-span-2 pr-8"> 
-        <img src="/Logo-White-Text.png" alt="logo TF">
+  <div class="w-full bg-red-800 font-normal text-white">
+    <div
+      class="grid grid-rows-1 gap-8 p-4 py-12 md:grid-flow-col md:grid-cols-10 md:px-16"
+    >
+      <div class="col-span-2 pr-8">
+        <img src="/Logo-White-Text.png" alt="logo TF" />
       </div>
       <div class="col-span-2">
-        <span class="h5 uppercase font-bold text-light-gray">Innovating Indonesia</span>
+        <span class="h5 font-bold uppercase text-light-gray"
+          >Innovating Indonesia</span
+        >
         <ul class="mt-4">
-          <li class="mb-4"><nuxt-link to="/news" class="font-normal text-sm">Berita</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/articles" class="font-normal text-sm">Artikel</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Video</nuxt-link></li>
+          <li class="mb-4">
+            <nuxt-link to="/news" class="text-sm font-normal">Berita</nuxt-link>
+          </li>
+          <li class="mb-4">
+            <nuxt-link to="/articles" class="text-sm font-normal"
+              >Artikel</nuxt-link
+            >
+          </li>
+          <li class="mb-4">
+            <nuxt-link to="/" class="text-sm font-normal">Video</nuxt-link>
+          </li>
         </ul>
       </div>
       <div class="col-span-2">
-        <span class="h5 uppercase font-bold text-light-gray">Perusahaan</span>
+        <span class="h5 font-bold uppercase text-light-gray">Perusahaan</span>
         <ul class="mt-4">
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Tentang Kami</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Kontak</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Kebijakan Privasi</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Tentang Layanan</nuxt-link></li>
+          <li class="mb-4">
+            <nuxt-link to="/" class="text-sm font-normal"
+              >Tentang Kami</nuxt-link
+            >
+          </li>
+          <li class="mb-4">
+            <nuxt-link to="/" class="text-sm font-normal">Kontak</nuxt-link>
+          </li>
+          <li class="mb-4">
+            <nuxt-link to="/" class="text-sm font-normal"
+              >Kebijakan Privasi</nuxt-link
+            >
+          </li>
+          <li class="mb-4">
+            <nuxt-link to="/" class="text-sm font-normal"
+              >Tentang Layanan</nuxt-link
+            >
+          </li>
         </ul>
       </div>
       <div class="col-span-2">
-        <span class="h5 uppercase font-bold text-light-gray">Layanan</span>
+        <span class="h5 font-bold uppercase text-light-gray">Layanan</span>
         <ul class="mt-4">
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Riset</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Pelatihan</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Konsultasi</nuxt-link></li>
-          <li class="mb-4"><nuxt-link to="/" class="font-normal text-sm">Mentoring</nuxt-link></li>
+          <li class="mb-4">
+            <nuxt-link to="/" class="text-sm font-normal">Riset</nuxt-link>
+          </li>
+          <li class="mb-4">
+            <nuxt-link to="/" class="text-sm font-normal">Pelatihan</nuxt-link>
+          </li>
+          <li class="mb-4">
+            <nuxt-link to="/" class="text-sm font-normal">Konsultasi</nuxt-link>
+          </li>
+          <li class="mb-4">
+            <nuxt-link to="/" class="text-sm font-normal">Mentoring</nuxt-link>
+          </li>
         </ul>
       </div>
       <div class="col-span-2">
-        <span class="h5 uppercase font-bold text-light-gray">Media Sosial</span>
-        <ul class="mt-2 flex justify-start flex-wrap">
-          <li class="mb-4 mr-4"><nuxt-link to="/" class="font-normal text-sm"><i class="mr-2 fab fah fa-lg fa-instagram"></i></nuxt-link></li>
-          <li class="mb-4 mr-4"><nuxt-link to="/" class="font-normal text-sm"><i class="mr-2 fab fah fa-lg fa-facebook-f"></i></nuxt-link></li>
-          <li class="mb-4 mr-4"><nuxt-link to="/" class="font-normal text-sm"><i class="mr-2 fab fah fa-lg fa-linkedin"></i></nuxt-link></li>
-          <li class="mb-4 mr-4"><nuxt-link to="/" class="font-normal text-sm"><i class="mr-2 fab fah fa-lg fa-whatsapp"></i></nuxt-link></li>
+        <span class="h5 font-bold uppercase text-light-gray">Media Sosial</span>
+        <ul class="mt-2 flex flex-wrap justify-start">
+          <li class="mb-4 mr-4">
+            <nuxt-link to="/" class="text-sm font-normal"
+              ><i class="fab fah fa-lg fa-instagram mr-2"></i
+            ></nuxt-link>
+          </li>
+          <li class="mb-4 mr-4">
+            <nuxt-link to="/" class="text-sm font-normal"
+              ><i class="fab fah fa-lg fa-facebook-f mr-2"></i
+            ></nuxt-link>
+          </li>
+          <li class="mb-4 mr-4">
+            <nuxt-link to="/" class="text-sm font-normal"
+              ><i class="fab fah fa-lg fa-linkedin mr-2"></i
+            ></nuxt-link>
+          </li>
+          <li class="mb-4 mr-4">
+            <nuxt-link to="/" class="text-sm font-normal"
+              ><i class="fab fah fa-lg fa-whatsapp mr-2"></i
+            ></nuxt-link>
+          </li>
         </ul>
       </div>
       <!-- <SignUpForm v-if="withSignUpForm" :settings="settings" /> -->
@@ -44,7 +94,9 @@
         Proudly published using <a href="https://prismic.io" class="text-slate-700">Prismic</a>
       </div> -->
     </div>
-    <div class="flex flex-col md:flex-row justify-between text-xxs p-4 md:px-16">
+    <div
+      class="flex flex-col justify-between p-4 text-xxs md:flex-row md:px-16"
+    >
       <span>Copyright © 2022 Innovating Indonesia</span>
     </div>
   </div>
@@ -55,12 +107,12 @@ export default {
   props: {
     withSignUpForm: {
       type: Boolean,
-      default: true
+      default: true,
     },
     settings: {
       type: Object,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>

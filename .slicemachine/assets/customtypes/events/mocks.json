@@ -1,0 +1,58 @@
+{
+  "id": "dcbe58d8-04af-4227-9569-de6bfd57c410",
+  "uid": "laboriosam-voluptates-soluta",
+  "type": "events",
+  "data": {
+    "title": "facilitate efficient models",
+    "eventDate": "2019-11-07T19:05:07.032Z",
+    "mainImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+    },
+    "url": {
+      "link_type": "Web",
+      "url": "http://google.com"
+    },
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Voluptate amet amet non irure. Elit mollit duis non nostrud do do aute excepteur. Adipisicing ea ipsum officia fugiat.",
+        "spans": []
+      }
+    ],
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
+    },
+    "card-type": "Summary Card with Large Image",
+    "twitter-handle": "harness revolutionary models",
+    "twitter-image": {
+      "dimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=300&h=300&fit=crop",
+      "large_image": {
+        "dimensions": {
+          "width": 600,
+          "height": 314
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=600&h=314&fit=crop"
+      }
+    }
+  }
+}

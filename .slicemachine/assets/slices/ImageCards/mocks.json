@@ -1,0 +1,108 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "image_cards",
+    "items": [
+      {
+        "image": {
+          "dimensions": {
+            "width": 2200,
+            "height": 1200
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=2200&h=1200&fit=crop"
+        },
+        "text": [
+          {
+            "type": "paragraph",
+            "text": "Est dolor nostrud fugiat sint nostrud sit. Fugiat minim enim et est eu in ea. Deserunt eiusmod consequat aliqua cillum sint ad mollit ea mollit magna id.",
+            "spans": []
+          }
+        ],
+        "buttonLink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        },
+        "buttonText": "harness viral solutions",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Cupidatat magna consectetur mollit quis dolore ad do in incididunt sit irure cupidatat mollit duis. Laborum deserunt laborum anim laborum aute tempor deserunt. Aliqua Lorem dolor sint laboris esse ut cillum nostrud ullamco eiusmod id culpa dolore.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 2200,
+            "height": 1200
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=2200&h=1200&fit=crop"
+        },
+        "text": [
+          {
+            "type": "paragraph",
+            "text": "Mollit incididunt cupidatat quis ut do ullamco exercitation aliqua amet cillum ex quis. Velit dolor minim sunt est ea non deserunt non consectetur ut ex mollit est.",
+            "spans": []
+          }
+        ],
+        "buttonLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "buttonText": "optimize impactful technologies",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Qui in exercitation do id anim eiusmod. Laborum anim adipisicing do fugiat non. Nulla pariatur sint id nulla.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 2200,
+            "height": 1200
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=2200&h=1200&fit=crop"
+        },
+        "text": [
+          {
+            "type": "paragraph",
+            "text": "Excepteur sit aute nulla irure nostrud aliquip occaecat enim consequat enim. Consectetur et ut commodo exercitation do anim.",
+            "spans": []
+          }
+        ],
+        "buttonLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "buttonText": "drive best-of-breed vortals",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Sint cillum duis anim aute tempor ex elit ex aliqua laborum aute eiusmod adipisicing.",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "primary": {
+      "heading": [
+        {
+          "type": "heading1",
+          "text": "Synergize synergistic portals",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

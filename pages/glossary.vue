@@ -1,7 +1,7 @@
 <template>
   <div class="pt-20">
     <div class="container py-12 text-center">
-      <h1>Glossary</h1>
+      <h1 class="section-title">Glossary</h1>
     </div>
     <div class="mx-auto flex items-start">
       <div class="w-1/4 p-8 pt-0">

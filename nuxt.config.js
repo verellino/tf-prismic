@@ -20,8 +20,8 @@ export default {
       },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
-    link: [{ rel: 'preconnect', href: "https://fonts.gstatic.com" }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/icon.ico" }],
+    link: [{ rel: "preconnect", href: "https://fonts.gstatic.com" }],
     link: [
       {
         rel: "stylesheet",
@@ -37,7 +37,9 @@ export default {
       },
     ],
   },
-
+  loading: {
+    color: "#7b1f1e",
+  },
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ["@nuxt/postcss8", "@nuxtjs/prismic", "@nuxtjs/google-fonts"],
 

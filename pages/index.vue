@@ -4,7 +4,7 @@
       <h2 class="pt-6 text-center">Tren Terkini</h2>
       <BlogsSwiper :articles="heroArticles" />
     </section>
-    <BlogsBlogAndNews :articles="articles.slice(0, 10)" :news="news" />
+    <BlogsHomeBlogAndNews :articles="articles.slice(0, 10)" :news="news" :events="events" :programs="programs" />
     <BlogsFeaturedwImgBlog :articles="featuredArticles" />
     <!-- <BlogsCategoryGrid :articles="articles" :categories="categories" /> -->
     <HomeSectionsCategoryThreeCol
@@ -105,6 +105,28 @@ export default {
         pageSize: 4,
       }
     );
+    const { results: events } = await $prismic.api.query(
+      $prismic.predicate.at("document.type", "events"),
+      {
+        orderings: `[${[
+          { field: "document.first_publication_date", direction: "desc" },
+        ]
+          .map(({ field, direction }) => `${field} ${direction}`)
+          .join(", ")}]`,
+        pageSize: 8,
+      }
+    );
+    const { results: programs } = await $prismic.api.query(
+      $prismic.predicate.at("document.type", "training"),
+      {
+        orderings: `[${[
+          { field: "document.first_publication_date", direction: "desc" },
+        ]
+          .map(({ field, direction }) => `${field} ${direction}`)
+          .join(", ")}]`,
+        pageSize: 8,
+      }
+    );
     await store.dispatch("prismic/load");
     return {
       articles,
@@ -115,6 +137,8 @@ export default {
       articlesEco,
       articlesGov,
       articlesTech,
+      events,
+      programs
     };
   },
   head() {

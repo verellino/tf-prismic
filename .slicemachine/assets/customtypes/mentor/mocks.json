@@ -1,0 +1,46 @@
+{
+  "id": "65c7cee6-4ebb-4aad-82bd-8c7d23e83bc4",
+  "uid": "dicta-veritatis-unde",
+  "type": "mentor",
+  "data": {
+    "name": "recontextualize collaborative interfaces",
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=900&h=500&fit=crop"
+    },
+    "position": [
+      {
+        "type": "paragraph",
+        "text": "Ex laborum reprehenderit consequat occaecat id non est Lorem ut ea aute. Reprehenderit do laboris ea excepteur est ad id anim. Consectetur excepteur nostrud nulla incididunt et officia.",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Lorem velit cupidatat minim.",
+        "spans": []
+      }
+    ],
+    "motivation": [
+      {
+        "type": "paragraph",
+        "text": "Fugiat laboris ea non adipisicing ullamco consequat elit tempor minim reprehenderit officia ipsum deserunt minim. Quis aliqua non duis cupidatat adipisicing anim magna Lorem proident incididunt ut proident. Qui consectetur qui voluptate minim aliquip occaecat consectetur ut officia ut.",
+        "spans": []
+      }
+    ],
+    "expectation": [
+      {
+        "type": "paragraph",
+        "text": "Ut quis ad ullamco excepteur cupidatat minim non sunt nisi consequat adipisicing eiusmod labore occaecat.",
+        "spans": []
+      }
+    ],
+    "sector": "Public"
+  }
+}

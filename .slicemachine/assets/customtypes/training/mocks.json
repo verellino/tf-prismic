@@ -1,0 +1,59 @@
+{
+  "id": "d1558006-5c0c-4598-88e8-ac587507b081",
+  "uid": "provident-esse-sunt",
+  "type": "training",
+  "data": {
+    "title": "e-enable bleeding-edge networks",
+    "section": "Ekonomi",
+    "category": "Metaverse",
+    "categories": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "mainImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+    },
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Veniam nulla voluptate pariatur anim. Exercitation nulla sunt nostrud. Velit Lorem officia aliquip incididunt eu aliquip consequat voluptate.",
+        "spans": []
+      }
+    ],
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
+    },
+    "card-type": "Summary Card with Large Image",
+    "twitter-handle": "deploy cross-media synergies",
+    "twitter-image": {
+      "dimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=300&h=300&fit=crop",
+      "large_image": {
+        "dimensions": {
+          "width": 600,
+          "height": 314
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=600&h=314&fit=crop"
+      }
+    }
+  }
+}

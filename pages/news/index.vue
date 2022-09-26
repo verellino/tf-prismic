@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="pt-24 text-center">
-      <h1 class="m-0">Berita</h1>
+      <h1 class="m-0 section-title">Berita</h1>
     </div>
     <client-only>
       <BlogsNewsThreeCol
@@ -50,7 +50,7 @@ export default {
       }
     );
     const { results: articlesEco } = await $prismic.api.query(
-      $prismic.predicate.at("my.news.categories", "Ekonomi"),
+      $prismic.predicate.at("my.news.section", "Ekonomi"),
       {
         orderings: `[${[
           { field: "my.article.publishDate", direction: "desc" },
@@ -62,7 +62,7 @@ export default {
       }
     );
     const { results: articlesGov } = await $prismic.api.query(
-      $prismic.predicate.at("my.news.categories", "Pemerintahan"),
+      $prismic.predicate.at("my.news.section", "Pemerintahan"),
       {
         orderings: `[${[
           { field: "my.article.publishDate", direction: "desc" },
@@ -74,7 +74,7 @@ export default {
       }
     );
     const { results: articlesTech } = await $prismic.api.query(
-      $prismic.predicate.at("my.news.categories", "Teknologi"),
+      $prismic.predicate.at("my.news.section", "Teknologi"),
       {
         orderings: `[${[
           { field: "my.article.publishDate", direction: "desc" },

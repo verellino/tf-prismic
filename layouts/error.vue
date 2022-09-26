@@ -1,7 +1,7 @@
 <template>
-  <div class="container px-4 sm:px-10 flex justify-center">
+  <div class="container pt-20 px-4 sm:px-10 flex flex-col justify-center min-h-screen">
     <h1 v-if="error.statusCode === 404">Page not found</h1>
-    <h1 v-else>An error occurred - {{ error.statusCode }}</h1>
+    <h1 v-else>An error occurred</h1>
     <NuxtLink to="/">Home page</NuxtLink>
   </div>
 </template>

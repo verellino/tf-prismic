@@ -1,0 +1,55 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "text_with_image",
+    "items": [],
+    "primary": {
+      "text": [
+        {
+          "type": "paragraph",
+          "text": "Velit proident dolore enim labore velit. Reprehenderit enim nostrud quis nulla ad amet sunt elit ad cupidatat ut ad irure.",
+          "spans": []
+        }
+      ],
+      "image": {
+        "dimensions": {
+          "width": 1000,
+          "height": 1200
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=1000&h=1200&fit=crop"
+      }
+    }
+  },
+  {
+    "variation": "withButton",
+    "name": "With Button",
+    "slice_type": "text_with_image",
+    "items": [],
+    "primary": {
+      "text": [
+        {
+          "type": "paragraph",
+          "text": "Sunt in sint incididunt quis est adipisicing non ullamco pariatur ullamco adipisicing occaecat labore officia fugiat. Incididunt consequat excepteur nulla est ipsum sit Lorem proident fugiat duis veniam nulla.",
+          "spans": []
+        }
+      ],
+      "buttonLink": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "buttonText": "redefine front-end architectures",
+      "image": {
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
+      }
+    }
+  }
+]

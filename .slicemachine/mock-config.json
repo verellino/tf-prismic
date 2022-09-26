@@ -73,7 +73,36 @@
           "blocks": 1
         }
       }
-    }
+    },
+    "events": {},
+    "mentor": {
+      "position": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "motivation": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "expectation": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "program": {},
+    "training": {}
   },
   "slices": {
     "Text": {
@@ -160,6 +189,8 @@
           }
         }
       }
-    }
+    },
+    "HeroWithImage": {},
+    "ImageCards": {}
   }
 }
