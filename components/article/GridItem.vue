@@ -12,7 +12,7 @@
         </Heading>
         <p v-if="excerpt" class="excerpt">{{ excerpt }}</p>
         <a class="inline-flex items-center">
-          <div class="article-details-bottom-span mt-4 flex">
+          <div class="article-details-bottom-span flex">
             <span class="title-font text-xxs text-neutral-900"
               >{{ article.data.writer }} |
             </span>

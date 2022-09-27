@@ -28,7 +28,7 @@
               {{ excerpt }}
             </p>
           </div>
-          <a href="#" class="mt-4 text-xxs">
+          <a href="#" class="text-xxs">
             <div class="article-details-bottom-span">
               <span class="">{{ article.data.writer }} | </span>
               <span class="ml-1">{{ formattedDate }} | </span>
@@ -80,7 +80,7 @@ export default {
     },
     excerpt() {
       const text = this.article.data.slices
-        .filter((slice) => slice.slice_type === "text")
+        .filter((slice) => slice.slice_type === "excerpt" || slice.slice_type === "text")
         .map((slice) => this.$prismic.asText(slice.primary.text))
         .join(" ");
       const excerpt = text.substring(0, 250);

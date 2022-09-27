@@ -14,7 +14,7 @@
               {{ excerpt }}
             </p>
           </div>
-         <a href="#" class="mt-4 text-xxs ">
+         <a href="#" class="text-xxs ">
            <div class="article-details-bottom-span">
               <span class="">{{ article.data.category }} | </span>
               <span class=" ml-1">{{ article.data.writer }}</span>

@@ -9,7 +9,7 @@
         <!-- <p v-if="excerpt" class="excerpt mt-2 hidden md:block leading-relaxed text-sm">
           {{ excerpt }}
         </p> -->
-        <div class="article-details-bottom-span mt-4 text-xxs">
+        <div class="article-details-bottom-span text-xxs">
           <span class="">{{ article.data.section }}</span>
           <span class=""> | {{ article.data.writer }}</span>
           <span class=""> | {{ formattedDate }}</span>
