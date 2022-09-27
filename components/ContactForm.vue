@@ -9,7 +9,7 @@
                   <label
                     for="first-name"
                     class="block text-sm font-medium text-gray-700"
-                    >First name</label
+                    >Nama Lengkap</label
                   >
                   <input
                     type="text"
@@ -24,7 +24,7 @@
                   <label
                     for="email-address"
                     class="block text-sm font-medium text-gray-700"
-                    >Email address</label
+                    >Email</label
                   >
                   <input
                     type="text"
