@@ -3,7 +3,7 @@
     <div>
       <Bounded class="pb-0 text-center">
         <p class="blue-primary mb-2 uppercase font-semibold">
-          {{ article.data.section }}
+          {{ article.data.section }} <span v-if="article.data.category">| {{ article.data.category }}</span>
         </p>
         <h1 class="mb-3 font-semibold text-slate-800 sm:text-2xl">
           {{article.data.title}}
@@ -29,7 +29,7 @@
         <Bounded v-if="latestArticles.length">
           <div>
             <div class="w-full">
-              <h2 class="pl-10">
+              <h2 class="pl-4">
                 Artikel Terbaru
               </h2>
               <ul class="grid grid-cols-1 gap-y-2">

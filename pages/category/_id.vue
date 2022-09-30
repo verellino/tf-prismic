@@ -4,7 +4,7 @@
       <h1>{{ articles[0].data.category }}</h1>
     </div>
     <client-only>
-      <BlogsBlogAndNews :articles="articles" />
+      <BlogsBlogAndNews :articles="articles" :news=:"news" />
     </client-only>
   </div>
 </template>
