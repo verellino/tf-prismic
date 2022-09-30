@@ -33,7 +33,7 @@ export default {
       }
     );
     const { results: news } = await $prismic.api.query(
-      $prismic.predicate.at("my.news.category", params.id),
+      $prismic.predicate.at("my.news.categories", params.id),
       {
         orderings: `[${[
           { field: "my.news.publishDate", direction: "desc" },

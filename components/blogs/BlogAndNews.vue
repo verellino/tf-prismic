@@ -9,7 +9,7 @@
             class="align-start border-blogs-right__desktop col-span-2 flex flex-col sm:pr-8"
           >
             <h2 class="section-title mb-6">Artikel Terbaru</h2>
-            <ul
+            <ul v-if="articles"
               class="artikel_terbaru-grid__ul grid grid-cols-1 gap-8 sm:grid-cols-2"
             >
               <ArticleGridItemWithImg
@@ -17,6 +17,9 @@
                 :key="article.id"
                 :article="article"
               />
+            </ul>
+            <ul v-else>
+              <p>Kontent belum tersedia.</p>
             </ul>
             <!-- <div class="col-span-2 mt-8 text-center">
               <nuxt-link to="/articles" class="link_underline text-sm"
@@ -29,12 +32,15 @@
             class="align-start col-span-2 flex flex-col justify-start md:col-span-1"
           >
             <h2 class="section-title">Berita Terbaru</h2>
-            <ul class="">
+            <ul v-if="news">
               <ArticleBeritaListItem
                 v-for="article in news"
                 :key="article.id"
                 :article="article"
               />
+            </ul>
+            <ul v-else>
+              <p>Kontent belum tersedia.</p>
             </ul>
           </div>
         </div>
