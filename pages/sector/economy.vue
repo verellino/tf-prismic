@@ -1,12 +1,10 @@
 <template>
   <div>
-    <div class="pt-24 text-center">
+    <div class="pt-24 text-center section-title">
         <h1>Ekonomi</h1>
     </div>
-    <client-only>
-    <BlogsArticleMainGrid :articles="articles.slice(0,7)" />
-    <BlogsFeaturedBlog :articles="articles" />
-    <BlogsLatestGrid :articles="articles" />
+     <client-only>
+      <BlogsBlogAndNews :articles="articles" :news="news" />
     </client-only>
   </div>
 </template>
@@ -32,9 +30,21 @@ export default {
         pageSize: 100
       }
     )
+    const { results: news } = await $prismic.api.query(
+      $prismic.predicate.at("my.news.section", "Ekonomi"),
+      {
+        orderings: `[${[
+          { field: "my.article.publishDate", direction: "desc" },
+          { field: "document.first_publication_date", direction: "desc" },
+        ]
+          .map(({ field, direction }) => `${field} ${direction}`)
+          .join(", ")}]`
+      }
+    );
     await store.dispatch('prismic/load')
     return {
-      articles
+      articles,
+      news
     }
   },
   data () {
@@ -42,7 +52,7 @@ export default {
   },
   head () {
     return {
-      title: `Ekonomi | Innovating Indonesia`
+      title: `Sektor Ekonomi | Innovating Indonesia`
     }
   },
 }

@@ -80,12 +80,18 @@ export default {
     },
     excerpt() {
       const text = this.article.data.slices
-        .filter((slice) => slice.slice_type === "excerpt" || slice.slice_type === "text")
-        .map((slice) => this.$prismic.asText(slice.primary.text))
+        .filter((slice) => slice.slice_type === "excerpt" )
+        .map((slice) => this.$prismic.asText(slice.primary.excerpt) )
         .join(" ");
-      const excerpt = text.substring(0, 250);
-      if (text.length > 250) {
+      const subtitle = this.article.data.slices
+        .filter((slice) => slice.slice_type === "text" )
+        .map((slice) => this.$prismic.asText(slice.primary.text) )
+        .join(" ");
+      let excerpt = text.substring(0, 320);
+      if (text.length > 320) {
         return excerpt.substring(0, excerpt.lastIndexOf(" "));
+      } else if (!text) {
+        return excerpt = subtitle.substring(0, 320);
       } else {
         return excerpt;
       }

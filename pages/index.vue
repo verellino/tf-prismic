@@ -1,11 +1,10 @@
 <template>
   <div>
-    <section class="relative">
-      <h2 class="pt-6 text-center">Tren Terkini</h2>
+    <section class="relative pt-20">
       <BlogsSwiper :articles="heroArticles" />
     </section>
     <BlogsHomeBlogAndNews :articles="articles.slice(0, 10)" :news="news" :events="events" :programs="programs" />
-    <BlogsFeaturedwImgBlog :articles="featuredArticles" />
+    <!-- <BlogsFeaturedwImgBlog :articles="featuredArticles" /> -->
     <!-- <BlogsCategoryGrid :articles="articles" :categories="categories" /> -->
     <HomeSectionsCategoryThreeCol
       :articlesEco="articlesEco.slice(0, 4)"

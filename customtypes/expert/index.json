@@ -1,0 +1,205 @@
+{
+  "id": "expert",
+  "label": "Expert Contributions",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "writer": {
+        "type": "Text",
+        "config": {
+          "label": "Writer",
+          "placeholder": ""
+        }
+      },
+      "editor": {
+        "type": "Text",
+        "config": {
+          "label": "Editor",
+          "placeholder": ""
+        }
+      },
+      "minsRead": {
+        "type": "Text",
+        "config": {
+          "label": "Mins Read",
+          "placeholder": ""
+        }
+      },
+      "publishDate": {
+        "type": "Timestamp",
+        "config": {
+          "label": "Publish Date",
+          "placeholder": ""
+        }
+      },
+      "section": {
+        "type": "Select",
+        "config": {
+          "label": "Section",
+          "placeholder": "",
+          "options": [
+            "Ekonomi",
+            "Pemerintahan",
+            "Teknologi"
+          ]
+        }
+      },
+      "category": {
+        "type": "Select",
+        "config": {
+          "label": "Category",
+          "placeholder": "",
+          "options": [
+            "Investasi dan Keuangan",
+            "Industri dan Perdagangan",
+            "Akses dan Infrastruktur",
+            "Keamanan dan Pertahanan",
+            "Energi dan Lingkungan",
+            "Inisiatif dan Pembangunan",
+            "Kepentingan Publik",
+            "Artificial Intelligence",
+            "AR/VR",
+            "Blockchain",
+            "Cloud computing",
+            "Data Analytics",
+            "Internet of Things",
+            "Metaverse",
+            "Robotics"
+          ]
+        }
+      },
+      "categories": {
+        "type": "Link",
+        "config": {
+          "label": "Categories",
+          "select": "document",
+          "customtypes": [
+            "subcategory"
+          ]
+        }
+      },
+      "mainImage": {
+        "type": "Image",
+        "config": {
+          "label": "Main Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "featured": {
+        "type": "Boolean",
+        "config": {
+          "label": "Featured",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "hero-slider": {
+        "type": "Boolean",
+        "config": {
+          "label": "Tampilkan di Hero",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "text": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            },
+            "references": {
+              "type": "SharedSlice"
+            },
+            "excerpt": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Social Media Cards & SEO Meta": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "General Title",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "label": "Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "card-type": {
+        "type": "Select",
+        "config": {
+          "options": [
+            "Standard Summary Card",
+            "Summary Card with Large Image"
+          ],
+          "default_value": "Standard Summary Card",
+          "label": "Card type"
+        }
+      },
+      "twitter-handle": {
+        "type": "Text",
+        "config": {
+          "label": "Twitter Handle",
+          "placeholder": "Twitter handle..."
+        }
+      },
+      "twitter-image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 300,
+            "height": 300
+          },
+          "thumbnails": [
+            {
+              "name": "large_image",
+              "width": 600,
+              "height": 314
+            }
+          ],
+          "label": "Image"
+        }
+      }
+    }
+  }
+}

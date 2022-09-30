@@ -8,7 +8,7 @@
           <div
             class="align-start border-blogs-right__desktop col-span-2 flex flex-col sm:pr-8"
           >
-            <h2 class="section-title mb-2">Artikel Terbaru</h2>
+            <h2 class="section-title mb-6">Artikel Terbaru</h2>
             <ul
               class="artikel_terbaru-grid__ul grid grid-cols-1 gap-8 sm:grid-cols-2"
             >

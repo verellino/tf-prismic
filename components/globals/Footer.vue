@@ -58,7 +58,7 @@
             <nuxt-link to="/contact" class="text-xs font-normal">Kontak</nuxt-link>
           </li>
           <li class="mb-2">
-            <nuxt-link to="/" class="text-xs font-normal"
+            <nuxt-link to="/kebijakan-privasi" class="text-xs font-normal"
               >Kebijakan Privasi</nuxt-link
             >
           </li>
@@ -76,13 +76,13 @@
             <nuxt-link to="/" class="text-xs font-normal">Riset</nuxt-link>
           </li>
           <li class="mb-2">
-            <nuxt-link to="/" class="text-xs font-normal">Pelatihan</nuxt-link>
+            <nuxt-link to="/training" class="text-xs font-normal">Pelatihan</nuxt-link>
           </li>
           <li class="mb-2">
             <nuxt-link to="/" class="text-xs font-normal">Konsultasi</nuxt-link>
           </li>
           <li class="mb-2">
-            <nuxt-link to="/" class="text-xs font-normal">Mentoring</nuxt-link>
+            <nuxt-link to="/menata" class="text-xs font-normal">Mentoring</nuxt-link>
           </li>
         </ul>
       </div>

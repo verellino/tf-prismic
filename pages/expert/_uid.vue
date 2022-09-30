@@ -22,28 +22,28 @@
             <h1 class="text-maroon mx-3 mb-3 text-2xl">
               {{ article.data.title }}
             </h1>
+            <div class="flex justify-center">
+              <div class="mr-32 text-left">
+                <p class="blog-details-span text-xs">
+                  Penulis: {{ article.data.writer }}
+                </p>
+                <p class="blog-details-span text-xs">
+                  Editor: {{ article.data.editor }}
+                </p>
+              </div>
+              <div class="text-left">
+                <p class="blog-details-span text-xs">
+                  {{ formattedDate }} | {{ article.data.minsRead }}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <article style="hyphens: auto">
           <SliceZone :slices="article.data.slices" :components="components" />
-          <div class="p-4 md:px-6 sm:ml-8">
-            <div class="mr-32 text-left text-xs">
-              <p>
-                Penulis: {{ article.data.writer }}
-              </p>
-              <p>
-                Editor: {{ article.data.editor }}
-              </p>
-            </div>
-            <div class="text-left">
-              <p>
-                {{ formattedDate }} | {{ article.data.minsRead }}
-              </p>
-            </div>
-          </div>
         </article>
-        
-        <div class="p-4 sm:px-6 sm:ml-8">
+
+        <div class="p-4 md:pl-12">
           <p>Bagikan artikel ini:</p>
           <ul class="mt-2 flex">
             <ShareNetwork

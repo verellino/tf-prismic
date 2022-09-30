@@ -8,10 +8,12 @@
           <div
             class="align-start border-blogs-right__desktop col-span-2 flex flex-col sm:pr-8"
           >
+          Repeat this section for each Subcategory and articles inside
             <h2 class="section-title mb-6">Artikel Terbaru</h2>
             <ul
               class="artikel_terbaru-grid__ul grid grid-cols-1 gap-8 sm:grid-cols-2"
             >
+            <!-- <h3 v-for="title in articles" :key="title.title">{{ title}}</h3> -->
               <ArticleGridItemWithImg
                 v-for="article in articles"
                 :key="article.id"
@@ -47,7 +49,7 @@
 export default {
   props: {
     articles: {
-      type: Array,
+      type: Object,
       required: true,
     },
     news: {

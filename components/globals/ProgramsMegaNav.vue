@@ -43,22 +43,6 @@
               class="border-blogs-bottom p-4 hover:bg-dark-maroon hover:font-bold hover:text-white"
             >
               <a
-                href="/"
-                class="group flex"
-                @keydown.esc.exact="hideMenu"
-                @keydown.tab.exact="focusNext(false)"
-                @keydown.down.exact.prevent="focusNext(true)"
-                @keydown.up.exact.prevent=""
-              >
-                <span class="ml-2">
-                  <span class="block items-center">Laporan</span>
-                </span>
-              </a>
-            </li>
-            <li
-              class="border-blogs-bottom p-4 hover:bg-dark-maroon hover:font-bold hover:text-white"
-            >
-              <a
                 href="/training"
                 class="group flex"
                 @keydown.esc.exact="hideMenu"

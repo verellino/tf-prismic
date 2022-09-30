@@ -3,7 +3,7 @@
   <div class="featured-blogs">
     <hr class="h-px w-full border-0 bg-slate-100" />
     <div class="container px-4 py-12 md:px-10">
-      <h2 class="section-title">Artikel Unggulan</h2>
+      <h2 class="section-title mb-6">Artikel Unggulan</h2>
       <client-only>
         <ul
           class="featured-grid__ul grid grid-cols-1 gap-y-4 md:grid-cols-4 md:gap-x-8"

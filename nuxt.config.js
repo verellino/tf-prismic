@@ -94,7 +94,7 @@ export default {
         {
           type: "report",
           path: "/report/:uid",
-        },
+        }
       ],
     },
     htmlSerializer(type, element, content, children) {
