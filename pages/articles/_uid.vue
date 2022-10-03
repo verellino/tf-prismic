@@ -22,6 +22,12 @@
             <h1 class="text-maroon mx-3 mb-3 text-2xl">
               {{ article.data.title }}
             </h1>
+            
+            <div class="text-left">
+              <p>
+                {{ formattedDate }} | {{ article.data.minsRead }}
+              </p>
+            </div>
           </div>
         </div>
         <article style="hyphens: auto">
@@ -33,11 +39,6 @@
               </p>
               <p>
                 Editor: {{ article.data.editor }}
-              </p>
-            </div>
-            <div class="text-left">
-              <p>
-                {{ formattedDate }} | {{ article.data.minsRead }}
               </p>
             </div>
           </div>
@@ -70,6 +71,7 @@
         </Bounded>
       </div>
       <!-- Right Blogs Section  -->
+      <hr class="h-px w-full border-0 bg-slate-200 mt-8">
       <div class="col-span-1">
         <div v-if="latestArticles.length" class="">
           <div class="w-full">

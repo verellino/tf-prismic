@@ -42,7 +42,7 @@
       <div class="carousel__desktop hidden md:block">
         <VueSlickCarousel v-bind="slickOptions">
           <ul v-for="article in articles" :key="article.id">
-            <ArticleGridItemWithImg :article="article" class="px-8" />
+            <ArticleGridItemWithImg :article="article" class="px-8 carousel__desktop--article" />
           </ul>
           <template #prevArrow="arrowOption">
             <div class="custom-arrow absolute top-1/2 -left-8">
@@ -112,6 +112,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.carousel__desktop--article img {
+  border-radius: 0;
+}
 .swiper {
   width: 100%;
   height: 100%;

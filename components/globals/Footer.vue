@@ -1,35 +1,14 @@
 <template>
   <div class="w-full bg-red-800 font-normal text-white">
     <div
-      class="grid grid-rows-1 gap-8 p-4 py-12 md:grid-flow-col md:grid-cols-10 md:px-16"
+      class="grid grid-rows-1 gap-8 p-4 py-12 md:gap-7 md:grid-flow-col md:grid-cols-12 md:px-16"
     >
-      <div class="col-span-2 pr-8 -m-4">
-        <img src="/Logo-White-Text.png" alt="logo TF" />
-        <ul class="ml-2 mt-6 flex gap-6">
-          <li class="mb-2">
-            <nuxt-link to="/" class="text-xs font-normal"
-              ><i class="fab fah fa-lg fa-instagram mr-2"></i
-            ></nuxt-link>
-          </li>
-          <li class="mb-2">
-            <nuxt-link to="/" class="text-xs font-normal"
-              ><i class="fab fah fa-lg fa-facebook-f mr-2"></i
-            ></nuxt-link>
-          </li>
-          <li class="mb-2">
-            <nuxt-link to="/" class="text-xs font-normal"
-              ><i class="fab fah fa-lg fa-linkedin mr-2"></i
-            ></nuxt-link>
-          </li>
-          <li class="mb-2">
-            <nuxt-link to="/" class="text-xs font-normal"
-              ><i class="fab fah fa-lg fa-whatsapp mr-2"></i
-            ></nuxt-link>
-          </li>
-        </ul>
+      <div class="col-span-3 pr-8 -m-4">
+        <img src="/Logo-White-Text.png" alt="logo TF" class="w-full" />
       </div>
+      <div class="col-span-1"></div>
       <div class="col-span-2">
-        <span class="h5 font-bold uppercase text-light-gray"
+        <span class="text-xs font-bold uppercase text-light-gray"
           >Innovating Indonesia</span
         >
         <ul class="mt-4">
@@ -47,7 +26,7 @@
         </ul>
       </div>
       <div class="col-span-2">
-        <span class="h5 font-bold uppercase text-light-gray">Perusahaan</span>
+        <span class="text-xs font-bold uppercase text-light-gray">Perusahaan</span>
         <ul class="mt-4">
           <li class="mb-2">
             <nuxt-link to="/" class="text-xs font-normal"
@@ -70,7 +49,7 @@
         </ul>
       </div>
       <div class="col-span-2">
-        <span class="h5 font-bold uppercase text-light-gray">Layanan</span>
+        <span class="text-xs font-bold uppercase text-light-gray">Layanan</span>
         <ul class="mt-4">
           <li class="mb-2">
             <nuxt-link to="/" class="text-xs font-normal">Riset</nuxt-link>
@@ -79,15 +58,15 @@
             <nuxt-link to="/training" class="text-xs font-normal">Pelatihan</nuxt-link>
           </li>
           <li class="mb-2">
-            <nuxt-link to="/" class="text-xs font-normal">Konsultasi</nuxt-link>
+            <nuxt-link to="/menata" class="text-xs font-normal">Mentoring</nuxt-link>
           </li>
           <li class="mb-2">
-            <nuxt-link to="/menata" class="text-xs font-normal">Mentoring</nuxt-link>
+            <nuxt-link to="/" class="text-xs font-normal">Konsultasi</nuxt-link>
           </li>
         </ul>
       </div>
       <div class="col-span-2">
-        <!-- <span class="h5 font-bold uppercase text-light-gray">Media Sosial</span> -->
+        <!-- <span class="text-xs font-bold uppercase text-light-gray">Media Sosial</span> -->
         <!-- <SignUpForm :settings="settings" /> -->
         <form 
           action="/api/sign-up"
@@ -113,6 +92,28 @@
               </button>
             </div>
           </form>
+          <ul class="ml-2 mt-6 flex gap-6">
+          <li class="mb-2">
+            <nuxt-link to="/" class="text-xs font-normal"
+              ><i class="fab fah fa-lg fa-instagram mr-2"></i
+            ></nuxt-link>
+          </li>
+          <li class="mb-2">
+            <nuxt-link to="/" class="text-xs font-normal"
+              ><i class="fab fah fa-lg fa-facebook-f mr-2"></i
+            ></nuxt-link>
+          </li>
+          <li class="mb-2">
+            <nuxt-link to="/" class="text-xs font-normal"
+              ><i class="fab fah fa-lg fa-linkedin mr-2"></i
+            ></nuxt-link>
+          </li>
+          <li class="mb-2">
+            <nuxt-link to="/" class="text-xs font-normal"
+              ><i class="fab fah fa-lg fa-whatsapp mr-2"></i
+            ></nuxt-link>
+          </li>
+        </ul>
       </div>
       <!-- <div class="mx-auto w-full max-w-3xl text-center text-xxs font-bold tracking-tight text-slate-500">
         Proudly published using <a href="https://prismic.io" class="text-slate-700">Prismic</a>

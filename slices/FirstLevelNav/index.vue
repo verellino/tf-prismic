@@ -1,10 +1,10 @@
 <template>
-  <li class="mb-6 sm:mr-8 lg:mb-0 relative" @mouseover="showMenu" @mouseleave="hideMenu">
+  <li class="mb-6 sm:mx-2 lg:mb-0 relative" @mouseover="showMenu" @mouseleave="hideMenu">
     <PrismicRichText :field="slice.primary.title"
       class="link_underline relative hover:font-semibold hover:text-dark-maroon" @focus="showMenu"
       @keydown.shift.tab="hideMenu" @keydown.esc.exact="hideMenu" @keydown.up.exact.prevent="startArrowKeys"
       @keydown.down.exact.prevent="startArrowKeys" />
-    <span class="float-right ml-2 w-6"><img src="~assets/images/bottom-chev.svg" alt="expand more" /></span>
+    <span class="float-right ml-2 w-6"><img src="~assets/images/bottom-chev-maroon.svg" alt="expand more" /></span>
     <div class="absolute w-full">&nbsp;</div>
     <transition name="mega-menu-fade">
       <div v-show="isVisible"

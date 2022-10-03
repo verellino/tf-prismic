@@ -61,6 +61,14 @@ export default {
       desc,
     };
   },
+  computed: {
+    navigation() {
+      return this.$store.state.prismic.navigation;
+    },
+    settings() {
+      return this.$store.state.prismic.settings;
+    },
+  },
   layout: 'default'
 };
 </script>

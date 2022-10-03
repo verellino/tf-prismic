@@ -98,7 +98,7 @@ h5, .h5 {
   @apply text-sm mt-2 hidden md:block leading-relaxed mb-2 pr-8;
 }
 .category-span {
-  @apply uppercase mr-2 inline-block bg-red-50 py-1 px-2 rounded-md text-xxs text-dark-maroon font-semibold tracking-wide;
+  @apply uppercase mr-2 inline-block py-1 px-2 rounded-md text-xxs text-dark-maroon border border-dark-maroon font-semibold tracking-wide;
 }
 
 .article-details-bottom-span {
