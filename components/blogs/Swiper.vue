@@ -4,7 +4,7 @@
       <div class="carousel__mobile block md:hidden">
         <VueSlickCarousel v-bind="slickOptionsMobile">
           <ul v-for="article in articles" :key="article.id">
-            <ArticleGridItemWithImg :article="article" class="px-1" />
+            <ArticleGridItemNoCorners :article="article" class="px-1" />
           </ul>
           <template #prevArrow="arrowOption">
             <div class="custom-arrow absolute top-1/2 -left-12 h-4 w-4">
@@ -42,7 +42,7 @@
       <div class="carousel__desktop hidden md:block">
         <VueSlickCarousel v-bind="slickOptions">
           <ul v-for="article in articles" :key="article.id">
-            <ArticleGridItemWithImg :article="article" class="px-8 carousel__desktop--article" />
+            <ArticleGridItemNoCorners :article="article" class="px-8 carousel__desktop--article" />
           </ul>
           <template #prevArrow="arrowOption">
             <div class="custom-arrow absolute top-1/2 -left-8">
