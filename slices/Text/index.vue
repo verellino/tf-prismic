@@ -1,5 +1,5 @@
 <template>
-  <Bounded as="section" class="md:ml-8">
+  <Bounded as="section" class="md:ml-4">
     <PrismicRichText
       v-if="$prismic.asText(slice.primary.text)"
       class="article-text"

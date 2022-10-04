@@ -1,22 +1,25 @@
 <template>
   <div class="absolute z-10 w-full bg-white font-sans text-gray-800 shadow-sm">
-    <nav class="mx-auto flex flex-wrap items-center justify-between px-8 py-5">
+    <nav class="mx-auto sm:flex flex-wrap items-center justify-between px-8 py-5">
       <!-- Logo -->
-      <div class="mb-0 lg:mb-6 xl:mb-0 flex w-44 overflow-hidden">
+      <div class="mb-0 sm:mb-6 sm:mr-8 xl:mb-0 flex w-44 overflow-hidden">
         <router-link :to="`/`" class="font-bold flex items-end">
           <PrismicImage :field="navigation.data.logo" class="object-cover w-full object-center"/>
         </router-link>
       </div>
       <!-- Navigation  -->
+      <div class="sm:flex justify-between">
+
         <slice-zone
           :components="components"
           :slices="navigation.data.body"
           class="mt-8 block w-full flex-grow items-center capitalize tracking-wide lg:mt-0 lg:flex lg:w-auto lg:flex-initial list-none"
           :class="menuOpen ? 'block' : 'hidden'"
         />
-        <li class="list-none hidden sm:block">
+        <li class="list-none hidden sm:block sm:ml-4">
           <GlobalsSearchForm />
         </li>
+      </div>
       <div class="absolute top-5 right-8 block sm:relative lg:hidden">
         <button
           @click="toggleMenu"

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mx-4 pt-24 sm:mx-14">
+    <div class="mx-4 pt-28 sm:mx-14">
       <div
         v-if="featuredImage"
         class="article-main-image relative mb-8 w-full overflow-hidden rounded-md"
@@ -22,17 +22,14 @@
             <h1 class="text-maroon mx-3 mb-3 text-2xl">
               {{ article.data.title }}
             </h1>
-            
-            <div class="text-left">
-              <p>
-                {{ formattedDate }} | {{ article.data.minsRead }}
-              </p>
-            </div>
+            <p class="md:ml-8">
+              {{ formattedDate }} | {{ article.data.minsRead }}
+            </p>
           </div>
         </div>
         <article style="hyphens: auto">
           <SliceZone :slices="article.data.slices" :components="components" />
-          <div class="p-4 md:px-6 sm:ml-8">
+          <div class="p-4 md:px-6 sm:ml-4">
             <div class="mr-32 text-left text-xs">
               <p>
                 Penulis: {{ article.data.writer }}
@@ -44,7 +41,7 @@
           </div>
         </article>
         
-        <div class="p-4 sm:px-6 sm:ml-8">
+        <div class="p-4 sm:px-6 sm:ml-4">
           <p>Bagikan artikel ini:</p>
           <ul class="mt-2 flex">
             <ShareNetwork
@@ -71,11 +68,10 @@
         </Bounded>
       </div>
       <!-- Right Blogs Section  -->
-      <hr class="h-px w-full border-0 bg-slate-200 mt-8">
-      <div class="col-span-1">
+      <div class="col-span-1 border-blogs-left__desktop">
         <div v-if="latestArticles.length" class="">
-          <div class="w-full">
-            <h2 class="pl-4">Artikel Terbaru</h2>
+          <div class="w-full px-4">
+            <h2 class="section-title">Artikel Terbaru</h2>
             <ul class="grid grid-cols-1 gap-y-2">
               <ArticleBlogsListItem
                 v-for="article in latestArticles"
@@ -84,10 +80,10 @@
               />
             </ul>
           </div>
-          <HorizontalDivider class="w-full" />
         </div>
       </div>
     </div>
+    <hr class="h-px w-full border-0 bg-slate-200 mt-8">
     <!-- More Blogs Bottom Section  -->
     <div>
       <BlogsMoreBlogs :articles="similarArticles" />

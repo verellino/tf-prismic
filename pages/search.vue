@@ -58,6 +58,7 @@ export default {
       )
  
       // Returns data to be used in template
+      await store.dispatch("prismic/load");
       return {
         result: searchresult.results,
         searchterm: query.search

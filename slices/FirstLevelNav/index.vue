@@ -33,6 +33,40 @@
         </div>
       </div>
     </transition>
+    <div
+      v-show="isVisible"
+      class="mega-menu borderfont-normal right-0 z-30 w-full overflow-hidden normal-case sm:hidden"
+    >
+      <div class="-mx-4 flex flex-col py-2 pl-4">
+        <ul v-for="(item, i) in slice.items" :key="`slice-item-${i}`" class="w-full">
+          <li v-if="item.secondNavLink.link_type === 'Document'" 
+            class="py-4 hover:bg-dark-maroon hover:text-white"
+          >
+            <nuxt-link
+              :to="`/category/${item.secondNavLink.id}`"
+              class="group flex"
+              @keydown.esc.exact="hideMenu"
+              @keydown.tab.exact="focusNext(false)"
+              @keydown.down.exact.prevent="focusNext(true)"
+              @keydown.up.exact.prevent=""
+            >
+              <span class="ml-2">
+                <span class="block items-center">{{ item.subcategoryTitle }}</span>
+              </span>
+            </nuxt-link>
+          </li>
+           <li v-else  class="py-4 hover:bg-dark-maroon hover:text-white">
+              <PrismicLink :field="item.secondNavLink" class="group flex" @keydown.esc.exact="hideMenu"
+                @keydown.tab.exact="focusNext(false)" @keydown.down.exact.prevent="focusNext(true)"
+                @keydown.up.exact.prevent="">
+                <span class="ml-2">
+                  <span class="block items-center">{{ item.subcategoryTitle }}</span>
+                </span>
+              </PrismicLink>
+            </li>
+        </ul>
+      </div>
+    </div>
   </li>
 </template>
 

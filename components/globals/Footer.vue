@@ -3,10 +3,10 @@
     <div
       class="grid grid-rows-1 gap-8 p-4 py-12 md:gap-7 md:grid-flow-col md:grid-cols-12 md:px-16"
     >
-      <div class="col-span-3 pr-8 -m-4">
+      <div class="col-span-2 sm:col-span-3 pr-8 -m-4">
         <img src="/Logo-White-Text.png" alt="logo TF" class="w-full" />
       </div>
-      <div class="col-span-1"></div>
+      <div class="hidden sm:block sm:col-span-1"></div>
       <div class="col-span-2">
         <span class="text-xs font-bold uppercase text-light-gray"
           >Innovating Indonesia</span
@@ -77,19 +77,20 @@
             >
             <span class="text-xs font-bold uppercase text-light-gray">Daftar newsletter kami</span>
               <label for="email" class="sr-only">Email</label>
+              <div class="flex items-center relative">
+                <input
+                  class="w-full px-4 py-2 bg-white border-gray-200 text-xs text-slate-900"
+                  type="email"
+                  placeholder="Email"
+                />
 
-              <input
-                class="w-full px-4 py-2 bg-white border-gray-200 rounded-md shadow-sm text-xs text-slate-900"
-                type="email"
-                placeholder="Email"
-              />
-
-              <button
-                class="block px-4 py-2 font-medium text-maroon transition bg-white rounded-md text-xs hover:bg-dark-maroon hover:text-white hover:border hover:border-maroon"
-                type="submit"
-              >
-                <i class="fa fa-envelope mr-2" aria-hidden="true"></i> Subscribe
-              </button>
+                <button
+                  class="block p-2 font-medium transition text-xs absolute right-0 bg-dark-maroon text-white"
+                  type="submit"
+                >
+                  <i class="fa fa-envelope" aria-hidden="true"></i> Subscribe
+                </button>
+              </div>
             </div>
           </form>
           <ul class="ml-2 mt-6 flex gap-6">

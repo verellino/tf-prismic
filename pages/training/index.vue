@@ -32,6 +32,7 @@ export default {
         pageSize: 100,
       }
     );
+    await store.dispatch("prismic/load");
     return {
       articles,
     };

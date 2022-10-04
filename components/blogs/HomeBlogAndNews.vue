@@ -29,21 +29,27 @@
             class="align-start col-span-2 flex flex-col justify-start md:col-span-1"
           >
             <h2 class="section-title">Berita Terbaru</h2>
-            <ul class="">
+            <ul class="news-list">
               <ArticleBeritaListItem
                 v-for="article in news.slice(0, 8)"
                 :key="article.id"
                 :article="article"
               />
             </ul>
-            <!-- <h2 class="section-title">Expert Contribution</h2>
-            <ul class="">
-              <ArticleBeritaListItem
-                v-for="article in expert.slice(0, 6)"
-                :key="article.id"
-                :article="article"
-              />
-            </ul> -->
+
+            <div v-if="expert">
+              <hr class="h-px w-full border-0 bg-slate-200 my-2">
+              <h2 class="section-title">Expert Contribution</h2>
+              <ul class="">
+                <ArticleBeritaListItem
+                  v-for="article in expert.slice(0, 6)"
+                  :key="article.id"
+                  :article="article"
+                />
+              </ul>
+            </div>
+            <hr class="h-px w-full border-0 bg-slate-200 my-2">
+
             <h2 class="section-title ">Events</h2>
             <ul class="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <EventsListItem
@@ -52,6 +58,9 @@
                 :article="article"
               />
             </ul>
+
+            <hr class="h-px w-full border-0 bg-slate-200 my-2">
+
             <h2 class="section-title mt-6">Programs</h2>
             <ul class="">
               <TrainingListItem
@@ -106,5 +115,8 @@ export default {
 }
 .artikel_terbaru-grid__ul li:nth-child(n + 3) .article-img {
   display: none;
+}
+.news-list:nth-last-child() {
+  border-bottom: none;
 }
 </style>

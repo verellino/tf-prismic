@@ -1,5 +1,5 @@
 <template>
-  <Bounded as="section" class="sm:ml-8 pt-0 break-words">
+  <Bounded as="section" class="sm:ml-4 lg:pt-0 break-words">
     <h3 class="h2 mb-7 text-maroon">Referensi</h3>
     <PrismicRichText
       v-if="$prismic.asText(slice.primary.references)"

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="pt-16">
     <!-- <section class="relative">
       <h2 class="pt-6 text-center">Tren Terkini</h2>
       <BlogsSwiper :articles="heroArticles" />
@@ -123,6 +123,7 @@ export default {
       }
 
     );
+    await store.dispatch("prismic/load");
     return {
       articles,
       articlesEco,

@@ -1,6 +1,6 @@
 <!-- Article / Blog List Item -->
 <template>
-  <li class="flex flex-col justify-center p-4">
+  <li class="blogs-article-list-item flex flex-col justify-center py-4">
     <PrismicLink :field="article" tab-index="-1">
       <div>
         <Heading as="h5">
@@ -72,3 +72,11 @@ export default {
   },
 };
 </script>
+<style scoped>
+.blogs-article-list-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.blogs-article-list-item:nth-last-child(1) {
+  border-bottom: none;
+}
+</style>
