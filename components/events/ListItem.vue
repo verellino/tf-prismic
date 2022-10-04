@@ -1,6 +1,6 @@
 <template>
   <li
-    class="article-list-item relative flex min-h-20 flex-col justify-between"
+    class="relative flex min-h-20 flex-col justify-between"
   >
     <PrismicLink :field="article" tab-index="-1" class="flex flex-col">
       <div
@@ -78,11 +78,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-.article-list-item {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-.article-list-item:nth-last-child(1) {
-  border-bottom: none;
-}
-</style>
