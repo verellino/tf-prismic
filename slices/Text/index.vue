@@ -1,12 +1,12 @@
 <template>
-  <Bounded as="section" class="md:ml-4">
+  <section class="mx-0 md:px-6 sm:ml-4">
     <PrismicRichText
       v-if="$prismic.asText(slice.primary.text)"
       class="article-text"
       :field="slice.primary.text"
       wrapper="div"
     />
-  </Bounded>
+  </section>
 </template>
 
 <script>

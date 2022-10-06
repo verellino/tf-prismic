@@ -1,7 +1,7 @@
 <template>
   <li class="mb-6 sm:mx-2 lg:mb-0 relative" @mouseover="showMenu" @mouseleave="hideMenu">
     <PrismicRichText :field="slice.primary.title"
-      class="link_underline relative hover:font-semibold hover:text-dark-maroon" @focus="showMenu"
+      class="link_underline relative hover:font-semibold hover:text-red-800" @focus="showMenu"
       @keydown.shift.tab="hideMenu" @keydown.esc.exact="hideMenu" @keydown.up.exact.prevent="startArrowKeys"
       @keydown.down.exact.prevent="startArrowKeys" />
     <span class="float-right ml-2 w-6"><img src="~assets/images/bottom-chev-maroon.svg" alt="expand more" /></span>

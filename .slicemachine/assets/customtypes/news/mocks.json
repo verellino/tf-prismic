@@ -1,18 +1,18 @@
 {
-  "id": "031ed559-1938-4f3f-8233-53d2831b8046",
-  "uid": "magnam-quidem-maiores",
+  "id": "6821a47d-66bb-4c9b-8a72-3cd360a3057b",
+  "uid": "neque-sequi-quia",
   "type": "news",
   "data": {
-    "title": "expedite proactive schemas",
-    "writer": "redefine visionary eyeballs",
-    "editor": "optimize distributed web services",
-    "minsRead": "e-enable proactive vortals",
-    "publishDate": "2022-03-22T06:21:11.279Z",
-    "section": "Government",
-    "category": "Energi dan Lingkungan",
+    "title": "whiteboard enterprise infrastructures",
+    "writer": "maximize seamless e-markets",
+    "editor": "grow cross-media solutions",
+    "minsRead": "incubate 24/7 content",
+    "publishDate": "2022-09-12T12:50:50.852Z",
+    "section": "Ekonomi",
+    "category": "Industri dan Perdagangan",
     "categories": {
       "link_type": "Web",
-      "url": "http://twitter.com"
+      "url": "https://prismic.io"
     },
     "mainImage": {
       "dimensions": {
@@ -21,8 +21,8 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=900&h=500&fit=crop"
     },
-    "featured": false
+    "featured": true
   }
 }

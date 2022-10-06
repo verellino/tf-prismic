@@ -6,11 +6,11 @@
     id="search"
     placeholder="Search"
     v-model="searchinput"
-    class="relative w-full outline outline-1 outline-gray-400 rounded-md p-2 pl-8 text-sm appearance-none focus:outline-black active:outline-none"
+    class="relative w-full outline outline-1 outline-gray-400 rounded-md p-2 pl-8 text-sm appearance-none focus:outline-red-800 active:outline-none"
   />
   <svg
         fill="none"
-        stroke="#9ca3af"
+        stroke="#991b1b"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -21,7 +21,7 @@
       </svg>
   <button
     type="submit"
-    class="ml-1 text-gray-400 outline-none hover:text-black focus:outline-none active:outline-none"
+    class="ml-1 text-red-800 outline-none hover:text-black focus:outline-none active:outline-none"
   ></button>
   
 </form>

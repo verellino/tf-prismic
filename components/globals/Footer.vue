@@ -69,9 +69,13 @@
         <!-- <span class="text-xs font-bold uppercase text-light-gray">Media Sosial</span> -->
         <!-- <SignUpForm :settings="settings" /> -->
         <form 
-          action="/api/sign-up"
+          name="newsletter"
+          action="/thanks-newsletter"
           method="post"
+          netlify
+          netlify-honeypot="bot-field"
           >
+            <input type="hidden" name="form-name" value="newsletter" />
             <div
               class="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-start"
             >
@@ -81,7 +85,8 @@
                 <input
                   class="w-full px-4 py-2 bg-white border-gray-200 text-xs text-slate-900"
                   type="email"
-                  placeholder="Email"
+                  name="email"
+                  placeholder="Email" required
                 />
 
                 <button
@@ -92,7 +97,7 @@
                 </button>
               </div>
             </div>
-          </form>
+        </form>
           <ul class="ml-2 mt-6 flex gap-6">
           <li class="mb-2">
             <nuxt-link to="/" class="text-xs font-normal"

@@ -14,7 +14,7 @@
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-3">
       <div class="col-span-1 sm:col-span-2">
-        <div>
+        <div class="p-4 sm:px-6 sm:ml-4 pt-0">
           <div class="pb-0 text-center">
             <p class="mt-2 mb-2 text-sm font-semibold uppercase">
               {{ article.data.section }} <span v-if="article.data.category">| {{ article.data.category }}</span>
@@ -36,6 +36,14 @@
               </p>
               <p>
                 Editor: {{ article.data.editor }}
+              </p>
+              <!-- Tags -->
+              <p class="mt-2">
+                Keywords:  
+                <span v-for="(t, index) in article.tags" class="mr-1">
+                  <span v-if="index != article.tags.length - 1">{{t}},</span>
+                  <span v-else>{{t}}</span>
+                </span>
               </p>
             </div>
           </div>
@@ -164,7 +172,7 @@ export default {
         ]
           .map(({ field, direction }) => `${field} ${direction}`)
           .join(", ")}]`,
-        pageSize: 8,
+        pageSize: 24,
       }
     );
 

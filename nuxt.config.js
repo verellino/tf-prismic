@@ -38,7 +38,7 @@ export default {
     ],
   },
   loading: {
-    color: "#7b1f1e",
+    color: "#991b1b",
   },
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ["@nuxt/postcss8", "@nuxtjs/prismic", "@nuxtjs/google-fonts"],

@@ -1,12 +1,13 @@
 <template>
   <main class="container pt-24 col-start-2 col-end-12 px-4 sm:px-10">
+    <h1 class="section-title text-center">Pencarian</h1>
     <client-only>
-    <div class="mb-16 mt-8 text-2xl Search">
-      <div>
-        <strong>Results for:</strong>
+    <div class="mb-16 mt-8 Search">
+      <h2 class="h3">
+        Hasil untuk:
         {{searchterm}}
-      </div>
-      <div class="w-1/12 mt-2 border-b-4 border-gray-400"></div>
+      </h2>
+      <div class="w-1/12 mt-2 border-b-4 border-red-800"></div>
     </div>
  
     <div v-if="result.length > 0" class="grid grid-cols-12 row-gap-16 md:col-gap-16">
@@ -14,21 +15,21 @@
         <ArticleGridItemWithImg :article="article" />
       </ul>
  
-      <div class="flex col-span-12 mt-16 loadmore">
+      <!-- <div class="flex col-span-12 mt-16 loadmore">
         <button
           class="px-8 py-2 mx-auto text-lg text-center border-2 border-black border-solid cursor-pointer dark-mode:border-white hover:border-accent-dark"
           @click="loadMoreResults()"
           v-if="result.length % 9 === 0 && !nonewposts"
         >Load more results</button>
-      </div>
+      </div> -->
     </div>
  
-    <div v-else class="text-xl font-semibold">Sorry, no result</div>
+    <div v-else class="text-xl font-semibold">Maaf, tidak menemukan artikel dengan kata: {{searchterm}}</div>
  
     <div class="w-2/3 mx-auto my-16 md:w-1/2 searchform">
       <div class="mb-4">
-        <div class="text-2xl">Change your search</div>
-        <div class="w-1/12 mt-2 border-b-4 border-gray-400"></div>
+        <div class="text-2xl">Ulangi pencarian</div>
+        <div class="w-1/12 mt-2 border-b-4 border-red-800"></div>
       </div>
       <GlobalsSearchForm :currentinput="searchterm" />
     </div>
@@ -46,8 +47,7 @@ export default {
       nonewposts: false
     }
   },
-  async asyncData({ $prismic, error, query }) {
-    try {
+  async asyncData({ $prismic, store, error, query }) {
       // Query for keyword
       const searchresult = await $prismic.api.query(
         [
@@ -63,41 +63,37 @@ export default {
         result: searchresult.results,
         searchterm: query.search
       }
-    } catch (e) {
-      // Returns error page
-      error({ statusCode: 404, message: 'Page not found' })
-    }
   },
   methods: {
-    async loadMoreResults() {
-      try {
-        // Query other page for search
-        const searchresult = await this.$prismic.api.query(
-          [
-            this.$prismic.predicates.at('document.type', 'post'),
-            this.$prismic.predicates.fulltext('document', this.searchterm)
-          ],
-          {
-            orderings: '[document.first_publication_date desc]',
-            pageSize: 9,
-            page: this.currentpage + 1
-          }
-        )
+    // async loadMoreResults() {
+    //   try {
+    //     // Query other page for search
+    //     const searchresult = await this.$prismic.api.query(
+    //       [
+    //         this.$prismic.predicates.at('document.type', 'article'),
+    //         this.$prismic.predicates.fulltext('document', this.searchterm)
+    //       ],
+    //       {
+    //         orderings: '[document.first_publication_date desc]',
+    //         pageSize: 9,
+    //         page: this.currentpage + 1
+    //       }
+    //     )
  
-        if (searchresult.results.length > 0) {
-          // Merge with the other posts
-          this.result = this.result.concat(searchresult.results)
-        } else {
-          // No more new posts
-          this.nonewposts = true
-        }
+    //     if (searchresult.results.length > 0) {
+    //       // Merge with the other posts
+    //       this.result = this.result.concat(searchresult.results)
+    //     } else {
+    //       // No more new posts
+    //       this.nonewposts = true
+    //     }
  
-        // Save current page
-        this.currentpage++
-      } catch (e) {
-        console.error(e)
-      }
-    }
+    //     // Save current page
+    //     this.currentpage++
+    //   } catch (e) {
+    //     console.error(e)
+    //   }
+    // }
   }
 }
 </script>

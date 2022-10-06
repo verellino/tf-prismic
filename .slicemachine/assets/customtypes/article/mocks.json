@@ -1,15 +1,15 @@
 {
-  "id": "f445ea77-4131-4d5f-a00b-b02f41f8de7f",
-  "uid": "dignissimos-expedita-accusantium",
+  "id": "cd9f97a8-d0ef-42cf-8bd9-ff4fe4f19431",
+  "uid": "quia-atque-voluptate",
   "type": "article",
   "data": {
-    "title": "enhance sticky e-tailers",
-    "writer": "seize web-enabled platforms",
-    "editor": "evolve out-of-the-box vortals",
-    "minsRead": "engage dot-com networks",
-    "publishDate": "2013-05-02T18:49:38.142Z",
-    "section": "Ekonomi",
-    "category": "Industri dan Perdagangan",
+    "title": "synthesize back-end schemas",
+    "writer": "engineer enterprise users",
+    "editor": "extend intuitive metrics",
+    "minsRead": "synthesize sexy markets",
+    "publishDate": "2019-04-25T08:00:03.109Z",
+    "section": "Teknologi",
+    "category": "Internet of Things",
     "categories": {
       "link_type": "Web",
       "url": "http://google.com"
@@ -21,14 +21,14 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"
     },
-    "featured": true,
+    "featured": false,
     "hero-slider": false,
     "description": [
       {
         "type": "paragraph",
-        "text": "Proident deserunt aliquip exercitation laboris excepteur esse consequat minim elit proident nostrud.",
+        "text": "Ex ipsum et consectetur sit culpa irure elit reprehenderit elit qui proident sint fugiat.",
         "spans": []
       }
     ],
@@ -39,10 +39,10 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
     },
     "card-type": "Standard Summary Card",
-    "twitter-handle": "optimize global content",
+    "twitter-handle": "recontextualize seamless convergence",
     "twitter-image": {
       "dimensions": {
         "width": 300,
@@ -50,7 +50,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=300&h=300&fit=crop",
+      "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=300&h=300&fit=crop",
       "large_image": {
         "dimensions": {
           "width": 600,
@@ -58,7 +58,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=600&h=314&fit=crop"
+        "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=600&h=314&fit=crop"
       }
     }
   }

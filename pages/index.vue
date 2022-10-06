@@ -6,6 +6,7 @@
     <BlogsHomeBlogAndNews :articles="articles.slice(0, 10)" :news="news" :events="events" :programs="programs" />
     <!-- <BlogsFeaturedwImgBlog :articles="featuredArticles" /> -->
     <!-- <BlogsCategoryGrid :articles="articles" :categories="categories" /> -->
+    <HomeSectionsFeaturedBlogs :articles="featuredArticles" />
     <HomeSectionsCategoryThreeCol
       :articlesEco="articlesEco.slice(0, 4)"
       :articlesGov="articlesGov.slice(0, 4)"

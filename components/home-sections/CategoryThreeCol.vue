@@ -1,7 +1,6 @@
 <template>
   <div class="border-blogs-bottom">
     <div class="container px-4 py-8">
-      <h2 class="section-title mb-6 px-8">Artikel Unggulan</h2>
       <ul class="flex flex-col sm:flex-row sm:px-4 sm:pt-4">
         <div class="w-full sm:w-1/3 sm:px-4 sm:pr-8">
           <nuxt-link to="/sector/economy" class="h3 link_underline section-title">

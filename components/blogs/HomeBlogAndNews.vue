@@ -72,9 +72,9 @@
             </ul>
           </div>
         </div>
+        <hr class="h-px w-full border-0 bg-slate-200 mt-8">
       </div>
     </client-only>
-    <hr class="h-px w-full border-0 bg-slate-200 mt-8">
   </div>
 </template>
 

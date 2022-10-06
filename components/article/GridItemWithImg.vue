@@ -4,12 +4,12 @@
     <PrismicLink :field="article" tab-index="-1">
       <div
         v-if="featuredImage"
-        class="article-img relative max-h-56 w-full overflow-hidden rounded-md pb-4"
+        class="article-img relative max-h-56 w-full overflow-hidden pb-4"
       >
         <PrismicImage
           v-if="featuredImage.url"
           :field="featuredImage"
-          class="h-full w-full rounded-md object-cover object-center"
+          class="h-full w-full object-cover object-center"
         />
       </div>
       <!-- <div v-if="!!featuredImage" class="sm:h-20"></div> -->

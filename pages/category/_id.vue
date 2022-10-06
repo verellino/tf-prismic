@@ -44,7 +44,6 @@ export default {
         pageSize: 10,
       }
     );
-    console.log(params.id)
     await store.dispatch("prismic/load");
     return {
       articles,

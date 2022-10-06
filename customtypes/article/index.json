@@ -104,19 +104,19 @@
       "featured": {
         "type": "Boolean",
         "config": {
-          "label": "Featured",
-          "default_value": false,
+          "label": "Featured - \"Artikel Unggulan\"",
+          "placeholder_false": "false",
           "placeholder_true": "true",
-          "placeholder_false": "false"
+          "default_value": false
         }
       },
       "hero-slider": {
         "type": "Boolean",
         "config": {
-          "label": "Tampilkan di Hero",
-          "default_value": false,
+          "label": "Hero Articles - \"Key Highlights\"",
+          "placeholder_false": "false",
           "placeholder_true": "true",
-          "placeholder_false": "false"
+          "default_value": false
         }
       },
       "slices": {

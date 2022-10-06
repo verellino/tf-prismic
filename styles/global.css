@@ -20,14 +20,14 @@ html, body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 h1, .h1 {
   font-size: 2.4em;
   font-weight: 600;
-  color: #7b1f1e;
+  color: #991b1b;
 }
 
 h2, .h2 {
   font-size: 2em;
   font-weight: 300;
   font-variant: all-small-caps;
-  color: #7b1f1e;
+  color: #991b1b;
 }
 
 h3, .h3 {
@@ -53,7 +53,7 @@ h5, .h5 {
     width: 100%;
     height: 2px;
     border-radius: 4px;
-    background-color: #7b1f1e;
+    background-color: #991b1b;
     bottom: 0;
     left: 0;
     transform-origin: right;
@@ -68,7 +68,7 @@ h5, .h5 {
 .section-title{
   font-weight: 600;
   font-variant: all-small-caps;
-  color: #7b1f1e;
+  color: #991b1b;
 }
 .blue-primary{
     color: #1478B3;
@@ -98,7 +98,7 @@ h5, .h5 {
   @apply text-sm mt-2 hidden md:block leading-relaxed mb-2 pr-8;
 }
 .category-span {
-  @apply uppercase mr-2 inline-block py-1 px-2 rounded-md text-xxs text-dark-maroon border border-dark-maroon font-semibold tracking-wide;
+  @apply uppercase mr-2 inline-block py-1 px-2 rounded-md text-xxs text-red-800 border border-dark-maroon font-semibold tracking-wide;
 }
 
 .article-details-bottom-span {
@@ -120,11 +120,11 @@ h5, .h5 {
   padding-top:16px;
 }
 .slick-active .custom-dot, .custom-arrow, .chevron-color{
- color: rgb(123, 31, 30);
+ color: rgb(153, 27, 27);
  fill:currentColor;
 }
 .custom-dot{
-  color: rgba(114, 71, 70, 0.4);;
+  color: rgba(161, 115, 115, 0.4);;
   fill:currentColor;
   margin: 0 0.25em;
 }

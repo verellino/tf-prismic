@@ -7,7 +7,7 @@
       <div class="w-full sm:w-1/4 p-4 sm:py-2 pt-0 sticky top-0 sm:top-2 bg-white shadow sm:shadow-none">
         <h2 class="h4 uppercase font-semibold">Section</h2>
         <div class="flex sm:flex-col flex-row overflow-x-scroll sm:overflow-auto">
-          <div v-for="g in getLetters" :key="g.id" class="p-4 sm:p-0 hover:text-dark-maroon active:text-dark-maroon">
+          <div v-for="g in getLetters" :key="g.id" class="p-4 sm:p-0 hover:text-red-800 active:text-red-800">
             <a :href="`#${g.group}`" class="hover:underline hover:underline-offset-2">
               <span class="mb-4 text-sm font-semibold">{{ g.group }}</span>
             </a>

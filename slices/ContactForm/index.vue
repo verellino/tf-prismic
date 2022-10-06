@@ -31,7 +31,7 @@
      
       <button
         type="submit"
-        class="ml-auto inline-flex items-center gap-2 hover:text-dark-maroon link_underline"
+        class="ml-auto inline-flex items-center gap-2 hover:text-red-800 link_underline"
       >
         Kirim Pesan <span aria-hidden="true" class="text-xl">
           &rarr;

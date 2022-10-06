@@ -14,16 +14,8 @@
             :article="article"
           />
         </ul>
-        <hr class="my-8 h-px w-full border-0 bg-slate-100" />
-        <ul class="mt-8 flex flex-col justify-start md:flex-row">
-          <ArticleGridItem
-            v-for="article in rowArticles"
-            :key="article.id"
-            :article="article"
-            class="featured-grid__ul-row sm:w-1/4 sm:py-0"
-          />
-        </ul>
       </client-only>
+      <hr class="h-px w-full border-0 bg-slate-200 mt-8">
     </div>
   </div>
 </template>

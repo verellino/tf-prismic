@@ -104,10 +104,10 @@
       "featured": {
         "type": "Boolean",
         "config": {
-          "label": "Featured",
-          "default_value": false,
+          "label": "Featured - \"Berita Unggulan\"",
+          "placeholder_false": "false",
           "placeholder_true": "true",
-          "placeholder_false": "false"
+          "default_value": false
         }
       },
       "slices": {

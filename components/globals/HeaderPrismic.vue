@@ -23,7 +23,7 @@
       <div class="absolute top-5 right-8 block sm:relative lg:hidden">
         <button
           @click="toggleMenu"
-          class="flex items-center rounded border border-gray-500 px-3 py-2 hover:border-gray-600 hover:text-dark-maroon"
+          class="flex items-center rounded border border-gray-500 px-3 py-2 hover:border-gray-600 hover:text-red-800"
         >
           <svg
             class="current-color h-3 w-3"
