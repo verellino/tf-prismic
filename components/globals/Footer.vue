@@ -3,9 +3,9 @@
     <div
       class="grid grid-rows-1 gap-8 p-4 py-12 md:gap-7 md:grid-flow-col md:grid-cols-12 md:px-16"
     >
-      <div class="col-span-2 sm:col-span-3 -m-4">
+      <nuxt-link to="/" class="col-span-2 sm:col-span-3 sm:-m-4">
         <img src="/Logo-White-Text.png" alt="logo TF" class="w-full" />
-      </div>
+      </nuxt-link>
       <div class="hidden sm:block sm:col-span-1"></div>
       <div class="col-span-2">
         <span class="text-xs font-bold uppercase text-light-gray"
@@ -83,7 +83,7 @@
               <label for="email" class="sr-only">Email</label>
               <div>
                 <input
-                  class="w-full px-4 py-2 bg-white border-gray-200 text-xs text-slate-900"
+                  class="w-full px-4 py-2 bg-white border-gray-200 text-xs text-slate-900 mb-2"
                   type="email"
                   name="email"
                   placeholder="Email" required

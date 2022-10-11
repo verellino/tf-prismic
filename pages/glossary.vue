@@ -1,6 +1,6 @@
 <template>
-  <div class="pt-20 glossary-section">
-    <div class="py-12 text-center">
+  <div class="glossary-section">
+    <div class="py-8 text-center">
       <h1 class="section-title">Glossarium</h1>
     </div>
     <div class="mx-auto flex flex-col items-start">
