@@ -1,15 +1,15 @@
 {
-  "id": "6821a47d-66bb-4c9b-8a72-3cd360a3057b",
-  "uid": "neque-sequi-quia",
+  "id": "3af40821-f888-4eb4-ae5c-5cb65281cbaa",
+  "uid": "molestiae-ratione-recusandae",
   "type": "news",
   "data": {
-    "title": "whiteboard enterprise infrastructures",
-    "writer": "maximize seamless e-markets",
-    "editor": "grow cross-media solutions",
-    "minsRead": "incubate 24/7 content",
-    "publishDate": "2022-09-12T12:50:50.852Z",
-    "section": "Ekonomi",
-    "category": "Industri dan Perdagangan",
+    "title": "envisioneer real-time metrics",
+    "writer": "visualize viral technologies",
+    "editor": "benchmark synergistic metrics",
+    "minsRead": "architect global applications",
+    "publishDate": "2015-07-28T21:55:08.408Z",
+    "section": "Pemerintahan",
+    "category": "Investasi dan Keuangan",
     "categories": {
       "link_type": "Web",
       "url": "https://prismic.io"
@@ -21,8 +21,8 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=900&h=500&fit=crop"
     },
-    "featured": true
+    "featured": false
   }
 }
