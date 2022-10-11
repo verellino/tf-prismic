@@ -1,6 +1,6 @@
 <template>
   <section class="mx-0 md:px-6 sm:ml-4 pt-8 break-words">
-    <h3 class="h2 mb-7 text-maroon">Referensi</h3>
+    <h3 class="mb-7 text-lg text-maroon">Referensi</h3>
     <PrismicRichText
       v-if="$prismic.asText(slice.primary.references)"
       :field="slice.primary.references"
@@ -22,10 +22,10 @@ export default {
 
 <style>
 .references-wrapper p {
-  @apply text-sm
+  @apply text-xs font-serif text-slate-600
 }
 .references-wrapper p a {
-  @apply italic text-primary text-sm
+  @apply italic text-primary text-xs font-serif
 }
 .references-wrapper p a:hover {
   @apply text-dark-blue

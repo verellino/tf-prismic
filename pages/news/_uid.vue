@@ -30,21 +30,18 @@
         <article style="hyphens: auto">
           <SliceZone :slices="article.data.slices" :components="components" />
           <div class="p-4 md:px-6 sm:ml-4">
-            <div class="mr-32 text-left text-xs">
-              <p>
+            <div class="mr-32 text-left text-sm font-serif text-slate-600">
+              <span>
                 Penulis: {{ article.data.writer }}
-              </p>
-              <p>
-                Editor: {{ article.data.editor }}
-              </p>
+              </span>
               <!-- Tags -->
-              <p class="mt-2">
+              <span class="mt-2 block">
                 Keywords:  
                 <span v-for="(t, index) in article.tags" class="mr-1">
                   <span v-if="index != article.tags.length - 1">{{t}},</span>
                   <span v-else>{{t}}</span>
                 </span>
-              </p>
+              </span>
             </div>
           </div>
         </article>
@@ -126,7 +123,11 @@ export default {
     )
 
     const { results: similarArticles } = await $prismic.api.query(
-      $prismic.predicate.similar(article.id, 3)
+     $prismic.predicate.at('document.type', 'news'),
+     {
+      pageSize: 3
+     }
+      // $prismic.predicate.similar(article.id, 3)
     )
       
     await store.dispatch('prismic/load')

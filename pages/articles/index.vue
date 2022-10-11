@@ -23,6 +23,9 @@
               :key="article.id"
               :article="article"
             />
+            <nuxt-link to="/sector/economy" class="text-center text-sm text-gray-500 link_underline">
+              Semua artikel Ekonomi &rarr;
+            </nuxt-link>
           </div>
           <div class="mt-4 w-full sm:mt-0 sm:w-1/3 sm:px-4 sm:pr-8">
             <span class="h3 link_underline section-title">
@@ -38,6 +41,9 @@
               :key="article.id"
               :article="article"
             />
+            <nuxt-link to="/sector/government" class="text-center text-sm text-gray-500 link_underline">
+              Semua artikel Pemerintahan &rarr;
+            </nuxt-link>
           </div>
           <div class="mt-4 w-full sm:mt-0 sm:w-1/3 sm:px-4">
             <span class="h3 link_underline section-title">
@@ -53,6 +59,9 @@
               :key="article.id"
               :article="article"
             />
+            <nuxt-link to="/sector/teknologi" class="text-center text-sm text-gray-500 link_underline">
+              Semua artikel Teknologi &rarr;
+            </nuxt-link>
           </div>
         </ul>
       </client-only>
@@ -72,7 +81,7 @@ export default {
         ]
           .map(({ field, direction }) => `${field} ${direction}`)
           .join(", ")}]`,
-        pageSize: 100,
+        pageSize: 10,
       }
     );
     // const { results: heroArticles } = await $prismic.api.query(
@@ -95,7 +104,7 @@ export default {
         ]
           .map(({ field, direction }) => `${field} ${direction}`)
           .join(", ")}]`,
-        pageSize: 100,
+        pageSize: 10,
       }
     );
     const { results: articlesGov } = await $prismic.api.query(
@@ -107,7 +116,7 @@ export default {
         ]
           .map(({ field, direction }) => `${field} ${direction}`)
           .join(", ")}]`,
-        pageSize: 100,
+        pageSize: 10,
       }
     );
     const { results: articlesTech } = await $prismic.api.query(
@@ -119,7 +128,7 @@ export default {
         ]
           .map(({ field, direction }) => `${field} ${direction}`)
           .join(", ")}]`,
-        pageSize: 100,
+        pageSize: 10,
       }
 
     );

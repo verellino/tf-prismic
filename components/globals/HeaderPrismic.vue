@@ -1,8 +1,8 @@
 <template>
   <div class="absolute z-10 w-full bg-white font-sans text-gray-800 shadow-sm">
-    <nav class="mx-auto sm:flex flex-wrap items-center justify-between px-8 py-5">
+    <nav class="mx-auto sm:flex flex-wrap items-center justify-between px-8 py-4">
       <!-- Logo -->
-      <div class="mb-0 sm:mb-6 sm:mr-8 xl:mb-0 flex w-44 overflow-hidden">
+      <div class="mb-0 sm:mb-6 xl:mb-0 flex w-48 overflow-hidden">
         <router-link :to="`/`" class="font-bold flex items-end">
           <PrismicImage :field="navigation.data.logo" class="object-cover w-full object-center"/>
         </router-link>

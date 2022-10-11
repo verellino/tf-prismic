@@ -11,7 +11,7 @@
         class="mega-menu right-0 z-30 mt-4 hidden w-full overflow-hidden rounded-md border bg-white font-normal normal-case shadow-md sm:absolute sm:block lg:z-10 lg:w-80">
         <div class="flex flex-col">
           <ul v-for="(item, i) in slice.items" :key="`slice-item-${i}`" class="w-full">
-            <li v-if="item.secondNavLink.link_type === 'Document'" class="border-blogs-bottom p-4 hover:bg-dark-maroon hover:font-bold hover:text-white">
+            <li v-if="item.secondNavLink.link_type === 'Document'" class="border-blogs-bottom p-4 hover:bg-red-800 hover:font-bold hover:text-white">
               <nuxt-link :to="`/category/${item.secondNavLink.id}`" class="group flex" @keydown.esc.exact="hideMenu"
                 @keydown.tab.exact="focusNext(false)" @keydown.down.exact.prevent="focusNext(true)"
                 @keydown.up.exact.prevent="">
@@ -20,7 +20,7 @@
                 </span>
               </nuxt-link>
             </li>
-            <li v-else class="border-blogs-bottom p-4 hover:bg-dark-maroon hover:font-bold hover:text-white">
+            <li v-else class="border-blogs-bottom p-4 hover:bg-red-800 hover:font-bold hover:text-white">
               <PrismicLink :field="item.secondNavLink" class="group flex" @keydown.esc.exact="hideMenu"
                 @keydown.tab.exact="focusNext(false)" @keydown.down.exact.prevent="focusNext(true)"
                 @keydown.up.exact.prevent="">
@@ -40,7 +40,7 @@
       <div class="-mx-4 flex flex-col py-2 pl-4">
         <ul v-for="(item, i) in slice.items" :key="`slice-item-${i}`" class="w-full">
           <li v-if="item.secondNavLink.link_type === 'Document'" 
-            class="py-4 hover:bg-dark-maroon hover:text-white"
+            class="py-4 hover:bg-red-800 hover:text-white"
           >
             <nuxt-link
               :to="`/category/${item.secondNavLink.id}`"
@@ -55,7 +55,7 @@
               </span>
             </nuxt-link>
           </li>
-           <li v-else  class="py-4 hover:bg-dark-maroon hover:text-white">
+           <li v-else  class="py-4 hover:bg-red-800 hover:text-white">
               <PrismicLink :field="item.secondNavLink" class="group flex" @keydown.esc.exact="hideMenu"
                 @keydown.tab.exact="focusNext(false)" @keydown.down.exact.prevent="focusNext(true)"
                 @keydown.up.exact.prevent="">

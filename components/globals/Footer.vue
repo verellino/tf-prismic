@@ -37,7 +37,7 @@
             <nuxt-link to="/contact" class="text-xs font-normal">Kontak</nuxt-link>
           </li>
           <li class="mb-2">
-            <nuxt-link to="/kebijakan-privasi" class="text-xs font-normal"
+            <nuxt-link to="/" class="text-xs font-normal"
               >Kebijakan Privasi</nuxt-link
             >
           </li>
@@ -81,16 +81,15 @@
             >
             <span class="text-xs font-bold uppercase text-light-gray">Daftar newsletter kami</span>
               <label for="email" class="sr-only">Email</label>
-              <div class="flex items-center relative">
+              <div>
                 <input
                   class="w-full px-4 py-2 bg-white border-gray-200 text-xs text-slate-900"
                   type="email"
                   name="email"
                   placeholder="Email" required
                 />
-
                 <button
-                  class="block p-2 font-medium transition text-xs absolute right-0 bg-dark-maroon text-white"
+                  class="block w-full p-2 font-medium transition text-xs bg-dark-maroon text-white"
                   type="submit"
                 >
                   <i class="fa fa-envelope" aria-hidden="true"></i> Subscribe
