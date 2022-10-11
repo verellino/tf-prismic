@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-0 md:px-6 sm:ml-4">
+  <section class="mx-0 md:px-8 sm:ml-8">
     <PrismicRichText
       v-if="$prismic.asText(slice.primary.text)"
       class="article-text"

@@ -1,5 +1,5 @@
 <template>
-  <main class="container pt-24 col-start-2 col-end-12 px-4 sm:px-10">
+  <main class="container pt-8 col-start-2 col-end-12 px-4 sm:px-10">
     <h1 class="section-title text-center">Pencarian</h1>
     <client-only>
     <div class="mb-16 mt-8 Search">

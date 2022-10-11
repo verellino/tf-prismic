@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="pt-24 text-center section-title">
+    <div class="pt-8 text-center section-title">
         <h1>Teknologi</h1>
     </div>
      <div>

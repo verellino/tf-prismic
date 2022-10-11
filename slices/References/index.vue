@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-0 md:px-6 sm:ml-4 pt-8 break-words">
+  <section class="mx-0 md:px-8 sm:ml-8 pt-8 break-words">
     <h3 class="mb-7 text-lg text-maroon">Referensi</h3>
     <PrismicRichText
       v-if="$prismic.asText(slice.primary.references)"

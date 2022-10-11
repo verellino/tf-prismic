@@ -3,7 +3,7 @@
     <div
       class="grid grid-rows-1 gap-8 p-4 py-12 md:gap-7 md:grid-flow-col md:grid-cols-12 md:px-16"
     >
-      <div class="col-span-2 sm:col-span-3 pr-8 -m-4">
+      <div class="col-span-2 sm:col-span-3 -m-4">
         <img src="/Logo-White-Text.png" alt="logo TF" class="w-full" />
       </div>
       <div class="hidden sm:block sm:col-span-1"></div>
@@ -79,7 +79,7 @@
             <div
               class="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-start"
             >
-            <span class="text-xs font-bold uppercase text-light-gray">Daftar newsletter kami</span>
+            <span class="text-xs font-bold uppercase text-light-gray">Newsletter</span>
               <label for="email" class="sr-only">Email</label>
               <div>
                 <input

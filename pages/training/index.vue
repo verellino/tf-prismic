@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="pt-24 text-center">
+    <div class="pt-8 text-center">
       <h1 class="section-title m-0">Training</h1>
     </div>
     <client-only>

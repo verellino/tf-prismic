@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mx-4 pt-24 sm:mx-14">
+    <div class="mx-4 pt-8 sm:mx-14">
       <div
         v-if="featuredImage"
         class="article-main-image relative mb-8 w-full overflow-hidden rounded-md"

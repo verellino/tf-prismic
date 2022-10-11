@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="relative pt-20">
+    <section class="relative pt-4">
       <BlogsSwiper :articles="heroArticles" />
     </section>
     <BlogsHomeBlogAndNews :articles="articles.slice(0, 10)" :news="news" :events="events" :programs="programs" />

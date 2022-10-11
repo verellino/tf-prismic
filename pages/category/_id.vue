@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-24">
+  <div class="pt-8">
     <div class="section-title text-center">
       <h1>{{ articles[0].data.category }}</h1>
     </div>

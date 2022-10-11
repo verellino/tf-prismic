@@ -1,12 +1,12 @@
 <template>
   <div class="pt-20 glossary-section">
-    <div class="container py-12 text-center">
+    <div class="py-12 text-center">
       <h1 class="section-title">Glossarium</h1>
     </div>
-    <div class="mx-auto flex flex-col sm:flex-row items-start">
-      <div class="w-full sm:w-1/4 p-4 sm:py-2 sm:px-16 pt-0 sticky top-8 sm:top-2 bg-white shadow sm:shadow-none">
-        <h2 class="h4 uppercase font-semibold">Section</h2>
-        <div class="flex sm:flex-col flex-row overflow-x-scroll sm:overflow-auto">
+    <div class="mx-auto flex flex-col items-start">
+      <div class="w-full p-8 sticky top-0 bg-white shadow">
+        <h2 class="h4 uppercase font-semibold text-center">Section</h2>
+        <div class="flex flex-row overflow-x-scroll sm:justify-evenly">
           <div v-for="g in getLetters" :key="g.id" class="p-4 sm:p-0 hover:text-red-800 active:text-red-800">
             <a :href="`#${g.group}`" class="hover:underline hover:underline-offset-2">
               <span class="mb-4 text-sm font-semibold">{{ g.group }}</span>
@@ -15,7 +15,7 @@
         </div>
       </div>
       <!-- Right Column -->
-      <div class="w-full sm:w-2/3">
+      <div class="glossary-container mx-auto">
         <!-- Glossary Grid by Letter -->
         <div class="px-4 sm:px-0">
           <div v-for="g in getLetters" :key="g.id" class="glossary-item pb-2">
@@ -84,5 +84,9 @@ export default {
 <style>
 .glossary-section{
   scroll-behavior: smooth;
+}
+.glossary-container {
+  max-width: 42rem;
+  margin: 0 auto;
 }
 </style>

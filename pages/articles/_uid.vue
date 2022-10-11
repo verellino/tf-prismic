@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mx-4 pt-28 sm:mx-14">
+    <div class="mx-4 pt-8 sm:mx-14">
       <div
         v-if="featuredImage"
         class="article-main-image relative mb-8 w-full overflow-hidden rounded-md"
@@ -11,10 +11,12 @@
           class="h-full w-full object-cover"
         />
       </div>
+      <div v-else class="pt-8">
+      </div>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-3">
       <div class="col-span-1 sm:col-span-2">
-        <div class="p-4 sm:px-6 sm:ml-4 pt-0">
+        <div class="p-4 sm:px-8 sm:ml-8 pt-0">
           <div class="pb-0 text-center">
             <p class="mt-2 mb-2 text-sm font-semibold uppercase">
               {{ article.data.section }} <span v-if="article.data.category">| {{ article.data.category }}</span>
@@ -29,7 +31,7 @@
         </div>
         <article style="hyphens: auto">
           <SliceZone :slices="article.data.slices" :components="components" />
-          <div class="p-4 md:px-6 sm:ml-4">
+          <div class="p-4 md:px-8 sm:ml-8">
             <div class="mr-32 text-left text sm font-serif text-slate-600">
               <span>
                 Penulis / Editor: {{ article.data.writer }} / {{ article.data.editor }}
@@ -46,7 +48,7 @@
           </div>
         </article>
         
-        <div class="p-4 sm:px-6 sm:ml-4">
+        <div class="p-4 sm:px-8 sm:ml-8">
           <p>Bagikan artikel ini:</p>
           <ul class="mt-2 flex">
             <ShareNetwork
@@ -75,7 +77,7 @@
       <!-- Right Blogs Section  -->
       <div class="col-span-1 border-blogs-left__desktop">
         <div v-if="latestArticles.length" class="">
-          <div class="w-full px-4">
+          <div class="pl-8 pr-10 sm:mr-4">
             <h2 class="section-title">Artikel Terbaru</h2>
             <ul class="grid grid-cols-1 gap-y-2">
               <ArticleBlogsListItem

@@ -3,7 +3,7 @@
     <form
       action="/api/contact"
       method="post"
-      class="grid grid-cols-1 gap-6 pt-12"
+      class="grid grid-cols-1 gap-6 pt-8"
     >
       <h1 class="h2 section-title text-center">Hubungi Kami</h1>
       <InputField label="Name" name="name" placeholder="Nama Lengkap" />

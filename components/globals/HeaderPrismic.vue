@@ -1,8 +1,8 @@
 <template>
-  <div class="absolute z-10 w-full bg-white font-sans text-gray-800 shadow-sm">
+  <div class="container w-full bg-white font-sans text-gray-800 shadow-sm">
     <nav class="mx-auto sm:flex flex-wrap items-center justify-between px-8 py-4">
       <!-- Logo -->
-      <div class="mb-0 sm:mb-6 xl:mb-0 flex w-48 overflow-hidden">
+      <div class="mb-0 sm:mb-6 xl:mb-0 flex w-56 overflow-hidden">
         <router-link :to="`/`" class="font-bold flex items-end">
           <PrismicImage :field="navigation.data.logo" class="object-cover w-full object-center"/>
         </router-link>
@@ -20,7 +20,7 @@
           <GlobalsSearchForm />
         </li>
       </div>
-      <div class="absolute top-5 right-8 block sm:relative lg:hidden">
+      <div class="absolute top-8 right-8 block sm:relative lg:hidden">
         <button
           @click="toggleMenu"
           class="flex items-center rounded border border-gray-500 px-3 py-2 hover:border-gray-600 hover:text-red-800"
