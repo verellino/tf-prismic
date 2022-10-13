@@ -1,6 +1,6 @@
 <template>
-  <section class="pages--hero-image relative bg-maroon text-white">
-    <figure class="absolute inset-0">
+  <section class="pages--hero-image relative bg-maroon text-white mx-4 sm:mx-16 rounded-md overflow-hidden my-8">
+    <figure class="main-image relative w-full">
       <PrismicImage
         v-if="slice.primary.backgroundImage.url"
         :field="slice.primary.backgroundImage"

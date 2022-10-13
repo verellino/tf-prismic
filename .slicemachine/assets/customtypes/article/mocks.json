@@ -1,14 +1,14 @@
 {
-  "id": "0647c50c-8367-449e-bd75-f038ae4446e9",
-  "uid": "sit-et-repellat",
+  "id": "d646a189-f137-4605-864b-2ca0f3f8f1d0",
+  "uid": "quaerat-voluptas-suscipit",
   "type": "article",
   "data": {
-    "title": "empower efficient relationships",
-    "writer": "evolve viral platforms",
-    "editor": "utilize web-enabled e-business",
-    "minsRead": "optimize B2B platforms",
-    "publishDate": "2012-03-08T20:16:51.191Z",
-    "section": "Pemerintahan",
+    "title": "seize front-end networks",
+    "writer": "reinvent plug-and-play e-commerce",
+    "editor": "empower sticky action-items",
+    "minsRead": "incentivize cutting-edge e-services",
+    "publishDate": "2018-04-30T12:40:35.150Z",
+    "section": "Ekonomi",
     "category": "Energi dan Lingkungan",
     "categories": {
       "link_type": "Web",
@@ -21,14 +21,14 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
     },
     "featured": false,
-    "hero-slider": true,
+    "hero-slider": false,
     "description": [
       {
         "type": "paragraph",
-        "text": "Pariatur dolor ipsum consequat aliquip reprehenderit ex ad mollit ullamco aliqua dolore. Occaecat adipisicing officia excepteur ullamco.",
+        "text": "Proident sunt commodo cillum eu esse anim amet aliqua sint sit. Esse ex adipisicing nostrud proident sunt magna eu aliquip. Nisi culpa officia anim fugiat aliquip magna est ea Lorem commodo duis.",
         "spans": []
       }
     ],
@@ -39,10 +39,10 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
     },
-    "card-type": "Standard Summary Card",
-    "twitter-handle": "transform 24/365 niches",
+    "card-type": "Summary Card with Large Image",
+    "twitter-handle": "architect ubiquitous models",
     "twitter-image": {
       "dimensions": {
         "width": 300,
@@ -50,7 +50,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=300&h=300&fit=crop",
+      "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=300&h=300&fit=crop",
       "large_image": {
         "dimensions": {
           "width": 600,
@@ -58,7 +58,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=600&h=314&fit=crop"
+        "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=600&h=314&fit=crop"
       }
     }
   }

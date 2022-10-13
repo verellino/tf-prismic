@@ -736,6 +736,75 @@
           }
         }
       },
+      "page_text": {
+        "library": "slices",
+        "id": "page_text",
+        "name": "PageText",
+        "description": "PageText",
+        "model": {
+          "id": "page_text",
+          "type": "SharedSlice",
+          "name": "PageText",
+          "description": "PageText",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Text",
+              "primary": {
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Text",
+                    "placeholder": "Text with rich formatting",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "page_text",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Enhance 24/7 e-tailers",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Sunt deserunt ut consectetur eiusmod minim cillum mollit cillum. Ut est nulla dolore culpa adipisicing eiusmod id ullamco. Velit ipsum anim ullamco in elit voluptate voluptate elit consequat mollit aliquip exercitation consequat.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "D:\\code\\transform-futures-main\\TF-nuxt\\.slicemachine\\assets\\slices\\PageText\\default\\preview.png",
+            "width": 800,
+            "height": 257
+          }
+        }
+      },
       "quote": {
         "library": "slices",
         "id": "quote",

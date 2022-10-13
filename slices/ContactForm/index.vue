@@ -18,9 +18,11 @@
       </label>
       <select class="w-full rounded-none border-b border-slate-200 py-3 pr-7 pl-3 text-slate-800 placeholder-slate-400">
         <option disabled selected>Pilih Kategori</option>
-        <option>Partnership</option>
-        <option>Business</option>
         <option>Editorial</option>
+        <option>Mentoring</option>
+        <option>Training</option>
+        <option>Riset</option>
+        <option>Konsultasi</option>
         <option>Lainnya</option>
       </select>
       <TextareaField

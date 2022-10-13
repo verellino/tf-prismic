@@ -4,7 +4,7 @@
     <div class="container py-12">
       <h2 class="text-center text-serif section-title">Baca berita selanjutnya</h2>
       <ul class="flex flex-col p-8 md:flex-row justify-evenly">
-        <ArticleGridItemWithImg
+        <ArticleGridItemNoImg
           v-for="article in articles.slice(0, 3)"
           :key="article.id"
           :article="article"

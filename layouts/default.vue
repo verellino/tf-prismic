@@ -1,5 +1,5 @@
 <template>
-  <div class="text-slate-700">
+  <div class="text-slate-700 min-h-screen">
     <!-- <GlobalsMegaMenu /> -->
     <GlobalsHeaderPrismic v-if="navigation.data" :navigation="navigation" />
     <main><nuxt /></main>

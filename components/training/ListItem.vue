@@ -5,12 +5,12 @@
     <PrismicLink :field="article" tab-index="-1" class="flex">
       <div
         v-if="featuredImage"
-        class="aspect-w-16 w-1/4 overflow-hidden rounded-md"
+        class="aspect-w-16 w-1/4 overflow-hidden"
       >
         <PrismicImage
           v-if="featuredImage.url"
           :field="featuredImage"
-          class="h-full w-full rounded-md object-cover object-center"
+          class="h-full w-full object-cover object-center"
         />
       </div>
       <div class="ml-4">

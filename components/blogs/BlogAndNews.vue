@@ -12,7 +12,7 @@
             <ul v-if="articles"
               class="artikel_terbaru-grid__ul grid grid-cols-1 gap-8 sm:grid-cols-2 mt-2"
             >
-              <ArticleGridItemWithImg
+              <ArticleGridItemNoImg
                 v-for="article in articles"
                 :key="article.id"
                 :article="article"

@@ -4,7 +4,7 @@
       <h1 class="section-title m-0">Events</h1>
     </div>
     <client-only>
-      <EventsEventGrid :articles="articles" />
+      <TrainingGrid :articles="articles" />
     </client-only>
   </div>
 </template>
@@ -32,6 +32,7 @@ export default {
         pageSize: 100,
       }
     );
+    await store.dispatch("prismic/load");
     return {
       articles,
     };

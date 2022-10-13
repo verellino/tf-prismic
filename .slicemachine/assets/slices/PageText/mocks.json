@@ -1,0 +1,24 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "page_text",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Enhance 24/7 e-tailers",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Sunt deserunt ut consectetur eiusmod minim cillum mollit cillum. Ut est nulla dolore culpa adipisicing eiusmod id ullamco. Velit ipsum anim ullamco in elit voluptate voluptate elit consequat mollit aliquip exercitation consequat.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

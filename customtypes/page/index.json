@@ -29,9 +29,6 @@
             "image": {
               "type": "SharedSlice"
             },
-            "text": {
-              "type": "SharedSlice"
-            },
             "hero": {
               "type": "SharedSlice"
             },
@@ -42,6 +39,9 @@
               "type": "SharedSlice"
             },
             "contact_form": {
+              "type": "SharedSlice"
+            },
+            "page_text": {
               "type": "SharedSlice"
             }
           }

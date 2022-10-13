@@ -94,7 +94,15 @@ export default {
         {
           type: "report",
           path: "/report/:uid",
-        }
+        },
+        {
+          type: "events",
+          path: "/events/:uid",
+        },
+        {
+          type: "training",
+          path: "/training/:uid",
+        },
       ],
     },
     htmlSerializer(type, element, content, children) {

@@ -40,6 +40,10 @@ module.exports = {
         20: "5rem",
         40: "10rem",
       },
+      maxHeight: {
+        "45vh": "45vh",
+        "50vh": "50vh",
+      },
     },
   },
   plugins: [require("@tailwindcss/aspect-ratio")],

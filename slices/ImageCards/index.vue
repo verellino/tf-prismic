@@ -1,5 +1,5 @@
 <template>
-  <Bounded as="section" class="bg-white">
+  <section class="bg-white container flex p-4 py-8 sm:flex-row md:px-16">
     <div class="grid gap-12">
       <Heading
         v-if="$prismic.asText(slice.primary.heading)"
@@ -46,7 +46,7 @@
         </li>
       </ul>
     </div>
-  </Bounded>
+  </section>
 </template>
 
 <script>

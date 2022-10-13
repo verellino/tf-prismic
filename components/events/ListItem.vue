@@ -5,12 +5,12 @@
     <PrismicLink :field="article" tab-index="-1" class="flex flex-col">
       <div
         v-if="featuredImage"
-        class="aspect-h-5 aspect-w-4 w-full overflow-hidden rounded-md"
+        class="aspect-h-5 aspect-w-4 w-full overflow-hidden mb-2"
       >
         <PrismicImage
           v-if="featuredImage.url"
           :field="featuredImage"
-          class="h-full w-full rounded-md object-cover object-center"
+          class="h-full w-full object-cover object-center"
         />
       </div>
       <div>
@@ -58,7 +58,7 @@ export default {
     },
     formattedDate() {
       const date = this.$prismic.asDate(
-        this.article.data.publishDate || this.article.first_publication_date
+        this.article.data.eventDate || this.article.first_publication_date
       );
 
       return dateFormatter.format(date);

@@ -314,7 +314,7 @@ export default {
   },
   mounted() {
     this.sharing.url =
-      "https://transformingfutures.com" + this.$nuxt.$route.path;
+      "https://innovatingindonesia.com" + this.$nuxt.$route.path;
     this.sharing.title = this.article.data.title + " - ";
   },
 };

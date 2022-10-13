@@ -29,7 +29,7 @@
         <span class="text-xs font-bold uppercase text-light-gray">Perusahaan</span>
         <ul class="mt-4">
           <li class="mb-2">
-            <nuxt-link to="/" class="text-xs font-normal"
+            <nuxt-link to="/tentang-kami" class="text-xs font-normal"
               >Tentang Kami</nuxt-link
             >
           </li>
@@ -37,7 +37,7 @@
             <nuxt-link to="/contact" class="text-xs font-normal">Kontak</nuxt-link>
           </li>
           <li class="mb-2">
-            <nuxt-link to="/" class="text-xs font-normal"
+            <nuxt-link to="/kebijakan-privasi" class="text-xs font-normal"
               >Kebijakan Privasi</nuxt-link
             >
           </li>
@@ -110,12 +110,7 @@
           </li>
           <li class="mb-2">
             <nuxt-link to="/" class="text-xs font-normal"
-              ><i class="fab fah fa-lg fa-linkedin mr-2"></i
-            ></nuxt-link>
-          </li>
-          <li class="mb-2">
-            <nuxt-link to="/" class="text-xs font-normal"
-              ><i class="fab fah fa-lg fa-whatsapp mr-2"></i
+              ><i class="fab fah fa-lg fa-twitter mr-2"></i
             ></nuxt-link>
           </li>
         </ul>

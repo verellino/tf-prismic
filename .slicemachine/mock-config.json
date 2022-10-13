@@ -192,6 +192,7 @@
       }
     },
     "HeroWithImage": {},
-    "ImageCards": {}
+    "ImageCards": {},
+    "PageText": {}
   }
 }

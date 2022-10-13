@@ -1,18 +1,12 @@
 <template>
-  <li>
-    <div class="relative py-2">
-    <PrismicLink :field="article" tab-index="-1" class="flex">
-      <div
-        v-if="featuredImage"
-        class="w-1/4 aspect-w-16 overflow-hidden rounded-md"
-      >
-        <PrismicImage
-          v-if="featuredImage.url"
-          :field="featuredImage"
-          class="h-full w-full rounded-md object-cover object-center"
-        />
-      </div>
-      <div class="ml-8">
+  <li class="relative">
+    <PrismicLink :field="article" tab-index="-1">
+      <p class="mb-2 text-xxs">
+        <nuxt-link to="/" class="category-span">{{
+          article.data.section
+        }}</nuxt-link>
+      </p>
+      <div>
         <div class="blog-card flex flex-col justify-between">
           <div>
             <Heading as="h3" class="h4">
@@ -23,15 +17,15 @@
             </p>
           </div>
           <a href="#" class="text-xxs">
-            <div class="float-right mr-8">
-              <span class="">Baca Lengkap >></span>
+            <div class="article-details-bottom-span">
+              <span class="">{{ article.data.writer }} | </span>
+              <span class="ml-1">{{ formattedDate }} | </span>
+              <span class="ml-1">{{ article.data.minsRead }}</span>
             </div>
           </a>
         </div>
       </div>
     </PrismicLink>
-    </div>
-  </div>
   </li>
 </template>
 
@@ -51,8 +45,8 @@ export default {
   },
   computed: {
     featuredImage() {
-      if (this.article.data.mainImage.url) {
-        return this.article.data.mainImage;
+      if (this.article.data.featuredImage.url) {
+        return this.article.data.featuredImage;
       }
 
       const imageSlice = this.article.data.slices.find(

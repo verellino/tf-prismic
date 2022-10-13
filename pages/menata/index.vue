@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="pt-20">
+    <div> 
     <client-only> 
         <SliceZone :slices="page.data.slices" :components="components" />
         <MentorGrid :mentorPublic="mentorPublic" :mentorPrivate="mentorPrivate" />

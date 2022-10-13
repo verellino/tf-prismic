@@ -7,6 +7,7 @@ import Hero from './Hero';
 import HeroWithImage from './HeroWithImage';
 import Image from './Image';
 import ImageCards from './ImageCards';
+import PageText from './PageText';
 import Quote from './Quote';
 import References from './References';
 import Text from './Text';
@@ -20,6 +21,7 @@ export {
 	HeroWithImage,
 	Image,
 	ImageCards,
+	PageText,
 	Quote,
 	References,
 	Text,
@@ -34,6 +36,7 @@ export const components = {
 	hero_with_image: HeroWithImage,
 	image: Image,
 	image_cards: ImageCards,
+	page_text: PageText,
 	quote: Quote,
 	references: References,
 	text: Text,

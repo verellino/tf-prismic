@@ -1,12 +1,12 @@
 <template>
-  <section class="pt-16">
+  <section>
     <!-- <section class="relative">
       <h2 class="pt-6 text-center">Tren Terkini</h2>
       <BlogsSwiper :articles="heroArticles" />
     </section>
     <BlogsAllArticles :articles="articles" /> -->
     <div class="container px-4 py-8">
-      <h1 class="section-title py-8 text-center">Semua Artikel</h1>
+      <h1 class="section-title pb-8 text-center">Semua Artikel</h1>
       <client-only>
         <ul class="flex flex-col sm:flex-row sm:px-4 sm:pt-4">
           <div class="w-full sm:w-1/3 sm:px-4 sm:pr-8">
