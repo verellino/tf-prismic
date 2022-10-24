@@ -1,8 +1,8 @@
 <template>
-  <section class="px-4 mx-0 md:px-8 sm:ml-8">
+  <section class="px-4 mx-0 md:px-12 sm:ml-12">
     <PrismicRichText
       v-if="$prismic.asText(slice.primary.text)"
-      class="article-text"
+      class="article-text sm:max-w-4xl mx-auto"
       :field="slice.primary.text"
       wrapper="div"
     />
@@ -22,5 +22,24 @@ export default {
 <style scoped>
 .article-text {    
   white-space: pre-wrap;
+  user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+}
+.article-text:first-child:first-letter {
+  color: rgb(127 29 29);
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 40px;
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-left: 3px;
+}    
+
+@media (min-width: 600px) {
+  .article-text p {
+    @apply text-xl;
+  }
 }
 </style>

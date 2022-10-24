@@ -1,18 +1,18 @@
 {
-  "id": "d646a189-f137-4605-864b-2ca0f3f8f1d0",
-  "uid": "quaerat-voluptas-suscipit",
+  "id": "eaa4b8b8-5e81-46f1-850e-51dcc3897031",
+  "uid": "facilis-exercitationem-blanditiis",
   "type": "article",
   "data": {
-    "title": "seize front-end networks",
-    "writer": "reinvent plug-and-play e-commerce",
-    "editor": "empower sticky action-items",
-    "minsRead": "incentivize cutting-edge e-services",
-    "publishDate": "2018-04-30T12:40:35.150Z",
+    "title": "brand intuitive relationships",
+    "writer": "monetize bleeding-edge interfaces",
+    "editor": "mesh strategic platforms",
+    "minsRead": "visualize viral mindshare",
+    "publishDate": "2022-09-22T06:09:17.774Z",
     "section": "Ekonomi",
-    "category": "Energi dan Lingkungan",
+    "category": "Cloud computing",
     "categories": {
       "link_type": "Web",
-      "url": "http://twitter.com"
+      "url": "http://google.com"
     },
     "mainImage": {
       "dimensions": {
@@ -21,14 +21,14 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
     },
     "featured": false,
-    "hero-slider": false,
+    "hero-slider": true,
     "description": [
       {
         "type": "paragraph",
-        "text": "Proident sunt commodo cillum eu esse anim amet aliqua sint sit. Esse ex adipisicing nostrud proident sunt magna eu aliquip. Nisi culpa officia anim fugiat aliquip magna est ea Lorem commodo duis.",
+        "text": "Ut sit sunt id fugiat non ex veniam ut esse eiusmod culpa reprehenderit enim.",
         "spans": []
       }
     ],
@@ -39,10 +39,10 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
     },
-    "card-type": "Summary Card with Large Image",
-    "twitter-handle": "architect ubiquitous models",
+    "card-type": "Standard Summary Card",
+    "twitter-handle": "engage interactive interfaces",
     "twitter-image": {
       "dimensions": {
         "width": 300,
@@ -50,7 +50,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=300&h=300&fit=crop",
+      "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?w=300&h=300&fit=crop",
       "large_image": {
         "dimensions": {
           "width": 600,
@@ -58,7 +58,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=600&h=314&fit=crop"
+        "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?w=600&h=314&fit=crop"
       }
     }
   }

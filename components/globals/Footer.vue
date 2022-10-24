@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-red-800 font-normal text-white">
+  <div class="w-full bg-red-800 font-normal text-white footer">
     <div
       class="grid grid-rows-1 gap-8 p-4 py-12 md:gap-7 md:grid-flow-col md:grid-cols-12 md:px-16"
     >
@@ -21,7 +21,7 @@
             >
           </li>
           <li class="mb-2">
-            <nuxt-link to="/" class="text-xs font-normal">Video</nuxt-link>
+            <nuxt-link to="/coming-soon" class="text-xs font-normal">Video</nuxt-link>
           </li>
         </ul>
       </div>
@@ -42,7 +42,7 @@
             >
           </li>
           <li class="mb-2">
-            <nuxt-link to="/" class="text-xs font-normal"
+            <nuxt-link to="/coming-soon" class="text-xs font-normal"
               >Tentang Layanan</nuxt-link
             >
           </li>
@@ -52,7 +52,7 @@
         <span class="text-xs font-bold uppercase text-light-gray">Layanan</span>
         <ul class="mt-4">
           <li class="mb-2">
-            <nuxt-link to="/" class="text-xs font-normal">Riset</nuxt-link>
+            <nuxt-link to="/coming-soon" class="text-xs font-normal">Riset</nuxt-link>
           </li>
           <li class="mb-2">
             <nuxt-link to="/training" class="text-xs font-normal">Pelatihan</nuxt-link>
@@ -61,7 +61,7 @@
             <nuxt-link to="/menata" class="text-xs font-normal">Mentoring</nuxt-link>
           </li>
           <li class="mb-2">
-            <nuxt-link to="/" class="text-xs font-normal">Konsultasi</nuxt-link>
+            <nuxt-link to="/coming-soon" class="text-xs font-normal">Konsultasi</nuxt-link>
           </li>
         </ul>
       </div>
@@ -142,3 +142,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.footer, .footer ul, .footer li, .footer a {
+  color: white;
+}
+</style>

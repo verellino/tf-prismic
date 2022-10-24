@@ -16,41 +16,38 @@
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-3">
       <div class="col-span-1 sm:col-span-2">
-        <div class="p-4 sm:px-8 sm:ml-8 pt-0">
-          <div class="pb-0 text-center">
+        <div class="p-4 sm:px-12 sm:ml-12 pt-0">
+          <div class="pb-0">
             <p class="mt-2 mb-2 text-sm font-semibold uppercase">
               {{ article.data.section }} <span v-if="article.data.category">| {{ article.data.category }}</span>
             </p>
-            <h1 class="text-maroon mx-3 mb-3 text-2xl">
+            <h1 class="text-maroon mb-4 text-2xl sm:text-3xl sm:leading-10">
               {{ article.data.title }}
             </h1>
-            <p class="md:ml-8">
-              {{ formattedDate }} | {{ article.data.minsRead }}
+            <p class="text-sm">
+              <span class="p-2 bg-black text-white rounded-md mr-1">{{ article.data.writer }} / {{ article.data.editor }}</span> {{ formattedDate }}. {{ article.data.minsRead }}.
             </p>
           </div>
         </div>
         <article style="hyphens: auto">
           <SliceZone :slices="article.data.slices" :components="components" />
-          <div class="p-4 md:px-8 sm:ml-8">
-            <div class="mr-32 text-left text sm font-serif text-slate-600">
-              <span>
-                Penulis / Editor: {{ article.data.writer }} / {{ article.data.editor }}
-              </span>
+          <div class="p-4 sm:px-12 sm:ml-12">
+            <div class="mr-32 text-left text sm font-serif">
               <!-- Tags -->
-              <span class="mt-2 block">
+              <span class="mt-4 block">
                 Keywords:  
                 <span v-for="(t, index) in article.tags" class="mr-1">
-                  <span v-if="index != article.tags.length - 1">{{t}},</span>
-                  <span v-else>{{t}}</span>
+                  <!-- <span v-if="index != article.tags.length - 1">{{t}},</span> -->
+                  <span class="bg-gray-200 rounded-md py-1 px-2 text-sm">{{t}}</span>
                 </span>
               </span>
             </div>
           </div>
         </article>
         
-        <div class="p-4 sm:px-8 sm:ml-8">
+        <div class="p-4 sm:px-12 sm:ml-12">
           <p>Bagikan artikel ini:</p>
-          <ul class="mt-2 flex">
+          <ul class="my-4 flex">
             <ShareNetwork
               v-for="network in networks"
               :network="network.network"
@@ -66,13 +63,10 @@
               <i :class="network.icon"></i>
             </ShareNetwork>
           </ul>
-        </div>
-
-        <Bounded>
           <NuxtLink to="/articles" class="tracking-tight text-slate-400">
             &larr; Kembali ke semua artikel
           </NuxtLink>
-        </Bounded>
+        </div>
       </div>
       <!-- Right Blogs Section  -->
       <div class="col-span-1 border-blogs-left__desktop">

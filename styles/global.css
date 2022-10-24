@@ -3,17 +3,19 @@
 @tailwind utilities;
 
 html, body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.625em;
-    font-kerning: normal;
-    
-  }
-  h1, h2, h3, h4, h5 {
-    font-family: 'Inter';
-    @apply leading-snug mb-1 font-semibold tracking-tight;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625em;
+  font-kerning: normal;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Inter';
+  @apply leading-snug mb-1 font-semibold tracking-tight;
+}
+html, body, p { 
+  color: black;
 }
 
 

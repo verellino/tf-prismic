@@ -44,14 +44,14 @@
           >
             <nuxt-link
               :to="`/category/${item.secondNavLink.id}`"
-              class="group flex"
+              class="group flex hover:text-white"
               @keydown.esc.exact="hideMenu"
               @keydown.tab.exact="focusNext(false)"
               @keydown.down.exact.prevent="focusNext(true)"
               @keydown.up.exact.prevent=""
             >
               <span class="ml-2">
-                <span class="block items-center">{{ item.subcategoryTitle }}</span>
+                <span class="block items-center hover:text-white">{{ item.subcategoryTitle }}</span>
               </span>
             </nuxt-link>
           </li>
