@@ -72,7 +72,8 @@ export default {
   plugins: [
     { src: "./plugins/vue-slick-carousel.js" },
     { src: "./plugins/vue-nested-menu.js" },
-    { src: "@/plugins/analytics.js"},
+    { src: "./plugins/analytics.client.js"},
+    { src: "./plugins/analytics.server.js"},
   ],
 
   prismic: {
