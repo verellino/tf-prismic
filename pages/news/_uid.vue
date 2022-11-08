@@ -25,18 +25,17 @@
               {{ article.data.title }}
             </h1>
             <p class="text-sm">
-              <span class="p-2 bg-black text-white rounded-md mr-1">{{ article.data.writer }} / {{ article.data.editor }}</span> {{ formattedDate }}. {{ article.data.minsRead }}.
+              <span class="mr-1">{{ article.data.writer }}</span> {{ formattedDate }}. {{ article.data.minsRead }}.
             </p>
           </div>
         </div>
         <article style="hyphens: auto">
           <SliceZone :slices="article.data.slices" :components="components" />
           <div class="p-4 md:px-8 sm:ml-8">
-            <div class="mr-32 text-left text-sm font-serif text-slate-600">
+            <div class="sm:mr-32 text-left text-sm font-serif text-slate-600">
               <!-- Tags -->
               <span class="mt-2 block">
-                Keywords:  
-                <span v-for="(t, index) in article.tags" class="mr-1">
+                <span v-for="(t, index) in article.tags" class="mr-1 mb-1">
                   <!-- <span v-if="index != article.tags.length - 1">{{t}},</span> -->
                   <span class="bg-gray-200 rounded-md py-1 px-2 text-sm">{{t}}</span>
                 </span>

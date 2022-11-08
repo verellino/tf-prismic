@@ -25,18 +25,17 @@
               {{ article.data.title }}
             </h1>
             <p class="text-sm">
-              <span class="p-2 bg-black text-white rounded-md mr-1">{{ article.data.writer }} / {{ article.data.editor }}</span> {{ formattedDate }}. {{ article.data.minsRead }}.
+              <span class="mr-1">{{ article.data.writer }} / {{ article.data.editor }}</span> {{ formattedDate }}. {{ article.data.minsRead }}.
             </p>
           </div>
         </div>
         <article style="hyphens: auto">
           <SliceZone :slices="article.data.slices" :components="components" />
           <div class="p-4 sm:px-12 sm:ml-12">
-            <div class="mr-32 text-left text sm font-serif">
+            <div class="sm:mr-32 text-left text-sm font-serif">
               <!-- Tags -->
               <span class="mt-4 block">
-                Keywords:  
-                <span v-for="(t, index) in article.tags" class="mr-1">
+                <span v-for="(t, index) in article.tags" class="mr-1 mb-1">
                   <!-- <span v-if="index != article.tags.length - 1">{{t}},</span> -->
                   <span class="bg-gray-200 rounded-md py-1 px-2 text-sm">{{t}}</span>
                 </span>
@@ -314,9 +313,20 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .article-main-image {
   aspect-ratio: 16/9;
   max-height: 45vh;
 }
+
+.article-text:first-child:first-letter {
+  color: rgb(127 29 29);
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 40px;
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-left: 3px;
+}    
 </style>

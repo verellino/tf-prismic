@@ -5,8 +5,8 @@
   "license": "Apache-2.0",
   "author": "Aflah Nadhif",
   "scripts": {
-    "dev": "concurrently \"npm:nuxt:dev\" \"npm:slicemachine\" --names \"nuxt,slicemachine\" --prefix-colors green,magenta",
-    "nuxt:dev": "nuxt",
+    "dev": "concurrently \"npm:nuxt:dev -o\" \"npm:slicemachine\" --names \"nuxt,slicemachine\" --prefix-colors green,magenta",
+    "nuxt:dev": "nuxt -o",
     "build": "nuxt build",
     "generate": "nuxt generate",
     "start": "nuxt start",

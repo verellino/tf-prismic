@@ -26,17 +26,6 @@ export default {
   -moz-user-select: -moz-none;
   -webkit-user-select: none;
 }
-.article-text:first-child:first-letter {
-  color: rgb(127 29 29);
-  float: left;
-  font-size: 50px;
-  font-weight: bold;
-  line-height: 40px;
-  padding-top: 4px;
-  padding-right: 4px;
-  padding-left: 3px;
-}    
-
 @media (min-width: 600px) {
   .article-text p {
     @apply text-xl;

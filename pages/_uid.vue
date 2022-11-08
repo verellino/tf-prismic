@@ -1,5 +1,5 @@
 <template>
-  <div class="py-8">
+  <div class="py-8 container">
     <SliceZone :slices="page.data.slices" :components="components" />
   </div>
 </template>

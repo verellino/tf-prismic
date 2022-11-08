@@ -2,7 +2,7 @@
   <section class="px-4 mx-0 md:px-8 sm:mx-8">
     <PrismicRichText
       v-if="$prismic.asText(slice.primary.text)"
-      class="article-text"
+      class="article-text sm:max-w-6xl mx-auto"
       :field="slice.primary.text"
       wrapper="div"
     />

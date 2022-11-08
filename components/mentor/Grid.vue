@@ -9,7 +9,7 @@
           :mentor="mentor"
         />
         <a href="https://forms.gle/z9byuyAr3eSBjhyJ8"
-          class="w-full mx-auto mt-8 rounded-md bg-maroon px-4 py-2 text-xs text-white"
+          class="block w-full mx-auto text-center mt-8 rounded-md bg-maroon px-4 py-2 text-xs text-white"
         >
           <span>Ingin jadi mentee? Daftar di sini</span>
         </a>
@@ -22,7 +22,7 @@
           :mentor="mentor"
         />
         <a href="https://forms.gle/xmu35RckGbTjXMyB6"
-          class="w-full mx-auto mt-8 rounded-md bg-maroon px-4 py-2 text-xs text-white"
+          class="block w-full mx-auto text-center mt-8 rounded-md bg-maroon px-4 py-2 text-xs text-white"
         >
           <span>Ingin jadi mentee? Daftar di sini</span>
         </a>
