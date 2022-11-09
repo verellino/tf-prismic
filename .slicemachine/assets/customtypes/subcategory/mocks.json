@@ -1,19 +1,23 @@
 {
-  "id": "24e4817e-a605-46fe-abaf-564c7cc5b42b",
-  "uid": "soluta-ut-rerum",
+  "id": "08108388-e3fa-4f21-8dbd-cc85ec92eb4f",
+  "uid": "eligendi-ducimus-dolores",
   "type": "subcategory",
   "data": {
-    "title": "reintermediate virtual markets",
+    "title": "deliver cross-media technologies",
     "category": {
       "link_type": "Web",
-      "url": "https://prismic.io"
+      "url": "http://twitter.com"
     },
     "description": [
       {
         "type": "paragraph",
-        "text": "Sint labore elit ad amet eu adipisicing proident ullamco tempor pariatur cillum sunt adipisicing.",
+        "text": "Consequat laboris labore nostrud aliqua in consectetur cillum do ea aute non quis.",
         "spans": []
       }
-    ]
+    ],
+    "featuredArticle": {
+      "link_type": "Web",
+      "url": "https://prismic.io"
+    }
   }
 }
