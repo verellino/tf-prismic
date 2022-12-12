@@ -181,4 +181,7 @@ export default {
     prefetch: true,
     download: true,
   },
+  env: {
+    googleAnalyticsId: process.env.GOOGLE_ANALYTICS_ID
+  },
 };
