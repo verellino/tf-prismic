@@ -4,7 +4,12 @@
       <h1>{{ articles[0].data.category }}</h1>
     </div>
     <client-only>
-      <BlogsBlogAndNews :articles="articles" :news="news" :featuredArticle="featuredArticle"/>
+      <div v-if="subcategory[0].data.featuredArticle">
+        <BlogsBlogAndNewsFeatured :articles="articles" :news="news" :featured="subcategory[0].data.featuredArticle.uid"/>
+      </div>
+      <div v-else>
+        <BlogsBlogAndNews :articles="articles" :news="news"/>
+      </div>
     </client-only>
   </div>
 </template>
@@ -20,6 +25,9 @@ const dateFormatter = new Intl.DateTimeFormat("id-ID", {
 
 export default {
   async asyncData({ $prismic, store, params }) {
+    const { results: subcategory } = await $prismic.api.query(
+      $prismic.predicate.at("document.id", params.id)
+    );
     const { results: articles } = await $prismic.api.query(
       $prismic.predicate.at("my.article.categories", params.id),
       {
@@ -44,14 +52,11 @@ export default {
         pageSize: 10,
       }
     );
-    const { results: subcategory } = await $prismic.api.query(
-      $prismic.predicate.at("document.id", params.id)
-    );
-    const featuredArticle = await $prismic.api.getByUID("article", subcategory[0].data.featuredArticle.uid)
+    
     await store.dispatch("prismic/load");
     return {
       articles,
-      featuredArticle,
+      subcategory,
       // subcategoryID,
       news
     };

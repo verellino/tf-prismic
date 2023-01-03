@@ -9,6 +9,10 @@
             class="align-start border-blogs-right__desktop col-span-2 flex flex-col sm:pr-8"
           >
             <!-- <h2 class="section-title mb-6">Artikel Terbaru</h2> -->
+            <ArticleGridItemNoImg
+                :article="highlights"
+                class="list-none mb-8"
+              />
             <ul v-if="articles"
               class="artikel_terbaru-grid__ul grid grid-cols-1 gap-8 sm:grid-cols-2 mt-2"
             >
@@ -58,8 +62,23 @@ export default {
     },
     news: {
       type: Array,
+    },
+    featured:{
+      type: String,
     }
   },
+  data() {
+    return {
+      // counter only uses this.initialCounter as the initial value;
+      // it is disconnected from future prop updates.
+      featuredUID: this.featured,
+      highlights: {}
+    }
+  },
+  async fetch() {
+    const uidFeatured = this.featuredUID
+    this.highlights = await this.$prismic.api.getByUID("article", this.featuredUID)
+  }
 };
 </script>
 
