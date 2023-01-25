@@ -2,7 +2,7 @@
   <div class="text-slate-700 min-h-screen">
     <!-- <GlobalsMegaMenu /> -->
     <GlobalsHeaderPrismic v-if="navigation.data" :navigation="navigation" />
-    <main><nuxt /></main>
+    <main class="min-h-screen"><nuxt /></main>
     <GlobalsFooter
       v-if="navigation.data && settings.data"
       :with-sign-up-form="withFooterSignUpForm"

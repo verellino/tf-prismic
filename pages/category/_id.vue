@@ -4,8 +4,9 @@
       <h1>{{ articles[0].data.category }}</h1>
     </div>
     <client-only>
-      <div v-if="subcategory[0].data.featuredArticle">
+      <div v-if="subcategory[0].data.featuredArticle.uid">
         <BlogsBlogAndNewsFeatured :articles="articles" :news="news" :featured="subcategory[0].data.featuredArticle.uid"/>
+        <!-- <pre>{{ subcategory }}</pre> -->
       </div>
       <div v-else>
         <BlogsBlogAndNews :articles="articles" :news="news"/>
@@ -28,6 +29,9 @@ export default {
     const { results: subcategory } = await $prismic.api.query(
       $prismic.predicate.at("document.id", params.id)
     );
+    // const { results: featured } = await $prismic.api.query(
+    //   $prismic.predicate.at("my.article.uid", subcategory[0].data.featuredArticle.uid)
+    // );
     const { results: articles } = await $prismic.api.query(
       $prismic.predicate.at("my.article.categories", params.id),
       {
@@ -57,6 +61,7 @@ export default {
     return {
       articles,
       subcategory,
+      // featured,
       // subcategoryID,
       news
     };

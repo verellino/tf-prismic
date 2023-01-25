@@ -36,8 +36,8 @@
         <div class="container py-20">
           <div>
             <div class="flex flex-col items-center justify-center">
-              <h2 class="text-4xl font-bold tracking-tight text-center sm:text-5xl">URGENSI LITERASI DIGITAL DI INDONESIA</h2>
-              <p class="w-160 mt-6 text-lg leading-8 text-gray-600 text-center">Rangkuman data literasi digital di Indonesia 2022</p>
+              <h2 class="text-4xl font-bold tracking-tight text-center sm:text-5xl">TRANSFORMASI DIGITAL TIAP DAERAH DI INDONESIA</h2>
+              <p class="w-160 mt-4 text-lg leading-8 text-gray-600 text-center">Rangkuman data Transformasi Digital di Indonesia 2022</p>
               <ul class="mt-8 flex gap-x-4 list-none sm:justify-center">
                 <ArticleGridItemWithImg class="col-span-4 sm:col-span-2" :article="article" />
               </ul>
@@ -72,6 +72,7 @@
 
 <script>
 import { components } from '~/slices'
+import backgroundUrl from "~/assets/images/background-example.jpg"
 export default {
   layout: 'default',
   async asyncData ({ $prismic, params, store }) {
@@ -99,7 +100,8 @@ export default {
             { name: 'Home', href: '#' },
             { name: 'Infografik', href: '#' },
             { name: 'Laporan Terkini', href: '#' },
-        ]
+        ],
+        backgroundUrl
     }
   },
   computed: {

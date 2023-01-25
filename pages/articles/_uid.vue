@@ -324,6 +324,7 @@ export default {
   float: left;
   font-size: 50px;
   font-weight: bold;
+  font-style: normal;
   line-height: 40px;
   padding-top: 4px;
   padding-right: 4px;

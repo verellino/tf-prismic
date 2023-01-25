@@ -9,8 +9,10 @@
             class="align-start border-blogs-right__desktop col-span-2 flex flex-col sm:pr-8"
           >
             <!-- <h2 class="section-title mb-6">Artikel Terbaru</h2> -->
-            <ArticleGridItemNoImg
-                :article="highlights"
+            <ArticleGridItemWithImg
+                v-for="article in highlights"
+                :key="article.id"
+                :article="article"
                 class="list-none mb-8"
               />
             <ul v-if="articles"
@@ -72,12 +74,12 @@ export default {
       // counter only uses this.initialCounter as the initial value;
       // it is disconnected from future prop updates.
       featuredUID: this.featured,
-      highlights: {}
+      highlights: []
     }
   },
   async fetch() {
-    const uidFeatured = this.featuredUID
-    this.highlights = await this.$prismic.api.getByUID("article", this.featuredUID)
+    const ftArticle = await this.$prismic.api.getByUID("article", this.featured)
+    this.highlights.push(ftArticle)
   }
 };
 </script>
