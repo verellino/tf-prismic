@@ -1,18 +1,18 @@
 {
-  "id": "19a060bd-bdac-4122-a8fe-d7c354270587",
-  "uid": "blanditiis-voluptatum-recusandae",
+  "id": "ae0b65c6-5e5a-4266-9072-4d75a06f48c2",
+  "uid": "animi-rerum-omnis",
   "type": "article",
   "data": {
-    "title": "leverage distributed initiatives",
-    "writer": "extend real-time vortals",
-    "editor": "evolve clicks-and-mortar partnerships",
-    "minsRead": "harness integrated solutions",
-    "publishDate": "2018-08-29T12:10:21.941Z",
-    "section": "Ekonomi",
-    "category": "Internet of Things",
+    "title": "envisioneer transparent e-tailers",
+    "writer": "iterate leading-edge bandwidth",
+    "editor": "maximize synergistic e-services",
+    "minsRead": "optimize plug-and-play content",
+    "publishDate": "2017-05-09T00:49:29.566Z",
+    "section": "Teknologi",
+    "category": "AR/VR",
     "categories": {
       "link_type": "Web",
-      "url": "https://slicemachine.dev"
+      "url": "http://twitter.com"
     },
     "mainImage": {
       "dimensions": {
@@ -21,14 +21,14 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"
     },
     "featured": true,
     "hero-slider": false,
     "description": [
       {
         "type": "paragraph",
-        "text": "Sunt nulla est proident.",
+        "text": "Eu elit incididunt do sit fugiat incididunt exercitation commodo culpa fugiat cillum.",
         "spans": []
       }
     ],
@@ -39,10 +39,10 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=900&h=500&fit=crop"
     },
-    "card-type": "Standard Summary Card",
-    "twitter-handle": "facilitate front-end metrics",
+    "card-type": "Summary Card with Large Image",
+    "twitter-handle": "envisioneer real-time solutions",
     "twitter-image": {
       "dimensions": {
         "width": 300,
@@ -50,7 +50,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=300&h=300&fit=crop",
+      "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=300&h=300&fit=crop",
       "large_image": {
         "dimensions": {
           "width": 600,
@@ -58,7 +58,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=600&h=314&fit=crop"
+        "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=600&h=314&fit=crop"
       }
     }
   }

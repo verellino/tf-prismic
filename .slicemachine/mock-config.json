@@ -103,7 +103,45 @@
     },
     "program": {},
     "training": {},
-    "expert": {}
+    "expert": {},
+    "provinsi": {
+      "elektronifikasi": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 1
+        }
+      },
+      "penetrasi": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 1
+        }
+      },
+      "komputer": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 1
+        }
+      },
+      "smartCity": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 1
+        }
+      },
+      "konektivitas": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 1
+        }
+      },
+      "literasiDigital": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 1
+        }
+      }
+    }
   },
   "slices": {
     "Text": {

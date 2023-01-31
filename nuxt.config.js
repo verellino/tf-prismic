@@ -56,7 +56,7 @@ export default {
         autoprefixer: {},
       },
     },
-    transpile: ["@prismicio/vue"],
+    transpile: ["@prismicio/vue", "vue-svg-map", "@svg-maps/indonesia", "vue-faq-accordion"],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -72,6 +72,7 @@ export default {
   plugins: [
     { src: "./plugins/vue-slick-carousel.js" },
     { src: "./plugins/vue-nested-menu.js" },
+    { src: "~/plugins/svg-map.js" },
     // { src: "./plugins/analytics.js"},
     // { src: "./plugins/analytics.server.js"},
   ],
@@ -182,6 +183,6 @@ export default {
     download: true,
   },
   env: {
-    googleAnalyticsId: process.env.GOOGLE_ANALYTICS_ID
+    googleAnalyticsId: process.env.GOOGLE_ANALYTICS_ID,
   },
 };

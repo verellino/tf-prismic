@@ -11,7 +11,7 @@
     </div>
  
     <div v-if="result.length > 0" class="grid grid-cols-12 row-gap-16 md:col-gap-16">
-      <ul v-for="article in result" :key="article.id" class="col-span-12 md:col-span-4">
+      <ul v-for="article in result" :key="article.id" class="col-span-12 md:col-span-4 p-4">
         <ArticleGridItemWithImg :article="article" />
       </ul>
  

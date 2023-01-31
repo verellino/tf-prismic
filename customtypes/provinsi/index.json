@@ -1,0 +1,99 @@
+{
+  "id": "provinsi",
+  "label": "Provinsi",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      },
+      "province": {
+        "type": "Text",
+        "config": {
+          "label": "Provinsi",
+          "placeholder": "DKI Jakarta"
+        }
+      },
+      "provinceID": {
+        "type": "Text",
+        "config": {
+          "label": "Province ID",
+          "placeholder": ""
+        }
+      },
+      "pulau": {
+        "type": "Select",
+        "config": {
+          "label": "Pulau",
+          "placeholder": "",
+          "options": [
+            "Pulau Jawa",
+            "Pulau Sumatera",
+            "Pulau Kalimantan",
+            "Pulau Sulawesi",
+            "Pulau Papua"
+          ]
+        }
+      },
+      "smartCity": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Smart City",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "elektronifikasi": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Elektronifikasi",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "konektivitas": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Konektivitas",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "penetrasi": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Penetrasi Internet",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "literasiDigital": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Literasi Digital",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "komputer": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Komputer / Smartphone ",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      }
+    }
+  }
+}

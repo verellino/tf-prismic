@@ -16,6 +16,7 @@
             :key="article.id"
             :article="article"
           />
+          <nuxt-link to="/sector/economy/" class="link_underline mt-2">Baca semua artikel Ekonomi</nuxt-link>
         </div>
         <div class="mt-4 w-full sm:mt-0 sm:w-1/3 sm:px-4 sm:pr-8">
           <span class="h3 link_underline section-title">
@@ -31,6 +32,7 @@
             :key="article.id"
             :article="article"
           />
+          <nuxt-link to="/sector/government/" class="link_underline mt-2">Baca semua artikel Pemerintahan</nuxt-link>
         </div>
         <div class="mt-4 w-full sm:mt-0 sm:w-1/3 sm:px-4">
           <span class="h3 link_underline section-title">
@@ -46,6 +48,7 @@
             :key="article.id"
             :article="article"
           />
+          <nuxt-link to="/sector/technology/" class="link_underline mt-2">Baca semua artikel Teknologi</nuxt-link>
         </div>
       </ul>
     </div>

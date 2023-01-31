@@ -89,7 +89,7 @@
     <hr class="h-px w-full border-0 bg-slate-200 mt-8">
     <!-- More Blogs Bottom Section  -->
     <div>
-      <BlogsMoreNews :articles="similarArticles" />
+      <BlogsMoreNews :articles="latestArticles.slice(0,3)" />
     </div>
   </div>
 </template>

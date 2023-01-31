@@ -1,0 +1,132 @@
+{
+  "id": "52a9374c-c8fb-405a-837c-50dee8ce61e4",
+  "uid": "omnis-praesentium-nam",
+  "type": "provinsi",
+  "data": {
+    "province": "e-enable impactful ROI",
+    "provinceID": "transform world-class mindshare",
+    "pulau": "Pulau Sulawesi",
+    "smartCity": [
+      {
+        "type": "heading1",
+        "text": "Matrix strategic markets",
+        "spans": []
+      },
+      {
+        "type": "image",
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"
+      },
+      {
+        "type": "paragraph",
+        "text": "Amet quis deserunt elit dolor pariatur tempor excepteur elit Lorem cupidatat ex duis fugiat. Laboris laboris aliqua velit irure ut consequat laboris velit aute laboris culpa sunt.",
+        "spans": []
+      }
+    ],
+    "elektronifikasi": [
+      {
+        "type": "heading1",
+        "text": "Deliver value-added relationships",
+        "spans": []
+      },
+      {
+        "type": "image",
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
+      },
+      {
+        "type": "paragraph",
+        "text": "Id in officia velit ad commodo sint aute anim ea in. Reprehenderit mollit aute labore labore dolore velit ad ut veniam irure veniam cillum excepteur Lorem aliquip.",
+        "spans": []
+      }
+    ],
+    "konektivitas": [
+      {
+        "type": "heading1",
+        "text": "Whiteboard bricks-and-clicks supply-chains",
+        "spans": []
+      },
+      {
+        "type": "image",
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
+      },
+      {
+        "type": "paragraph",
+        "text": "Aliqua sunt Lorem ipsum nisi. Qui ex in mollit anim incididunt tempor fugiat sit dolore.",
+        "spans": []
+      }
+    ],
+    "penetrasi": [
+      {
+        "type": "heading1",
+        "text": "Empower back-end infrastructures",
+        "spans": []
+      },
+      {
+        "type": "paragraph",
+        "text": "Nisi proident amet est nulla dolor et id aliqua quis officia amet mollit. Non minim aliqua aliquip non amet excepteur. Consequat veniam culpa est do sit ullamco id incididunt dolore exercitation tempor sunt.",
+        "spans": []
+      }
+    ],
+    "literasiDigital": [
+      {
+        "type": "heading1",
+        "text": "Repurpose open-source blockchains",
+        "spans": []
+      },
+      {
+        "type": "image",
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
+      },
+      {
+        "type": "paragraph",
+        "text": "Magna sint est anim ex sint magna commodo duis sunt officia reprehenderit.",
+        "spans": []
+      }
+    ],
+    "komputer": [
+      {
+        "type": "heading1",
+        "text": "Repurpose leading-edge e-commerce",
+        "spans": []
+      },
+      {
+        "type": "image",
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
+      },
+      {
+        "type": "paragraph",
+        "text": "Consequat qui excepteur quis eu consectetur proident veniam ipsum Lorem cillum aute sint. Fugiat commodo minim id adipisicing anim velit ipsum proident laborum pariatur laboris id do ullamco mollit.",
+        "spans": []
+      }
+    ]
+  }
+}

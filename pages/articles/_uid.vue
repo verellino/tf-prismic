@@ -283,13 +283,6 @@ export default {
       if (this.article.data.mainImage.url) {
         return this.article.data.mainImage;
       }
-
-      const imageSlice = this.article.data.slices.find(
-        (slice) => slice.slice_type === "image"
-      );
-      if (imageSlice && imageSlice.primary.image.url) {
-        return imageSlice.primary.image;
-      }
       return null;
     },
     excerpt() {
