@@ -65,7 +65,7 @@
           </form>
         </div>
         <div v-for="item in locations">
-          <div v-if="selectedLocation == item.id" class="absolute top-8 left-12 bg-white border drop-shadow p-4">
+          <div v-if="selectedLocation == item.id" class="absolute top-8 left-12 bg-white border drop-shadow p-2 text-sm">
             <h2 class="h3">{{ item.name }}</h2>
             <p>Smart City : {{ item.smartCity }}</p>
             <p>Elektronifikasi : {{ item.elektronifikasi }}</p>
