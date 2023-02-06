@@ -206,7 +206,7 @@ export default {
   fill: rgb(248 113 113);
 }
 .svg-map__location[aria-checked="true"] {
-    fill: #03ca21;
+    fill: #40ad50;
 }
 .accordion-head, .accordion-content {
   background: white !important;
