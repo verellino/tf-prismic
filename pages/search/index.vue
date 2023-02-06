@@ -2,37 +2,38 @@
   <main class="container pt-8 col-start-2 col-end-12 px-4 sm:px-10">
     <h1 class="section-title text-center">Pencarian</h1>
     <client-only>
-    <div class="mb-16 mt-8 Search">
-      <h2 class="h3">
-        Hasil untuk:
-        {{searchterm}}
-      </h2>
-      <div class="w-1/12 mt-2 border-b-4 border-red-800"></div>
-    </div>
- 
-    <div v-if="result.length > 0" class="grid grid-cols-12 row-gap-16 md:col-gap-16">
-      <ul v-for="article in result" :key="article.id" class="col-span-12 md:col-span-4 p-4">
-        <ArticleGridItemWithImg :article="article" />
-      </ul>
- 
-      <!-- <div class="flex col-span-12 mt-16 loadmore">
-        <button
-          class="px-8 py-2 mx-auto text-lg text-center border-2 border-black border-solid cursor-pointer dark-mode:border-white hover:border-accent-dark"
-          @click="loadMoreResults()"
-          v-if="result.length % 9 === 0 && !nonewposts"
-        >Load more results</button>
-      </div> -->
-    </div>
- 
-    <div v-else class="text-xl font-semibold">Maaf, tidak menemukan artikel dengan kata: {{searchterm}}</div>
- 
-    <div class="w-2/3 mx-auto my-16 md:w-1/2 searchform">
-      <div class="mb-4">
-        <div class="text-2xl">Ulangi pencarian</div>
+      <div class="mb-16 mt-8 Search">
+        <h2 class="h3">
+          Hasil untuk: {{ searchterm }}
+        </h2>
         <div class="w-1/12 mt-2 border-b-4 border-red-800"></div>
       </div>
-      <GlobalsSearchForm :currentinput="searchterm" />
-    </div>
+  
+      <div v-if="result.length > 0" class="grid grid-cols-12 row-gap-16 md:col-gap-16">
+        <ul v-for="article in result" :key="article.id" class="col-span-12 md:col-span-4 p-4">
+          <ArticleGridItemWithImg :article="article" />
+        </ul>
+  
+        <!-- <div class="flex col-span-12 mt-16 loadmore">
+          <button
+            class="px-8 py-2 mx-auto text-lg text-center border-2 border-black border-solid cursor-pointer dark-mode:border-white hover:border-accent-dark"
+            @click="loadMoreResults()"
+            v-if="result.length % 9 === 0 && !nonewposts"
+          >Load more results</button>
+        </div> -->
+      </div>
+  
+      <div v-else class="text-xl font-semibold">
+        Maaf, tidak menemukan artikel dengan kata: {{ searchterm }}
+      </div>
+  
+      <div class="w-2/3 mx-auto my-16 md:w-1/2 searchform">
+        <div class="mb-4">
+          <div class="text-2xl">Ulangi pencarian</div>
+          <div class="w-1/12 mt-2 border-b-4 border-red-800"></div>
+        </div>
+        <GlobalsSearchForm :currentinput="searchterm" />
+      </div>
     </client-only>
   </main>
 </template>
@@ -48,6 +49,7 @@ export default {
     }
   },
   async asyncData({ $prismic, store, error, query }) {
+      try {
       // Query for keyword
       const searchresult = await $prismic.api.query(
         [
@@ -58,11 +60,14 @@ export default {
       )
  
       // Returns data to be used in template
-      await store.dispatch("prismic/load");
       return {
         result: searchresult.results,
         searchterm: query.search
       }
+    } catch (e) {
+      // Returns error page
+      error({ statusCode: 404, message: 'Page not found' })
+    }
   },
   methods: {
     // async loadMoreResults() {

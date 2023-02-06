@@ -80,6 +80,7 @@ export default {
   async fetch() {
     const ftArticle = await this.$prismic.api.getByUID("article", this.featured)
     this.highlights.push(ftArticle)
+    this.articles = this.articles.filter(item => item.uid !== this.featured);
   }
 };
 </script>
