@@ -2,7 +2,7 @@ import sm from './sm.json'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: "server",
+  target: "static",
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -96,7 +96,7 @@ export default {
         },
         {
           type: "report",
-          path: "/report/:uid",
+          path: "/reports/:uid",
         },
         {
           type: "events",

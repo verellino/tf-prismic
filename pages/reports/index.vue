@@ -132,6 +132,7 @@ export default {
         };
     } catch(e) {
         // do something with `e` here...
+        let error = "Page not found"
         console.log(error)
         // then rethrow error
         throw e

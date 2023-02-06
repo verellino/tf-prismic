@@ -59,7 +59,7 @@
               :key="article.id"
               :article="article"
             />
-            <nuxt-link to="/sector/teknologi" class="text-center text-sm text-gray-500 link_underline">
+            <nuxt-link to="/sector/technology" class="text-center text-sm text-gray-500 link_underline">
               Semua artikel Teknologi &rarr;
             </nuxt-link>
           </div>
