@@ -75,68 +75,68 @@
 <script>
 export default {
   async asyncData({ $prismic, store }) {
-    try {
-        const { results: reports } = await $prismic.api.query(
-        $prismic.predicate.at("document.type", "report"),
-        {
-            orderings: `[${[
-            { field: "my.article.publishDate", direction: "desc" },
-            { field: "document.first_publication_date", direction: "desc" },
-            ]
-            .map(({ field, direction }) => `${field} ${direction}`)
-            .join(", ")}]`,
-        }
-        )
-        const { results: reportEco } = await $prismic.api.query(
-        $prismic.predicate.at("my.report.section", "Economy"),
-        {
-            orderings: `[${[
-            { field: "my.article.publishDate", direction: "desc" },
-            { field: "document.first_publication_date", direction: "desc" },
-            ]
-            .map(({ field, direction }) => `${field} ${direction}`)
-            .join(", ")}]`,
-            pageSize: 10,
-        }
-        );
-        const { results: reportGov } = await $prismic.api.query(
-        $prismic.predicate.at("my.report.section", "Government"),
-        {
-            orderings: `[${[
-            { field: "my.article.publishDate", direction: "desc" },
-            { field: "document.first_publication_date", direction: "desc" },
-            ]
-            .map(({ field, direction }) => `${field} ${direction}`)
-            .join(", ")}]`,
-            pageSize: 10,
-        }
-        );
-        const { results: reportTech } = await $prismic.api.query(
-        $prismic.predicate.at("my.report.section", "Technology"),
-        {
-            orderings: `[${[
-            { field: "my.article.publishDate", direction: "desc" },
-            { field: "document.first_publication_date", direction: "desc" },
-            ]
-            .map(({ field, direction }) => `${field} ${direction}`)
-            .join(", ")}]`,
-            pageSize: 10,
-        }
-        );
+    // try {
+    //     const { results: reports } = await $prismic.api.query(
+    //     $prismic.predicate.at("document.type", "report"),
+    //     {
+    //         orderings: `[${[
+    //         { field: "my.article.publishDate", direction: "desc" },
+    //         { field: "document.first_publication_date", direction: "desc" },
+    //         ]
+    //         .map(({ field, direction }) => `${field} ${direction}`)
+    //         .join(", ")}]`,
+    //     }
+    //     )
+    //     // const { results: reportEco } = await $prismic.api.query(
+    //     // $prismic.predicate.at("my.report.section", "Economy"),
+    //     // {
+    //     //     orderings: `[${[
+    //     //     { field: "my.article.publishDate", direction: "desc" },
+    //     //     { field: "document.first_publication_date", direction: "desc" },
+    //     //     ]
+    //     //     .map(({ field, direction }) => `${field} ${direction}`)
+    //     //     .join(", ")}]`,
+    //     //     pageSize: 10,
+    //     // }
+    //     // );
+    //     // const { results: reportGov } = await $prismic.api.query(
+    //     // $prismic.predicate.at("my.report.section", "Government"),
+    //     // {
+    //     //     orderings: `[${[
+    //     //     { field: "my.article.publishDate", direction: "desc" },
+    //     //     { field: "document.first_publication_date", direction: "desc" },
+    //     //     ]
+    //     //     .map(({ field, direction }) => `${field} ${direction}`)
+    //     //     .join(", ")}]`,
+    //     //     pageSize: 10,
+    //     // }
+    //     // );
+    //     // const { results: reportTech } = await $prismic.api.query(
+    //     $prismic.predicate.at("my.report.section", "Technology"),
+    //     {
+    //         orderings: `[${[
+    //         { field: "my.article.publishDate", direction: "desc" },
+    //         { field: "document.first_publication_date", direction: "desc" },
+    //         ]
+    //         .map(({ field, direction }) => `${field} ${direction}`)
+    //         .join(", ")}]`,
+    //         pageSize: 10,
+    //     }
+    //     );
         await store.dispatch("prismic/load");
-        return {
-        reports,
-        reportEco,
-        reportGov,
-        reportTech
-        };
-    } catch(e) {
-        // do something with `e` here...
-        let error = "Page not found"
-        console.log(error)
-        // then rethrow error
-        throw e
-    }
+    //     return {
+    //     reports,
+    //     // reportEco,
+    //     // reportGov,
+    //     // reportTech
+    //     };
+    // } catch(e) {
+    //     // do something with `e` here...
+    //     let error = "Page not found"
+    //     console.log(error)
+    //     // then rethrow error
+    //     throw e
+    // }
   },
   computed: {
     navigation() {
