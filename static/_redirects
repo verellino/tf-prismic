@@ -1,0 +1,4 @@
+/*    /index.html   200
+/articles/*    /articles/:splat   200
+/events/*    /events   200
+/reports/*    /reports   200
